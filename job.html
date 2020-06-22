@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>职位搜索 - 更快找到好工作！</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit" />
+  <meta name="keywords" content="招聘搜索,职位搜索,找工作,招聘,BAT招聘" />
+  <meta name="description" content="职位搜索——鲁虺文化网出品!为广大求职者提供方便、快捷和全面的职位搜索入口,是你的上网找工作的第一站!" />
+  <meta name="revised" content="luhui.net, 2004/01/11/" />
+  <meta name="author" content="luhui.net" />
+  <link rel="shortcut icon" href="/favicon.ico" /> 
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/jquery.mcustomscrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="css/soo.css"/>
+  <script src="js/config.js" type="text/javascript" charset="utf-8"></script>
+  </head> 
+ <body>
+ 	<script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+ 	</script>
+  <div id="nav">
+     <!--<h3 class="descr">鲁虺文化网</h3>-->
+   <ul id="skin-nav">
+    <li><a class="logo" href="/"><img src="images/xs-logo.png"></a></li>
+    <li id="donate"><i style="color:#589BFF;" class="fa fa-thumbs-up"></i>&nbsp;赞助&nbsp;&nbsp;&nbsp;
+    <div id="sub_donate"></div></li> 
+	<li><a href="http://club.luhui.net" target="_blank"><i style="color:#ED6D52;" class="fa fa-heart"></i> 赞助者</a></li>
+    <li><a href="http://search.luhui.net/" target="_blank"><i style="color:#F7B700;font-size:15px" class="fa fa-cog fa-spin"></i> 搜索技巧</a></li>
+	<li><a href="http://www.2mfa.cn" target="_blank"><i style="color:#589BFF;font-size:14px" class="fa fa-spinner fa-spin"></i> 最新收录</a></li>
+	<li><a href="http://soft.luhui.net/" title="鲁虺文化网社区" target="_blank"><i style="color:#23CF5F" class="fa fa-group"></i> 鲁虺软件</a></li>
+    <li><a href="http://scholar.luhui.net/" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i> 学术搜索</a></li>
+	<li><a href="http://data.luhui.net/" target="_blank"><i style="color:#F7B700" class="fa fa-cubes"></i> 数据搜索</a></li>
+	<li><a href="http://images.luhui.net/" target="_blank"><i style="color:#ED6D52" class="fa fa-picture-o"></i> 图搜</a></li>
+	<li><a href="http://magnet.luhui.net/" target="_blank"><i style="color:#52DBFC" class="fa fa-magnet"></i> 磁力搜索</a></li>
+	<li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
+	<li><a href="http://weibo.com/kugeceo" title="鲁虺文化网微博" target="_blank"><i style="color:#E42825" class="fa fa-weibo"></i> 微博</a></li>
+	<li><a href="http://twitter.com/luhuiceo" title="鲁虺文化网 Twitter" target="_blank"><i style="color:#6FC5F5" class="fa fa-twitter"></i> Twitter</a></li>
+   </ul>
+  </div>
+  <div class="container">
+   <div class="left-nav">
+    <ul id="foo" class="luhuiyun">
+	<li id="lagou"><img src="http://www.lagou.com/favicon.ico" /><a data="https://www.lagou.com/">拉勾</a></li>
+	 <li id="bosszhipin"><img src="https://www.bosszhipin.com/favicon.ico" /><a data="https://www.bosszhipin.com/">BOSS直聘</a></li>
+	 <li id="topys"><img src="http://cn.bing.com/favicon.ico" /><a data="http://www.topys.cn/jobs">TOPYS.招聘</a></li>
+	 <li id="zhaopins"><img src="http://www.zhaopins.com/assets/images/favicon.ico" /><a data="http://www.zhaopins.com/">秒聘</a></li>
+	 <li id="zoool"><img src="http://sucai.zcool.com.cn/favicon.ico" /><a data="http://job.zcool.com.cn/">站酷</a></li>
+     <li id="liepin"><img src="https://www.liepin.com/favicon.ico" /><a data="https://www.liepin.com/zhaopin/?sfrom=click-pc_homepage-centre_searchbox-search_new&key=">猎聘</a></li>
+	 <li id="neitui"><img src="http://www.neitui.me/images/favicon.ico" /><a data="http://www.neitui.me/">内推</a></li>
+	 <li id="wealink"><img src="http://www.wealink.com/favicon.ico" /><a data="http://www.wealink.com/">若邻网</a></li>
+	 <li id="dianhou"><img src="http://www.dianhou.com/favicon.ico" /><a data="http://www.dianhou.com/">电猴网</a></li>
+	 <li id="jobtong"><img src="http://www.jobtong.com/favicon.ico" /><a data="http://www.jobtong.com/jobs">周伯通</a></li>
+	 <li id="guilai"><img src="http://www.guilai.cn/images/frontend/icons.png" /><a data="http://www.guilai.cn/job/index.html">归来</a></li>
+	 <li id="wutongguo"><img src="http://www.wutongguo.com/favicon.ico" /><a data="http://www.wutongguo.com/wangshen/">梧桐果</a></li>
+	 <li id="kanzhun"><img src="http://www.kanzhun.com/favicon.ico" /><a data="http://www.kanzhun.com/">看准</a></li>
+     <li id="jobmd"><img src="http://assets.dxycdn.com/app/bbs/favicon@2x.ico" /><a data="http://search.jobmd.cn/">丁香人才</a></li>
+	 <li id="jobui"><img src="http://www.letpub.com.cn/favicon.ico" /><a data="http://www.jobui.com/">职友集</a></li>
+     <li id="wagongzuo"><img src="http://www.wagongzuo.com/favicon.ico" /><a data="http://www.wagongzuo.com/">挖工作</a></li>
+	 <li id="shixian"><img src="http://shixian.com/favicon.ico" /><a data="http://shixian.com/consultants">实现网</a></li>
+	 <li id="dajie"><img src="https://assets.dajieimg.com/images/favicon.ico" /><a data="http://job.dajie.com/">大街网</a></li>
+	  <li id="zhaopin"><img src="http://img00.zhaopin.cn/new2011/images/ie9.ico" /><a data="http://sou.zhaopin.com/">智联招聘</a></li>
+	 <li id="las"><img src="http://51job.com/favicon.ico" /><a data="http://search.51job.com/jobsearch/advance_search.php">前程无忧</a></li>
+	 <li id="xueshu"><img src="http://tb1.bdstatic.com/tb/favicon.ico" /><a data="http://www.chinahr.com/sou/">中华英才</a></li>
+    </ul>    <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+    </script>
+    <script src="js/jquery.mcustomscrollbar.concat.min.js"></script>
+    <script>$(".left-nav").mCustomScrollbar({theme:"minimal"});</script>
+   </div>
+   <div class="main">
+    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+   </div>
+  </div>
+  <div class="footer">
+   <a href="?q=site:.luhui.net" target="_top">鲁虺文化网</a> 版权所有
+   <span>&copy; 2004-01-11 luhui.net</span>
+
+   <a href="?q=site:.gov" target="_blank"> icp备案中</a>
+
+   <a href="?q=about" title="About luhui" target="_top">关于本站</a>
+
+   <a href="?q=product service" title="产品服务" target="_top">产品服务</a>
+
+   <a href="?q=joint" title="渠道合作共赢" target="_top">合作共赢</a>
+
+
+   <a href="?q=Disclaimer" title="免责声明" target="_top">免责声明</a>
+
+
+
+   <a href="?q=contact" title="联系我们" target="_top">联系我们</a>
+  </div>
+<div style="display:none">
+    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+</div>
+  <script src="js/z_stat.js" language="JavaScript"></script>
+  
+  <link href="css/csshake.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="css/ui-dialog.css"/>
+  <script src="js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="css/messenger.css"/>
+  <link rel="stylesheet" type="text/css" href="css/messenger-theme-ice.css"/>
+  <script src="js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/color.js"></script>
+  <script src="js/chinese_convert.js"></script>
+<!--放下偷刀(盗)，立地成佛-->
+<!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2004.01.11虫子宣-->
+ </body>
+</html>

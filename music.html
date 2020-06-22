@@ -1,0 +1,1030 @@
+﻿
+<!--
+                                                           .                     
+                                     .;Hh                     
+                        ....:;hhhhhhh   h                     
+                    ..;;;hhh            h:..                  
+                 .:hhhhhh               hhhhh:.               
+               .;hhhhhhhh           hhhhhhhhhhh;.             
+             .;hhhhhhhhhh      hhhhhhh;hhhhhhhhhh;.           
+            ;hhhhhhhhhhhhh    hh;hhhhhhhhhhhhhhhhhh;          
+           ;hhhhhh奋发hhhhhh    hhhhhhhh图强hhhhhhhhh         
+          hhhhhhhhhhhhhhhhhhh    hhhhhhhhhhhhhhhhhhhhh        
+         :hhhhhhhhhhhhhhhhhhhh    hhhhhhhhhhhhhhhhhhhh;       
+        .hhhhhhhhhhhhhhhhhhhhhhh   hhhhhhhhhhhhhhhhhhhh.      
+        :hhhhhhhhhhhhhhhhhhhhhhhh   hhhhhhhhhhhhhhhhhhh:      
+        ;hhhhhhhhhhhhhhhhhhhhhhhhhh  hhhhhhhhhhhhhhhhhh;      
+        ;生于忧患死于安乐，愿音乐能   抚慰伱不安的灵魂.;      
+        :hhhhhhhhhhhhhhhhhh             hhhhhhhhhhhhhhh:      
+        .hhhhhhhhhhhhhhh                 hhhhhhhhhhhhhh.      
+         ;hhhhhhhhhhhhh                   hhhhhhhhhhhh;       
+          hhhhhhhhhhhh                     hhhhhhhhhhh        
+           hhhhhhhhhh    music.luhui.net   hhhhhhhhhh         
+            ;hhhhhhhh                     hhhhhhhhh;          
+             .hhhhhhhh                   hhhhhhhhh.           
+               .hhhhhhhh               hhhhhhhhh:             
+                 .;hhhhhhhh          hhhhhhhh;.               
+                    .:求人不如求己,靠谁都不如:.                  
+                        ...:;;靠自己;:...                                     
+                                                
+         交互:鲁之虺 && 视觉:鲁之虺 && 重构:鲁之虺 && 前端:鲁之虺
+                      鲁虺文化网独家倾情出品
+-->	 
+
+<!DOCTYPE html>
+<html manifest="cache.appcache">
+ <head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="renderer" content="webkit" />
+  <title>鲁虺音乐集合器 http://music.luhui.net  鲁虺文化网音乐频道，为你提供海量正版高品质音乐数据，权威的音乐文化研究，新歌速递，契合你的主题音频资源推荐，人性化的集成歌曲搜索，让你更快地找到喜爱的音乐，带给你全新音乐体验。</title>
+  <meta name="keywords" content="鲁虺音乐集合器，音乐，音乐网，音乐播放器，鲁虺音乐播放器，mp3免费下载，百度音乐，流行歌曲，在线听歌，音乐网站，MV，巅峰榜，音乐排行榜，经典老歌, 在线听歌，无损音乐，网络歌曲，DJ舞曲，情歌，红歌，伤感，劲爆，80后，儿歌，广场舞" />
+  <meta name="description" content="鲁虺音乐集合器 http://music.luhui.net 鲁虺文化网音乐频道，为你提供海量正版高品质音乐数据，权威的音乐文化研究，新歌速递，契合你的主题音频资源推荐，人性化的集成歌曲搜索，让你更快地找到喜爱的音乐，带给你全新音乐体验。" />
+  <meta name="revised" content="luhui.net, 2004-01-11" />
+  <meta name="author" content="luhui.net" />
+  <link rel="shortcut icon" href="/favicon.ico" /> 
+  <script type="text/javascript" src="/js/jquery-3.1.0.min.js"></script>
+  <script src="/js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/jquery.mcustomscrollbar.css" />
+  <link rel="stylesheet" type="text/css" href="/css/so.css"/>
+  <script src="/js/config.js" type="text/javascript" charset="utf-8"></script>
+  </head> 
+ <body>
+ 	<script type="text/javascript">
+ 		if(localStorage.style === 'icon') {
+ 			$(document.body).addClass('icon-style');
+ 		}
+ 	</script>
+  <div id="nav">
+   <ul id="skin-nav">
+    <li><a href="/" title="鲁虺音乐集合器" class="logo"><img src="/images/music_logo.png"/></a></li>
+    <li id="donate"><i style="color:#589BFF;" class="fa fa-thumbs-up"></i>&nbsp;赞助&nbsp;&nbsp;&nbsp;
+    <div id="sub_donate"></div></li> 
+	<li><a href="http://club.luhui.net/" title="赞助者" target="_blank"><i style="color:#ED6D52;" class="fa fa-heart"></i> 赞助者</a></li>
+    <li><a href="http://www.zhangou.pw/"  title="展沟网" target="_blank"><i style="color:#F7B700;font-size:15px" class="fa fa-cog fa-spin"></i>展沟网</a></li>
+	<li><a href="http://www.guanfu.pw" title="冠富物联网"  target="_blank"><i style="color:#589BFF;font-size:14px" class="fa fa-spinner fa-spin"></i>冠富物联网</a></li>
+	<li><a href="http://www.guanfu.bid" title="冠富贸易" target="_blank"><i style="color:#23CF5F" class="fa fa-group"></i>冠富贸易</a></li>
+    <li><a href="http://www.guanfu.org/" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i>冠富研究院</a></li>
+	<li><a href="http://www.guanfu.hk/" target="_blank"><i style="color:#F7B700" class="fa fa-cubes"></i>冠富港</a></li>
+	<li><a href="http://www.9kz.org/" title="九门快照"  target="_blank"><i style="color:#ED6D52" class="fa fa-picture-o"></i>机器视觉</a></li>
+	<li><a href="http://luhui.net" target="_blank"><i style="color:#52DBFC" class="fa fa-cloud-download"></i>鲁虺云</a></li>
+    <li id="skin"><i style="color:#23CF5F" class="fa fa-leaf"></i> 皮肤
+     <ul id="skin-subnav">
+      <li><a href="skin/b1601727gw1f0yog91237j205k05ka9z.jpg">默认</a></li>
+	  <li><a href="skin/b1601727gw1f0ypz5sqeog203k03kt8l.gif">流水</a></li>
+      <li><a href="skin/b1601727gw1f0yog7wy6gj20go0goaar.jpg">晶体</a></li>
+      <li><a href="skin/b1601727gw1f0yogbxosbj20e80e8ta1.jpg">木纹</a></li>
+      <li><a href="skin/b1601727gw1f0yog9rt8jj20dw0afwg2.jpg">宣纸</a></li>
+      <li><a href="skin/b1601727gw1f0ypz6et0vj205804jglg.jpg">爱心</a></li>
+      <li><a href="skin/b1601727gw1f0ypz5y1g5g204102wa9z.gif">墙壁</a></li>
+      <li><a href="skin/b1601727gw1f0yogc8nydj208c08c3yc.jpg">知识</a></li>
+      <li><a href="skin/b1601727gw1f0yogacp89j20b40b7mxm.jpg">妖娆</a></li>
+      <li><a href="images/grey.gif">纯灰</a></li>
+     </ul></li>
+	 <li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
+   </ul>
+  </div>
+  <div class="container">
+   <div class="left-nav">
+    <ul id="foo" class="luhuiyun">
+	 <li id="taobao"><img  title="爱淘宝" src="https://www.taobao.com/favicon.ico" /><a  title="爱淘宝" data="http://ai.taobao.com/?pid=mm_31320626_3466227_58448586&unid=&source_id=search&key=403">爱淘宝,就购了</a></li>
+
+	 <li id="taihe"><img  title="千千音乐是中国音乐门户之一，为你提供海量正版高品质音乐，权威的音乐榜单，新歌速递，契合你的主题电台，人性化的歌曲搜索，让你更快地找到喜爱的音乐，带给你全新音乐体验。" src="http://music.taihe.com/favicon.ico" /><a  title="千千音乐是中国音乐门户之一，为你提供海量正版高品质音乐，权威的音乐榜单，新歌速递，契合你的主题电台，人性化的歌曲搜索，让你更快地找到喜爱的音乐，带给你全新音乐体验。" data="http://MP3.baidu.com/">千千音乐</a></li>
+	 <li id="luhui"><img  title="鲁虺音乐集合器" src="/favicon.ico" /><a  title="鲁虺音乐集合器" data="music.htm">鲁虺音乐</a></li>
+
+	 <li id="baidu"><img  title="百度MP3索引" src="/images/baidu.ico" /><a  title="百度MP3索引" data="https://www.baidu.com/s?wd=%5BTo%20Parent%20Directory%5D%20MP3&pn=0&oq=%5BTo%20Parent%20Directory%5D%20MP3&tn=luhuinet&ie=utf-8&usm=1&rsv_pq=a9de57b600017d28&rsv_t=2025PapgFgdf%2F7ydSzxDvBDmK7Ff4ef09z6Av%2FY02KD38l7m%2BuCQP4RmtwT8T8I">百度MP3索引</a></li>
+	 <li id="luhuiplayer"><img  title="鲁虺音乐集合器" src="http://music.luhui.net/luhuiplayer/favicon.ico" /><a  title="鲁虺音乐集合器" data="luhuiplayer">luhuiplayer</a></li>	
+   <li id="cnbing"><img title="国内版 Bing video" src="/images/bing.ico" /><a  title="国内版 Bing video" data="https://cn.bing.com/videos/feed">必应视频</a></li>
+   <li id="64ma"><img title="64码高清网络电视嵌入播放，全部频道在线观看，直播、回看、线路选择，操作随心所欲" src="https://live.64ma.com/favicon.ico" /><a title="64码高清网络电视嵌入播放，全部频道在线观看，直播、回看、线路选择，操作随心所欲" data="https://live.64ma.com/tv/live.html#http://music.luhui.net/luhuiplayer#/cn/tv/live/live.asp">在线电视直播</a></li>
+
+	 <li id="sogou_advanced"><img  title="搜狗视频，视频聚合平台，拥有全网更新更热视频内容。为用户提供高清电影,电视剧,动漫,综艺等视频在线观看，以及视频搜索等服务" src="https://www.sogou.com/images/logo/new/favicon.ico" /><a  title="搜狗视频，视频聚合平台，拥有全网更新更热视频内容。为用户提供高清电影,电视剧,动漫,综艺等视频在线观看，以及视频搜索等服务" data="https://v.sogou.com/?p=music.luhui.net&query=&ie=utf8">搜狗视频</a></li>
+	 <li id="music"><img  title="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" src="http://p3.music.126.net/tBTNafgjNnTL1KlZMt7lVA==/18885211718935735.jpg" /><a  title="网易云音乐是一款专注于发现与分享的音乐产品，依托专业音乐人、DJ、好友推荐及社交功能，为用户打造全新的音乐生活。" data="https://music.163.com/">网易云音乐</a></li>
+   <li id="imusic"><img  title="多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。" src="/images/music.ico" /><a  title="多站合一音乐搜索解决方案，可搜索试听网易云音乐、QQ音乐、酷狗音乐、酷我音乐、虾米音乐、百度音乐、一听音乐、咪咕音乐、荔枝FM、蜻蜓FM、喜马拉雅FM、全民K歌、5sing原创翻唱音乐。" data="http://www.guqiankun.com/tools/music/">音乐搜索解析</a></li>
+	 <li id="kuw"><img  title="酷我音乐-无损音质正版在线试听网站，酷我音乐为您提供高品质音乐，无损音乐下载，拥有各类音乐榜单，快捷的新歌速递，完善的主题电台，个性化的歌曲推荐，高品质音乐在线听，好音质，用酷我。" src="http://image.kuwo.cn/website/favicon.ico" /><a  title="酷我音乐-无损音质正版在线试听网站，酷我音乐为您提供高品质音乐，无损音乐下载，拥有各类音乐榜单，快捷的新歌速递，完善的主题电台，个性化的歌曲推荐，高品质音乐在线听，好音质，用酷我。" data="http://www.kuwo.cn/">酷我音乐</a></li>
+	 <li id="xiami"><img title="虾米音乐是专业音乐内容发现平台，依托专业曲库内容和精准推荐算法，带你发现音乐惊喜，提升音乐审美。平台致力于扶持原创音乐，2014年启动原创音乐扶持项目——寻光计划。" src="https://img.alicdn.com/tfs/TB1qP4zgY5YBuNjSspoXXbeNFXa-550-550.png" /><a title="虾米音乐是专业音乐内容发现平台，依托专业曲库内容和精准推荐算法，带你发现音乐惊喜，提升音乐审美。平台致力于扶持原创音乐，2014年启动原创音乐扶持项目——寻光计划。" data="http://www.xiami.com/">虾米音乐</a></li>
+	 <li id="douban"><img title="发现更多豆瓣音乐独家歌曲、有趣有深度的专题报道，结识更多更新更有特点的音乐人——和我们一起探索广阔的音乐世界吧！" src="http://music.douban.com/favicon.ico" /><a title="发现更多豆瓣音乐独家歌曲、有趣有深度的专题报道，结识更多更新更有特点的音乐人——和我们一起探索广阔的音乐世界吧！" data="http://music.douban.com">豆瓣音乐</a></li>
+	 <li id="app-echo"><img title="「echo回声」年轻人里最流行的音乐APP之一，也是全球最大的3D音乐平台。echo将颠覆你对音乐的一切体验。在这里，发现前所未有的好听音乐、3D神奇立体音效、弹幕评论社交，还能在纯粹的音乐环境里跟喜爱的明星歌手互动" src="http://www.app-echo.com/favicon.ico" /><a  title="「echo回声」年轻人里最流行的音乐APP之一，也是全球最大的3D音乐平台。echo将颠覆你对音乐的一切体验。在这里，发现前所未有的好听音乐、3D神奇立体音效、弹幕评论社交，还能在纯粹的音乐环境里跟喜爱的明星歌手互动" data="http://www.app-echo.com/">echo回声</a></li>
+	 
+<li id="kugou"><img  title="酷狗音乐旗下最新最全的在线正版音乐网站，本站为您免费提供最全的在线音乐试听下载，以及全球海量电台和MV播放服务、最新音乐播放器下载。酷狗音乐 和音乐在一起。" src="https://www.kugou.com/root/favicon.ico" /><a  title="酷狗音乐旗下最新最全的在线正版音乐网站，本站为您免费提供最全的在线音乐试听下载，以及全球海量电台和MV播放服务、最新音乐播放器下载。酷狗音乐 和音乐在一起。" data="http://www.kugou.com/">酷狗音乐</a></li>
+
+<!--
+  囧        囧                    囧囧囧囧囧囧囧囧                囧    囧                        囧  囧囧囧囧囧囧囧            
+  囧    囧  囧                    囧  囧        囧                囧    囧囧囧囧囧                囧囧囧    囧                  
+  囧    囧囧囧囧囧                囧  囧囧囧囧囧囧                  囧囧    囧  囧              囧    囧  囧囧囧囧              
+囧囧囧囧囧囧囧  囧                囧囧囧    囧  囧                囧      囧  囧                  囧  囧  囧囧囧囧              
+  囧    囧  囧  囧                囧囧囧囧囧囧囧囧              囧    囧囧      囧囧                  囧囧      囧              
+  囧    囧  囧囧囧                囧    囧      囧                  囧囧囧囧囧囧                  囧  囧  囧囧囧囧              
+  囧囧  囧  囧    囧              囧  囧囧囧囧  囧                囧          囧                  囧  囧  囧囧  囧              
+囧囧  囧囧        囧              囧      囧囧  囧                                              囧  囧  囧  囧  囧              
+        囧囧囧囧囧                囧囧囧囧囧囧囧囧                      囧囧                    囧  囧  囧囧囧    囧            
+                                                                  囧囧囧    囧囧囧                                              
+-->	 
+
+	 <li id="map"><img title="地图资源集成列表" src="/images/map.png"><a>地图</a>
+		<ul class="more">
+			<li id="amap"><img title="高德地图官方网站，提供全国地图浏览，地点搜索，公交驾车查询服务。可同时查看商家团购、优惠信息。高德地图，您的出行、生活好帮手。" src="/images/amap.jpg"><a title="高德地图官方网站，提供全国地图浏览，地点搜索，公交驾车查询服务。可同时查看商家团购、优惠信息。高德地图，您的出行、生活好帮手。" data="http://ditu.amap.com/">高德地图</a></li>
+			<li id="baidumap"><img title="百度地图浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手。提供地铁线路图浏览，乘车方案查询，以及准确的票价和时间信息。" src="/images/baidu.ico"><a title="百度地图浏览地图、搜索地点、查询公交驾车线路、查看实时路况，您的出行指南、生活助手。提供地铁线路图浏览，乘车方案查询，以及准确的票价和时间信息。" data="http://map.baidu.com/">百度地图</a></li>
+			<li id="googlemap"><img title="谷歌地图" src="/images/googlemap.ico"><a title="谷歌地图" data="http://www.google.cn/maps/" target="_blank">谷歌地图</a></li>
+			<li id="tencentmap"><img title="腾讯地图提供全国400多个城市的地图浏览、地址查询、兴趣点搜索、公交换乘、驾车导航、公交线路及站点查询等多项服务" src="/images/tencentmap.ico"><a title="腾讯地图提供全国400多个城市的地图浏览、地址查询、兴趣点搜索、公交换乘、驾车导航、公交线路及站点查询等多项服务" data="http://map.qq.com/">腾讯地图</a></li>
+			<li id="sogoumap"><img title="搜狗地图，出行专家，可靠帮手。提供电子地图浏览、地点搜索、公交自驾路线查询、手机地图、手机导航、高清卫星图，城市仿真三维图等多项服务" src="/images/sogou.ico"><a dtitle="搜狗地图，出行专家，可靠帮手。提供电子地图浏览、地点搜索、公交自驾路线查询、手机地图、手机导航、高清卫星图，城市仿真三维图等多项服务" ata="http://map.sogou.com">搜狗地图</a></li>
+			<li id="bingmap"><img title="必应地图" src="/images/bing.ico"><a title="必应地图" data="http://cn.bing.com/ditu/">必应地图</a></li>
+			<li id="gps"><img title="鲁虺在线地图经度纬度查询" src="http://gps.luhui.net/ico/maps.ico"><a title="鲁虺在线地图经度纬度查询" data="http://gps.luhui.net/">鲁虺GPS经纬度</a></li>
+			<li id="earth"><img title="鲁虺地球在线探索大千世界的遥远边界，就在浏览器的方寸之间。" src="http://earth.luhui.net/00-favicon.ico"><a title="鲁虺地球在线探索大千世界的遥远边界，就在浏览器的方寸之间。" data="http://earth.luhui.net/">鲁虺地球在线</a></li>
+			<li id="earth3dmap"><img title="The Google Maps API and Earth plug-in allows you to navigate and explore geographic data on a 3D globe using a web browser." src="http://earth3dmap.com/wp-content/uploads/2018/08/earth3dmap-globe-map.jpg"><a title="The Google Maps API and Earth plug-in allows you to navigate and explore geographic data on a 3D globe using a web browser." data="http://earth3dmap.com/">Earth 3D Map</a></li>
+			<li id="zoom"><img title="Zoom Earth - 探索地球的实时卫星图像" src="http://zoom.earth/assets/images/icon-400.jpg"><a title="Zoom Earth - 探索地球的实时卫星图像" data="http://zoom.earth/">Zoom Earth</a></li>
+
+		</ul>
+	 </li>
+
+<!--
+    囧          囧                          囧        囧          囧          囧                                          囧    
+      囧        囧                囧          囧      囧            囧        囧                  囧      囧囧囧囧囧囧囧囧囧囧  
+      囧        囧      囧          囧                囧囧囧囧      囧        囧囧囧囧囧囧囧        囧囧  囧      囧            
+囧囧囧囧囧囧  囧囧囧囧囧囧囧        囧  囧囧囧囧囧囧囧                  囧  囧    囧      囧          囧  囧    囧              
+    囧      囧        囧        囧          囧    囧                囧囧  囧      囧    囧      囧        囧  囧囧囧囧囧囧囧    
+    囧            囧囧            囧囧      囧      囧囧囧囧囧  囧囧囧          囧  囧            囧囧    囧  囧          囧    
+    囧囧囧囧  囧囧        囧        囧      囧囧囧        囧        囧        囧      囧            囧    囧  囧囧囧囧囧囧囧    
+    囧    囧  囧  囧    囧囧            囧  囧  囧      囧          囧    囧囧          囧囧囧          囧囧  囧          囧    
+    囧    囧  囧  囧  囧              囧    囧  囧      囧            囧囧囧囧囧囧囧囧囧  囧          囧  囧  囧囧囧囧囧囧囧    
+    囧    囧  囧    囧              囧      囧  囧囧囧囧囧囧囧        囧              囧            囧    囧  囧    囧    囧    
+    囧    囧  囧    囧          囧囧囧      囧  囧      囧            囧      囧      囧        囧囧囧    囧        囧          
+    囧    囧  囧      囧            囧    囧    囧      囧            囧      囧      囧            囧    囧    囧  囧  囧      
+    囧    囧  囧      囧            囧    囧    囧      囧            囧      囧      囧            囧  囧    囧囧  囧    囧囧  
+  囧      囧  囧  囧    囧囧囧      囧  囧      囧      囧                  囧  囧囧                囧  囧  囧      囧      囧  
+囧    囧  囧  囧囧        囧        囧囧      囧囧  囧  囧              囧囧        囧囧            囧囧        囧  囧          
+        囧    囧                    囧                囧            囧囧                囧          囧            囧            
+-->	
+	 <li id="trip"><img title="旅游资源集成列表" src="/images/trip.png"><a>旅游</a>
+		<ul class="more">
+			<li id="mafengwo"><img title="马蜂窝!靠谱的旅游攻略,自由行,自助游分享社区,海量旅游景点图片、游记、交通、美食、购物等自由行旅游攻略信息,马蜂窝旅游网获取自由行,自助游攻略信息更全面" src="/images/mafengwo.ico"><a title="马蜂窝!靠谱的旅游攻略,自由行,自助游分享社区,海量旅游景点图片、游记、交通、美食、购物等自由行旅游攻略信息,马蜂窝旅游网获取自由行,自助游攻略信息更全面" data="http://www.mafengwo.cn/">蚂蜂窝</a></li>
+			<li id="qyer"><img title="穷游网鼓励和帮助中国旅行者以自己的视角和方式体验世界，为出国旅行者提供专业、实用、全面的出境游旅行指南和旅游攻略，是中国出境游旅行者们分享旅游目的地信息和游记攻略的平台。" src="/images/qyer.ico"><a title="穷游网鼓励和帮助中国旅行者以自己的视角和方式体验世界，为出国旅行者提供专业、实用、全面的出境游旅行指南和旅游攻略，是中国出境游旅行者们分享旅游目的地信息和游记攻略的平台。" data="http://www.qyer.com/">穷游</a></li>
+			<li id="tripadvisor"><img title="全球领先的旅行平台。 浏览数亿条旅行者点评和建议。 比较酒店、航班和邮轮的超低价格。 预订热门游览和景点并在绝佳餐厅订位。" src="https://cc.ddcdn.com/favicon.ico#/images/tripadvisor.ico"><a title="全球领先的旅行平台。 浏览数亿条旅行者点评和建议。 比较酒店、航班和邮轮的超低价格。 预订热门游览和景点并在绝佳餐厅订位。" data="https://www.tripadvisor.cn/">猫途鹰</a></li>
+			<li id="booking"><img title="Booking.com缤客网提供全世界国内外120,000多个目的地酒店在线预订且可享受超值优惠。查询符合您预算并提供最低价格保证的酒店。" src="/images/booking.ico"><a title="Booking.com缤客网提供全世界国内外120,000多个目的地酒店在线预订且可享受超值优惠。查询符合您预算并提供最低价格保证的酒店。" data="https://www.booking.com/destinationfinder.zh-cn.html">缤客</a></li>
+			<li id="lotour"><img title="来乐途旅游网，找到你的旅游灵感。乐途旅游网一直致力于更好的解决用户去哪玩的问题，在这你可以找到好玩，有趣，新鲜的目的地，发现下一次旅行的灵感。" src="/images/lotour.ico"><a title="来乐途旅游网，找到你的旅游灵感。乐途旅游网一直致力于更好的解决用户去哪玩的问题，在这你可以找到好玩，有趣，新鲜的目的地，发现下一次旅行的灵感。" data="http://www.lotour.com/">乐途</a></li>
+			<li id="airbnb"><img title="度假屋、民宿、体验和攻略 - Airbnb爱彼迎" src="/images/airbnb.ico"><a title="度假屋、民宿、体验和攻略 - Airbnb爱彼迎" data="https://zh.airbnb.com/" target="_blank">爱彼迎</a></li>
+			<li id="tuniu"><img title="途牛旅游网搜索频道为您提供途牛旅游网跟团游线路搜索，自助游线路搜索、酒店搜索、门票搜索、邮轮搜索功能。要旅游，找途牛！Tuniu.com" src="/images/tuniu.ico"><a title="途牛旅游网搜索频道为您提供途牛旅游网跟团游线路搜索，自助游线路搜索、酒店搜索、门票搜索、邮轮搜索功能。要旅游，找途牛！Tuniu.com" data="http://s.tuniu.com/">途牛</a></li>
+		</ul>
+	 </li>
+	 
+
+<!--	 
+            囧                                      囧            囧          囧                                          囧    
+              囧      囧                        囧囧囧囧            囧        囧                  囧      囧囧囧囧囧囧囧囧囧囧  
+    囧囧囧囧囧囧囧囧囧囧囧            囧囧囧囧囧                    囧        囧囧囧囧囧囧囧        囧囧  囧      囧            
+        囧          囧                囧                                囧  囧    囧      囧          囧  囧    囧              
+          囧        囧                囧      囧                    囧囧  囧      囧    囧      囧        囧  囧囧囧囧囧囧囧    
+          囧      囧      囧        囧        囧                囧囧囧          囧  囧            囧囧    囧  囧          囧    
+囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧        囧          囧        囧        囧      囧            囧    囧  囧囧囧囧囧囧囧    
+                                  囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧    囧囧          囧囧囧          囧囧  囧          囧    
+      囧囧囧囧囧囧囧囧囧                      囧                      囧囧囧囧囧囧囧囧囧  囧          囧  囧  囧囧囧囧囧囧囧    
+      囧              囧                      囧                      囧              囧            囧    囧  囧    囧    囧    
+      囧              囧                囧    囧    囧                囧      囧      囧        囧囧囧    囧        囧          
+      囧囧囧囧囧囧囧囧囧                囧    囧      囧              囧      囧      囧            囧    囧    囧  囧  囧      
+      囧              囧              囧      囧        囧            囧      囧      囧            囧  囧    囧囧  囧    囧囧  
+      囧              囧            囧        囧        囧囧                囧  囧囧                囧  囧  囧      囧      囧  
+      囧囧囧囧囧囧囧囧囧          囧      囧  囧          囧            囧囧        囧囧            囧囧        囧  囧          
+      囧              囧                    囧                      囧囧                囧          囧            囧            
+
+-->	 	 
+	 
+	 <li id="qq"><img  title="QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。" src="https://y.qq.com/favicon.ico" /><a  title="QQ音乐是腾讯公司推出的一款网络音乐服务产品，海量音乐在线试听、新歌热歌在线首发、歌词翻译、手机铃声下载、高品质无损音乐试听、海量无损曲库、正版音乐下载、空间背景音乐设置、MV观看等，是互联网音乐播放和下载的优选。" data="https://y.qq.com/">QQ音乐</a></li>
+	 <li id="easyicon"><img title="咪咕音乐网是中国移动官方音乐门户，旨在提供音乐首发、高品质音乐试听、彩铃订购、歌曲下载、铃音管理、音乐电台、音乐视频等一站式音乐互动体验，好音乐尽在music.migu.cn！" src="http://cdnmusic.migu.cn/favicon.ico" /><a title="咪咕音乐网是中国移动官方音乐门户，旨在提供音乐首发、高品质音乐试听、彩铃订购、歌曲下载、铃音管理、音乐电台、音乐视频等一站式音乐互动体验，好音乐尽在music.migu.cn！" data="http://music.migu.cn/">咪咕音乐</a></li>
+	 <li id="1ting"><img title="一听音乐网是在线音乐网站，提供免费歌曲在线试听、下载。一听音乐网拥有正版、庞大、完整的曲库，歌曲更新迅速，试听流畅，口碑极佳。一听音乐网，每天听一听" src="http://www.1ting.com/favicon.ico" /><a title="一听音乐网是在线音乐网站，提供免费歌曲在线试听、下载。一听音乐网拥有正版、庞大、完整的曲库，歌曲更新迅速，试听流畅，口碑极佳。一听音乐网，每天听一听" data="http://www.1ting.com/">一听音乐</a></li>
+	 <li id="biaoqing"><img  title="喜马拉雅FM是专业的音频分享平台,汇集了有声小说,有声读物,有声书,儿童睡前故事,相声小品,鬼故事等数亿条音频,超过4.7亿用户选择的网络电台,随时随地，听我想听。" src="http://www.ximalaya.com/favicon.ico" /><a  title="喜马拉雅FM是专业的音频分享平台,汇集了有声小说,有声读物,有声书,儿童睡前故事,相声小品,鬼故事等数亿条音频,超过4.7亿用户选择的网络电台,随时随地，听我想听。" data="http://www.ximalaya.com/">喜马拉雅</a></li>
+	 <li id="jiumodiary"><img  title="Jiumo Search 鸠摩搜索 - 文档搜索引擎鸠摩搜书, 电子书, 摩鸠, 鸠魔, 鸩摩, 九磨, 官网, 就摸, 鸠, kindle, ebook, jiumosoushu, 找书" src="/images/jiumodiary.png" /><a  title="Jiumo Search 鸠摩搜索 - 文档搜索引擎鸠摩搜书, 电子书, 摩鸠, 鸠魔, 鸩摩, 九磨, 官网, 就摸, 鸠, kindle, ebook, jiumosoushu, 找书" data="http://www.jiumodiary.com/">鸠摩搜书</a></li>
+	 <li id="lib"><img title="超好听的歌曲大全，在音乐巴士。最具人气的流行音乐，最好听的MP3歌曲试听免费下载" src="http://www.yy8844.cn/yimages/logo.gif" /><a title="超好听的歌曲大全，在音乐巴士。最具人气的流行音乐，最好听的MP3歌曲试听免费下载" data="http://www.yy8844.cn/">音乐巴士</a></li>
+   <li id="github"><img title="九天音乐网是目前国内最悠久的音乐服务品牌，为用户提供高品质音乐免费试听、正版音乐下载、MV观看、唱片购买。平台汇聚了众多优质音乐人和歌手，拥有流行、民谣、电子、摇滚等十多个流派的原创音乐作品。" src="http://www.9sky.com/favicon.ico" /><a title="九天音乐网是目前国内最悠久的音乐服务品牌，为用户提供高品质音乐免费试听、正版音乐下载、MV观看、唱片购买。平台汇聚了众多优质音乐人和歌手，拥有流行、民谣、电子、摇滚等十多个流派的原创音乐作品。" data="http://www.9sky.com">九天音乐</a></li>
+   <li id="wolf"><img  title="Wolfram Alpha" src="/images/wolframalpha.ico" /><a  title="Wolfram Alpha" data="http://www.wolframalpha.com/">Wolfram Alpha</a></li>
+	 <li id="PP"><img  title="PP视频音乐频道是中国领先的音乐视频媒体平台，为用户提供原创音乐节目、演唱会现场直播、明星互动访谈、偶像组合直播等高品质音乐内容，涵盖欧美、日韩、华语、原声等音乐歌曲视频类型。PP视频一起玩出精彩" src="https://sr1.pplive.cn/mcms/nav/images/favicon.ico" /><a  title="PP视频音乐频道是中国领先的音乐视频媒体平台，为用户提供原创音乐节目、演唱会现场直播、明星互动访谈、偶像组合直播等高品质音乐内容，涵盖欧美、日韩、华语、原声等音乐歌曲视频类型。PP视频一起玩出精彩" data="http://music.pptv.com/">PP视频</a></li>
+   <li id="kuaidi"><img title="自由钢琴(AutoPiano)是利用HTML5技术开发的在线钢琴应用，致力于为钢琴爱好者、音乐爱好者提供一个优雅、简洁的平台，在学习工作之余可以在线弹钢琴，享受音乐、生活的美好。自由钢琴支持自动演奏和手动演奏，简单易学，快来试试吧" src="http://www.autopiano.cn/favicon.ico" /><a title="自由钢琴(AutoPiano)是利用HTML5技术开发的在线钢琴应用，致力于为钢琴爱好者、音乐爱好者提供一个优雅、简洁的平台，在学习工作之余可以在线弹钢琴，享受音乐、生活的美好。自由钢琴支持自动演奏和手动演奏，简单易学，快来试试吧" data="http://www.autopiano.cn">自由钢琴</a></li>
+	 <li id="gepu"><img  title="专业歌谱搜索引擎，30万首热门歌谱、简谱、钢琴谱、吉他谱等让你随意浏览。" src="/images/zhaogepu.ico" /><a  title="专业歌谱搜索引擎，30万首热门歌谱、简谱、钢琴谱、吉他谱等让你随意浏览。" data="http://www.zhaogepu.com/">找歌谱</a></li>
+	 <li id="nyaso"><img  title="以「再次認識這個世界」為號召——Giloo邀請大家第一手觀賞來自世界最新最重要的影展片與經典紀實影像！" src="http://giloo.ist/favicon.ico" /><a  title="以「再次認識這個世界」為號召——Giloo邀請大家第一手觀賞來自世界最新最重要的影展片與經典紀實影像！" data="http://nyaso.com/">Giloo紀實影音</a></li>
+	 <li id="kisssub"><img  title="动漫 BT" src="/images/kisssub.ico" /><a  title="动漫 BT" data="http://www.kisssub.org/">动漫 BT</a></li>
+	 <li id="acgsou"><img  title="ACG搜" src="/images/acg.ico" /><a  title="ACG搜" data="http://www.acgsou.com/">ACG搜</a></li>
+	 <li id="baidushitu"><img  title="百度识图" src="/images/baidu.ico" /><a  title="百度识图" data="http://stu.baidu.com/">百度识图</a></li>
+	 <li id="chashenjia"><img title="「一小时专注」是一个通过背景音乐来提高工作和学习效率的网站，该网站提供阿尔法波、自然音乐、白噪音三种不同的音乐，让你进入属于自己的专注空间。" src="http://chanfocus.com/favicon.ico" /><a title="「一小时专注」是一个通过背景音乐来提高工作和学习效率的网站，该网站提供阿尔法波、自然音乐、白噪音三种不同的音乐，让你进入属于自己的专注空间。" data="http://chanfocus.com">一小时专注</a></li>
+	 <li id="shapecatcher"><img src="/images/shapecatcher.ico" /><a data="http://shapecatcher.com/">特殊符号识别</a></li>
+	 <li id="font"><img src="/images/qiuziti.ico" /><a data="http://www.qiuziti.com/">求字体</a></li>
+	 <li id="visualhunt"><img src="/images/visualhunt.ico" /><a data="http://visualhunt.com/">Visual Hunt</a></li>
+	 <li id="renwu"><img  title="iSearch 是一个提供iTunes搜索,试听,高清专辑封面获取,查看最新音乐动态等综合性平台!" src="http://i.oppsu.cn/favicon.ico" /><a  title="iSearch 是一个提供iTunes搜索,试听,高清专辑封面获取,查看最新音乐动态等综合性平台!" data="http://i.oppsu.cn/">iTunes搜索</a></li>
+	 <li id="xungen"><img src="/images/xungen.ico" /><a data="http://weijp.library.sh.cn/mobileinto.html">姓氏家谱</a></li>
+	 <li id="handian"><img src="/images/zdic.ico" /><a data="http://www.zdic.net/">汉典字典</a></li>
+	 <li id="vividict"><img src="/images/vividict.ico" /><a data="http://www.vividict.com/Default.aspx">象形文字</a></li>
+	 <li id="guoxue"><img src="/images/guoxue.ico" /><a data="http://www.guoxuedashi.com/zidian/bujian/">国学大师</a></li>
+	 <li id="wenxian"><img src="/images/daizhige.ico" /><a data="http://122.200.75.13">古文献</a></li>
+	 <li id="mba"><img src="/images/mbalib.ico" /><a data="http://www.mbalib.com/">MBA智库</a></li>
+	 <li id="makedie"><img src="/images/zimu.ico" /><a data="http://assrt.net/">字幕</a></li>
+	 <li id="bilibili"><img src="/images/bilibili.ico" /><a data="http://search.bilibili.com/">哔哩哔哩</a></li>
+	 <li id="soku"><img src="/images/soku.ico" /><a data="http://www.soku.com/">搜库视频</a></li>
+   <li id="b1bj"><img src="/images/b1bj.ico" /><a data="http://b1bj.com/">比一比价</a></li>
+	 <li id="xitie"><img src="/images/xitie.ico" /><a data="http://www.xitie.com/">商品历史价格</a></li>
+	 <li id="boxz"><img src="/images/boxz.ico" /><a data="http://www.boxz.com/">数码电器比价</a></li>
+	 <li id="boxz"><img src="http://www.egouz.com/favicon.ico" /><a data="http://www.egouz.com/asia/china/music/2.html">音乐网址导航</a></li>
+
+<!--
+        囧        囧                  囧        囧                                  囧              囧囧囧囧囧  囧囧囧囧囧      
+        囧        囧                  囧          囧                            囧囧囧囧            囧      囧  囧      囧      
+        囧        囧                囧            囧    囧            囧囧囧囧囧                    囧      囧  囧      囧      
+      囧  囧囧囧囧囧囧囧囧囧        囧    囧囧囧囧囧囧囧囧囧          囧                            囧      囧  囧      囧      
+      囧          囧              囧    囧      囧                    囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+    囧囧          囧      囧    囧囧囧囧囧    囧      囧            囧        囧                              囧    囧          
+  囧  囧囧囧囧囧囧囧囧囧囧囧囧        囧    囧          囧          囧        囧          囧                  囧      囧        
+囧    囧        囧                  囧    囧囧囧囧囧囧囧囧囧      囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+      囧      囧        囧        囧          囧    囧    囧                  囧                            囧  囧              
+      囧    囧囧囧囧囧囧囧囧    囧囧囧囧囧    囧    囧                        囧                        囧囧      囧囧          
+      囧                囧        囧          囧    囧                  囧    囧    囧              囧囧              囧囧      
+      囧      囧      囧                      囧    囧                  囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+      囧        囧  囧                囧囧  囧      囧      囧        囧      囧        囧          囧      囧  囧      囧      
+      囧          囧            囧囧囧      囧      囧      囧      囧        囧        囧囧        囧      囧  囧      囧      
+      囧          囧囧            囧      囧          囧囧囧囧    囧      囧  囧          囧        囧      囧  囧      囧      
+      囧            囧                  囧                                  囧                      囧囧囧囧囧  囧囧囧囧囧      
+
+-->	
+	 <li id="dagu"><img  title="中国传统乐器"src="/favicon.ico" /><a data="music.html?q=中国传统乐器"  title="中国传统乐器" target="_blank">中国传统乐器</a></li>
+	 <li id="dagu"><img  title="葫芦丝"src="item/葫芦丝.jpg" /><a data="music.html?q=葫芦丝"  title="葫芦丝" target="_blank">葫芦丝</a></li>
+	 <li id="dagu"><img  title="大锣"src="item/7e3e6709c93d70cfb1beaab9f8dcd100baa12b39.jpg" /><a data="music.html?q=大锣"  title="大锣" target="_blank">大锣</a></li>
+	 <li id="dagu"><img  title="大镲"src="item/eaf81a4c510fd9f9c6b45ddd252dd42a2934a4e6.jpg" /><a data="music.html?q=大镲"  title="大镲" target="_blank">大镲</a></li>
+	 <li id="dagu"><img  title="小镲"src="item/eaf81a4c510fd9f9c6b45ddd252dd42a2934a4e6.jpg" /><a data="music.html?q=小镲"  title="小镲" target="_blank">小镲</a></li>
+	 <li id="dagu"><img  title="镲片"src="item/eaf81a4c510fd9f9c6b45ddd252dd42a2934a4e6.jpg" /><a data="music.html?q=镲片"  title="镲片" target="_blank">镲片</a></li>
+
+<!--
+                                            囧          囧                          囧              囧囧囧囧囧  囧囧囧囧囧      
+                          囧      囧          囧      囧                        囧囧囧囧            囧      囧  囧      囧      
+囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧囧        囧  囧                囧囧囧囧囧                    囧      囧  囧      囧      
+          囧      囧                  囧  囧囧囧囧囧囧囧囧囧          囧                            囧      囧  囧      囧      
+          囧      囧            囧                囧                  囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+          囧      囧      囧      囧囧            囧                囧        囧                              囧    囧          
+  囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧      囧囧囧囧囧囧囧          囧        囧          囧                  囧      囧        
+  囧      囧      囧      囧            囧        囧              囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+  囧      囧      囧      囧          囧          囧                          囧                            囧  囧              
+  囧      囧      囧      囧        囧            囧      囧                  囧                        囧囧      囧囧          
+  囧      囧      囧      囧    囧囧囧  囧囧囧囧囧囧囧囧囧囧囧          囧    囧    囧              囧囧              囧囧      
+  囧    囧          囧囧囧囧        囧            囧                    囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+  囧  囧                  囧        囧            囧                  囧      囧        囧          囧      囧  囧      囧      
+  囧                      囧        囧            囧                囧        囧        囧囧        囧      囧  囧      囧      
+  囧囧囧囧囧囧囧囧囧囧囧囧囧        囧            囧              囧      囧  囧          囧        囧      囧  囧      囧      
+  囧                      囧        囧            囧                        囧                      囧囧囧囧囧  囧囧囧囧囧      
+
+-->	 	 
+	 <li id="dagu"><img  title="西洋乐器"src="/favicon.ico" /><a data="music.html?q=西洋乐器"  title="西洋乐器" target="_blank">西洋乐器</a></li>
+	 <li id="dagu"><img  title="打击乐器"src="/favicon.ico" /><a data="music.html?q=打击乐器"  title="打击乐器" target="_blank">打击乐器</a></li>
+	 <li id="dagu"><img  title="定音鼓"src="item/a08b87d6277f9e2fe2651abc1f30e924b899f336.jpg" /><a data="music.html?q=定音鼓"  title="定音鼓" target="_blank">定音鼓</a></li>
+  <li id="dagu"><img  title="西洋木琴"src="item/f2deb48f8c5494ee90f20ead2df5e0fe98257eb5.jpg" /><a data="music.html?q=西洋木琴"  title="西洋木琴" target="_blank">西洋木琴</a></li>
+	 <li id="dagu"><img  title="钢片琴"src="item/b58f8c5494eef01f5a8e1871e0fe9925bd317def.jpg" /><a data="music.html?q=钢片琴"  title="钢片琴" target="_blank">钢片琴</a></li>
+	 <li id="dagu"><img  title="响板"src="item/b58f8c5494eef01f5a541871e0fe9925bd317dc5.jpg" /><a data="music.html?q=响板"  title="响板" target="_blank">响板</a></li>
+	 <li id="dagu"><img  title="三角铁"src="item/f703738da9773912605485d5f8198618367ae210.jpg" /><a data="music.html?q=三角铁"  title="三角铁" target="_blank">三角铁</a></li>
+ 	 <li id="dagu"><img  title="管钟"src="item/b03533fa828ba61ed4ffc89b4134970a304e5974.jpg" /><a data="music.html?q=管钟"  title="管钟" target="_blank">管钟</a></li>
+ 	 <li id="dagu"><img  title="西洋大鼓"src="item/a1ec08fa513d2697a2bb0ae955fbb2fb4316d81e.jpg" /><a data="music.html?q=西洋大鼓"  title="西洋大鼓" target="_blank">西洋大鼓</a></li>
+	 <li id="dagu"><img  title="西洋小鼓"src="item/f3d3572c11dfa9ec7e0a56a362d0f703918fc15a.jpg" /><a data="music.html?q=西洋小鼓"  title="西洋小鼓" target="_blank">西洋小鼓</a></li>
+	 <li id="dagu"><img  title="西洋铃鼓"src="item/8718367adab44aedf61fbc50b31c8701a18bfb35.jpg" /><a data="music.html?q=西洋铃鼓"  title="西洋铃鼓" target="_blank">西洋铃鼓</a></li>
+	 <li id="dagu"><img  title="砂槌"src="item/b64543a98226cffcd568bf06b9014a90f703eac0.jpg" /><a data="music.html?q=砂槌"  title="砂槌" target="_blank">砂槌</a></li>
+	 <li id="dagu"><img  title="西洋钹"src="item/a8773912b31bb0512d6eb39c367adab44aede038.jpg" /><a data="music.html?q=西洋钹"  title="西洋钹" target="_blank">西洋钹</a></li>
+	 <li id="dagu"><img  title="西洋锣"src="item/7e3e6709c93d70cfb1beaab9f8dcd100baa12b39.jpg" /><a data="music.html?q=西洋锣"  title="西洋锣" target="_blank">西洋锣</a></li>
+	 <li id="dagu"><img  title="单簧管"src="item/279759ee3d6d55fb4f807b926d224f4a21a4ddc4.jpg" /><a data="music.html?q=单簧管"  title="单簧管" target="_blank">单簧管</a></li>
+
+<!--
+    囧                囧                  囧          囧                            囧              囧囧囧囧囧  囧囧囧囧囧      
+    囧    囧囧囧      囧              囧囧囧囧囧囧囧囧囧囧                      囧囧囧囧            囧      囧  囧      囧      
+    囧囧囧    囧  囧囧囧囧囧          囧              囧              囧囧囧囧囧                    囧      囧  囧      囧      
+  囧          囧      囧  囧          囧    囧        囧              囧                            囧      囧  囧      囧      
+囧          囧  囧囧囧囧囧囧囧        囧      囧      囧              囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+  囧囧囧囧  囧        囧  囧    囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧        囧                              囧    囧          
+    囧    囧      囧囧囧囧囧          囧              囧            囧        囧          囧                  囧      囧        
+    囧    囧囧囧      囧              囧    囧        囧          囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+囧囧囧囧囧    囧  囧囧囧囧囧        囧        囧  囧  囧                      囧                            囧  囧              
+    囧        囧      囧          囧                囧                        囧                        囧囧      囧囧          
+    囧    囧  囧      囧            囧囧囧囧囧囧囧囧囧囧囧              囧    囧    囧              囧囧              囧囧      
+    囧      囧  囧囧囧囧囧囧囧      囧    囧      囧    囧              囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+    囧  囧  囧        囧            囧    囧      囧    囧            囧      囧        囧          囧      囧  囧      囧      
+    囧囧  囧  囧      囧            囧    囧      囧    囧          囧        囧        囧囧        囧      囧  囧      囧      
+    囧  囧      囧    囧        囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧    囧      囧  囧          囧        囧      囧  囧      囧      
+                  囧囧囧囧囧囧                                              囧                      囧囧囧囧囧  囧囧囧囧囧      
+-->	 
+	 <li id="jianpanyueqi"> <img  title="键盘乐器"src="/favicon.ico" /><a data="music.html?q=键盘乐器"  title="键盘乐器" target="_blank">键盘乐器</a></li>
+	 <li id="dagu"> <img  title="钢琴"src="item/9213b07eca8065383f5fa4a797dda144ac3482c8.jpg" /><a data="music.html?q=钢琴"  title="钢琴" target="_blank">钢琴</a></li>
+	 <li id="dagu"> <img  title="管风琴"src="item/cc11728b4710b912594df44ac3fdfc03934522f1.jpg" /><a data="music.html?q=管风琴"  title="管风琴" target="_blank">管风琴</a></li>
+	 <li id="dagu"> <img  title="手风琴"src="item/6c224f4a20a446230d44a7d69822720e0df3d7f3.jpg" /><a data="music.html?q=手风琴"  title="手风琴" target="_blank">手风琴</a></li>
+	 <li id="dagu"> <img  title="电子琴"src="item/cefc1e178a82b9018643c187738da9773812ef9c.jpg" /><a data="music.html?q=电子琴"  title="电子琴" target="_blank">电子琴</a></li>
+
+<!--
+    囧                    囧          囧          囧                                囧              囧囧囧囧囧  囧囧囧囧囧      
+    囧      囧囧囧囧囧囧囧囧囧        囧囧囧囧囧  囧囧囧囧囧                    囧囧囧囧            囧      囧  囧      囧      
+    囧囧囧囧囧            囧        囧  囧      囧    囧              囧囧囧囧囧                    囧      囧  囧      囧      
+  囧        囧            囧      囧      囧  囧        囧            囧                            囧      囧  囧      囧      
+囧          囧  囧囧囧囧  囧                  囧                      囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+  囧囧囧囧  囧            囧      囧囧囧囧囧囧囧囧囧囧囧囧囧囧      囧        囧                              囧    囧          
+    囧      囧            囧      囧                        囧      囧        囧          囧                  囧      囧        
+    囧      囧  囧囧囧囧  囧    囧    囧囧囧囧囧囧囧囧    囧      囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+囧囧囧囧囧  囧  囧    囧  囧          囧            囧                        囧                            囧  囧              
+    囧      囧  囧    囧  囧          囧囧囧囧囧囧囧囧                        囧                        囧囧      囧囧          
+    囧      囧  囧    囧  囧          囧                                囧    囧    囧              囧囧              囧囧      
+    囧    囧囧  囧囧囧囧  囧          囧囧囧囧囧囧囧囧囧                囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+    囧  囧  囧            囧          囧              囧              囧      囧        囧          囧      囧  囧      囧      
+    囧囧    囧            囧          囧              囧            囧        囧        囧囧        囧      囧  囧      囧      
+    囧      囧        囧  囧          囧囧囧囧囧囧囧囧囧          囧      囧  囧          囧        囧      囧  囧      囧      
+            囧          囧            囧                                    囧                      囧囧囧囧囧  囧囧囧囧囧      
+
+-->	
+	 <li id="dagu"> <img  title="铜管乐器"src="/favicon.ico" /><a data="music.html?q=铜管乐器"  title="铜管乐器" target="_blank">铜管乐器</a></li>
+	 <li id="dagu"><img  title="小号"src="item/a9d3fd1f4134970a4e8c129b95cad1c8a6865d82.jpg" /><a data="music.html?q=小号"  title="小号" target="_blank">小号</a></li>
+   <li id="dagu"><img  title="长号"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=长号"  title="长号" target="_blank">长号</a></li>
+	 <li id="dagu"> <img  title="大号"src="item/1c950a7b02087bf4e1c55a5df2d3572c11dfcf5d.jpg" /><a data="music.html?q=大号"  title="大号" target="_blank">大号</a></li>
+	 <li id="dagu"> <img  title="短号"src="item/0df431adcbef760976c99b2b2edda3cc7dd99e47.jpg" /><a data="music.html?q=短号"  title="短号" target="_blank">短号</a></li>
+	 <li id="dagu"><img  title="圆号"src="item/d01373f082025aaf1c1e737ffbedab64034f1a51.jpg" /><a data="music.html?q=圆号"  title="圆号" target="_blank">圆号</a></li>
+
+
+<!--
+口口口口口口口囧口口口口口口口口口口口囧口口口口口囧口口口口口口口口口口口口口口口口囧口口口口口口口囧囧囧囧囧口囧囧囧囧囧口口口
+口口口口口口口囧口口口口口口口口口口口囧囧囧囧囧口囧囧囧囧囧口口口口口口口口口口囧囧囧囧口口口口口口囧口口口囧口囧口口口囧口口口
+口口口口口口口囧口口口口口口口口口口囧口囧口口口囧口口囧口口口口口口口囧囧囧囧囧口口口口口口口口口口囧口口口囧口囧口口口囧口口口
+口口口口口口口囧口口口口口囧口口口囧口口口囧口囧口口口口囧口口口口口口囧口口口口口口口口口口口口口口囧口口口囧口囧口口口囧口口口
+囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧口口口口口口口口囧口口口口口口口口口口口囧口口口囧口口口口口口口口口口囧囧囧囧囧口囧囧囧囧囧口口口
+口口口口口口口囧口口口口口口口口口囧囧囧囧囧囧囧囧囧囧囧囧囧囧口口口囧口口口口囧口口口口口口口口口口口口口口口囧口口囧口口口口口
+口口口口口口囧囧囧口口口口口口口口囧口口口口口口口口口口口口囧口口口囧口口口口囧口口口口口囧口口口口口口口口口囧口口口囧口口口口
+口口口口口口囧囧口囧口口口口口口囧口口囧囧囧囧囧囧囧囧口口囧口口口囧囧囧囧囧囧囧囧囧囧囧囧囧囧口囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧口
+口口口口口囧口囧口口囧口口口口口口口口囧口口口口口口囧口口口口口口口口口口口口囧口口口口口口口口口口口口口口囧口囧口口口口口口口
+口口口口囧口口囧口口口囧口口口口口口口囧囧囧囧囧囧囧囧口口口口口口口口口口口口囧口口口口口口口口口口口口囧囧口口口囧囧口口口口口
+口口口囧口口口囧口口口口囧口口口口口口囧口口口口口口口口口口口口口口口口囧口口囧口口囧口口口口口口口囧囧口口口口口口口囧囧口口口
+口口囧口口口口囧口口口口囧囧囧口口口口囧囧囧囧囧囧囧囧囧口口口口口口口口囧口口囧口口口囧口口口口囧囧囧囧囧囧囧口囧囧囧囧囧囧囧口
+囧囧口口口口口囧口口口口口囧口口口口口囧口口口口口口口囧口口口口口口口囧口口口囧口口口口囧口口口口口囧口口口囧口囧口口口囧口口口
+口口口口口口口囧口口口口口口口口口口口囧口口口口口口口囧口口口口口口囧口口口口囧口口口口囧囧口口口口囧口口口囧口囧口口口囧口口口
+口口口口口口口囧口口口口口口口口口口口囧囧囧囧囧囧囧囧囧口口口口口囧口口口囧口囧口口口口口囧口口口口囧口口口囧口囧口口口囧口口口
+口口口口口口口囧口口口口口口口口口口口囧口口口口口口口口口口口口口口口口口口囧口口口口口口口口口口口囧囧囧囧囧口囧囧囧囧囧口口口
+-->		 
+	 <li id="dagu"> <img  title="木管乐器"src="/favicon.ico" /><a data="music.html?q=木管乐器"  title="木管乐器" target="_blank">木管乐器</a></li>
+	 <li id="dagu"> <img  title="木管长笛"src="item/838ba61ea8d3fd1f3a15af8e304e251f95ca5f61.jpg" /><a data="music.html?q=木管长笛"  title="木管长笛" target="_blank">木管长笛</a></li>
+	 <li id="dagu"> <img  title="木管短笛"src="item/dc54564e9258d109dea7a406d158ccbf6c814d39.jpg" /><a data="music.html?q=木管短笛"  title="木管短笛" target="_blank">木管短笛</a></li>
+	 <li id="dagu"> <img  title="单簧管"src="item/279759ee3d6d55fb4f807b926d224f4a21a4ddc4.jpg" /><a data="music.html?q=单簧管"  title="单簧管" target="_blank">单簧管</a></li>
+	 <li id="dagu"> <img  title="双簧管"src="item/5bafa40f4bfbfbed115c3acb78f0f736afc31f78.jpg" /><a data="music.html?q=双簧管"  title="双簧管" target="_blank">双簧管</a></li>
+	 <li id="dagu"> <img  title="英国管"src="item/4034970a304e251fea0be94ca786c9177e3e5381.jpg" /><a data="music.html?q=英国管"  title="英国管" target="_blank">英国管</a></li>
+	 <li id="dagu"> <img  title="大管"src="item/64380cd7912397dd92f295b05982b2b7d1a287fe.jpg" /><a data="music.html?q=大管"  title="大管" target="_blank">大管</a></li>
+	 <li id="dagu"> <img  title="萨克斯管"src="item/2cf5e0fe9925bc313ea00c2c5edf8db1ca137080.jpg" /><a data="music.html?q=萨克斯管"  title="萨克斯管" target="_blank">萨克斯管</a></li>
+
+<!--
+            囧          囧            囧          囧                                囧              囧囧囧囧囧  囧囧囧囧囧      
+  囧囧囧囧    囧      囧              囧          囧  囧                        囧囧囧囧            囧      囧  囧      囧      
+        囧      囧  囧                囧    囧    囧    囧            囧囧囧囧囧                    囧      囧  囧      囧      
+        囧  囧囧囧囧囧囧囧            囧    囧    囧    囧            囧                            囧      囧  囧      囧      
+        囧  囧    囧    囧      囧囧囧囧囧囧囧    囧                  囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+  囧囧囧囧  囧    囧    囧            囧    囧囧囧囧囧囧囧囧囧      囧        囧                              囧    囧          
+  囧    囧  囧囧囧囧囧囧囧            囧        囧                  囧        囧          囧                  囧      囧        
+  囧        囧    囧    囧            囧囧囧    囧      囧        囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+  囧        囧    囧    囧            囧      囧囧囧囧囧囧囧                  囧                            囧  囧              
+  囧囧囧囧  囧囧囧囧囧囧囧          囧囧      囧        囧                    囧                        囧囧      囧囧          
+        囧        囧            囧囧  囧    囧  囧      囧              囧    囧    囧              囧囧              囧囧      
+        囧囧囧囧囧囧囧囧囧囧囧        囧    囧    囧  囧                囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+        囧        囧                  囧  囧        囧                囧      囧        囧          囧      囧  囧      囧      
+        囧        囧                  囧囧      囧囧  囧            囧        囧        囧囧        囧      囧  囧      囧      
+  囧  囧          囧              囧  囧    囧囧        囧囧囧    囧      囧  囧          囧        囧      囧  囧      囧      
+    囧            囧                囧  囧囧              囧                囧                      囧囧囧囧囧  囧囧囧囧囧      
+
+-->
+	 <li id="dagu"><img  title="弹拨乐器"src="/favicon.ico" /><a data="music.html?q=弹拨乐器"  title="弹拨乐器" target="_blank">弹拨乐器</a></li>
+	 <li id="dagu"><img  title="小提琴"src="item/03087bf40ad162d91e9b6ea811dfa9ec8a13cd09.jpg" /><a data="music.html?q=小提琴"  title="小提琴" target="_blank">小提琴</a></li>
+	 <li id="dagu"><img  title="琵琶"src="item/8759287ad9ddbcd32e73b38d.jpg" /><a data="music.html?q=琵琶"  title="琵琶" target="_blank">琵琶</a></li>
+	 <li id="dagu"><img  title="贝斯"src="item/贝斯.jpg" /><a data="music.html?q=贝斯"  title="贝斯" target="_blank">贝斯</a></li>
+
+<!--
+        奤        奤                  奤            奤            奤          奤                                          奤    
+奤奤奤奤奤奤      奤    奤            奤            奤              奤        奤                  奤      奤奤奤奤奤奤奤奤奤奤  
+        奤  奤奤奤奤奤奤奤奤          奤            奤              奤        奤奤奤奤奤奤奤        奤奤  奤      奤            
+  奤    奤        奤                  奤            奤                  奤  奤    奤      奤          奤  奤    奤              
+  奤    奤      奤  奤          奤奤奤奤奤奤  奤    奤    奤        奤奤  奤      奤    奤      奤        奤  奤奤奤奤奤奤奤    
+  奤    奤    奤      奤            奤    奤  奤    奤奤奤奤奤  奤奤奤          奤  奤            奤奤    奤  奤          奤    
+  奤    奤奤奤奤奤奤奤奤奤奤奤      奤    奤  奤奤奤奤    奤        奤        奤      奤            奤    奤  奤奤奤奤奤奤奤    
+  奤    奤              奤          奤    奤奤奤    奤    奤        奤    奤奤          奤奤奤          奤奤  奤          奤    
+  奤奤奤奤奤  奤奤奤奤  奤          奤    奤  奤    奤    奤          奤奤奤奤奤奤奤奤奤  奤          奤  奤  奤奤奤奤奤奤奤    
+          奤  奤    奤  奤        奤      奤  奤    奤奤  奤          奤              奤            奤    奤  奤    奤    奤    
+          奤  奤    奤  奤          奤  奤    奤    奤  奤            奤      奤      奤        奤奤奤    奤        奤          
+      奤奤奤  奤    奤  奤            奤      奤    奤                奤      奤      奤            奤    奤    奤  奤  奤      
+奤奤奤    奤  奤奤奤奤  奤          奤  奤    奤    奤      奤        奤      奤      奤            奤  奤    奤奤  奤    奤奤  
+  奤      奤  奤        奤        奤      奤  奤            奤              奤  奤奤                奤  奤  奤      奤      奤  
+      奤  奤        奤  奤      奤        奤    奤奤奤奤奤奤奤          奤奤        奤奤            奤奤        奤  奤          
+        奤            奤                                            奤奤                奤          奤            奤            
+
+-->	   		 
+	 <li id="open"><img title="开源代码" src="/images/kaiyuan.ico" /><a title="开源代码" data="https://github.com/search?q=%E9%9F%B3%E4%B9%90">开源代码</a></li>
+   <li id="open-open"><img title="开源文献" src="/images/open.png" /><a title="开源文献" data="http://www.open-open.com/doc/">开源文献</a></li>
+   <li id="innojoy"><img title="专利检索" src="/images/patmain.ico" /><a title="专利检索" data="http://www.innojoy.com/search/index.shtml">专利检索</a></li>
+	 <li id="cheyisou"><img  title="摆渡一下是一个免费提供无损音乐下载的网站,专注于Ape音乐、Flac音乐以及Wav等各类高品质无损音乐免费下载，是您发现和下载无损音乐的神器，好资源，尽在摆渡一下。" src="http://www.baiduonce.com/favicon.ico" /><a  title="摆渡一下是一个免费提供无损音乐下载的网站,专注于Ape音乐、Flac音乐以及Wav等各类高品质无损音乐免费下载，是您发现和下载无损音乐的神器，好资源，尽在摆渡一下。" data="http://www.baiduonce.com/">摆渡一下</a></li>
+	 <li id="tianyancha"><img  title="天眼查专注服务于个人与企业信息查询,都在用的商业安全工具,为您提供公司查询,工商信息查询,企业查询,工商查询,企业信用信息查询等相关信息,帮您快速了解企业信息,企业工商信息,企业信用信息等企业经营和人员投资状况,查询更多企业信息就到天眼查官网！" src="/images/tianyancha.ico" /><a  title="天眼查专注服务于个人与企业信息查询,都在用的商业安全工具,为您提供公司查询,工商信息查询,企业查询,工商查询,企业信用信息查询等相关信息,帮您快速了解企业信息,企业工商信息,企业信用信息等企业经营和人员投资状况,查询更多企业信息就到天眼查官网！" data="https://www.tianyancha.com/">天眼查</a></li>
+   <li id="qgtong"><img title="海关百搜" src="/images/haiguan.ico" /><a title="海关百搜" data="http://www.qgtong.com/so/Search.asp">海关百搜</a></li>
+   <li id="sound"><img title="声音素材" src="/images/findsounds.ico" /><a  title="声音素材" data="http://www.findsounds.com/ISAPI/search.dll?keywords=computer+keyboard+typing">声音素材</a></li>
+   <li id="onegreen"><img title="这里是乐谱的天地：吉他谱,简谱,歌谱,曲谱,乐谱,钢琴谱,五线谱，应有尽有，你不光临就简直太离谱" src="http://pu.onegreen.net/favicon.ico" /><a title="这里是乐谱的天地：吉他谱,简谱,歌谱,曲谱,乐谱,钢琴谱,五线谱，应有尽有，你不光临就简直太离谱" data="http://pu.onegreen.net/">歌谱收藏</a></li>
+   <li id="tingfm"><img title="听FM TingFM.com 提供高品质网络收音机在线收听服务，无软件安装实现网页在线收听，手机在线收听广播。网站全面汇集整理国内外主流电台流媒体播放地址，方便广大广播爱好者随时随地利用网络收听喜爱的广播电台。TingFM祝您收听愉快！" src="https://static.fenbu.net/wp-content/themes/radio-hub/favicon.ico" /><a title="听FM TingFM.com 提供高品质网络收音机在线收听服务，无软件安装实现网页在线收听，手机在线收听广播。网站全面汇集整理国内外主流电台流媒体播放地址，方便广大广播爱好者随时随地利用网络收听喜爱的广播电台。TingFM祝您收听愉快！" data="https://tingfm.com/">TingFM广播电台</a></li>
+   <li id="musicbible"><img title="幻音音乐是国内最大的95后音乐社区,幻音娘协同一众原创音乐人带来更多的音乐，千人千面听见不同，这里有ACG新番、优秀原创、同人翻唱、idol偶像流行歌曲、幻音音乐给你想听的95后音乐社区" src="http://www.huanmusic.com/favicon.ico" /><a title="幻音音乐是国内最大的95后音乐社区,幻音娘协同一众原创音乐人带来更多的音乐，千人千面听见不同，这里有ACG新番、优秀原创、同人翻唱、idol偶像流行歌曲、幻音音乐给你想听的95后音乐社区" data="http://www.huanmusic.com/">幻音音乐</a></li>
+   <li id="dianzi"><img title="音乐圣经做经典音乐的百科全书" src="http://www.musicbible.com/favicon.ico" /><a title="音乐圣经做经典音乐的百科全书" data="http://www.musicbible.com/">音乐圣经</a></li>
+   <li id="dj"><img title="DJ音乐网是一个颇具影响力的原创电音dj舞曲与夜店歌曲网站，提供DJ舞曲下载，DJ音乐上传，共同分享DJ舞曲超劲爆的快感，体验最时尚的慢摇舞曲，最流行的嗨曲文化，在嗨曲嗨歌里找到属于你我的DJ网站。" src="http://www.dj.net/favicon.ico" /><a title="DJ音乐网是一个颇具影响力的原创电音dj舞曲与夜店歌曲网站，提供DJ舞曲下载，DJ音乐上传，共同分享DJ舞曲超劲爆的快感，体验最时尚的慢摇舞曲，最流行的嗨曲文化，在嗨曲嗨歌里找到属于你我的DJ网站。" data="http://www.dj.net/">DJ音乐网</a></li>
+	<li id="csres"><img title="国家标准" src="/images/gb.ico" /><a title="国家标准"  data="http://www.csres.com/">国家标准</a></li>
+   <li id="dianzi"><img title="电子元件数据" src="/images/chip.png" /><a title="电子元件数据" data="http://www.alldatasheetcn.com/">电子元件数据</a></li>
+ 
+
+<!--	 
+                      龍            龍            龍                                龍              龍龍龍龍龍  龍龍龍龍龍      
+  龍龍龍龍龍龍龍龍龍龍龍龍            龍龍        龍                            龍龍龍龍            龍      龍  龍      龍      
+  龍                  龍                龍        龍      龍          龍龍龍龍龍                    龍      龍  龍      龍      
+  龍                  龍                          龍龍龍龍龍龍        龍                            龍      龍  龍      龍      
+  龍                  龍        龍龍龍龍龍龍龍  龍                    龍      龍                    龍龍龍龍龍  龍龍龍龍龍      
+  龍龍龍龍龍龍龍龍龍龍龍            龍        龍  龍                龍        龍                              龍    龍          
+  龍        龍                      龍            龍龍龍龍龍        龍        龍          龍                  龍      龍        
+  龍        龍          龍          龍龍龍龍    龍  龍            龍龍龍龍龍龍龍龍龍龍龍龍龍龍  龍龍龍龍龍龍龍龍龍龍龍龍龍龍龍  
+  龍龍龍龍龍龍龍龍龍龍龍龍龍        龍    龍    龍  龍                        龍                            龍  龍              
+  龍        龍                      龍    龍  龍    龍                        龍                        龍龍      龍龍          
+  龍          龍                    龍    龍龍龍龍龍龍龍龍龍龍          龍    龍    龍              龍龍              龍龍      
+  龍          龍                    龍    龍        龍                  龍    龍      龍        龍龍龍龍龍龍龍  龍龍龍龍龍龍龍  
+  龍    龍      龍                龍      龍      龍  龍              龍      龍        龍          龍      龍  龍      龍      
+  龍  龍          龍        龍    龍      龍      龍  龍            龍        龍        龍龍        龍      龍  龍      龍      
+  龍龍              龍龍    龍  龍    龍  龍    龍      龍龍龍    龍      龍  龍          龍        龍      龍  龍      龍      
+  龍                    龍龍龍          龍    龍          龍                龍                      龍龍龍龍龍  龍龍龍龍龍      
+
+-->	  	 
+ <li id="dagu"><img  title="民族乐器"src="/favicon.ico" /><a data="music.html?q=民族乐器"  title="民族乐器" target="_blank">民族乐器</a></li>
+<!--	
+      滥        滥                                滥                                滥              滥滥滥滥滥  滥滥滥滥滥      
+      滥        滥                      滥      滥      滥                      滥滥滥滥            滥      滥  滥      滥      
+      滥        滥                滥滥滥滥滥  滥滥滥滥滥滥滥          滥滥滥滥滥                    滥      滥  滥      滥      
+    滥          滥      滥        滥    滥    滥        滥            滥                            滥      滥  滥      滥      
+    滥  滥滥滥滥滥滥滥滥滥滥      滥    滥    滥  滥    滥            滥      滥                    滥滥滥滥滥  滥滥滥滥滥      
+  滥滥      滥  滥  滥            滥    滥    滥        滥          滥        滥                              滥    滥          
+滥  滥      滥  滥  滥            滥    滥    滥    滥  滥          滥        滥          滥                  滥      滥        
+    滥    滥    滥    滥          滥    滥    滥      滥          滥滥滥滥滥滥滥滥滥滥滥滥滥滥  滥滥滥滥滥滥滥滥滥滥滥滥滥滥滥  
+    滥    滥    滥    滥          滥    滥    滥          滥                  滥                            滥  滥              
+    滥  滥      滥      滥        滥    滥    滥滥滥滥滥滥滥滥                滥                        滥滥      滥滥          
+    滥  滥  滥滥滥滥滥  滥滥滥    滥滥滥滥                滥            滥    滥    滥              滥滥              滥滥      
+    滥滥        滥        滥      滥    滥          滥    滥            滥    滥      滥        滥滥滥滥滥滥滥  滥滥滥滥滥滥滥  
+    滥          滥                        滥滥滥滥滥滥滥  滥          滥      滥        滥          滥      滥  滥      滥      
+    滥          滥                                        滥        滥        滥        滥滥        滥      滥  滥      滥      
+    滥          滥                                    滥  滥      滥      滥  滥          滥        滥      滥  滥      滥      
+    滥          滥                                      滥                  滥                      滥滥滥滥滥  滥滥滥滥滥      
+-->
+<li id="dagu"><img  title="体鸣乐器"src="/favicon.ico" /><a data="music.html?q=体鸣乐器"  title="体鸣乐器" target="_blank">体鸣乐器</a></li>
+    <li id="dagu"><img  title="叮咚"src="item/6398ecd3bf3d3bcca9ec9a02.jpg" /><a data="music.html?q=叮咚"  title="叮咚" target="_blank">叮咚</a></li>
+   <li id="dagu"><img  title="木棍琴"src="item/b64543a98226cffcda48b606b9014a90f603ea20.jpg" /><a data="music.html?q=木棍琴"  title="木棍琴" target="_blank">木棍琴</a></li>
+     <li id="dagu"><img  title="韵板"src="item/6c224f4a20a44623f69cacd69822720e0cf3d734.jpg" /><a data="music.html?q=韵板"  title="韵板" target="_blank">韵板</a></li>
+   <li id="dagu"><img  title="竹筒琴"src="item/5ab5c9ea15ce36d3c8418a843af33a87e950b138.jpg" /><a data="music.html?q=竹筒琴"  title="竹筒琴" target="_blank">竹筒琴</a></li>
+  <li id="dagu"><img  title="基诺竹筒"src="item/b7fd5266d0160924096dabafd40735fae6cd343d.jpg" /><a data="music.html?q=基诺竹筒"  title="基诺竹筒" target="_blank">基诺竹筒</a></li>
+   <li id="dagu"><img  title="铛铛"src="item/bd315c6034a85edfec33f79749540923dc5475c2.jpg" /><a data="music.html?q=铛铛"  title="铛铛" target="_blank">铛铛</a></li>
+   <li id="dagu"><img  title="单打"src="item/314e251f95cad1c8da26f5937f3e6709c83d51e0.jpg" /><a data="music.html?q=单打"  title="单打" target="_blank">单打</a></li>
+   <li id="dagu"><img  title="铓锣"src="item/d50735fae6cd7b89369733370f2442a7d8330e8e.jpg" /><a data="music.html?q=铓锣"  title="铓锣" target="_blank">铓锣</a></li>
+   <li id="dagu"><img  title="铜鼓"src="item/c8177f3e6709c93df20e07439f3df8dcd0005481.jpg" /><a data="music.html?q=铜鼓"  title="铜鼓" target="_blank">铜鼓</a></li>
+ 	 <li id="dagu"><img  title="木鱼"src="item/a71ea8d3fd1f4134efe20cca251f95cad0c85ea8.jpg" /><a data="music.html?q=木鱼"  title="木鱼" target="_blank">木鱼</a></li>
+ <li id="dagu"><img  title="木琴"src="item/f2deb48f8c5494ee90f20ead2df5e0fe98257eb5.jpg" /><a data="music.html?q=木琴"  title="木琴" target="_blank">木琴</a></li>
+   <li id="dagu"><img  title="铝板琴"src="item/4a36acaf2edda3cc4029b19401e93901203f92b0.jpg" /><a data="music.html?q=铝板琴"  title="铝板琴" target="_blank">铝板琴</a></li>
+   <li id="dagu"><img  title="棒棒"src="item/b7fd5266d016092409efabafd40735fae7cd34bf.jpg" /><a data="music.html?q=棒棒"  title="棒棒" target="_blank">棒棒</a></li>
+   <li id="dagu"><img  title="铜镜"src="item/37d12f2eb9389b5008cde8e68535e5dde7116e57.jpg" /><a data="music.html?q=铜镜"  title="铜镜" target="_blank">铜镜</a></li>
+   <li id="dagu"><img  title="竹梆"src="item/35a85edf8db1cb132b4534a7dd54564e92584b51.jpg" /><a data="music.html?q=竹梆"  title="竹梆" target="_blank">竹梆</a></li>
+   <li id="dagu"><img  title="竹杠"src="item/ca1349540923dd543369afdcd109b3de9c82486f.jpg" /><a data="music.html?q=竹杠"  title="竹杠" target="_blank">竹杠</a></li>
+   <li id="dagu"><img  title="布哉"src="item/838ba61ea8d3fd1f370aaa8e304e251f95ca5f06.jpg" /><a data="music.html?q=布哉"  title="布哉" target="_blank">布哉</a></li>
+   <li id="dagu"><img  title="乳钹"src="item/b2de9c82d158ccbf00b5bd8e19d8bc3eb135417c.jpg" /><a data="music.html?q=乳钹"  title="乳钹" target="_blank">乳钹</a></li>
+   <li id="dagu"><img  title="头钹"src="item/359b033b5bb5c9ea0f940b57d539b6003af3b31a.jpg" /><a data="music.html?q=头钹"  title="头钹" target="_blank">头钹</a></li>
+   <li id="dagu"><img  title="二钹"src="item/7c1ed21b0ef41bd53535e04051da81cb39db3d1b.jpg" /><a data="music.html?q=二钹"  title="二钹" target="_blank">二钹</a></li>
+	 <li id="dagu"><img  title="大钹"src="item/b8014a90f603738d602b0496b31bb051f819ec25.jpg" /><a data="music.html?q=大钹"  title="大钹" target="_blank">大钹</a></li>
+	 <li id="dagu"><img  title="小钹"src="item/b8014a90f603738d602b0496b31bb051f819ec25.jpg" /><a data="music.html?q=小钹"  title="小钹" target="_blank">小钹</a></li>
+   <li id="dagu"><img  title="大铙"src="item/63d9f2d3572c11df4282b797632762d0f703c237.jpg" /><a data="music.html?q=大铙"  title="大铙" target="_blank">大铙</a></li>
+   <li id="dagu"><img  title="钗"src="item/728da9773912b31b7cdec59d8618367adbb4e1d0.jpg" /><a data="music.html?q=钗"  title="钗" target="_blank">钗</a></li>
+   <li id="dagu"><img  title="铙"src="item/caef76094b36acaf17ad9e487cd98d1001e99c30.jpg" /><a data="music.html?q=铙"  title="铙" target="_blank">铙</a></li>
+   <li id="dagu"><img  title="司涅"src="item/4b90f603738da977f3838e9fb051f8198718e3d2.jpg" /><a data="music.html?q=司涅"  title="司涅" target="_blank">司涅</a></li>
+   <li id="dagu"><img  title="镲"src="item/5243fbf2b211931398e2f70465380cd790238de4.jpg" /><a data="music.html?q=镲"  title="镲" target="_blank">镲</a></li>
+   <li id="dagu"><img  title="小镲"src="item/eaf81a4c510fd9f9c6b45ddd252dd42a2934a4e6.jpg" /><a data="music.html?q=小镲"  title="小镲" target="_blank">小镲</a></li>
+   <li id="dagu"><img  title="碰盅"src="item/2f738bd4b31c8701771dba52277f9e2f0608ffdf.jpg" /><a data="music.html?q=碰盅"  title="碰盅" target="_blank">碰盅</a></li>
+ 	 <li id="dagu"><img  title="碰铃"src="item/9a504fc2d5628535af60da9590ef76c6a6ef6385.jpg" /><a data="music.html?q=碰铃"  title="碰铃" target="_blank">碰铃</a></li>
+  <li id="dagu"><img  title="腰铃"src="item/0df3d7ca7bcb0a46f4a0838d6b63f6246a60af87.jpg" /><a data="music.html?q=腰铃"  title="腰铃" target="_blank">腰铃</a></li>
+   <li id="dagu"><img  title="阔朔克"src="item/6f061d950a7b02089e3d375562d9f2d3562cc88a.jpg" /><a data="music.html?q=阔朔克"  title="阔朔克" target="_blank">阔朔克</a></li>
+   <li id="dagu"><img  title="板凳"src="item/30adcbef76094b3694441359a3cc7cd98c109dab.jpg" /><a data="music.html?q=板凳"  title="板凳" target="_blank">板凳</a></li>
+   <li id="dagu"><img  title="它石"src="item/72b19c02e9b08c1c4bfb5117.jpg" /><a data="music.html?q=它石"  title="它石" target="_blank">它石</a></li>
+   <li id="dagu"><img  title="骨板子"src="item/骨板子.jpg" /><a data="music.html?q=骨板子"  title="骨板子" target="_blank">骨板子</a></li>
+   <li id="dagu"><img  title="乐杵"src="item/30adcbef76094b369b811059a3cc7cd98d109d76.jpg" /><a data="music.html?q=乐杵"  title="乐杵" target="_blank">乐杵</a></li>
+   <li id="dagu"><img  title="竹捣筒"src="item/ae826731b74a9b0aebc4af10.jpg" /><a data="music.html?q=竹捣筒"  title="竹捣筒" target="_blank">竹捣筒</a></li>
+   <li id="dagu"><img  title="师刀"src="item/b9d8b701ad1746151d958310.jpg" /><a data="music.html?q=师刀"  title="师刀" target="_blank">师刀</a></li>
+ 	 <li id="dagu"><img  title="手碟"src="item/手碟鼓.jpg" /><a data="music.html?q=手碟"  title="手碟" target="_blank">手碟</a></li>
+	 <li id="dagu"><img  title="小锣"src="item/7e3e6709c93d70cfb1beaab9f8dcd100baa12b39.jpg" /><a data="music.html?q=小锣"  title="小锣" target="_blank">小锣</a></li>
+		 
+	 
+	 
+	 
+
+<!--
+              膜      膜                          膜                                膜              膜膜膜膜膜  膜膜膜膜膜      
+  膜膜膜膜    膜      膜                膜      膜      膜                      膜膜膜膜            膜      膜  膜      膜      
+  膜    膜膜膜膜膜膜膜膜膜膜膜    膜膜膜膜膜  膜膜膜膜膜膜膜          膜膜膜膜膜                    膜      膜  膜      膜      
+  膜    膜    膜      膜          膜    膜    膜        膜            膜                            膜      膜  膜      膜      
+  膜    膜    膜      膜          膜    膜    膜  膜    膜            膜      膜                    膜膜膜膜膜  膜膜膜膜膜      
+  膜膜膜膜  膜膜膜膜膜膜膜        膜    膜    膜        膜          膜        膜                              膜    膜          
+  膜    膜  膜          膜        膜    膜    膜    膜  膜          膜        膜          膜                  膜      膜        
+  膜    膜  膜膜膜膜膜膜膜        膜    膜    膜      膜          膜膜膜膜膜膜膜膜膜膜膜膜膜膜  膜膜膜膜膜膜膜膜膜膜膜膜膜膜膜  
+  膜    膜  膜          膜        膜    膜    膜          膜                  膜                            膜  膜              
+  膜膜膜膜  膜膜膜膜膜膜膜        膜    膜    膜膜膜膜膜膜膜膜                膜                        膜膜      膜膜          
+  膜    膜        膜              膜膜膜膜                膜            膜    膜    膜              膜膜              膜膜      
+  膜    膜膜膜膜膜膜膜膜膜膜膜    膜    膜          膜    膜            膜    膜      膜        膜膜膜膜膜膜膜  膜膜膜膜膜膜膜  
+  膜    膜        膜                      膜膜膜膜膜膜膜  膜          膜      膜        膜          膜      膜  膜      膜      
+  膜    膜      膜  膜膜                                  膜        膜        膜        膜膜        膜      膜  膜      膜      
+  膜    膜    膜        膜膜膜                        膜  膜      膜      膜  膜          膜        膜      膜  膜      膜      
+膜    膜  膜膜            膜                            膜                  膜                      膜膜膜膜膜  膜膜膜膜膜      
+
+-->	 
+<li id="dagu"><img  title="膜鸣乐器"src="/favicon.ico" /><a data="music.html?q=膜鸣乐器"  title="膜鸣乐器" target="_blank">膜鸣乐器</a></li>
+	 <li id="dagu"><img  title="大鼓"src="item/a1ec08fa513d2697a2bb0ae955fbb2fb4316d81e.jpg" /><a data="music.html?q=%E5%A4%A7%E9%BC%93"  title="大鼓" target="_blank">大鼓</a></li>
+	 <li id="dagu"><img  title="小鼓"src="item/f3d3572c11dfa9ec7e0a56a362d0f703918fc15a.jpg" /><a data="music.html?q=小鼓"  title="小鼓" target="_blank">小鼓</a></li>
+	 <li id="dagu"><img  title="铃鼓"src="item/8718367adab44aedf61fbc50b31c8701a18bfb35.jpg" /><a data="music.html?q=铃鼓"  title="铃鼓" target="_blank">铃鼓</a></li>
+	 <li id="dagu"><img  title="架子鼓"src="item/架子鼓.jpg"  /><a data="music.html?q=架子鼓"  title="架子鼓" target="_blank">架子鼓</a></li>
+	 <li id="dagu"><img  title="板鼓"src="item/f7426d8d67601d01b31bba08.jpg" /><a data="music.html?q=板鼓"  title="板鼓" target="_blank">板鼓</a></li>
+	 <li id="dagu"><img  title="排鼓"src="item/a6c7d717ff5d401ac93d6dd3.jpg" /><a data="music.html?q=排鼓"  title="排鼓" target="_blank">排鼓</a></li>
+	<li id="dagu"><img  title="堂鼓"src="item/堂鼓.jpg" /><a data="music.html?q=%E5%A0%82%E9%BC%93"  title="堂鼓" target="_blank">堂鼓</a></li>
+	 <li id="dagu"><img  title="手鼓"src="item/b84054901e217bb2a977a4c7.jpg" /><a data="music.html?q=手鼓"  title="手鼓" target="_blank">手鼓</a></li>
+	 <li id="dagu"><img  title="小军鼓"src="item/小军鼓.jpg" /><a data="music.html?q=小军鼓"  title="小军鼓" target="_blank">小军鼓</a></li>
+	 <li id="dagu"><img  title="锣鼓"src="item/锣鼓.jpg" /><a data="music.html?q=锣鼓"  title="锣鼓" target="_blank">锣鼓</a></li>
+	 <li id="dagu"><img  title="卡洪鼓"src="item/卡洪鼓.jpg" /><a data="music.html?q=卡洪鼓"  title="卡洪鼓" target="_blank">卡洪鼓</a></li>
+	 <li id="dagu"><img  title="非洲鼓，是一个俗称，通常指的是来自西非的Djembe（金贝鼓，坚贝鼓），是西非曼丁文化的代表性乐器。传统上，Djembe是徒手演奏，主要有低、中、高三个音，而且需要和Dunun（墩墩鼓）配合，演奏与特定生活场景相关的鼓曲，来给舞者和歌手伴奏。现在Djembe已经传播到世界各地，在不同的音乐、培训领域发挥着它独特的价值。"src="item/非洲鼓.jpg" /><a data="music.html?q=非洲鼓"  title="非洲鼓，是一个俗称，通常指的是来自西非的Djembe（金贝鼓，坚贝鼓），是西非曼丁文化的代表性乐器。传统上，Djembe是徒手演奏，主要有低、中、高三个音，而且需要和Dunun（墩墩鼓）配合，演奏与特定生活场景相关的鼓曲，来给舞者和歌手伴奏。现在Djembe已经传播到世界各地，在不同的音乐、培训领域发挥着它独特的价值。" target="_blank">非洲鼓</a></li>
+	 <li id="dagu"><img  title="腰鼓"src="item/3a86813d7ebff613baa167d3.jpg" /><a data="music.html?q=腰鼓"  title="腰鼓" target="_blank">腰鼓</a></li>
+	 <li id="dagu"><img  title="中东鼓"src="item/中东鼓.jpg" /><a data="music.html?q=中东鼓"  title="中东鼓" target="_blank">中东鼓</a></li>
+	 <li id="dagu"><img  title="瑶族大鼓"src="item/caae6809735584bc2eddd4d3.jpg" /><a data="music.html?q=瑶族大鼓"  title="瑶族大鼓" target="_blank">瑶族大鼓</a></li>
+	 <li id="dagu"><img  title="战鼓"src="item/战鼓.jpg" /><a data="music.html?q=战鼓"  title="战鼓" target="_blank">战鼓</a></li>
+	 <li id="dagu"><img  title="杖鼓，是中国古代细腰鼓类乐器，东传高丽后成为朝鲜族的重要击膜鸣乐器。杖鼓清代后在中原几乎消失，如今汉族地区唯一留存的是福建杖鼓。朝鲜杖鼓流行于辽宁、吉林、黑龙江、内蒙古、河北等省区，尤以吉林省延边朝鲜族自治州为最。福建杖鼓主要流行于福州及周边地区，多用于福建民间音乐。"src="item/杖鼓.jpg" /><a data="music.html?q=杖鼓"  title="杖鼓，是中国古代细腰鼓类乐器，东传高丽后成为朝鲜族的重要击膜鸣乐器。杖鼓清代后在中原几乎消失，如今汉族地区唯一留存的是福建杖鼓。朝鲜杖鼓流行于辽宁、吉林、黑龙江、内蒙古、河北等省区，尤以吉林省延边朝鲜族自治州为最。福建杖鼓主要流行于福州及周边地区，多用于福建民间音乐。" target="_blank">杖鼓</a></li>
+	 <li id="dagu"><img  title="缸鼓又称民族定音鼓，是在缸鼓的基础上，吸取西洋定音鼓音高的特点改制而成的。鼓框木制（也有改用玻璃钢制的）。定音缸鼓分大、中、小三种，可调节音高。用低音谱表记谱。鼓皮的质量和天气的变化都对鼓音高有影响，在使用时要注意调准音。"src="item/缸鼓.jpg" /><a data="music.html?q=缸鼓"  title="缸鼓又称民族定音鼓，是在缸鼓的基础上，吸取西洋定音鼓音高的特点改制而成的。鼓框木制（也有改用玻璃钢制的）。定音缸鼓分大、中、小三种，可调节音高。用低音谱表记谱。鼓皮的质量和天气的变化都对鼓音高有影响，在使用时要注意调准音。" target="_blank">缸鼓</a></li>
+	 <li id="dagu"><img  title="扁鼓"src="item/566d0fdf45faa2006327980f.jpg" /><a data="music.html?q=扁鼓"  title="扁鼓" target="_blank">扁鼓</a></li>
+	 <li id="dagu"><img  title="水族大鼓"src="item/83cab81edde6d50c413417ed.jpg" /><a data="music.html?q=水族大鼓"  title="水族大鼓" target="_blank">水族大鼓</a></li>
+	 <li id="dagu"><img  title="塞吐"src="item/4075890a497b0d0c95ca6bed.jpg" /><a data="music.html?q=塞吐"  title="塞吐" target="_blank">塞吐</a></li>
+	 <li id="dagu"><img  title="略斗，苗族棰击膜鸣乐器。苗语“略”为木、“斗”为鼓，意即木制大鼓。又称竹龙。流行于贵州省黔东南苗族侗族自治州各地。"src="item/略斗.jpg" /><a data="music.html?q=略斗"  title="略斗，苗族棰击膜鸣乐器。苗语“略”为木、“斗”为鼓，意即木制大鼓。又称竹龙。流行于贵州省黔东南苗族侗族自治州各地。" target="_blank">略斗</a></li>
+	 <li id="dagu"><img  title="光拢"src="item/207ea60e398f7cf436d122d3.jpg" /><a data="music.html?q=光拢"  title="光拢" target="_blank">光拢</a></li>
+	 <li id="dagu"><img  title="赠疆"src="item/3790312eff5bb3434fc226d3.jpg" /><a data="music.html?q=赠疆"  title="赠疆" target="_blank">赠疆</a></li>
+	 <li id="dagu"><img  title="瑶族猴鼓"src="item/8d158aeeca007c172df534fa.jpg" /><a data="music.html?q=瑶族猴鼓"  title="瑶族猴鼓" target="_blank">瑶族猴鼓</a></li>
+	 <li id="dagu"><img  title="苗族猴鼓"src="item/3a86813d7de9f913baa167ed.jpg" /><a data="music.html?q=苗族猴鼓"  title="苗族猴鼓" target="_blank">苗族猴鼓</a></li>
+	 <li id="dagu"><img  title="猪嘴鼓"src="item/7787b9ef9e78b505fdfa3cd3.jpg" /><a data="music.html?q=猪嘴鼓"  title="猪嘴鼓" target="_blank">猪嘴鼓</a></li>
+	 <li id="dagu"><img  title="姜鼓"src="item/c28fddfd7336ba56d6887ded.jpg" /><a data="music.html?q=姜鼓"  title="姜鼓" target="_blank">姜鼓</a></li>
+	 <li id="dagu"><img  title="八音鼓"src="item/f29faa8fda37bcfdf01f36d3.jpg" /><a data="music.html?q=八音鼓"  title="八音鼓" target="_blank">八音鼓</a></li>
+	 <li id="dagu"><img  title="书鼓"src="item/808a27db14e57675d0164e08.jpg" /><a data="music.html?q=书鼓"  title="书鼓" target="_blank">书鼓</a></li>
+	 <li id="dagu"><img  title="火者，彝族、布依族棰击膜鸣乐器。彝语称火者。布依族称的光。流行于贵州省西北部威宁、赫章、毕节、水城、纳雍、黔西、盘县等彝族地区和黔西南布依族苗族自治州兴义、贞丰等布依族地区。火者鼓框用核桃木或梧桐木板条拼合而成，呈扁圆形，两端蒙以未经处理的带毛生牛皮，皮边四周用两排竹钉固定，竹钉露出鼓框1.5厘米。鼓的规格不一，大者，鼓面直径40厘米～45厘米、鼓高20厘米，小者，鼓面直径15厘米～20厘米、鼓高10厘米，鼓框两侧置鼓环、系鼓绳。鼓棰木或藤制，大者长25厘米、小者长20厘米，棰头包布。"src="item/火者.png" /><a data="music.html?q=火者"  title="火者，彝族、布依族棰击膜鸣乐器。彝语称火者。布依族称的光。流行于贵州省西北部威宁、赫章、毕节、水城、纳雍、黔西、盘县等彝族地区和黔西南布依族苗族自治州兴义、贞丰等布依族地区。火者鼓框用核桃木或梧桐木板条拼合而成，呈扁圆形，两端蒙以未经处理的带毛生牛皮，皮边四周用两排竹钉固定，竹钉露出鼓框1.5厘米。鼓的规格不一，大者，鼓面直径40厘米～45厘米、鼓高20厘米，小者，鼓面直径15厘米～20厘米、鼓高10厘米，鼓框两侧置鼓环、系鼓绳。鼓棰木或藤制，大者长25厘米、小者长20厘米，棰头包布。" target="_blank">火者</a></li>
+	 <li id="dagu"><img  title="如咚，瑶族棰击膜鸣乐器。瑶语“如”为鼓，“咚”为小，“如咚”即小鼓之意。流行于广西壮族自治区防城各族自治县。"src="item/f3d3572c11dfa9ec7e0a56a362d0f703918fc15a.jpg" /><a data="music.html?q=如咚"  title="如咚，瑶族棰击膜鸣乐器。瑶语“如”为鼓，“咚”为小，“如咚”即小鼓之意。流行于广西壮族自治区防城各族自治县。" target="_blank">如咚</a></li>
+	 <li id="dagu"><img  title="太平鼓"src="item/e78c6589a71c988f0f2444ae.jpg" /><a data="music.html?q=太平鼓"  title="太平鼓" target="_blank">太平鼓</a></li>
+	 <li id="dagu"><img  title="环鼓"src="item/964b2e4e5f7cbdd9d1c86ad3.jpg" /><a data="music.html?q=环鼓"  title="环鼓" target="_blank">环鼓</a></li>
+	 <li id="dagu"><img  title="抬鼓"src="item/72b19c02e99a8c1c4bfb51ed.jpg" /><a data="music.html?q=抬鼓"  title="抬鼓" target="_blank">抬鼓</a></li>
+	 <li id="dagu"><img  title="达玛"src="item/caae6809772e88bc2eddd408.jpg" /><a data="music.html?q=达玛"  title="达玛" target="_blank">达玛</a></li>
+	 <li id="dagu"><img  title="纳格拉"src="item/aa251d4fc1c5df25afc3abee.jpg" /><a data="music.html?q=纳格拉"  title="纳格拉" target="_blank">纳格拉</a></li>
+	 <li id="dagu"><img  title="达玛如"src="item/6648d73df2ac13d49f3d62d3.jpg" /><a data="music.html?q=达玛如"  title="达玛如" target="_blank">达玛如</a></li>
+	 <li id="dagu"><img  title="建鼓"src="item/bbe0d311908f882eb9127be0.jpg" /><a data="music.html?q=建鼓"  title="建鼓" target="_blank">建鼓</a></li>
+	 <li id="dagu"><img  title="神鼓"src="item/c2bce203065df29bd43f7c08.jpg" /><a data="music.html?q=神鼓"  title="神鼓" target="_blank">神鼓</a></li>
+	 <li id="dagu"><img  title="那额"src="item/aa59892b70641de9e6cd40d3.jpg" /><a data="music.html?q=那额"  title="那额" target="_blank">那额</a></li>
+	 <li id="dagu"><img  title="达布尔"src="item/95afee1f15a37fcae1fe0b6e.jpg" /><a data="music.html?q=达布尔"  title="达布尔" target="_blank">达布尔</a></li>
+	 <li id="dagu"><img  title="竹鼓"src="item/0b907cd91be67f3f11df9bee.jpg" /><a data="music.html?q=竹鼓"  title="竹鼓" target="_blank">竹鼓</a></li>
+	 <li id="dagu"><img  title="夏尔巴鼓"src="item/c9bdddce4e24d51093457e49.jpg" /><a data="music.html?q=夏尔巴鼓"  title="夏尔巴鼓" target="_blank">夏尔巴鼓</a></li>
+	 <li id="dagu"><img  title="八角鼓"src="item/9319cf09a661e0bcd0581b5a.jpg" /><a data="music.html?q=八角鼓"  title="八角鼓" target="_blank">八角鼓</a></li>
+	 <li id="dagu"><img  title="达卜"src="item/0b3a1c089d0322c263d98628.jpg" /><a data="music.html?q=达卜"  title="达卜" target="_blank">达卜</a></li>
+	 <li id="dagu"><img  title="黄泥鼓"src="item/62667cd01912bb9ca0ec9c02.jpg" /><a data="music.html?q=黄泥鼓"  title="黄泥鼓" target="_blank">黄泥鼓</a></li>
+	 <li id="dagu"><img  title="长鼓"src="item/b84054901ec67bb2a877a422.jpg" /><a data="music.html?q=长鼓"  title="长鼓" target="_blank">长鼓</a></li>
+	 <li id="dagu"><img  title="光亚"src="item/光亚.jpg" /><a data="music.html?q=光亚"  title="光亚" target="_blank">光亚</a></li>
+	 <li id="dagu"><img  title="光吞"src="item/b87985502d45db3b84352445.jpg" /><a data="music.html?q=光吞"  title="光吞" target="_blank">光吞</a></li>
+	 <li id="dagu"><img  title="圆鼓"src="item/bbe0d311c90eb109b9127b84.jpg" /><a data="music.html?q=圆鼓"  title="圆鼓" target="_blank">圆鼓</a></li>
+	 <li id="dagu"><img  title="边鼓"src="item/b853d6fc4e08ebeefd037f7e.jpg" /><a data="music.html?q=边鼓"  title="边鼓" target="_blank">边鼓</a></li>
+	 <li id="dagu"><img  title="双面鼓"src="item/4651a7124325eaddc2fd7849.jpg" /><a data="music.html?q=双面鼓"  title="双面鼓" target="_blank">双面鼓</a></li>
+	 <li id="dagu"><img  title="蜂鼓"src="item/0fb505d534a8f5d750da4b7e.jpg" /><a data="music.html?q=蜂鼓"  title="蜂鼓" target="_blank">蜂鼓</a></li>
+	 <li id="dagu"><img  title="汪都"src="item/b29f82824cd93aa66c8119b8.jpg" /><a data="music.html?q=汪都"  title="汪都" target="_blank">汪都</a></li>
+	 <li id="dagu"><img  title="壮族种劳"src="item/8c511fe91a086525b80e2d00.jpg" /><a data="music.html?q=壮族种劳"  title="壮族种劳" target="_blank">壮族种劳</a></li>
+
+	 
+
+<!--
+                                                                                                                                
+    噐                                                                                                                          
+    噐噐噐噐噐噐噐                        噐                      噐噐噐噐噐噐噐噐                噐噐噐  噐噐噐噐              
+  噐                              噐噐  噐噐噐噐噐                噐                              噐  噐  噐    噐              
+  噐噐噐噐噐噐噐噐                噐噐  噐噐    噐                噐      噐                      噐噐噐  噐噐噐噐              
+噐                                噐噐  噐  噐  噐                噐      噐                            噐    噐                
+噐噐噐噐噐噐噐噐                  噐噐  噐  噐噐噐                噐噐噐噐噐噐噐噐              噐噐噐噐噐噐噐噐噐噐            
+              噐                  噐噐  噐噐噐噐噐                  噐    噐                    噐噐噐噐    噐噐噐噐            
+              噐                  噐噐  噐噐噐噐噐                  噐    噐  噐                  噐噐噐  噐噐噐噐              
+                噐噐                            噐                噐      噐    噐                噐  噐  噐    噐              
+                噐噐                        噐噐噐              噐    噐噐        噐              噐噐噐  噐噐噐噐              
+                                                                                                  噐      噐    噐              
+ -->	 
+   <li id="qiming"><img  title="气鸣乐器"src="/favicon.ico" /><a data="music.html?q=气鸣乐器"  title="气鸣乐器" target="_blank">气鸣乐器</a></li>
+   <li id="dagu"><img  title="牛角"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=牛角"  title="牛角" target="_blank">牛角</a></li>
+   <li id="dagu"><img  title="铜角"src="item/148f28d3c89e9e133af3cf9f.jpg" /><a data="music.html?q=铜角"  title="铜角" target="_blank">铜角</a></li>
+   <li id="dagu"><img  title="刚洞"src="item/0e655ca7a9b0acaad0435867.jpg" /><a data="music.html?q=刚洞"  title="刚洞" target="_blank">刚洞</a></li>
+   <li id="dagu"><img  title="海螺"src="item/d019d2bffa857f3719d81fe7.jpg" /><a data="music.html?q=海螺"  title="海螺" target="_blank">海螺</a></li>
+   <li id="dagu"><img  title="鹿笛"src="item/c71d0e3876e4d3e1b211c79f.jpg" /><a data="music.html?q=鹿笛"  title="鹿笛" target="_blank">鹿笛</a></li>
+   <li id="dagu"><img  title="筒钦"src="item/73ca591029feebefc2ce7924.jpg" /><a data="music.html?q=筒钦"  title="筒钦" target="_blank">筒钦</a></li>
+   <li id="dagu"><img  title="铓筒"src="item/9f6e1908f4ef3723e8248848.jpg" /><a data="music.html?q=铓筒"  title="铓筒" target="_blank">铓筒</a></li>
+   <li id="dagu"><img  title="布巴"src="item/b3508d1399d9e2936538db9f.jpg" /><a data="music.html?q=布巴"  title="布巴" target="_blank">布巴</a></li>
+   <li id="dagu"><img  title="小号"src="item/a9d3fd1f4134970a4e8c129b95cad1c8a6865d82.jpg" /><a data="music.html?q=小号"  title="小号" target="_blank">小号</a></li>
+   <li id="dagu"><img  title="次中音号"src="item/a75fb6d398037827970a1614.jpg" /><a data="music.html?q=次中音号"  title="次中音号" target="_blank">次中音号</a></li>
+   <li id="dagu"><img  title="圆号"src="item/d01373f082025aaf1c1e737ffbedab64034f1a51.jpg" /><a data="music.html?q=圆号"  title="圆号" target="_blank">圆号</a></li>
+   <li id="dagu"><img  title="斯布斯额"src="item/ea85a94572463a3ccefca32f.jpg" /><a data="music.html?q=斯布斯额"  title="斯布斯额" target="_blank">斯布斯额</a></li>
+   <li id="dagu"><img  title="合欢箫"src="item/b13fd4804e9f24c49123d99f.jpg" /><a data="music.html?q=合欢箫"  title="合欢箫" target="_blank">合欢箫</a></li>
+   <li id="dagu"><img  title="胡笳"src="item/cc506c8beb61bf2cc8fc7a94.jpg" /><a data="music.html?q=胡笳"  title="胡笳" target="_blank">胡笳</a></li>
+   <li id="dagu"><img  title="壮笛"src="item/0b3a1c089d2322c263d98648.jpg" /><a data="music.html?q=壮笛"  title="壮笛" target="_blank">壮笛</a></li>
+   <li id="dagu"><img  title="乃依"src="item/6f470395eeac2a1b7af48048.jpg" /><a data="music.html?q=乃依"  title="乃依" target="_blank">乃依</a></li>
+   <li id="dagu"><img  title="横笛"src="item/718e25c73661fbe3d10060b8.jpg" /><a data="music.html?q=横笛"  title="横笛" target="_blank">横笛</a></li>
+   <li id="dagu"><img  title="排萧"src="item/0db2c9ca78d42055f21fe717.jpg" /><a data="music.html?q=排萧"  title="排萧" target="_blank">排萧</a></li>
+   <li id="dagu"><img  title="短箫"src="item/3a86813d7d71f913bba16765.jpg" /><a data="music.html?q=短箫"  title="短箫" target="_blank">短箫</a></li>
+   <li id="dagu"><img  title="筒箫"src="item/0ff41bd5ad6eddc42b7fdc4e39dbb6fd536633ee.jpg" /><a data="music.html?q=筒箫"  title="筒箫" target="_blank">筒箫</a></li>
+   <li id="dagu"><img  title="鼻箫"src="item/d01373f082025aaf3771167efbedab64024f1ac7.jpg" /><a data="music.html?q=筒箫"  title="筒箫" target="_blank">筒箫</a></li>
+   <li id="dagu"><img  title="鹰笛"src="item/476217f7908ab031730eec48.jpg" /><a data="music.html?q=鹰笛"  title="鹰笛" target="_blank">鹰笛</a></li>
+   <li id="dagu"><img  title="骨笛"src="item/4651a7125195d8f0c3fd788c.jpg" /><a data="music.html?q=骨笛"  title="骨笛" target="_blank">骨笛</a></li>
+   <li id="dagu"><img  title="吐任"src="item/3c2c4bfb676b0f566c22eb76.jpg" /><a data="music.html?q=吐任"  title="吐任" target="_blank">吐任</a></li>
+   <li id="dagu"><img  title="直通箫"src="item/caae68096b41ecb52eddd4b6.jpg" /><a data="music.html?q=直通箫"  title="直通箫" target="_blank">直通箫</a></li>
+   <li id="dagu"><img  title="布利亚"src="item/bf487563fcfc43730d33fa48.jpg" /><a data="music.html?q=布利亚"  title="布利亚" target="_blank">布利亚</a></li>
+   <li id="dagu"><img  title="巴葛丢冬"src="item/4e0b3ea44dbb12ed9052ee97.jpg" /><a data="music.html?q=巴葛丢冬"  title="巴葛丢冬" target="_blank">巴葛丢冬</a></li>
+   <li id="dagu"><img  title="列都"src="item/f765756000ebaf57eaf8f848.jpg" /><a data="music.html?q=列都"  title="列都" target="_blank">列都</a></li>
+   <li id="dagu"><img  title="笛朽篥"src="item/e1bf8725e196747334a80f9f.jpg" /><a data="music.html?q=笛朽篥"  title="笛朽篥" target="_blank">笛朽篥</a></li>
+   <li id="dagu"><img  title="库洛"src="item/库洛.jpg" /><a data="music.html?q=库洛"  title="库洛" target="_blank">库洛</a></li>
+   <li id="dagu"><img  title="双管鼻笛"src="item/d52a2834349b033ba31d946f15ce36d3d439bdea.jpg" /><a data="music.html?q=双管鼻笛"  title="双管鼻笛" target="_blank">双管鼻笛</a></li>
+   <li id="dagu"><img  title="扎令，是藏族边棱气鸣乐器。藏语又称德林、扎布令、列丝。汉族译称陶笛，与汉族地区的 埙 同属一类乐器。未经焙烧的扎令汉族称泥埙或泥哨，经过焙烧的扎令汉族称陶埙或陶哨。流 行于西藏自治区日喀则地区和藏北高原牧区。"src="item/扎布令.jpg" /><a data="music.html?q=扎令"  title="扎令，是藏族边棱气鸣乐器。藏语又称德林、扎布令、列丝。汉族译称陶笛，与汉族地区的 埙 同属一类乐器。未经焙烧的扎令汉族称泥埙或泥哨，经过焙烧的扎令汉族称陶埙或陶哨。流 行于西藏自治区日喀则地区和藏北高原牧区。" target="_blank">扎令</a></li>
+   <li id="dagu"><img  title="阿乌"src="item/11794d43dd2a9a029213c648.jpg" /><a data="music.html?q=阿乌"  title="阿乌" target="_blank">阿乌</a></li>
+   <li id="dagu"><img  title="笛老挪"src="item/fab3ac11bbcb986dcb80c448.jpg" /><a data="music.html?q=笛老挪"  title="笛老挪" target="_blank">笛老挪</a></li>
+   <li id="dagu"><img  title="泥哇呜"src="item/b0742dfaf12c8e0da8d3119f.jpg" /><a data="music.html?q=泥哇呜"  title="泥哇呜" target="_blank">泥哇呜</a></li>
+   <li id="dagu"><img  title="狍哨，鄂伦春、鄂温克、达斡尔等族边棱气鸣乐器。因使用桦树皮制成，故又称桦皮哨。鄂伦春语称皮卡兰。流行于内蒙古自治区呼伦贝尔盟鄂伦春自治旗、鄂温克族自治旗、莫力达瓦达斡尔族自治旗、布特哈旗和黑龙江省呼玛、逊克等地。"src="item/狍哨.jpg" /><a data="music.html?q=狍哨"  title="狍哨，鄂伦春、鄂温克、达斡尔等族边棱气鸣乐器。因使用桦树皮制成，故又称桦皮哨。鄂伦春语称皮卡兰。流行于内蒙古自治区呼伦贝尔盟鄂伦春自治旗、鄂温克族自治旗、莫力达瓦达斡尔族自治旗、布特哈旗和黑龙江省呼玛、逊克等地。" target="_blank">狍哨</a></li>
+   <li id="dagu"><img  title="口笛"src="item/246cca2a3dee1d88023bf64a.jpg" /><a data="music.html?q=口笛"  title="口笛" target="_blank">口笛</a></li>
+ 	 <li id="dagu"><img  title="古代用陶土烧制的一种吹奏乐器，圆形或椭圆形，有六孔。亦称“陶埙”。"src="item/埙.jpg" /><a data="music.html?q=埙"  title="埙古代用陶土烧制的一种吹奏乐器，圆形或椭圆形，有六孔。亦称“陶埙”。" target="_blank">埙</a></li>
+  <li id="dagu"><img  title="夜箫"src="item/6648d73d0b0f14dd9e3d627f.jpg" /><a data="music.html?q=夜箫"  title="夜箫" target="_blank">夜箫</a></li>
+   <li id="dagu"><img  title="侗笛"src="item/a8ad941390ce41c3f6039e5a.jpg" /><a data="music.html?q=侗笛"  title="侗笛" target="_blank">侗笛</a></li>
+   <li id="dagu"><img  title="塞箫"src="item/d478a800244113b9e850cd55.jpg" /><a data="music.html?q=塞箫"  title="塞箫" target="_blank">塞箫</a></li>
+   <li id="dagu"><img  title="瓦格洛"src="item/c28fddfd68eeb156d7887d25.jpg" /><a data="music.html?q=瓦格洛"  title="瓦格洛" target="_blank">瓦格洛</a></li>
+   <li id="dagu"><img  title="雄林"src="item/faacb564ef9d8ccef6365436.jpg" /><a data="music.html?q=雄林"  title="雄林" target="_blank">雄林</a></li>
+   <li id="dagu"><img  title="苏奈依"src="item/9a1151c29ccbad26e5dd3b99.jpg" /><a data="music.html?q=苏奈依"  title="苏奈依" target="_blank">苏奈依</a></li>
+   <li id="dagu"><img  title="嘟噜"src="item/d4239b35ae74cf0290ef3999.jpg" /><a data="music.html?q=嘟噜"  title="嘟噜" target="_blank">嘟噜</a></li>
+   <li id="dagu"><img  title="低音嘟噜"src="item/0d729944e522325f500ffe4a.jpg" /><a data="music.html?q=低音嘟噜"  title="低音嘟噜" target="_blank">低音嘟噜</a></li>
+   <li id="dagu"><img  title="太平箫"src="item/35a85edf8db1cb130ba154a6dd54564e93584bbe.jpg" /><a data="music.html?q=太平箫"  title="太平箫" target="_blank">太平箫</a></li>
+   <li id="dagu"><img  title="嘎嗦，苗族吹口气鸣乐器。汉族称拉音笛。流行于广西壮族自治区西林、那坡等地。"src="item/嘎嗦.jpg" /><a data="music.html?q=嘎嗦"  title="嘎嗦，苗族吹口气鸣乐器。汉族称拉音笛。流行于广西壮族自治区西林、那坡等地。" target="_blank">嘎嗦</a></li>
+   <li id="dagu"><img  title="五月箫，瑶族支系排瑶吹口气鸣乐器。瑶语称嗯？凸，即五月伐竹制箫、吹箫之意，故 此得名。"src="item/五月箫.jpg" /><a data="music.html?q=五月箫"  title="五月箫，瑶族支系排瑶吹口气鸣乐器。瑶语称嗯？凸，即五月伐竹制箫、吹箫之意，故 此得名。" target="_blank">五月箫</a></li>
+   <li id="dagu"><img  title="筚箫"src="item/a6aed01bccbfd5e9af513399.jpg" /><a data="music.html?q=筚箫"  title="筚箫" target="_blank">筚箫</a></li>
+   <li id="dagu"><img  title="筚笋"src="item/9dc3cf58a9e2439b800a18dc.jpg" /><a data="music.html?q=筚笋"  title="筚笋" target="_blank">筚笋</a></li>
+   <li id="dagu"><img  title="勒绒"src="item/9c57e3fafcf8dbcdb48f3199.jpg" /><a data="music.html?q=勒绒"  title="勒绒" target="_blank">勒绒</a></li>
+   <li id="dagu"><img  title="姊妹箫"src="item/4bac30735e0794238601b030.jpg" /><a data="music.html?q=姊妹箫"  title="姊妹箫" target="_blank">姊妹箫</a></li>
+   <li id="dagu"><img  title="双管侗笛"src="item/83cab81e0fad0b06413417bd.jpg" /><a data="music.html?q=双管侗笛"  title="双管侗笛" target="_blank">双管侗笛</a></li>
+   <li id="dagu"><img  title="波晓呼"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=波晓呼"  title="波晓呼" target="_blank">波晓呼</a></li>
+   <li id="dagu"><img  title="决篥杰"src="item/e1bf8725e198747334a80f99.jpg" /><a data="music.html?q=决篥杰"  title="决篥杰" target="_blank">决篥杰</a></li>
+   <li id="dagu"><img  title="巴乌"src="item/7aad4ae77f380c3db8382059.jpg" /><a data="music.html?q=巴乌"  title="巴乌" target="_blank">巴乌</a></li>
+   <li id="dagu"><img  title="筚"src="item/f35ea009686ad81a6b60fbec.jpg" /><a data="music.html?q=筚"  title="筚" target="_blank">筚</a></li>
+   <li id="dagu"><img  title="筚相"src="item/f35ea009686ad81a6b60fbec.jpg" /><a data="music.html?q=筚相"  title="筚相" target="_blank">筚相</a></li>
+   <li id="dagu"><img  title="苗笛"src="item/f99dcf003d0ce502738b6565.jpg" /><a data="music.html?q=苗笛"  title="苗笛" target="_blank">苗笛</a></li>
+   <li id="dagu"><img  title="芒筒"src="item/9dc3cf58ad215fbe810a187a.jpg" /><a data="music.html?q=芒筒"  title="芒筒" target="_blank">芒筒</a></li>
+   <li id="dagu"><img  title="竹叶笛"src="item/6dc09e0a7671942db1351d99.jpg" /><a data="music.html?q=竹叶笛"  title="竹叶笛" target="_blank">竹叶笛</a></li>
+   <li id="dagu"><img  title="马布"src="item/1899a23ec09c1be9828b1399.jpg" /><a data="music.html?q=马布"  title="马布" target="_blank">马布</a></li>
+   <li id="dagu"><img  title="筚鲁"src="item/b0742dfaf1228e0da8d31199.jpg" /><a data="music.html?q=筚鲁"  title="筚鲁" target="_blank">筚鲁</a></li>
+   <li id="dagu"><img  title="寸笛"src="item/a992e31f369dbf19304e1599.jpg" /><a data="music.html?q=寸笛"  title="寸笛" target="_blank">寸笛</a></li>
+   <li id="dagu"><img  title="咚咚亏"src="item/4a77b2af14078bdf7dd92a4a.jpg" /><a data="music.html?q=咚咚亏"  title="咚咚亏" target="_blank">咚咚亏</a></li>
+   <li id="dagu"><img  title="笔管"src="item/10dfa9ec8a1363278705b174918fa0ec09fac789.jpg" /><a data="music.html?q=笔管"  title="笔管" target="_blank">笔管</a></li>
+   <li id="dagu"><img  title="大嘀珑"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=大嘀珑"  title="大嘀珑" target="_blank">大嘀珑</a></li>
+   <li id="dagu"><img  title="筚多喝"src="item/7aad4ae7720b073db838204a.jpg" /><a data="music.html?q=筚多喝"  title="筚多喝" target="_blank">筚多喝</a></li>
+   <li id="dagu"><img  title="波芦"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=波芦"  title="波芦" target="_blank">波芦</a></li>
+   <li id="dagu"><img  title="筚建"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=筚建"  title="筚建" target="_blank">筚建</a></li>
+   <li id="dagu"><img  title="利列"src="item/8b527d273ecb4c3d918f9dff.jpg" /><a data="music.html?q=利列"  title="利列" target="_blank">利列</a></li>
+   <li id="dagu"><img  title="利罗"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=利罗"  title="利罗" target="_blank">利罗</a></li>
+   <li id="dagu"><img  title="笛列"src="item/bbe0d311fb226f03b9127b99.jpg" /><a data="music.html?q=笛列"  title="笛列" target="_blank">笛列</a></li>
+   <li id="dagu"><img  title="筚尔"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=筚尔"  title="筚尔" target="_blank">筚尔</a></li>
+   <li id="dagu"><img  title="筚朗布浪"src="item/e6508eef381c8ffccf1b3e4a.jpg" /><a data="music.html?q=筚朗布浪"  title="筚朗布浪" target="_blank">筚朗布浪</a></li>
+   <li id="dagu"><img  title="芒笛"src="item/aa251d4fb1b1ef2cafc3abf9.jpg" /><a data="music.html?q=芒笛"  title="芒笛" target="_blank">芒笛</a></li>
+   <li id="dagu"><img  title="美都"src="item/b853d6fc4e67ebeefc037f99.jpg" /><a data="music.html?q=美都"  title="美都" target="_blank">美都</a></li>
+   <li id="dagu"><img  title="其篥"src="item/90cebeec0e9a447d26979185.jpg" /><a data="music.html?q=其篥"  title="其篥" target="_blank">其篥</a></li>
+   <li id="dagu"><img  title="双管巴乌"src="item/ea85a94534dff019cffca393.jpg" /><a data="music.html?q=双管巴乌"  title="双管巴乌" target="_blank">双管巴乌</a></li>
+   <li id="dagu"><img  title="双管筚朗叨"src="item/f35ea0094d70fd646b60fbf0.jpg" /><a data="music.html?q=双管筚朗叨"  title="双管筚朗叨" target="_blank">双管筚朗叨</a></li>
+   <li id="dagu"><img  title="筚总"src="item/b853d6fc42bef7c3fc037f8b.jpg" /><a data="music.html?q=筚总"  title="筚总" target="_blank">筚总</a></li>
+   <li id="dagu"><img  title="决列"src="item/f15e2429772fc8ed98250a4a.jpg" /><a data="music.html?q=决列"  title="决列" target="_blank">决列</a></li>
+   <li id="dagu"><img  title="双管竹叶笛"src="item/0d729944d89f1973510ffe83.jpg" /><a data="music.html?q=双管竹叶笛"  title="双管竹叶笛" target="_blank">双管竹叶笛</a></li>
+   <li id="dagu"><img  title="双管马布"src="item/b8405490a189ea97a977a482.jpg" /><a data="music.html?q=双管马布"  title="双管马布" target="_blank">双管马布</a></li>
+   <li id="dagu"><img  title="菲察克"src="item/9864a23102ba1cbb5fdf0e4a.jpg" /><a data="music.html?q=菲察克"  title="菲察克" target="_blank">菲察克</a></li>
+   <li id="dagu"><img  title="筚达"src="item/5327ce16a88d830b972b4399.jpg" /><a data="music.html?q=筚达"  title="筚达" target="_blank">筚达</a></li>
+   <li id="dagu"><img  title="木叶"src="item/346bd85c095c607cfbf2c080.jpg" /><a data="music.html?q=木叶"  title="木叶" target="_blank">木叶</a></li>
+   <li id="dagu"><img  title="巴拉曼"src="item/4abae5ed5f79e87078f055fa.jpg" /><a data="music.html?q=巴拉曼"  title="巴拉曼" target="_blank">巴拉曼</a></li>
+   <li id="dagu"><img  title="波伯"src="item/ca5257548c0eda14564e00ca.jpg" /><a data="music.html?q=波伯"  title="波伯" target="_blank">波伯</a></li>
+   <li id="dagu"><img  title="细筚篥"src="item/ac0acf13c236aa115baf537e.jpg" /><a data="music.html?q=细筚篥"  title="细筚篥" target="_blank">细筚篥</a></li>
+   <li id="dagu"><img  title="小闷笛"src="item/b7fd5266d01609242ae9caaed40735fae7cd34b2.jpg" /><a data="music.html?q=小闷笛"  title="小闷笛" target="_blank">小闷笛</a></li>
+   <li id="dagu"><img  title="苏尔奈"src="item/d56b3634232e2b285ab5f56d.jpg" /><a data="music.html?q=苏尔奈"  title="苏尔奈" target="_blank">苏尔奈</a></li>
+   <li id="dagu"><img  title="长唢呐"src="item/c856613e9087780371cf6c6a.jpg" /><a data="music.html?q=长唢呐"  title="长唢呐" target="_blank">长唢呐</a></li>
+   <li id="dagu"><img  title="嘉令"src="item/5af4d7ea0e7b1ec0d439c96d.jpg" /><a data="music.html?q=嘉令"  title="嘉令" target="_blank">嘉令</a></li>
+   <li id="dagu"><img  title="波列"src="item/5af4d7ea749ed4eed539c9ab.jpg" /><a data="music.html?q=波列"  title="波列" target="_blank">波列</a></li>
+   <li id="dagu"><img  title="苗族唢呐"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=苗族唢呐"  title="苗族唢呐" target="_blank">苗族唢呐</a></li>
+   <li id="dagu"><img  title="白族唢呐"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=白族唢呐"  title="白族唢呐" target="_blank">白族唢呐</a></li>
+   <li id="dagu"><img  title="彝族唢呐"src="item/e49cf911ced36181a7ef3fa0.jpg" /><a data="music.html?q=彝族唢呐"  title="彝族唢呐" target="_blank">彝族唢呐</a></li>
+   <li id="dagu"><img  title="拜，黎族双簧气鸣乐器。黎语又称利拉罗。汉族称其为竹唢呐。流行于海南省乐东、东方、昌江等地。演奏时，其姿势和方法均与唢呐相似，就音质而言，拜的发音清亮、柔和，音色则悠扬而甜美。"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=拜"  title="拜，黎族双簧气鸣乐器。黎语又称利拉罗。汉族称其为竹唢呐。流行于海南省乐东、东方、昌江等地。演奏时，其姿势和方法均与唢呐相似，就音质而言，拜的发音清亮、柔和，音色则悠扬而甜美。" target="_blank">拜</a></li>
+   <li id="dagu"><img  title="加键拜"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=加键拜"  title="加键拜" target="_blank">加键拜</a></li>
+   <li id="dagu"><img  title="勒尤"src="item/83cab81edd15d50c4034177e.jpg" /><a data="music.html?q=勒尤"  title="勒尤" target="_blank">勒尤</a></li>
+   <li id="dagu"><img  title="双勒浪"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=双勒浪"  title="双勒浪" target="_blank">双勒浪</a></li>
+   <li id="dagu"><img  title="洞巴"src="item/109eb7ec6b68571962d09f9f.jpg" /><a data="music.html?q=洞巴"  title="洞巴" target="_blank">洞巴</a></li>
+   <li id="dagu"><img  title="阔诗乃依"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=阔诗乃依"  title="阔诗乃依" target="_blank">阔诗乃依</a></li>
+   <li id="dagu"><img  title="双筚篥"src="item/027a45b5d30c3ddd37d3ca5e.jpg" /><a data="music.html?q=双筚篥"  title="双筚篥" target="_blank">双筚篥</a></li>
+   <li id="dagu"><img  title="长积"src="item/a6aed01bf354f6c4af5133a5.jpg" /><a data="music.html?q=长积"  title="长积" target="_blank">长积</a></li>
+   <li id="dagu"><img  title="双管闷笛"src="item/3792cb39a8e612e03b87ce5e.jpg" /><a data="music.html?q=双管闷笛"  title="双管闷笛" target="_blank">双管闷笛</a></li>
+   <li id="dagu"><img  title="咪咪"src="item/5af4d7ea918389ecd539c9aa.jpg" /><a data="music.html?q=咪咪"  title="咪咪" target="_blank">咪咪</a></li>
+   <li id="dagu"><img  title="芦笙"src="item/d872d6954634920bd1135e9c.jpg" /><a data="music.html?q=芦笙"  title="芦笙" target="_blank">芦笙</a></li>
+   <li id="dagu"><img  title="葫芦笙"src="item/5202e5f2afada12db17ec55f.jpg" /><a data="music.html?q=葫芦笙"  title="葫芦笙" target="_blank">葫芦笙</a></li>
+   <li id="dagu"><img  title="排笙"src="item/f99dcf0041ef792f728b65aa.jpg" /><a data="music.html?q=排笙"  title="排笙" target="_blank">排笙</a></li>
+   <li id="dagu"><img  title="高音笙"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=高音笙"  title="高音笙" target="_blank">高音笙</a></li>
+   <li id="dagu"><img  title="中音笙"src="item/f392492ce10d8aff8b139943.jpg" /><a data="music.html?q=中音笙"  title="中音笙" target="_blank">中音笙</a></li>
+   <li id="dagu"><img  title="低音笙"src="item/718e25c7aec883c8d000602e.jpg" /><a data="music.html?q=低音笙"  title="低音笙" target="_blank">低音笙</a></li>
+ 
+   
+   
+	 
+	 
+
+<!--                                                                                                              
+        妶妶                                    妶                                妶                  妶妶  妶  妶  妶          
+    妶妶妶妶    妶                    妶  妶  妶妶  妶                  妶  妶妶妶                    妶妶妶妶  妶妶妶          
+        妶妶妶妶妶妶妶                妶妶妶  妶  妶妶                  妶妶  妶                      妶妶  妶  妶  妶          
+        妶妶    妶                    妶  妶  妶    妶                  妶    妶                      妶妶  妶  妶  妶          
+    妶妶妶妶  妶                      妶  妶  妶妶  妶                  妶    妶                      妶妶妶妶  妶妶妶          
+    妶        妶  妶妶                妶  妶  妶妶  妶                妶      妶                              妶  妶            
+    妶  妶  妶    妶妶                妶  妶  妶妶妶                  妶妶汸囸烑軆妶妶妶              妶妶汸囸烑軆妶妶妶        
+    妶妶妶  妶妶妶妶                  妶  妶  妶    妶                    妶  妶妶                        妶      妶            
+        妶        妶                  妶妶妶  妶妶妶妶                    妶  妶  妶                    妶  妶  妶  妶妶        
+        妶      妶妶                  妶  妶        妶                  妶妶  妶  妶                  妶  妶妶  妶妶妶          
+        妶    妶  妶                  妶  妶汸囸烑軆妶                  妶    妶    妶                妶    妶  妶  妶          
+        妶  妶    妶妶                              妶                  妶    妶    妶妶              妶    妶  妶  妶          
+        方正姚体妶  妶                              妶                妶      妶      妶              妶妶妶妶  妶妶妶          
+      妶                                        妶妶                        妶妶                      妶    妶  妶  妶          
+-->
+   <li id="dagu"><img  title="弦鸣乐器"src="/favicon.ico" /><a data="music.html?q=弦鸣乐器"  title="弦鸣乐器" target="_blank">弦鸣乐器</a></li>
+  <li id="dagu"><img  title="扬琴"src="item/f3d3572c11dfa9ec61c55da362d0f703908fc19f.jpg" /><a data="music.html?q=扬琴"  title="扬琴" target="_blank">扬琴</a></li>
+  <li id="dagu"><img  title="竹琴"src="item/310f3b1fea86f58ba78669b4.jpg" /><a data="music.html?q=竹琴"  title="竹琴" target="_blank">竹琴</a></li>
+  <li id="dagu"><img  title="锵"src="item/4610b912c8fcc3ce9dfc90709245d688d43f20b0.jpg" /><a data="music.html?q=锵"  title="锵" target="_blank">锵</a></li>
+ <li id="dagu"><img  title="古筝"src="item/5ab5c9ea15ce36d3cefd88843af33a87e850b18c.jpg" /><a data="music.html?q=古筝"  title="古筝" target="_blank">古筝</a></li>
+ 	 <li id="dagu"><img  title="柳琴"src="item/38403f3ffd2d5fff54e72313.jpg" /><a data="music.html?q=柳琴"  title="柳琴" target="_blank">柳琴</a></li>
+	 <li id="dagu"><img  title="中阮"src="item/ae826731bd869d0aeac4af4c.jpg" /><a data="music.html?q=中阮"  title="中阮" target="_blank">中阮</a></li>
+	 <li id="dagu"><img  title="古琴"src="item/d009b3de9c82d158a6625205800a19d8bd3e42a5.jpg" /><a data="music.html?q=古琴"  title="古琴" target="_blank">古琴</a></li>
+<li id="dagu"><img  title="蝶筝"src="item/蝶式筝.jpg" /><a data="music.html?q=蝶筝"  title="蝶筝" target="_blank">蝶筝</a></li>
+ 	 <li id="dagu"><img  title="玄琴"src="item/3792cb3987752faa3b87ce6b.jpg" /><a data="music.html?q=玄琴"  title="玄琴" target="_blank">玄琴</a></li>
+ <li id="dagu"><img  title="伽倻琴"src="item/d35a10f4811b8b7ddcc47446.jpg" /><a data="music.html?q=伽倻琴"  title="伽倻琴" target="_blank">伽倻琴</a></li>
+  <li id="dagu"><img  title="雅托噶"src="item/4075890a68b76c4694ca6bf7.jpg" /><a data="music.html?q=雅托噶"  title="雅托噶" target="_blank">雅托噶</a></li>
+  <li id="dagu"><img  title="五弦琴"src="item/d872d6954ebd9a75d0135e19.jpg" /><a data="music.html?q=五弦琴"  title="五弦琴" target="_blank">五弦琴</a></li>
+  <li id="dagu"><img  title="大阮"src="item/dbf554ed32f054ebb21cb160.jpg" /><a data="music.html?q=大阮"  title="大阮" target="_blank">大阮</a></li>
+  <li id="dagu"><img  title="小阮"src="item/dbf554ed32f054ebb21cb160.jpg" /><a data="music.html?q=小阮"  title="小阮" target="_blank">小阮</a></li>
+  <li id="dagu"><img  title="朝尔"src="item/c2bce203240bd4c8d43f7cab.jpg" /><a data="music.html?q=朝尔"  title="朝尔" target="_blank">朝尔</a></li>
+  <li id="dagu"><img  title="库布孜"src="item/d35a10f48dc4877dddc47401.jpg" /><a data="music.html?q=库布孜"  title="库布孜" target="_blank">库布孜</a></li>
+  <li id="dagu"><img  title="牛腿琴"src="item/0b3a1c083484b5ef62d98694.jpg" /><a data="music.html?q=牛腿琴"  title="牛腿琴" target="_blank">牛腿琴</a></li>
+  <li id="dagu"><img  title="呃吱"src="item/0e655ca7728be186d0435868.jpg" /><a data="music.html?q=呃吱"  title="呃吱" target="_blank">呃吱</a></li>
+  <li id="dagu"><img  title="独弦琴"src="item/bf487563f80d4f730c33fa19.jpg" /><a data="music.html?q=独弦琴"  title="独弦琴" target="_blank">独弦琴</a></li>
+  <li id="dagu"><img  title="五弦琵琶"src="item/8759287ad9ddbcd32e73b38d.jpg" /><a data="music.html?q=五弦琵琶"  title="五弦琵琶" target="_blank">五弦琵琶</a></li>
+  <li id="dagu"><img  title="纳西琵琶"src="item/6648d73d09750ad49e3d626a.jpg" /><a data="music.html?q=纳西琵琶"  title="纳西琵琶" target="_blank">纳西琵琶</a></li>
+  <li id="dagu"><img  title="火不思"src="item/d68b65cb2a2ffc5fbe09e68e.jpg" /><a data="music.html?q=火不思"  title="火不思" target="_blank">火不思</a></li>
+  <li id="dagu"><img  title="忽雷"src="item/3853ad1baedb2f268718bf6f.jpg" /><a data="music.html?q=忽雷"  title="忽雷" target="_blank">忽雷</a></li>
+  <li id="dagu"><img  title="考姆兹"src="item/fc5e5f34e11b1a5d251f1401.jpg" /><a data="music.html?q=考姆兹"  title="考姆兹" target="_blank">考姆兹</a></li>
+  <li id="dagu"><img  title="苏古笃"src="item/9f6e1908a4f4670fe8248829.jpg" /><a data="music.html?q=苏古笃"  title="苏古笃" target="_blank">苏古笃</a></li>
+  <li id="dagu"><img  title="扎木年"src="item/0ef21124e01de820c995596a.jpg" /><a data="music.html?q=扎木年"  title="扎木年" target="_blank">扎木年</a></li>
+ 	 <li id="dagu"><img  title="弹布尔"src="item/8c511fe90f8b107fb90e2d6f.jpg" /><a data="music.html?q=弹布尔"  title="弹布尔" target="_blank">弹布尔</a></li>
+ <li id="dagu"><img  title="赛依吐尔"src="item/d4239b35ae70cf0291ef3965.jpg" /><a data="music.html?q=赛依吐尔"  title="赛依吐尔" target="_blank">赛依吐尔</a></li>
+  <li id="dagu"><img  title="碧约牛腿琴"src="item/90cebeec3d00b7002797911d.jpg" /><a data="music.html?q=碧约牛腿琴"  title="碧约牛腿琴" target="_blank">碧约牛腿琴</a></li>
+  <li id="dagu"><img  title="独它尔"src="item/2e6fa738dcfd67d1d4622565.jpg" /><a data="music.html?q=独它尔"  title="独它尔" target="_blank">独它尔</a></li>
+  <li id="dagu"><img  title="喀什热瓦普"src="item/3bf33a87e950352ac4164dbd5343fbf2b2118b0b.jpg" /><a data="music.html?q=喀什热瓦普"  title="喀什热瓦普" target="_blank">喀什热瓦普</a></li>
+  <li id="dagu"><img  title="多朗热瓦普"src="item/4e0b3ea40811d1c99052eed6.jpg" /><a data="music.html?q=多朗热瓦普"  title="多朗热瓦普" target="_blank">多朗热瓦普</a></li>
+  <li id="dagu"><img  title="巴朗孜库木"src="item/8474fbddacabb9fc77c6386a.jpg" /><a data="music.html?q=巴朗孜库木"  title="巴朗孜库木" target="_blank">巴朗孜库木</a></li>
+  <li id="dagu"><img  title="库木日依"src="item/6a21123302835bc71b4cff2c.jpg" /><a data="music.html?q=库木日依"  title="库木日依" target="_blank">库木日依</a></li>
+  <li id="dagu"><img  title="阿肯冬不拉"src="item/阿肯冬不拉.jpg" /><a data="music.html?q=阿肯冬不拉"  title="阿肯冬不拉" target="_blank">阿肯冬不拉</a></li>
+  <li id="dagu"><img  title="乐队冬不拉"src="item/乐队冬不拉.jpg" /><a data="music.html?q=乐队冬不拉"  title="乐队冬不拉" target="_blank">乐队冬不拉</a></li>
+	 <li id="dagu"><img  title="月琴"src="item/f392492c539c78d28a1399a7.jpg" /><a data="music.html?q=月琴"  title="月琴" target="_blank">月琴</a></li>
+  <li id="dagu"><img  title="彝族四弦"src="item/fab3ac11c59a4a40cb80c46d.jpg" /><a data="music.html?q=彝族四弦"  title="彝族四弦" target="_blank">彝族四弦</a></li>
+  <li id="dagu"><img  title="苗族四弦"src="item/d041a4a14ac95b9846106448.jpg" /><a data="music.html?q=苗族四弦"  title="苗族四弦" target="_blank">苗族四弦</a></li>
+  <li id="dagu"><img  title="侗族大琵琶"src="item/a8ad94138f3748c3f7039e01.jpg" /><a data="music.html?q=侗族大琵琶"  title="侗族大琵琶" target="_blank">侗族大琵琶</a></li>
+  <li id="dagu"><img  title="侗族中琵琶"src="item/a836271278f0994bf919b823.jpg" /><a data="music.html?q=侗族中琵琶"  title="侗族中琵琶" target="_blank">侗族中琵琶</a></li>
+  <li id="dagu"><img  title="侗族小琵琶"src="item/0d729944ba3aff72500ffe26.jpg" /><a data="music.html?q=侗族小琵琶"  title="侗族小琵琶" target="_blank">侗族小琵琶</a></li>
+  <li id="dagu"><img  title="其布厄"src="item/4d497006bc7a604403088114.jpg" /><a data="music.html?q=其布厄"  title="其布厄" target="_blank">其布厄</a></li>
+  <li id="dagu"><img  title="大三弦"src="item/cf5a83163ed7186ff3de32c9.jpg" /><a data="music.html?q=大三弦"  title="大三弦" target="_blank">大三弦</a></li>
+  <li id="dagu"><img  title="龙头三弦"src="item/906289dd86c09d0b5882dd60.jpg" /><a data="music.html?q=龙头三弦"  title="龙头三弦" target="_blank">龙头三弦</a></li>
+  <li id="dagu"><img  title="彝族小三弦"src="item/911386228a2a3ee0d7cae21d.jpg" /><a data="music.html?q=彝族小三弦"  title="彝族小三弦" target="_blank">彝族小三弦</a></li>
+  <li id="dagu"><img  title="拉祜族小三弦"src="item/0865b5180e0fe61435fa411c.jpg" /><a data="music.html?q=拉祜族小三弦"  title="拉祜族小三弦" target="_blank">拉祜族小三弦</a></li>
+  <li id="dagu"><img  title="傈僳三弦"src="item/d478a800affd88b9e950cdea.jpg" /><a data="music.html?q=傈僳三弦"  title="傈僳三弦" target="_blank">傈僳三弦</a></li>
+  <li id="dagu"><img  title="赛玎"src="item/a75fb6d388c76827960a1648.jpg" /><a data="music.html?q=赛玎"  title="赛玎" target="_blank">赛玎</a></li>
+  <li id="dagu"><img  title="壮族三弦"src="item/壮族三弦.jpg" /><a data="music.html?q=壮族三弦"  title="壮族三弦" target="_blank">壮族三弦</a></li>
+  <li id="dagu"><img  title="垤施三弦"src="item/4e83cb62208928e3e6113a58.jpg" /><a data="music.html?q=垤施三弦"  title="垤施三弦" target="_blank">垤施三弦</a></li>
+  <li id="dagu"><img  title="彝族大三弦"src="item/b74124f32ca2db43352acc1d.jpg" /><a data="music.html?q=彝族大三弦"  title="彝族大三弦" target="_blank">彝族大三弦</a></li>
+  <li id="dagu"><img  title="彝族中三弦"src="item/b840549053533897a977a4c8.jpg" /><a data="music.html?q=彝族中三弦"  title="彝族中三弦" target="_blank">彝族中三弦</a></li>
+  <li id="dagu"><img  title="苗族三弦"src="item/f677b1c3f67f5f6bb319a8aa.jpg" /><a data="music.html?q=苗族三弦"  title="苗族三弦" target="_blank">苗族三弦</a></li>
+  <li id="dagu"><img  title="天琴"src="item/b3508d13f6c6c1be6438db53.jpg" /><a data="music.html?q=天琴"  title="天琴" target="_blank">天琴</a></li>
+ 	 <li id="dagu"><img  title="箜篌"src="item/09bb4f3d84eb22b73c6d9773.jpg" /><a data="music.html?q=箜篌"  title="箜篌" target="_blank">箜篌</a></li>
+ <li id="dagu"><img  title="竖箜篌"src="item/09bb4f3d84eb22b73c6d9773.jpg" /><a data="music.html?q=竖箜篌"  title="竖箜篌" target="_blank">竖箜篌</a></li>
+  <li id="dagu"><img  title="凤首箜篌"src="item/b0742dfa757f0221a9d31111.jpg" /><a data="music.html?q=凤首箜篌"  title="凤首箜篌" target="_blank">凤首箜篌</a></li>
+  <li id="dagu"><img  title="双排弦箜篌"src="item/30adcbef76094b36b4947358a3cc7cd98d109d04.jpg" /><a data="music.html?q=双排弦箜篌"  title="双排弦箜篌" target="_blank">双排弦箜篌</a></li>
+  <li id="dagu"><img  title="雁柱箜篌"src="item/a583631e11b1f5cb1ad5764f.jpg" /><a data="music.html?q=雁柱箜篌"  title="雁柱箜篌" target="_blank">雁柱箜篌</a></li>
+  <li id="dagu"><img  title="转调箜篌"src="item/0862c354d9916d67d0090604.jpg" /><a data="music.html?q=转调箜篌"  title="转调箜篌" target="_blank">转调箜篌</a></li>
+  <li id="dagu"><img  title="卡龙"src="item/c8ab0bce16faf12ab600c819.jpg" /><a data="music.html?q=卡龙"  title="卡龙" target="_blank">卡龙</a></li>
+  <li id="dagu"><img  title="弓琴"src="item/95afee1f638405e6e1fe0b65.jpg" /><a data="music.html?q=弓琴"  title="弓琴" target="_blank">弓琴</a></li>
+  <li id="dagu"><img  title="达比亚"src="item/8367d1fcf54b8bbcb901a0b8.jpg" /><a data="music.html?q=达比亚"  title="达比亚" target="_blank">达比亚</a></li>
+  <li id="dagu"><img  title="傣玎"src="item/b7bc4c664fce2037aa184c48.jpg" /><a data="music.html?q=傣玎"  title="傣玎" target="_blank">傣玎</a></li>
+  <li id="dagu"><img  title="托甫秀尔"src="item/b0742dfa51d86e04a8d311cb.jpg" /><a data="music.html?q=托甫秀尔"  title="托甫秀尔" target="_blank">托甫秀尔</a></li>
+  <li id="dagu"><img  title="东布尔"src="item/东布尔.jpg" /><a data="music.html?q=东布尔"  title="东布尔" target="_blank">东布尔</a></li>
+  <li id="dagu"><img  title="菲特克呐"src="item/8435e5dde71190ef5bcdfa6ace1b9d16fdfa6054.jpg" /><a data="music.html?q=菲特克呐"  title="菲特克呐" target="_blank">菲特克呐</a></li>
+  <li id="dagu"><img  title="三线琴"src="item/4a77b2af1ef891df7cd92a1d.jpg" /><a data="music.html?q=三线琴"  title="三线琴" target="_blank">三线琴</a></li>
+	 <li id="dagu"><img  title="二胡"src="item/024f78f0f736afc3c02b35d1b319ebc4b745125a.jpg" /><a data="music.html?q=二胡"  title="二胡" target="_blank">二胡</a></li>
+  <li id="dagu"><img  title="曲胡"src="item/0b14ad19ba06210d42a9ad28.jpg" /><a data="music.html?q=曲胡"  title="曲胡" target="_blank">曲胡</a></li>
+  <li id="dagu"><img  title="中胡"src="item/a836271262c49342f919b850.jpg" /><a data="music.html?q=中胡"  title="中胡" target="_blank">中胡</a></li>
+  <li id="dagu"><img  title="老胡"src="item/老胡.jpg" /><a data="music.html?q=老胡"  title="老胡" target="_blank">老胡</a></li>
+ 	 <li id="dagu"><img  title="高胡"src="item/86d5bac2e7fcf1080ff47752.jpg" /><a data="music.html?q=高胡"  title="高胡" target="_blank">高胡</a></li>
+ 	 <li id="dagu"><img  title="京胡"src="item/7d989310719ccf3f213f2e91.jpg" /><a data="music.html?q=京胡"  title="京胡" target="_blank">京胡</a></li>
+ 	 <li id="dagu"><img  title="马头琴"src="item/f15e2429e14756c098250a56.jpg" /><a data="music.html?q=马头琴"  title="马头琴" target="_blank">马头琴</a></li>
+	 <li id="dagu"><img  title="板胡"src="item/3bb22487cfb31639c75cc353.jpg" /><a data="music.html?q=板胡"  title="板胡" target="_blank">板胡</a></li>
+	 <li id="dagu"><img  title="四胡"src="item/f7426d8d675f1d01b31bba19.jpg" /><a data="music.html?q=四胡"  title="四胡" target="_blank">四胡</a></li>
+<li id="dagu"><img  title="琤尼"src="item/c2bce203029cfe9bd53f7c49.jpg" /><a data="music.html?q=琤尼"  title="琤尼" target="_blank">琤尼</a></li>
+	 <li id="dagu"><img  title="牙筝"src="item/b110e61926e86145dbb4bd15.jpg" /><a data="music.html?q=牙筝"  title="牙筝" target="_blank">牙筝</a></li>
+  <li id="dagu"><img  title="塔吉克艾捷克"src="item/d5462bfa42dc519a9e514601.jpg" /><a data="music.html?q=塔吉克艾捷克"  title="塔吉克艾捷克" target="_blank">塔吉克艾捷克</a></li>
+	 <li id="dagu"><img  title="竖琴（英：Harp，意：Arpa，德：Harfe，波斯：چنگ），是一种大型拨弦乐器。竖琴是世界上最古老的拨弦乐器之一，起源于古波斯（伊朗），据埃及古图记载，此种乐器出现于公元前三、四千年。当时的形状犹如一个有弦之弓。"src="item/竖琴.jpg" /><a data="music.html?q=竖琴"  title="竖琴（英：Harp，意：Arpa，德：Harfe，波斯：چنگ），是一种大型拨弦乐器。竖琴是世界上最古老的拨弦乐器之一，起源于古波斯（伊朗），据埃及古图记载，此种乐器出现于公元前三、四千年。当时的形状犹如一个有弦之弓。" target="_blank">竖琴</a></li>
+	 <li id="dagu"><img  title="秦琴"src="item/秦琴.jpg" /><a data="music.html?q=秦琴"  title="秦琴" target="_blank">秦琴</a></li>
+	 <li id="dagu"><img  title="胡琴"src="item/6f47039577558d457bf480d9.jpg" /><a data="music.html?q=胡琴"  title="胡琴" target="_blank">胡琴</a></li>
+  <li id="dagu"><img  title="萨它尔"src="item/3792cb39f56f39b33a87ce94.jpg" /><a data="music.html?q=萨它尔"  title="萨它尔" target="_blank">萨它尔</a></li>
+  <li id="dagu"><img  title="胡西它尔"src="item/4a77b2af17048adf7dd92a49.jpg" /><a data="music.html?q=胡西它尔"  title="胡西它尔" target="_blank">胡西它尔</a></li>
+  <li id="dagu"><img  title="椰胡"src="item/570f8c58bd2197cd9c820418.jpg" /><a data="music.html?q=椰胡"  title="椰胡" target="_blank">椰胡</a></li>
+  <li id="dagu"><img  title="葫芦胡"src="item/8a95ad1c5d26859887d6b618.jpg" /><a data="music.html?q=葫芦胡"  title="葫芦胡" target="_blank">葫芦胡</a></li>
+  <li id="dagu"><img  title="土胡"src="item/35da1d3b440febf014cecb71.jpg" /><a data="music.html?q=土胡"  title="土胡" target="_blank">土胡</a></li>
+  <li id="dagu"><img  title="根卡"src="item/d5462bfa4cea5f9a9e51461f.jpg" /><a data="music.html?q=根卡"  title="根卡" target="_blank">根卡</a></li>
+  <li id="dagu"><img  title="多朗艾捷克"src="item/a005b3346ca096a4d0a2d312.jpg" /><a data="music.html?q=多朗艾捷克"  title="多朗艾捷克" target="_blank">多朗艾捷克</a></li>
+  <li id="dagu"><img  title="艾捷克"src="item/c856613ee3dfed2e71cf6c4e.jpg" /><a data="music.html?q=艾捷克"  title="艾捷克" target="_blank">艾捷克</a></li>
+  <li id="dagu"><img  title="高音艾捷克"src="item/c28fddfd605f891cd6887d92.jpg" /><a data="music.html?q=高音艾捷克"  title="高音艾捷克" target="_blank">高音艾捷克</a></li>
+  <li id="dagu"><img  title="低音艾捷克"src="item/8b82b9014a90f603da53f5f23912b31bb151eda0.jpg" /><a data="music.html?q=低音艾捷克"  title="低音艾捷克" target="_blank">低音艾捷克</a></li>
+  <li id="dagu"><img  title="独弦胡琴"src="item/0b907cd9157b7d3f11df9b99.jpg" /><a data="music.html?q=独弦胡琴"  title="独弦胡琴" target="_blank">独弦胡琴</a></li>
+  <li id="dagu"><img  title="适争"src="item/aa251d4fc84bc625aec3ab74.jpg" /><a data="music.html?q=适争"  title="适争" target="_blank">适争</a></li>
+  <li id="dagu"><img  title="玎黑"src="item/0ef21124e01ce820c995596b.jpg" /><a data="music.html?q=玎黑"  title="玎黑" target="_blank">玎黑</a></li>
+ 	 <li id="dagu"><img  title="三味线是日本传统弦乐器，与源自中国的三弦相近。由细长的琴杆和方形的音箱两部分组成。三味线一般用丝做弦，也有用尼龙材料做成，在演奏时，演奏者需要用象牙、玳瑁等材料制成的拨子，拨弄琴弦，其声色清幽而纯净，质朴而悠扬。义太夫三味线是三味线中体积最大的一种。"src="item/三味线.jpg" /><a data="music.html?q=三味线"  title="三味线是日本传统弦乐器，与源自中国的三弦相近。由细长的琴杆和方形的音箱两部分组成。三味线一般用丝做弦，也有用尼龙材料做成，在演奏时，演奏者需要用象牙、玳瑁等材料制成的拨子，拨弄琴弦，其声色清幽而纯净，质朴而悠扬。义太夫三味线是三味线中体积最大的一种。" target="_blank">三味线</a></li>
+	 <li id="dagu"><img  title="扎木年，是藏族弹弦乐器，俗称“藏族六弦琴”，藏语意为声音悦耳的琴，深受藏族人民喜爱，是歌舞常用的伴奏乐器。现代一般将“吉他”称为“六弦琴”。"src="item/六弦琴.jpg" /><a data="music.html?q=六弦琴"  title="扎木年，是藏族弹弦乐器，俗称“藏族六弦琴”，藏语意为声音悦耳的琴，深受藏族人民喜爱，是歌舞常用的伴奏乐器。现代一般将“吉他”称为“六弦琴”。" target="_blank">六弦琴</a></li>
+	 <li id="dagu"><img  title="奚琴"src="item/cf5a8316abd28b42f3de3218.jpg" /><a data="music.html?q=奚琴"  title="奚琴" target="_blank">奚琴</a></li>
+	 <li id="dagu"><img  title="伏羲琴是伏羲神以玉石加天蚕丝所制出的乐器，形似古琴，呈淡粉色，泛著柔和的白色光芒，其琴音能使人心感到宁静祥和，甚至能够净化已被魔界气息沾染的心灵，是十大上古神器之一，据说拥有能支配万物心灵之神秘力量。战胜蚩尤后，上古神器落入人间，其中伏羲琴被敦煌千佛所保管。"src="item/伏羲琴.jpg" /><a data="music.html?q=伏羲琴"  title="伏羲琴是伏羲神以玉石加天蚕丝所制出的乐器，形似古琴，呈淡粉色，泛著柔和的白色光芒，其琴音能使人心感到宁静祥和，甚至能够净化已被魔界气息沾染的心灵，是十大上古神器之一，据说拥有能支配万物心灵之神秘力量。战胜蚩尤后，上古神器落入人间，其中伏羲琴被敦煌千佛所保管。" target="_blank">伏羲琴</a></li>
+	 <li id="dagu"><img  title="西塔琴（印地语：सितार；孟加拉语：সেতার；乌尔都语：ستار；波斯语：سی تار）又称西塔尔琴、锡塔尔琴、锡塔琴，是印度一种长颈琉特，印度古典音乐乐器，1950年代起也开始作为流行音乐中乐器使用。西塔琴是印度最具代表性的印度古典乐器。"src="item/西塔琴.jpg" /><a data="music.html?q=西塔琴"  title="西塔琴（印地语：सितार；孟加拉语：সেতার；乌尔都语：ستار；波斯语：سی تار）又称西塔尔琴、锡塔尔琴、锡塔琴，是印度一种长颈琉特，印度古典音乐乐器，1950年代起也开始作为流行音乐中乐器使用。西塔琴是印度最具代表性的印度古典乐器。" target="_blank">西塔琴</a></li>
+ <li id="dagu"><img  title="四弦奚琴"src="item/eab9044ca810e6ddd72afce1.jpg" /><a data="music.html?q=四弦奚琴"  title="四弦奚琴" target="_blank">四弦奚琴</a></li>
+  <li id="dagu"><img  title="必汪"src="item/b13fd480331bf1e89123d9c0.jpg" /><a data="music.html?q=必汪"  title="必汪" target="_blank">必汪</a></li>
+  <li id="dagu"><img  title="铁琴"src="item/263e802fdca0002b1f308999.jpg" /><a data="music.html?q=铁琴"  title="铁琴" target="_blank">铁琴</a></li>
+  <li id="dagu"><img  title="藏京胡"src="item/29752a9b1be173a6c8eaf44a.jpg" /><a data="music.html?q=藏京胡"  title="藏京胡" target="_blank">藏京胡</a></li>
+  <li id="dagu"><img  title="马骨胡"src="item/d15717240d30b338d4074218.jpg" /><a data="music.html?q=马骨胡"  title="马骨胡" target="_blank">马骨胡</a></li>
+  <li id="dagu"><img  title="竹筒胡"src="item/54baacfbb2ac5c314e4aea6b.jpg" /><a data="music.html?q=竹筒胡"  title="竹筒胡" target="_blank">竹筒胡</a></li>
+  <li id="dagu"><img  title="纳西胡琴"src="item/dc854fda351729e4b7fd4838.jpg" /><a data="music.html?q=纳西胡琴"  title="纳西胡琴" target="_blank">纳西胡琴</a></li>
+  <li id="dagu"><img  title="朗多依"src="item/a54e55fb947ac424024f567c.jpg" /><a data="music.html?q=朗多依"  title="朗多依" target="_blank">朗多依</a></li>
+  <li id="dagu"><img  title="西玎"src="item/55a628d11395882b9a50276b.jpg" /><a data="music.html?q=西玎"  title="西玎" target="_blank">西玎</a></li>
+  <li id="dagu"><img  title="多洛"src="item/0db52fadfe365f1a4a36d649.jpg" /><a data="music.html?q=多洛"  title="多洛" target="_blank">多洛</a></li>
+  <li id="dagu"><img  title="扎尼"src="item/5af4d7ea28ad30c9d539c9da.jpg" /><a data="music.html?q=扎尼"  title="扎尼" target="_blank">扎尼</a></li>
+  <li id="dagu"><img  title="彝族三胡"src="item/b3f6cea2382e19becaefd04a.jpg" /><a data="music.html?q=彝族三胡"  title="彝族三胡" target="_blank">彝族三胡</a></li>
+  <li id="dagu"><img  title="蒙古族四胡"src="item/948bcfc8e617ad4e7e3e6f4f.jpg" /><a data="music.html?q=蒙古族四胡"  title="蒙古族四胡" target="_blank">蒙古族四胡</a></li>
+  <li id="dagu"><img  title="四弦胡"src="item/8605f5f81cf7601cd8f9fd6b.jpg" /><a data="music.html?q=四弦胡"  title="四弦胡" target="_blank">四弦胡</a></li>
+  <li id="dagu"><img  title="彝族四胡，彝族弓拉弦鸣乐器。较汉族、蒙古族四胡体积小，音色脆亮。流行于云南省楚雄彝族自治州楚雄、永仁等地。"src="item/彝族四胡.jpg" /><a data="music.html?q=彝族四胡"  title="彝族四胡，彝族弓拉弦鸣乐器。较汉族、蒙古族四胡体积小，音色脆亮。流行于云南省楚雄彝族自治州楚雄、永仁等地。" target="_blank">彝族四胡</a></li>
+  <li id="dagu"><img  title="布依四胡，是布依族、苗族弓拉弦鸣乐器。苗族又称四弦胡。流行于贵州省黔南、黔西 南布依族苗族自治州各地。"src="item/布依四胡.jpg" /><a data="music.html?q=布依四胡"  title="布依四胡，是布依族、苗族弓拉弦鸣乐器。苗族又称四弦胡。流行于贵州省黔南、黔西 南布依族苗族自治州各地。" target="_blank">布依四胡</a></li>
+  <li id="dagu"><img  title="克亚克"src="item/a54e55fb4e558277024f5668.jpg" /><a data="music.html?q=克亚克"  title="克亚克" target="_blank">克亚克</a></li>
+
+
+<!--
+                      囧                        囧                                  囧              囧囧囧囧囧  囧囧囧囧囧      
+  囧囧囧囧囧囧囧囧囧囧囧囧      囧囧囧囧囧        囧                            囧囧囧囧            囧      囧  囧      囧      
+                      囧                囧                囧          囧囧囧囧囧                    囧      囧  囧      囧      
+                      囧                囧囧囧囧囧囧囧囧囧囧囧        囧                            囧      囧  囧      囧      
+                      囧                囧        囧                  囧      囧                    囧囧囧囧囧  囧囧囧囧囧      
+    囧囧囧囧囧囧囧囧囧囧          囧囧囧囧        囧                囧        囧                              囧    囧          
+    囧                囧          囧            囧                  囧        囧          囧                  囧      囧        
+    囧                            囧          囧        囧        囧囧囧囧囧囧囧囧囧囧囧囧囧囧  囧囧囧囧囧囧囧囧囧囧囧囧囧囧囧  
+  囧                    囧        囧          囧囧囧囧囧                      囧                            囧  囧              
+  囧囧囧囧囧囧囧囧囧囧囧囧囧      囧囧囧囧          囧                        囧                        囧囧      囧囧          
+                        囧              囧        囧                    囧    囧    囧              囧囧              囧囧      
+                        囧              囧      囧                      囧    囧      囧        囧囧囧囧囧囧囧  囧囧囧囧囧囧囧  
+                        囧              囧    囧        囧            囧      囧        囧          囧      囧  囧      囧      
+                囧    囧                囧  囧囧囧囧囧囧囧囧        囧        囧        囧囧        囧      囧  囧      囧      
+                  囧  囧          囧  囧                  囧      囧      囧  囧          囧        囧      囧  囧      囧      
+                    囧              囧                                      囧                      囧囧囧囧囧  囧囧囧囧囧      
+
+-->
+	 <li id="dagu"><img  title="弓弦乐器"src="/favicon.ico" /><a data="music.html?q=弓弦乐器"  title="弓弦乐器" target="_blank">弓弦乐器</a></li>
+	 <li id="dagu"><img  title="竖笛是欧洲一种历史悠久的木管乐器，从中世纪起开始使用，它起源于15世纪的意大利，十六至十八世纪盛行于欧洲各国。竖笛音色优美圆润，是欧洲重要的管乐器，也是巴洛克时代的标准独奏乐器。竖笛在世界发达国家中，无论是在专业音乐表演还是在普通音乐教育中，都在发挥着巨大的作用。"src="item/竖笛.jpg" /><a data="music.html?q=竖笛"  title="竖笛是欧洲一种历史悠久的木管乐器，从中世纪起开始使用，它起源于15世纪的意大利，十六至十八世纪盛行于欧洲各国。竖笛音色优美圆润，是欧洲重要的管乐器，也是巴洛克时代的标准独奏乐器。竖笛在世界发达国家中，无论是在专业音乐表演还是在普通音乐教育中，都在发挥着巨大的作用。" target="_blank">竖笛</a></li>
+	 <li id="dagu"><img  title="陶笛"src="item/陶笛.jpg" /><a data="music.html?q=陶笛"  title="陶笛" target="_blank">陶笛</a></li>
+	 <li id="dagu"><img  title="洞箫"src="item/洞箫.jpg" /><a data="music.html?q=洞箫"  title="洞箫" target="_blank">洞箫</a></li>
+	 <li id="dagu"><img  title="古典乐器"src="item/古典乐器.jpg" /><a data="music.html?q=古典乐器"  title="古典乐器" target="_blank">古典乐器</a></li>
+	 <li id="dagu"><img  title="笛子"src="item/笛子.jpg" /><a data="music.html?q=笛子"  title="笛子" target="_blank">笛子</a></li>
+	 <li id="dagu"><img  title="陶埙在古代主要为诱捕猎物所用，是中国最古老的闭口吹奏乐器。陶埙在八音中是属土音，最早文献记载始于《诗经》“如埙如篪”，还有“伯氏吹埙”，“仲氏吹篪”的诗句。在周代奴隶制社会已相当流行，秦汉以后用于历代宫廷雅乐。"src="item/陶埙.jpg" /><a data="music.html?q=陶埙"  title="陶埙在古代主要为诱捕猎物所用，是中国最古老的闭口吹奏乐器。陶埙在八音中是属土音，最早文献记载始于《诗经》“如埙如篪”，还有“伯氏吹埙”，“仲氏吹篪”的诗句。在周代奴隶制社会已相当流行，秦汉以后用于历代宫廷雅乐。" target="_blank">陶埙</a></li>
+	 <li id="dagu"><img  title="梆笛"src="item/梆笛.jpg" /><a data="music.html?q=梆笛"  title="梆笛" target="_blank">梆笛</a></li>
+	 <li id="dagu"><img  title="卡祖笛（KAZOO）是一个极为特殊的管乐器，它通过人声哼唱发出的声音，依靠自身的膜片和共鸣管的声音放大，发出嘶哑的音色，类似萨克斯管。"src="item/卡祖笛.jpg" /><a data="music.html?q=卡祖笛"  title="卡祖笛（KAZOO）是一个极为特殊的管乐器，它通过人声哼唱发出的声音，依靠自身的膜片和共鸣管的声音放大，发出嘶哑的音色，类似萨克斯管。" target="_blank">卡祖笛</a></li>
+	 <li id="dagu"><img  title="冬不拉又名东不拉、东布拉，是北亚和中亚地区的哈萨克族的传统弹拨乐器，在哈萨克斯坦、蒙古、俄罗斯西伯利亚地区以及中国新疆、中国东北大兴安岭地区的哈萨克族、鄂伦春族中尤其流行。"src="item/冬不拉.jpg" /><a data="music.html?q=冬不拉"  title="冬不拉又名东不拉、东布拉，是北亚和中亚地区的哈萨克族的传统弹拨乐器，在哈萨克斯坦、蒙古、俄罗斯西伯利亚地区以及中国新疆、中国东北大兴安岭地区的哈萨克族、鄂伦春族中尤其流行。" target="_blank">冬不拉</a></li>
+	 <li id="dagu"><img  title="口琴，(英文Harmonica），用嘴吹或吸气，使金属簧片振动发声的多簧片乐器；在乐器分类上属于自由簧的吹奏乐器。其发声源是长度介于1.5～3.5cm的簧片而非空气柱（如长笛）。"src="item/口琴.jpg" /><a data="music.html?q=口琴"  title="口琴，(英文Harmonica），用嘴吹或吸气，使金属簧片振动发声的多簧片乐器；在乐器分类上属于自由簧的吹奏乐器。其发声源是长度介于1.5～3.5cm的簧片而非空气柱（如长笛）。" target="_blank">口琴</a></li>
+	 <li id="dagu"><img  title="长笛是现代管弦乐和室乐中主要的高音旋律乐器，外型是一根开有数个音孔的圆柱型长管。早期的长笛是乌木或者椰木制，现代多使用金属的材质，比如比较低级的黄铜、白铜，普通的镍银合金到专业型的银合金，9K、14K、18K、20K、24K金和铂金长笛等。"src="item/长笛.jpg" /><a data="music.html?q=长笛"  title="长笛是现代管弦乐和室乐中主要的高音旋律乐器，外型是一根开有数个音孔的圆柱型长管。早期的长笛是乌木或者椰木制，现代多使用金属的材质，比如比较低级的黄铜、白铜，普通的镍银合金到专业型的银合金，9K、14K、18K、20K、24K金和铂金长笛等。" target="_blank">长笛</a></li>
+	 <li id="dagu"><img  title="竹笛，汉族乐器名。笛子是中国广为流传的吹奏乐器，因为是用天然竹材制成，所以也称为“竹笛”。竹笛流传地域广大，品种繁多。使用最普遍的有曲笛、梆笛和定调笛。还有玉屏笛、七孔笛、短笛和顺笛等。"src="item/竹笛.jpg" /><a data="music.html?q=竹笛"  title="竹笛，汉族乐器名。笛子是中国广为流传的吹奏乐器，因为是用天然竹材制成，所以也称为“竹笛”。竹笛流传地域广大，品种繁多。使用最普遍的有曲笛、梆笛和定调笛。还有玉屏笛、七孔笛、短笛和顺笛等。" target="_blank">竹笛</a></li>
+	 <li id="dagu"><img  title="轧筝,是中国弓弦乐器的先驱筑的后代,属筑族乐器。自唐代出现其专称之后,广泛应用于宫廷、民间。’由于流传地域的不同,其形制和演奏形态以及称谓都有变化。就形制说来,可分为比较长大和比较短小的两种,弦数在7弦至13弦之问;演奏形态则有坐奏和行奏(立奏)两种。"src="item/轧筝.jpg" /><a data="music.html?q=轧筝"  title="轧筝,是中国弓弦乐器的先驱筑的后代,属筑族乐器。自唐代出现其专称之后,广泛应用于宫廷、民间。’由于流传地域的不同,其形制和演奏形态以及称谓都有变化。就形制说来,可分为比较长大和比较短小的两种,弦数在7弦至13弦之问;演奏形态则有坐奏和行奏(立奏)两种。" target="_blank">轧筝</a></li>
+	 <li id="dagu"><img  title="轧琴，又名轧筝琴，是中国最早出现的传统拉弦乐器，大约在唐代出现，后流行于民间，近代少有应用。流行于河北省邯郸市为中心，以冀南、豫北、晋东南等地区流行的武安平调剧种中，轧琴是武安平调的特色伴奏乐器，曾为该剧种发挥着独具特色的韵律。"src="item/轧琴.jpg" /><a data="music.html?q=轧琴"  title="轧琴，又名轧筝琴，是中国最早出现的传统拉弦乐器，大约在唐代出现，后流行于民间，近代少有应用。流行于河北省邯郸市为中心，以冀南、豫北、晋东南等地区流行的武安平调剧种中，轧琴是武安平调的特色伴奏乐器，曾为该剧种发挥着独具特色的韵律。" target="_blank">轧琴</a></li>
+	 <li id="dagu"><img  title="胡笳（Hú Jiā）是蒙古族边棱气鸣乐器，民间又称潮尔、冒顿潮尔。该乐器流行于内蒙古自治区、新疆维吾尔自治区伊犁哈萨克自治州阿勒泰地区。"src="item/胡笳.jpg" /><a data="music.html?q=胡笳"  title="胡笳（Hú Jiā）是蒙古族边棱气鸣乐器，民间又称潮尔、冒顿潮尔。该乐器流行于内蒙古自治区、新疆维吾尔自治区伊犁哈萨克自治州阿勒泰地区。" target="_blank">胡笳</a></li>
+	 <li id="dagu"><img  title="班卓琴(Banjo)上部的形状像吉他，下部的形状像铃鼓，有四根弦或者五根弦，用手指或拨子弹奏。历史相传，班卓琴起源于西非，在17 世纪奴隶买卖盛行的时代，黑奴把它引进新大陆。后来，班卓琴从南方的种植园渐渐传至美国北方各州，在拓殖者中流行起来。"src="item/班卓琴.jpg" /><a data="music.html?q=班卓琴"  title="班卓琴(Banjo)上部的形状像吉他，下部的形状像铃鼓，有四根弦或者五根弦，用手指或拨子弹奏。历史相传，班卓琴起源于西非，在17 世纪奴隶买卖盛行的时代，黑奴把它引进新大陆。后来，班卓琴从南方的种植园渐渐传至美国北方各州，在拓殖者中流行起来。" target="_blank">班卓琴</a></li>
+	 <li id="dagu"><img  title="次中音号（细管上低音号）按键类型可分为立键和扁键两种。与其外形类似的还有上低音号、中音号，音域略有不同。都是属于大号家族。"src="item/次中音号.jpg" /><a data="music.html?q=次中音号"  title="次中音号（细管上低音号）按键类型可分为立键和扁键两种。与其外形类似的还有上低音号、中音号，音域略有不同。都是属于大号家族。" target="_blank">次中音号</a></li>
+	 <li id="dagu"><img  title="悠风号是一种低音铜管乐器，又叫粗管上低音号，音译又叫悠风宁号。悠风号区别于巴里东号【（Baritone）细管上低音号】，属于大号家族的一员，不过比大号要小型一些，音比大号高八度。"src="item/悠风号.jpg" /><a data="music.html?q=悠风号"  title="悠风号是一种低音铜管乐器，又叫粗管上低音号，音译又叫悠风宁号。悠风号区别于巴里东号【（Baritone）细管上低音号】，属于大号家族的一员，不过比大号要小型一些，音比大号高八度。" target="_blank">悠风号</a></li>
+	 <li id="dagu"><img  title="提琴族中的中音乐器，外形及结构与小提琴基本相同，只是形体略大。五度定弦为c、g、d1、a1，琴身长度一般为42.5厘米。中提琴的音色比小提琴更厚实、温暖而丰满，指法和运弓与小提琴基本相同。中提琴从比中央C低八度音程的C开始，每根弦间隔五度音程，依次为C、G、D及A音，比小提琴低五度，而比大提琴高了八度。 作为独奏乐器，它缺少小提琴的辉煌性和大提琴的浑厚有力的音响，并且不如小提琴和大提琴那样在演奏协奏曲时可以和乐队进行较量。因此作曲家为中提琴写的协奏曲不多见（多见于小提琴）。中提琴（viola）历史 19世纪，N·帕格尼尼获得了一把A.斯特拉迪瓦里制作的中提琴，H·柏辽兹为它写了一首交响曲《哈罗尔德在意大利》。"src="item/中提琴.jpg" /><a data="music.html?q=中提琴"  title="提琴族中的中音乐器，外形及结构与小提琴基本相同，只是形体略大。五度定弦为c、g、d1、a1，琴身长度一般为42.5厘米。中提琴的音色比小提琴更厚实、温暖而丰满，指法和运弓与小提琴基本相同。中提琴从比中央C低八度音程的C开始，每根弦间隔五度音程，依次为C、G、D及A音，比小提琴低五度，而比大提琴高了八度。 作为独奏乐器，它缺少小提琴的辉煌性和大提琴的浑厚有力的音响，并且不如小提琴和大提琴那样在演奏协奏曲时可以和乐队进行较量。因此作曲家为中提琴写的协奏曲不多见（多见于小提琴）。中提琴（viola）历史 19世纪，N·帕格尼尼获得了一把A.斯特拉迪瓦里制作的中提琴，H·柏辽兹为它写了一首交响曲《哈罗尔德在意大利》。" target="_blank">中提琴</a></li>
+	 <li id="dagu"><img  title="大提琴，为西洋乐器，是管弦乐队中必不可少的次中音或低音弦乐器，属提琴族乐器里的下中音乐器。大提琴音色浑厚丰满，具有开朗的性格，擅长演奏抒情的旋律，表达深沉而复杂的感情，也与低音提琴共同担负和声的低音声部，有音乐贵妇之称。"src="item/大提琴.jpg" /><a data="music.html?q=大提琴"  title="大提琴，为西洋乐器，是管弦乐队中必不可少的次中音或低音弦乐器，属提琴族乐器里的下中音乐器。大提琴音色浑厚丰满，具有开朗的性格，擅长演奏抒情的旋律，表达深沉而复杂的感情，也与低音提琴共同担负和声的低音声部，有音乐贵妇之称。" target="_blank">大提琴</a></li>
+	 <li id="dagu"><img  title="琴箫是箫的一种，外直径为1.7——1.8cm左右，开有八个音孔（前七后一），直径略细，音量较小，在民间也称雅箫。一般适用于与丝弦古琴合奏，由于它的音量较小，比较典雅幽静。"src="item/琴箫.jpg" /><a data="music.html?q=琴箫"  title="琴箫是箫的一种，外直径为1.7——1.8cm左右，开有八个音孔（前七后一），直径略细，音量较小，在民间也称雅箫。一般适用于与丝弦古琴合奏，由于它的音量较小，比较典雅幽静。" target="_blank">琴箫</a></li>
+	 <li id="dagu"><img  title="瓷箫瓷制管乐器。北宋时即有烧造。明代福建德化窑亦有烧制。据清陆廷灿《南村随笔》记载，德化窑生产的瓷箫，色莹白，式亦精好，但百支中，无一二合调者，合则其声凄朗，远远超过竹箫的音色。"src="item/瓷箫.jpg" /><a data="music.html?q=瓷箫"  title="瓷箫瓷制管乐器。北宋时即有烧造。明代福建德化窑亦有烧制。据清陆廷灿《南村随笔》记载，德化窑生产的瓷箫，色莹白，式亦精好，但百支中，无一二合调者，合则其声凄朗，远远超过竹箫的音色。" target="_blank">瓷箫</a></li>
+	 <li id="dagu"><img  title="玉箫"src="item/玉箫.jpg" /><a data="music.html?q=玉箫"  title="玉箫" target="_blank">玉箫</a></li>
+	 <li id="dagu"><img  title="铁箫"src="item/铁箫.jpg" /><a data="music.html?q=铁箫"  title="铁箫" target="_blank">铁箫</a></li>
+	 <li id="dagu"><img  title="纸箫"src="item/纸箫.jpg" /><a data="music.html?q=纸箫"  title="纸箫" target="_blank">纸箫</a></li>
+	 <li id="dagu"><img  title="吹箫"src="item/吹箫.jpg" /><a data="music.html?q=吹箫"  title="吹箫" target="_blank">吹箫</a></li>
+	 <li id="dagu"><img  title="八孔箫"src="item/八孔箫.jpg" /><a data="music.html?q=八孔箫"  title="八孔箫" target="_blank">八孔箫</a></li>
+	 <li id="dagu"><img  title="吉他"src="item/吉他.jpg" /><a data="music.html?q=吉他"  title="吉他" target="_blank">吉他</a></li>
+	 <li id="dagu"><img  title="声乐"src="item/声乐.jpg" /><a data="music.html?q=声乐"  title="声乐" target="_blank">声乐</a></li>
+	 <li id="dagu"><img  title="三弦琴"src="item/三弦琴.jpg" /><a data="music.html?q=三弦琴"  title="三弦琴" target="_blank">三弦琴</a></li>
+	 <li id="dagu"><img  title="羽管键琴"src="item/羽管键琴.jpg" /><a data="music.html?q=羽管键琴"  title="羽管键琴" target="_blank">羽管键琴</a></li>
+	 <li id="dagu"><img  title="云锣"src="item/云锣.jpg" /><a data="music.html?q=云锣"  title="云锣" target="_blank">云锣</a></li>
+	 <li id="dagu"><img  title="铙钹"src="item/铙钹.jpg" /><a data="music.html?q=铙钹"  title="铙钹" target="_blank">铙钹</a></li>
+	 <li id="dagu"><img  title="碰钟"src="item/碰钟.jpg" /><a data="music.html?q=碰钟"  title="碰钟" target="_blank">碰钟</a></li>
+	 <li id="dagu"><img  title="托布秀尔"src="item/托布秀尔.jpg" /><a data="music.html?q=托布秀尔"  title="托布秀尔" target="_blank">托布秀尔</a></li>
+	 <li id="dagu"><img  title="颤音琴"src="item/颤音琴.jpg" /><a data="music.html?q=颤音琴"  title="颤音琴" target="_blank">颤音琴</a></li>
+
+
+ 
+   </ul>
+    <script type="text/javascript">
+    	var c = localStorage.content;
+    	if(c) {
+    		$("#foo")[0].innerHTML = c;
+    	}
+    </script>
+    <script src="/js/jquery.mcustomscrollbar.concat.min.js"></script>
+    <script>$(".left-nav").mCustomScrollbar({theme:"minimal-dark"});</script>
+   </div>
+   <div class="main">
+    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
+   </div>
+  </div>
+  <div class="footer">
+   <a href="?q=site:.luhui.net" target="_top">鲁虺文化网</a> 版权所有
+   <span>&copy; 2004-01-11 luhui.net</span>
+
+   <a href="?q=site:.gov" target="_blank"> icp备案中</a>
+
+   <a href="?q=about" title="About luhui" target="_top">关于本站</a>
+
+   <a href="?q=product service" title="产品服务" target="_top">产品服务</a>
+
+   <a href="?q=joint" title="渠道合作共赢" target="_top">合作共赢</a>
+
+
+   <a href="?q=Disclaimer" title="免责声明" target="_top">免责声明</a>
+
+
+
+   <a href="?q=contact" title="联系我们" target="_top">联系我们</a>
+  </div>
+<div style="display:none">
+    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+</div>
+  
+  <link href="/css/csshake.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" type="text/css" href="/css/ui-dialog.css"/>
+  <script src="/js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
+  <link rel="stylesheet" type="text/css" href="/css/messenger.css"/>
+  <link rel="stylesheet" type="text/css" href="/css/messenger-theme-ice.css"/>
+  <script src="/js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="/js/color.js"></script>
+  <script src="/js/chinese_convert.js"></script>
+  <script>
+	var defaultEncoding = 2; // 预设语言：1-繁体中文 | 2-简体中文
+	var translateDelay = 0;
+	var cookieDomain = "http://www.guanfu.co";        
+	var msgToTraditionalChinese = "繁体";        
+	var msgToSimplifiedChinese = "简体";        
+	var translateButtonId = "translateLink"; 
+	translateInitilization();
+  </script>
+  <script type="text/javascript">         
+            window.onload=function () {
+                      function _GetUrlParams() {
+                var url = location.search; //获取url中"?"符后的字串
+                var theRequest = {};
+                if (url.indexOf("?") != -1) {
+                    var str = url.substr(1);
+                    strs = str.split("&");
+                    for (var i = 0; i < strs.length; i++) {
+                        //console.log(strs[i]);
+                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+                    }
+                }
+                return theRequest;
+            }
+            var obj = _GetUrlParams();
+            if(obj.q){
+              var bingurl=obj.q;
+			  document.getElementById('engine').src = '/lyrics/?type=qq&name=' + escape(bingurl);
+			   $("#google").addClass("on");
+			   $("#guanfu").removeClass("on");
+			  //console.log(bingurl);
+				}
+            }
+            </script>
+
+
+<!--百度自动推送代码http://www.baidu.com/s?ie=utf-8&f=8&rsv_bp=1&tn=luhuinet&wd=-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--百度自动推送代码-->
+
+
+<!-- 网址安全插件开始 -->
+<script type="text/javascript">
+	var _svq_ = _svq_ || [];
+	_svq_.push(['set_api_key', '16adflfafads9gf28327005056b68c3d']);
+	_svq_.push(['set_noicon_class', '']); //链接前不显示任何图标，如果需要显示，请去掉这句
+	_svq_.push(['set_nopopup_class', '-sv-no-popup']); 
+	_svq_.push(['check_page']);
+	(function(){   
+		var aq = document.createElement('script');
+		aq.type = 'text/javascript'; 
+		aq.async = true;   
+		aq.charset = 'utf-8';
+		aq.src = 'http://openapi.anquan.org/static/aq.js';    
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(aq, s); 
+	})();
+</script>	
+<!-- 网址安全插件结束 --> </body>
+</html>
