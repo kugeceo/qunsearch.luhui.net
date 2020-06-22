@@ -1,0 +1,331 @@
+﻿*{
+		margin:0px;
+		padding: 0px;
+		list-style: none;
+	}
+		html,html body{
+			font-family: "Microsoft YaHei";
+			height: 100%;
+			overflow-y: hidden;
+		}
+		#disPlay{
+			height: 100%;
+			width: calc(100% - 218px);
+			float: right
+		}
+		#control{
+			position: relative;
+			float: left;
+			width: 218px;
+			height: 100%;
+		}
+		.top{
+			overflow: hidden;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			box-shadow: -15px 0px 35px #ccc;
+			width: 214px;
+			height: 84px;
+			border:2px solid #f5f5f5;
+		}
+		.ovfl{
+			overflow: hidden;
+		}
+		.fl{float: left;}
+		.fr{float: right;}
+		.icon_btn>span{
+			width: 25px;
+			height: 25px;
+			background: url(../img/logout.png);
+			cursor: pointer;
+		}
+		.icon_btn>i{
+			width: 25px;
+			height: 25px;
+			background: url(../img/setsever.png);
+			cursor: pointer;
+			margin-left: 6px;
+		}
+		.title_p{
+			margin-left: 25px;
+			line-height: 45px;
+			width: 105px;
+			height: 45px;
+			text-align: center;
+		}
+		.title_p>i{
+			float: left;
+			margin:12px 0 0 2px ;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background: url(../img/search.png);
+		}
+		.title_p>span{
+			margin:12px 0 0 2px ;
+			float: left;
+			color: #999999;
+			line-height: 20px;
+			font-size: 20px;
+		}
+		.search_d{
+			overflow: hidden;
+			width: 206px;
+			height: 32px;
+			margin-left: 2px;
+			margin-right: 2px;
+			border:2px solid #eeeeee;
+		}
+		.search_d #search_t{
+			float: left;
+			width: 160px;
+			height: 22px;
+			padding: 5px;
+			border:none;
+			outline: none;
+		}
+		.top .search_d #search_b{
+			float: right;
+			width: 34px;
+			height: 30px;
+			margin: 1px;
+			margin-left: 0px;
+			border:none;
+			background: url(../img/search_b.png);
+			border-left: 1px solid #eeeeee;
+			cursor: pointer;
+		}
+		.select_left{
+			overflow: hidden;
+			margin-top: 84px;
+			width: 100%;
+			height: 100%;
+			background: #f5f5f5;
+		}
+		.s_left{
+			margin-top: 10px;
+			width: 77px;
+			height: 100%;
+			border-right:1px solid #dbdbdb;
+			float: left;
+		}
+		.s_left .action{
+			font-size: 18px;
+			color: #2e93e1;
+		}
+		.s_left li{
+			cursor: pointer;
+			color: #9a9a9a;
+			font-size: 14px;
+			height: 35px;
+			line-height: 35px;
+			text-align: center;
+		}
+		.s_right{
+			font-size: 14px;
+			width: 138px;
+			height:calc(100% - 46px);
+			margin-top: 20px;
+			float: right;
+		}
+		.s_right li:hover{
+			background: #ccc;
+		}
+		.s_right li{
+			cursor: pointer;
+			height: 30px;
+		}
+		.s_right li span{
+			color: #969696;
+			line-height: 30px;
+			text-align: center;
+			float:right;
+			width: 100px;
+		}
+		.s_right #addLink{
+			width: 140px;
+		}
+		.s_right #addLink .link{
+			float: right;
+			width: 70px;
+			height: 30px;
+			background: url(../img/addlink.png) 15px -3px no-repeat;
+			background-color: #f5f5f5;
+		}
+		.s_right #addLink .hide{
+			float: right;
+			width: 70px;
+			height: 30px;
+			background: url(../img/logout.png) 15px -3px no-repeat;
+			background-color: #f5f5f5;
+		}
+		#setSever{
+			display: none;
+			width: 0px;
+			height: 0px;
+			position: absolute;
+			left: 30px;
+			top: 20px;
+			z-index:99;
+			background:#fff;
+			border:1px solid #ccc;
+			border-radius: 0px 15px 15px 15px;
+		}
+		#setSever p{
+			border-radius: 15px;
+			color: #9a9a9a;
+			width: 86px;
+			height: 25px;
+			line-height: 25px;
+			text-align: center;
+			padding-top: 38px;
+			float: left;
+			cursor: pointer;
+		}
+		.s_right .backBlue:hover{
+			background: #3598db;
+		}
+		.s_right .backBlue{
+			background: #3598db;
+		}
+		.s_right .backBlue span{
+			overflow: hidden;
+			color: #fff;
+		}
+		#showBtn{
+			position: absolute;
+			right: -10px;
+			top: 50%;
+			display: none;
+			margin-top:-100px;
+			z-index: 99999999999;
+			width: 10px;
+			height: 200px;
+			opacity: 0.5;
+			background: url(../img/showbtn.png);
+		}
+		#showBtn:hover{
+			opacity: 1;
+		}
+		.sky{
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,.5);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			z-index: 999;
+		}
+		#addSearch{
+			width:760px;
+			height: 430px;
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			right: 0px;
+			bottom: 0px;
+			margin:auto;
+			background: #fff;
+		}
+		#addSearch>p{
+			text-align: center;
+			height: 39px;
+			line-height: 39px;
+			border-bottom: 1px solid #edeef0;
+
+		}
+		#addSearch>div{
+			float: left;
+			padding:0 21px;
+		}
+		.con_right{margin-left: 16px}
+		.con_right,.con_left{float: left;}
+		.con_right,.con_left>p{
+			line-height: 49px;
+		}
+		#addSearch .right_ul,#addSearch .left_ul{
+			border:1px solid #7fb6dd;
+			background: #e9f1f4;
+			overflow-y: scroll;
+			max-height: 268px;
+			width: 348px;
+			height: 268px;
+		}
+		.left_ul li{
+			padding-left:13px;
+			line-height: 33px;
+			color: #4783f5;
+			height: 33px;
+			border-bottom: 1px solid #d9dee2;
+		}
+		.left_ul li i{
+			text-align: center;
+			width: 30px;
+			cursor: pointer;
+			float: right;
+			color: #797979;
+			font-weight: bold;
+			font-style:normal;
+		}
+		.right_ul{
+			border-color: #eaeaea;
+			padding-right: 1px;
+			margin-right: 1px;
+			overflow-y: scroll;
+			max-height: 268px;
+		}
+		.right_ul li{
+			height: 29px;
+			border-bottom: 1px solid #dcdcdc;
+			padding-left: 27px;
+			line-height: 29px;
+			color: #686868;
+			cursor: pointer;
+			background-image: url(../img/li_btn.png);
+			background-repeat: no-repeat;
+			background-position: 10px 10px;
+		}
+		.right_ul .click{
+			background-image: url(../img/li_btn2.png);
+			background-position: 8px 15px;
+		}
+		.right_ul .click>div{
+			height: 100px;
+			width: 100px;
+		}
+		.right_ul #linkBox{
+			cursor: default;
+			width: 100%;
+			height: auto;
+			padding:0;
+			background:none;
+		}
+		.bottom{
+			width: calc(100% - 44px);
+			margin-top:14px;
+		}
+		.bottom button{
+			font-family: "微软雅黑";
+			font-size: 18px;
+			float: right;
+			width: 118px;
+			height:34px;
+			border:1px solid #dedede;
+			border-radius: 5px;
+			outline: none;
+			cursor: pointer;
+		}
+		.bottom a{
+			color: #7c7c7c;
+		}
+		#none{
+			color: #767676;
+			margin-right: 10px;
+			background:#f2f2f2;
+			border:1px solid #dedede;
+		}
+		#sure{
+			color: #fff;
+			background: #3598db;
+		}
