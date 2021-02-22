@@ -37,11 +37,11 @@ Search.localeList["en-us"]["web"] = {
 
 	"items": {
 		"yahoo": { title: "Yahoo!",
-			url: "http://search.yahoo.com/search?p={keyword}" },
+			url: "https://search.yahoo.com/search?p={keyword}" },
 		"ask": { title: "Ask.com",
-			url: "http://www.ask.com/web?q={keyword}" },
+			url: "https://www.ask.com/web?q={keyword}" },
 		"live": { title: "Live Search",
-			url: "http://search.live.com/results.aspx?q={keyword}" },
+			url: "https://search.live.com/results.aspx?q={keyword}" },
 		"gigablast": { title: "Gigablast",
 			url: "http://www.gigablast.com/search?q={keyword}" }
 	}
@@ -135,12 +135,12 @@ Search.localeList["zh-cn"] = {};
 Search.localeList["zh-cn"]["web"] = {
 	"title": "网页",
 	"items": {
-		"baidu": { title: "百度", subtitle: "(网页)",	url: "http://www.baidu.com/baidu?tn=luhuinet&word={keyword}" },
-		"bing": { title: "必应", subtitle: "(网页)",	url: "http://cn.bing.com/search?q={keyword}" },
-		"３６０": { title: "３６０",			url: "http://www.so.com/s?q={keyword}" },
-		"yodao": { title: "有道",			url: "http://www.yodao.com/search?q={keyword}" },
-		"soso": { title: "搜搜",			url: "http://www.soso.com/q?w={keyword:gb2312}" },
-		"sogou": { title: "搜狗",			url: "http://www.sogou.com/web?pid=yuzi&query={keyword:gb2312}" }
+		"baidu": { title: "百度", subtitle: "(网页)",	url: "https://www.baidu.com/baidu?tn=luhuinet&word={keyword}" },
+		"bing": { title: "必应", subtitle: "(网页)",	url: "https://cn.bing.com/search?q={keyword}" },
+		"３６０": { title: "３６０",			url: "https://www.so.com/s?q={keyword}" },
+		"yodao": { title: "有道",			url: "https://www.yodao.com/search?q={keyword}" },
+		"soso": { title: "搜搜",			url: "https://www.soso.com/q?w={keyword:gb2312}" },
+		"sogou": { title: "搜狗",			url: "https://www.sogou.com/web?pid=yuzi&query={keyword:gb2312}" }
 
 	}
 }
@@ -149,10 +149,10 @@ Search.localeList["zh-cn"]["web"] = {
 Search.localeList["zh-cn"]["news"] = {
 	"title": "新闻",
 	"items": {
-		"bing": { title: "必应",			url: "http://cn.bing.com/news/results.aspx?q={keyword}" },
-		"360sou": { title: "360",			url: "http://news.so.com/ns?ie=utf-8&tn=news&q={keyword}" },
-		"zhongshou": { title: "中搜",			url: "http://z.zhongsou.com/n?w={keyword:gb2312}" },
-		"sogou": { title: "搜狗",			url: "http://news.sogou.com/news?query={keyword:gb2312}" }
+		"bing": { title: "必应",			url: "https://cn.bing.com/news/results.aspx?q={keyword}" },
+		"360sou": { title: "360",			url: "https://news.so.com/ns?ie=utf-8&tn=news&q={keyword}" },
+		"zhongshou": { title: "中搜",			url: "https://z.zhongsou.com/n?w={keyword:gb2312}" },
+		"sogou": { title: "搜狗",			url: "https://news.sogou.com/news?query={keyword:gb2312}" }
 	}
 }
 
@@ -160,9 +160,9 @@ Search.localeList["zh-cn"]["news"] = {
 Search.localeList["zh-cn"]["images"] = {
 	"title": "图像",
 	"items": {
-		"bing": { title: "必应", subtitle: "(图像)",	url: "http://cn.bing.com/images/results.aspx?q={keyword}" },
+		"bing": { title: "必应", subtitle: "(图像)",	url: "https://cn.bing.com/images/results.aspx?q={keyword}" },
 		"zhongshou": { title: "中搜",			url: "http://img.zhongsou.com/i?w={keyword:gb2312}" },
-		"iask": { title: "爱问",			url: "http://p.iask.com/p?k={keyword:gb2312}" },
+		"iask": { title: "爱问",			url: "https://p.iask.com/p?k={keyword:gb2312}" },
 		"sogou": { title: "搜狗",			url: "http://pic.sogou.com/pics?query={keyword:gb2312}" }
 	}
 }
