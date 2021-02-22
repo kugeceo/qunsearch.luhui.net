@@ -558,9 +558,9 @@ Search.search.frame.showLoading=function(_30){
 	if(!_31){
 		return;
 	}
-	var _32="<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"+"<html xmlns=\"http://www.w3.org/1999/xhtml\">"+"<head>"+"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />"+"<title>Search Result</title>"+"<link rel=\"stylesheet\" type=\"text/css\" href=\"css/base.css\" />"+"<link rel=\"stylesheet\" type=\"text/css\" href=\"css/custom.css\" />"+"</head>";
+	var _32="<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">"+"<html xmlns=\"http://www.w3.org/1999/xhtml\">"+"<head>"+"<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" />"+"<title>Search Result</title>"+"<link rel=\"stylesheet\" type=\"text/css\" href=\"./static/css/base.css\" />"+"<link rel=\"stylesheet\" type=\"text/css\" href=\"./static/css/custom.css\" />"+"</head>";
 	_32+="<body>";
-	_32+="<div class=\"loading\">"+"<img src=\"images/loading.gif\" /> "+$lang("loading").$encodeHTML()+"</div>";
+	_32+="<div class=\"loading\">"+"<img src=\"./static/images/loading.gif\" /> "+$lang("loading").$encodeHTML()+"</div>";
 	_32+="</body>"+"</html>";
 	try{
 		var obj=_31.contentWindow.document;
@@ -819,7 +819,7 @@ Search.options.list.buildPrefered=function(){
 	var _51="";
 	for(var _52 in Search.options.processedList){
 		var _53=Search.options.processedList[_52];
-		_51+="<div class=\"list-item-hot\" style=\"cursor:pointer;\" id=\"p_"+_52+"\""+" onclick=\"Search.options.list.selectItem('"+_52+"')\""+">"+"<div class=\"list-control\">"+"&nbsp; <img width=\"16\" height=\"16\" src=\"images/btn_remove.png\" onclick=\"Search.options.list.removeItem('"+_52+"')\" alt=\""+$lang("list_remove")+"\"/>"+"</div>"+_53.title.$encodeHTML()+(_53.custom?" <img width=\"16\" height=\"16\" src=\"images/custom.png\" id=\"img_list_custom\" alt=\"Custom\" />":"")+"</div>";
+		_51+="<div class=\"list-item-hot\" style=\"cursor:pointer;\" id=\"p_"+_52+"\""+" onclick=\"Search.options.list.selectItem('"+_52+"')\""+">"+"<div class=\"list-control\">"+"&nbsp; <img width=\"16\" height=\"16\" src=\"./static/images/btn_remove.png\" onclick=\"Search.options.list.removeItem('"+_52+"')\" alt=\""+$lang("list_remove")+"\"/>"+"</div>"+_53.title.$encodeHTML()+(_53.custom?" <img width=\"16\" height=\"16\" src=\"./static/images/custom.png\" id=\"img_list_custom\" alt=\"Custom\" />":"")+"</div>";
 	}
 	$write(_51,"list_prefered");
 	Search.options.list.selectedItem="";
