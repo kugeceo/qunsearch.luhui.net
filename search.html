@@ -1,216 +1,183 @@
-﻿<!DOCTYPE html>
-<html manifest="cache.appcache">
- <head>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <script>var _hmt=_hmt||[];(function(){var hm=document.createElement("script");hm.src="//hm.baidu.com/hm.js?b169f904ade5ef8ef30b1f93eb03f0ef";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(hm,s)})();</script>
-  <meta name="renderer" content="webkit" />
-  <title>鲁虺文化网快搜 - 搜索快人一步</title>
-  <meta name="keywords" content="鲁虺文化网快搜,鲁虺快搜,聚合搜索引擎,搜索快人一步,鲁之虺" />
-  <meta name="description" content="鲁虺文化快搜！鲁虺文化网全网独家首发出品！为你聚合Google,百度,必应等国内外综合搜索和学术,资源,专业领域知识等垂直搜索。精准搜索,便捷交互！是你的网络搜索第一站！" />
-  <meta name="revised" content="luhui.net, 2004/01/11/" />
-  <meta name="author" content="luhui.net" />
-  <link rel="shortcut icon" href="/favicon.ico" /> 
-  <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <link rel="stylesheet" href="css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/jquery.mcustomscrollbar.css" />
-  <link rel="stylesheet" type="text/css" href="css/so.css"/>
-  <script src="js/config.js" type="text/javascript" charset="utf-8"></script>
-  </head> 
- <body>
- 	<script type="text/javascript">
- 		if(localStorage.style === 'icon') {
- 			$(document.body).addClass('icon-style');
- 		}
- 	</script>
-  <div id="nav">
-   <ul id="skin-nav">
-    <li><a href="/" title="鲁虺文化网快搜" class="logo"><img src="images/so_logo.png"/></a></li>
-    <li id="donate"><i style="color:#589BFF;" class="fa fa-thumbs-up"></i>&nbsp;赞助&nbsp;&nbsp;&nbsp;
-    <div id="sub_donate"></div></li> 
-	<li><a href="http://club.luhui.net" target="_blank"><i style="color:#ED6D52;" class="fa fa-heart"></i> 赞助者</a></li>
-    <li><a href="http://search.luhui.net/" target="_blank"><i style="color:#F7B700;font-size:15px" class="fa fa-cog fa-spin"></i> 搜索技巧</a></li>
-	<li><a href="http://www.2mfa.cn" target="_blank"><i style="color:#589BFF;font-size:14px" class="fa fa-spinner fa-spin"></i> 最新收录</a></li>
-	<li><a href="http://club.luhui.net/" title="鲁虺文化网社区" target="_blank"><i style="color:#23CF5F" class="fa fa-group"></i> 鲁虺文化社区</a></li>
-    <li><a href="http://scholar.luhui.net/" target="_blank"><i style="color:#A262E8" class="fa fa-mortar-board"></i> 学术搜索</a></li>
-	<li><a href="http://data.luhui.net/" target="_blank"><i style="color:#F7B700" class="fa fa-cubes"></i> 数据搜索</a></li>
-	<li><a href="http://images.luhui.net/" target="_blank"><i style="color:#ED6D52" class="fa fa-picture-o"></i> 图搜</a></li>
-	<li><a href="http://magnet.luhui.net/" target="_blank"><i style="color:#52DBFC" class="fa fa-cloud-download"></i> 资源搜索</a></li>
-    <li id="skin"><i style="color:#23CF5F" class="fa fa-leaf"></i> 皮肤
-     <ul id="skin-subnav">
-      <li><a href="skin/b1601727gw1f0yog91237j205k05ka9z.jpg">默认</a></li>
-	  <li><a href="skin/b1601727gw1f0ypz5sqeog203k03kt8l.gif">流水</a></li>
-      <li><a href="skin/b1601727gw1f0yog7wy6gj20go0goaar.jpg">晶体</a></li>
-      <li><a href="skin/b1601727gw1f0yogbxosbj20e80e8ta1.jpg">木纹</a></li>
-      <li><a href="skin/b1601727gw1f0yog9rt8jj20dw0afwg2.jpg">宣纸</a></li>
-      <li><a href="skin/b1601727gw1f0ypz6et0vj205804jglg.jpg">爱心</a></li>
-      <li><a href="skin/b1601727gw1f0ypz5y1g5g204102wa9z.gif">墙壁</a></li>
-      <li><a href="skin/b1601727gw1f0yogc8nydj208c08c3yc.jpg">知识</a></li>
-      <li><a href="skin/b1601727gw1f0yogacp89j20b40b7mxm.jpg">妖娆</a></li>
-      <li><a href="images/grey.gif">纯灰</a></li>
-     </ul></li>
-	 <li><i class="fa fa-exchange"></i>&nbsp;<a id="translateLink"></a></li>
-   </ul>
-  </div>
-  <div class="container">
-   <div class="left-nav">
-    <ul id="foo" class="luhuiyun">
-	 <li id="google"><img src="images/google.ico" /><a data="google.html">Google</a></li>
-	 <li id="baidu"><img src="images/baidu.ico" /><a data="https://www.baidu.com/">百度</a></li>
-   <li id="cnbing"><img src="images/bing.ico" /><a data="https://cn.bing.com/">必应</a></li>
-   <li id="wikipedia"><img src="images/wikipedia.png" /><a data="https://www.wikipedia.org/">Wikipedia</a></li>
-   <li id="google_advanced"><img src="images/google.ico" /><a data="http://search.luhui.net/advanced_search.html">谷歌高级</a></li>
-	 <li id="baidu_advanced"><img src="images/baidu.ico" /><a data="http://search.luhui.net/baidu_advanced.html">百度高级</a></li>
-	 <li id="sogou_advanced"><img src="images/sogou.ico" /><a data="http://search.luhui.net/sogou_advanced.html">搜狗高级</a></li>
-	 <li id="music"><img src="images/163.ico" /><a data="http://club.luhui.net/music.html">音乐</a></li>
-   <li id="imusic"><img src="images/music.ico" /><a data="http://www.guqiankun.com/tools/music/">音乐搜索解析</a></li>
-	 <li id="taobao"><img src="images/taobao.png" /><a data="http://club.luhui.net/shopping.html">购物</a></li>
-	 <li id="xcx"><img src="images/mini_programs.png" /><a data="http://www.duba.com/wxapp/index.html">小程序</a></li>
-	 <li id="weibo"><img src="images/weibo.ico" /><a data="http://club.luhui.net/weibo.html">微博搜索</a></li>
-	 <li id="wechat"><img src="images/weixin.ico" /><a data="http://weixin.sogou.com/?p=73141200&amp;kw=">搜狗微信</a></li>
-	 <li id="zhihu"><img src="images/zhihu.ico" /><a data="http://zhihu.sogou.com/">搜狗知乎</a></li>
-	 <li id="map"><img src="images/map.png"><a>地图</a>
-		<ul class="more">
-			<li id="amap"><img src="images/amap.jpg"><a data="http://ditu.amap.com/">高德地图</a></li>
-			<li id="baidumap"><img src="images/baidu.ico"><a data="http://map.baidu.com/">百度地图</a></li>
-			<li id="googlemap"><img src="images/googlemap.ico"><a data="http://www.google.cn/maps/" target="_blank">谷歌地图</a></li>
-			<li id="tencentmap"><img src="images/tencentmap.ico"><a data="http://map.qq.com/">腾讯地图</a></li>
-			<li id="sogoumap"><img src="images/sogou.ico"><a data="http://map.sogou.com">搜狗地图</a></li>
-			<li id="bingmap"><img src="images/bing.ico"><a data="http://cn.bing.com/ditu/">必应地图</a></li>
-		</ul>
-	 </li>
-	 <li id="trip"><img src="images/trip.png"><a>旅游</a>
-		<ul class="more">
-			<li id="mafengwo"><img src="images/mafengwo.ico"><a data="http://www.mafengwo.cn/">蚂蜂窝</a></li>
-			<li id="qyer"><img src="images/qyer.ico"><a data="http://www.qyer.com/">穷游</a></li>
-			<li id="tripadvisor"><img src="images/tripadvisor.ico"><a data="https://www.tripadvisor.cn/">猫途鹰</a></li>
-			<li id="booking"><img src="images/booking.ico"><a data="https://www.booking.com/destinationfinder.zh-cn.html">缤客</a></li>
-			<li id="lotour"><img src="images/lotour.ico"><a data="http://www.lotour.com/">乐途</a></li>
-			<li id="airbnb"><img src="images/airbnb.ico"><a data="https://zh.airbnb.com/" target="_blank">爱彼迎</a></li>
-			<li id="tuniu"><img src="images/tuniu.ico"><a data="http://s.tuniu.com/">途牛</a></li>
-		</ul>
-	 </li>
-	 <li id="wdl"><img src="images/wdl.ico" /><a data="http://mx.wdl.org/zh/">世图</a></li>
-	 <li id="easyicon"><img src="images/easyicon.ico" /><a data="http://www.easyicon.net/">图标</a></li>
-	 <li id="gif"><img src="images/soogif.ico" /><a data="http://www.soogif.com/">GIF动图</a></li>
-	 <li id="biaoqing"><img src="images/sogou.ico" /><a data="http://pic.sogou.com/pic/emo/index.jsp">搜狗表情</a></li>
-	 <li id="jiumodiary"><img src="images/jiumodiary.png" /><a data="https://www.jiumodiary.com/">电子书</a></li>
-	 <li id="lib"><img src="images/e-book.png" /><a data="http://club.luhui.net/book.html">英文电子书</a></li>
-   <li id="github"><img src="images/github.ico" /><a data="http://club.luhui.net/github.html">GitHub</a></li>
-   <li id="wolf"><img src="images/wolframalpha.ico" /><a data="http://www.wolframalpha.com/">Wolfram Alpha</a></li>
-	 <li id="mao"><img src="images/pangci.ico" /><a data="https://www.ziyuanmao.org/#/home">资源猫</a></li>
-   <li id="kuaidi"><img src="images/kuaidi.ico" /><a data="http://www.kuaidi100.com/">快递</a></li>
-	 <li id="gepu"><img src="images/zhaogepu.ico" /><a data="http://www.zhaogepu.com/">找歌谱</a></li>
-	 <li id="nyaso"><img src="images/nyaso.ico" /><a data="https://nyaso.com/">动漫资源</a></li>
-	 <li id="kisssub"><img src="images/kisssub.ico" /><a data="http://www.kisssub.org/">动漫 BT</a></li>
-	 <li id="acgsou"><img src="images/acg.ico" /><a data="http://www.acgsou.com/">ACG搜</a></li>
-	 <li id="baidushitu"><img src="images/baidu.ico" /><a data="http://stu.baidu.com/">百度识图</a></li>
-	 <li id="chashenjia"><img src="images/soccer.ico" /><a data="http://club.luhui.net/price.html">查身价</a></li>
-	 <li id="shapecatcher"><img src="images/shapecatcher.ico" /><a data="http://shapecatcher.com/">特殊符号识别</a></li>
-	 <li id="font"><img src="images/qiuziti.ico" /><a data="http://www.qiuziti.com/">求字体</a></li>
-	 <li id="visualhunt"><img src="images/visualhunt.ico" /><a data="http://visualhunt.com/">Visual Hunt</a></li>
-	 <li id="renwu"><img src="images/sogou.ico" /><a data="http://www.sogou.com/tupu/person.html?q=%E8%B5%B5%E4%B8%BD%E9%A2%96">人物关系</a></li>
-	 <li id="xungen"><img src="images/xungen.ico" /><a data="http://weijp.library.sh.cn/mobileinto.html">姓氏家谱</a></li>
-	 <li id="handian"><img src="images/zdic.ico" /><a data="http://www.zdic.net/">汉典</a></li>
-	 <li id="vividict"><img src="images/vividict.ico" /><a data="http://www.vividict.com/Default.aspx">象形文字</a></li>
-	 <li id="guoxue"><img src="images/guoxue.ico" /><a data="http://www.guoxuedashi.com/zidian/bujian/">国学</a></li>
-	 <li id="wenxian"><img src="images/daizhige.ico" /><a data="http://122.200.75.13">古文献</a></li>
-	 <li id="mba"><img src="images/mbalib.ico" /><a data="http://www.mbalib.com/">MBA智库</a></li>
-	 <li id="makedie"><img src="images/zimu.ico" /><a data="http://assrt.net/">字幕</a></li>
-	 <li id="bilibili"><img src="images/bilibili.ico" /><a data="http://search.bilibili.com/">哔哩哔哩</a></li>
-	 <li id="soku"><img src="images/soku.ico" /><a data="http://www.soku.com/">视频</a></li>
-   <li id="b1bj"><img src="images/b1bj.ico" /><a data="http://b1bj.com/">比一比价</a></li>
-	 <li id="xitie"><img src="images/xitie.ico" /><a data="http://www.xitie.com/">商品历史价格</a></li>
-	 <li id="boxz"><img src="images/boxz.ico" /><a data="http://www.boxz.com/">数码电器比价</a></li>
-	 <li id="drugs"><img src="images/drug.ico" /><a data="http://search.luhui.net/drugs.html" target="_blank">用药助手</a></li>
-	 <li id="open"><img src="images/kaiyuan.ico" /><a data="https://www.openhub.net/">开源代码</a></li>
-   <li id="open-open"><img src="images/open.png" /><a data="http://www.open-open.com/doc/">开源文献</a></li>
-   <li id="innojoy"><img src="images/patmain.ico" /><a data="http://www.innojoy.com/search/index.shtml">专利检索</a></li>
-	 <li id="cheyisou"><img src="images/cheyisou.ico" /><a data="http://www.cheyisou.com/">易车</a></li>
-	 <li id="tianyancha"><img src="images/tianyancha.ico" /><a data="https://www.tianyancha.com/">查企业</a></li>
-   <li id="qgtong"><img src="images/haiguan.ico" /><a data="http://www.qgtong.com/so/Search.asp">海关</a></li>
-   <li id="sound"><img src="images/findsounds.ico" /><a data="http://www.findsounds.com/ISAPI/search.dll?keywords=computer+keyboard+typing">声音素材</a></li>
-	 <li id="csres"><img src="images/gb.ico" /><a data="http://www.csres.com/">国家标准</a></li>
-   <li id="dianzi"><img src="images/chip.png" /><a data="http://www.alldatasheetcn.com/">电子元件数据</a></li>
-    </ul>
-    <script type="text/javascript">
-    	var c = localStorage.content;
-    	if(c) {
-    		$("#foo")[0].innerHTML = c;
-    	}
-    </script>
-    <script src="js/jquery.mcustomscrollbar.concat.min.js"></script>
-    <script>$(".left-nav").mCustomScrollbar({theme:"minimal-dark"});</script>
-   </div>
-   <div class="main">
-    <iframe id="engine" name="engine" frameborder="0" marginwidth="0" marginheight="0" allowtransparency="true" style="background-color:#fff"></iframe>
-   </div>
-  </div>
-  <div class="footer">
-   <a href="?q=site:.luhui.net" target="_top">鲁虺文化网</a> 版权所有
-   <span>&copy; 2004-01-11 luhui.net</span>
-
-   <a href="?q=site:.gov" target="_blank"> icp备案中</a>
-
-   <a href="?q=about" title="About luhui" target="_top">关于本站</a>
-
-   <a href="?q=product service" title="产品服务" target="_top">产品服务</a>
-
-   <a href="?q=joint" title="渠道合作共赢" target="_top">合作共赢</a>
-
-
-   <a href="?q=Disclaimer" title="免责声明" target="_top">免责声明</a>
-
-
-
-   <a href="?q=contact" title="联系我们" target="_top">联系我们</a>
-<div style="display:none">
-    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="search" type="application/opensearchdescription+xml" href="./search/search.xml" title="Union Search" />
+<title>鲁虺联合搜索引擎群 http://search.luhui.net 鲁虺搜索</title>
+<meta name="Copyright" content="鲁虺文化网版权所有" />
+<link rel="bookmark" href="favicon.ico"  />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="./search/js/base.js"></script>
+<script type="text/javascript" src="./search/js/UniSearch.js"></script>
+<script type="text/javascript" src="./search/js/UniSearchData.js"></script>
+<script type="text/javascript" src="./search/js/UniSearchInput.js"></script>
+<script type="text/javascript" src="./search/js/gb2312.js"></script>
+<link rel="stylesheet" type="text/css" href="./search/theme/google2011/css/style.css" title="google" />
+</head>
+<body scroll="no" onload="UniSearchBase.init();">
+<div class="wrapper">
+	<!--头部文开始件-->
+	<header class="header" id="header">
+		<div class="innerHeader">
+			<div class="searchCon">
+			 	<div class="title-menu" id="titleMenu">&nbsp;</div>
+				<h3>
+				<a href="http://search.luhui.net/" id="set_home" onmouseover="" onmouseout="" onclick=""></a>
+				<a href="javascript:void(9)" onmouseover="" onmouseout="" id="add_fav"></a>
+				<a href="javascript:void(8)" onmouseover="" onmouseout="" id="set_lang"></a>
+				<a href="javascript:void(7)" onmouseover="" onmouseout="" id="setup"></a>
+				</h3>
+				<div class="clear"></div>
+				<div class="logo"><span id='searchImgTop'></span></div>
+				<div class="searchText">
+				  <input name="text" type="text" class="searchBox" id="keyword" />
+				  <span class="spBut" id='searchBut' onclick="UniSearchBase.searchWoooord()" title=""></span>
+				  <span class="imeBut" id='imeBut' onmouseover="UniSearchBase.showDom('Tips');" onmouseout="UniSearchBase.styHidDom('Tips');" onclick="javascript:(function(q){!!q?q.toggle():(function(d,j){j=d.createElement('script');j.src='//ime.qq.com/fcgi-bin/getjs';j.setAttribute('ime-cfg','lt=2');d.getElementsByTagName('head')[0].appendChild(j)})(document)})(window.QQWebIME)" title=""></span>
+				  <div class="searchWord" id="SearKeys" style="display:none"></div>
+				</div>
+				<div class="historyBut" id="historyBut" onclick="UniSearchBase.showDom('historyBut')"></div>
+			</div>
+		</div>
+	</header>
+	<!--头部文件结束-->
+<!-- tips -->
+<div id="Tips">
+    <div class="tipsContent">
+      <div class="ico"></div>
+      <div class="title" id="TipsTitle"></div>
+      <div class="close"><a id="TipsClose" onclick="UniSearchBase.styHidDom('Tips');"></a></div>
+    </div> 
 </div>
-  <link href="css/csshake.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" type="text/css" href="css/ui-dialog.css"/>
-  <script src="js/dialog-min.js" type="text/javascript" charset="utf-8"></script>
-  <link rel="stylesheet" type="text/css" href="css/messenger.css"/>
-  <link rel="stylesheet" type="text/css" href="css/messenger-theme-ice.css"/>
-  <script src="js/messenger.min.js" type="text/javascript" charset="utf-8"></script>
-  <script src="js/color.js"></script>
-  <script src="js/chinese_convert.js"></script>
-  <script>
-	var defaultEncoding = 2; // 预设语言：1-繁体中文 | 2-简体中文
-	var translateDelay = 0;
-	var cookieDomain = "http://www.luhui.net";        
-	var msgToTraditionalChinese = "繁体";        
-	var msgToSimplifiedChinese = "简体";        
-	var translateButtonId = "translateLink"; 
-	translateInitilization();
-  </script>
-  <script type="text/javascript">         
-            window.onload=function () {
-                      function _GetUrlParams() {
-                var url = location.search; //获取url中"?"符后的字串
-                var theRequest = {};
-                if (url.indexOf("?") != -1) {
-                    var str = url.substr(1);
-                    strs = str.split("&");
-                    for (var i = 0; i < strs.length; i++) {
-                        //console.log(strs[i]);
-                        theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
-                    }
-                }
-                return theRequest;
-            }
-            var obj = _GetUrlParams();
-            if(obj.q){
-              var bingurl=obj.q;
-			  document.getElementById('engine').src = 'http://cn.bing.com/search?q=' + escape(bingurl);
-			   $("#cnbing").addClass("on");
-			   $("#google").removeClass("on");
-			  //console.log(bingurl);
-				}
-            }
-            </script>
- <!--放下偷刀(盗)，立地成佛；尊重原作者的劳动成果也是对您自身人格的尊重-->
- <!--今后凡以任何形式盗取或变相盗取本站程序者，我随即会直接将你本人的所有私人信息公开到网络上！2004.01.11虫子宣-->
- </body>
+<!-- end tips -->
+  <!-- nav -->
+	<nav class="navPanel" id="headerNav">
+		<div class="innerNavPanel">
+			<div class="buttons" id="searches"></div>
+			<div class="newSpan" id="addPreferDom" style="display:none" onclick="UniSearchBase.getCurSearchSatus()">
+			<img src="./search/theme/google2011/images/btn_add_to_prefered.png" id="addPreferImg" width="16" height="16" alt="添加到首选" />
+			</div>
+			<span id="searchConfig" class="adddPrefered" style="display:none" onclick="UniSearchBase.showDom('perConfigCon')">
+			<img src="./search/theme/google2011/images/btn_new_prefered.png" id="newPreferImg" width="16" height="16" alt="" />
+			<h6 id="selfCon"></h6>
+			</span>
+		</div>
+		<div class="clear"></div>
+	</nav>
+  	<!-- end nav -->
+	
+	<!--Effect-->
+	<div class="effect" id="effect" style="display:none"></div>
+	<!--Effect-->
+	
+	<!--note文件开始-->
+	<footer id="noteWrapper" class="note" style="display:none">
+		<p id="note"></p>
+		<hr/>
+		<p align="center">
+		</p>
+		<p style="color:#999999;" align="center">Copyright &copy; 2011 Union Search International Limited. All Rights Reserved. </p>
+	</footer>
+	<!--note文件结束-->
+	<iframe width='0' height='0' frameborder='0' id="iframeDom" style="display:none" src="about:blank"></iframe>
+	<!--搜索历史记录-->
+	<div class="hisDom" id="hisDom" style="display:none"><a class="hisItemDel" id="doCookie"></a><div class="clear"></div></div>
+	<!--搜索历史记录-->
+	<div class="options" style="display:none" id="options">
+		<h3 id="opt_title"></h3>
+			<p>
+				<span id="txt_opt_lang"></span>:
+				<select id="opt_lang" onchange="UniSearchBase.onchangeLang();"><option selected="selected" value="zh-cn">简体中文</option><option value="en-us">English</option><option value="fr-fr">Français</option></select>
+	  <div class="clear"></div>
+				<input type="button" value="" id="opt_butSave" class="butt" onclick="UniSearchBase.changeLanguage();" /><input type="button" id="opt_butCancel" value="" class="butt" onclick="UniSearchBase.styHidDom('options');"  />
+			</p>
+	</div>
+	<div class="perConfigCon" id="perConfigCon" style="display:none">
+		<h3 id="custom_prefer"></h3>
+		<table width="100%" cellpadding="0" cellspacing="8" border="0" class="tableConfig">
+		  <tr>
+			<td width="50%"><strong id="custom_curr"></strong><span><a href="#" onclick="navPrefer.preferDef()" id="custom_def"></a></span><span id="muveImg" style="display:none"><img width="16" height="16" src="./search/theme/google2011/images/btn_up.png" alt="Move Up" class="spanImg" onclick="navPrefer.moveUp()" /><img width="16" height="16" src="./search/theme/google2011/images/btn_down.png" alt="Move down" class="spanImg" onclick="navPrefer.moveDown()" /></span></td>
+			<td width="50%"><b id="custom_list"></b></td>
+		  </tr>
+		  <tr>
+			<td width="50%">
+				<div class="preferList" id="preferList"></div>
+			</td>
+			<td width="50%">
+				<div class="preferListC" id="searchListAll"></div>
+			</td>
+		  </tr>
+		</table>
+		<input type="button" id="custom_butSave" value="保存" class="butt" onclick="navPrefer.saveConfig();nevTit.readyCreate['prefer'].newCreat(navPrefer.returnNewPrefer());UniSearchBase.savePre()" /><input type="button" id="custom_butCancel" value="取消" class="butt" onclick="navPrefer.cancleDom();UniSearchBase.styHidDom('perConfigCon');"  />
+	</div>
+	<div class="moreConMain" id="moreConMain" style="display:none"></div>
+	<div class="moreBg1" id="moreBg1" style="display:none"></div>
+	<div class="moreConMainUp" id="moreConMainUp" style="display:none">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">机票火车票旅游</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.ctrip.com/" target="_blank">携程网</a></td>
+			<td width="20%">☆<a href="http://www.elong.com/" target="_blank">艺龙旅行网</a></td>
+			<td width="20%">☆<a href="http://www.huoche.com.cn/" target="_blank">火车网</a></td>
+			<td width="20%">☆<a href="http://www.lieche.cn/" target="_blank">列车时刻</a></td>
+			<td width="20%">☆<a href="http://www.qunar.com/" target="_blank">去哪</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.kuxun.cn/" target="_blank">酷讯</a></td>
+			<td width="20%">☆<a href="http://www.huochepiao.com/" target="_blank">火车票网</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">生活分类信息</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.58.com/" target="_blank">58同城</a></td>
+			<td width="20%">☆<a href="http://www.ganji.com/" target="_blank">赶集网</a></td>
+			<td width="20%">☆<a href="http://www.dianping.com/" target="_blank">大众点评</a></td>
+			<td width="20%">☆<a href="http://www.fantong.com/" target="_blank">饭统</a></td>
+			<td width="20%">☆<a href="http://www.aibang.com/" target="_blank">爱帮</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.edushi.com/" target="_blank">E都市</a></td>
+			<td width="20%">☆<a href="http://www.mapbar.com/" target="_blank">图吧</a></td>
+			<td width="20%">☆<a href="http://www.mapabc.com/" target="_blank">Mapabc</a></td>
+			<td width="20%">☆<a href="http://www.haodf.com/" target="_blank">好大夫</a></td>
+			<td width="20%">☆<a href="http://www.8684.cn/" target="_blank">公交查询</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.kiees.cn/" target="_blank">快递查询</a></td>
+			<td width="20%">☆<a href="http://www.city8.com/" target="_blank">城市吧</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">股票基金</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://quote.eastmoney.com/" target="_blank" >股票查询</a></td>
+			<td width="20%">☆<a href="http://fund.eastmoney.com/fund.html" target="_blank">基金净值</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+	  <tr>
+		<td class="p2"><input type="button" value="&nbsp;&nbsp;关&nbsp;闭&nbsp;&nbsp;" onclick="UniSearchBase.showDom('backcon')" /></td>
+	  </tr>
+	</table>
+	<div class="clear"></div>
+	</div>
+</div>
+<div style=" display:none"><img src="" id="keyWordsSubmit" width="1" height="1" alt="UnionSearch"/></div>
+</body>
 </html>
