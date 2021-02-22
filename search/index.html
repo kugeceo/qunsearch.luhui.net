@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="search" type="application/opensearchdescription+xml" href="search.xml" title="Union Search" />
+<title>联合搜索</title>
+<meta name="Copyright" content="版权所有" />
+<link rel="bookmark" href="favicon.ico"  />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="js/UniSearch.js"></script>
+<script type="text/javascript" src="js/UniSearchData.js"></script>
+<script type="text/javascript" src="js/UniSearchInput.js"></script>
+<script type="text/javascript" src="js/gb2312.js"></script>
+<link rel="stylesheet" type="text/css" href="theme/google2011/css/style.css" title="google" />
+</head>
+<body scroll="no" onload="UniSearchBase.init();">
+<div class="wrapper">
+	<!--头部文开始件-->
+	<header class="header" id="header">
+		<div class="innerHeader">
+			<div class="searchCon">
+			 	<div class="title-menu" id="titleMenu">&nbsp;</div>
+				<h3>
+				<a href="http://search.myuedu.net/" id="set_home" onmouseover="" onmouseout="" onclick=""></a>
+				<a href="javascript:void(9)" onmouseover="" onmouseout="" id="add_fav"></a>
+				<a href="javascript:void(8)" onmouseover="" onmouseout="" id="set_lang"></a>
+				<a href="javascript:void(7)" onmouseover="" onmouseout="" id="setup"></a>
+				</h3>
+				<div class="clear"></div>
+				<div class="logo"><span id='searchImgTop'></span></div>
+				<div class="searchText">
+				  <input name="text" type="text" class="searchBox" id="keyword" />
+				  <span class="spBut" id='searchBut' onclick="UniSearchBase.searchWoooord()" title=""></span>
+				  <span class="imeBut" id='imeBut' onmouseover="UniSearchBase.showDom('Tips');" onmouseout="UniSearchBase.styHidDom('Tips');" onclick="javascript:(function(q){!!q?q.toggle():(function(d,j){j=d.createElement('script');j.src='//ime.qq.com/fcgi-bin/getjs';j.setAttribute('ime-cfg','lt=2');d.getElementsByTagName('head')[0].appendChild(j)})(document)})(window.QQWebIME)" title=""></span>
+				  <div class="searchWord" id="SearKeys" style="display:none"></div>
+				</div>
+				<div class="historyBut" id="historyBut" onclick="UniSearchBase.showDom('historyBut')"></div>
+			</div>
+		</div>
+	</header>
+	<!--头部文件结束-->
+<!-- tips -->
+<div id="Tips">
+    <div class="tipsContent">
+      <div class="ico"></div>
+      <div class="title" id="TipsTitle"></div>
+      <div class="close"><a id="TipsClose" onclick="UniSearchBase.styHidDom('Tips');"></a></div>
+    </div> 
+</div>
+<!-- end tips -->
+  <!-- nav -->
+	<nav class="navPanel" id="headerNav">
+		<div class="innerNavPanel">
+			<div class="buttons" id="searches"></div>
+			<div class="newSpan" id="addPreferDom" style="display:none" onclick="UniSearchBase.getCurSearchSatus()">
+			<img src="theme/google2011/images/btn_add_to_prefered.png" id="addPreferImg" width="16" height="16" alt="添加到首选" />
+			</div>
+			<span id="searchConfig" class="adddPrefered" style="display:none" onclick="UniSearchBase.showDom('perConfigCon')">
+			<img src="theme/google2011/images/btn_new_prefered.png" id="newPreferImg" width="16" height="16" alt="" />
+			<h6 id="selfCon"></h6>
+			</span>
+		</div>
+		<div class="clear"></div>
+	</nav>
+  	<!-- end nav -->
+	
+	<!--Effect-->
+	<div class="effect" id="effect" style="display:none"></div>
+	<!--Effect-->
+	
+	<!--note文件开始-->
+	<footer id="noteWrapper" class="note" style="display:none">
+		<p id="note"></p>
+		<hr/>
+		<p align="center">
+		</p>
+		<p style="color:#999999;" align="center">Copyright &copy; 2011 Union Search International Limited. All Rights Reserved. </p>
+	</footer>
+	<!--note文件结束-->
+	<iframe width='0' height='0' frameborder='0' id="iframeDom" style="display:none" src="about:blank"></iframe>
+	<!--搜索历史记录-->
+	<div class="hisDom" id="hisDom" style="display:none"><a class="hisItemDel" id="doCookie"></a><div class="clear"></div></div>
+	<!--搜索历史记录-->
+	<div class="options" style="display:none" id="options">
+		<h3 id="opt_title"></h3>
+			<p>
+				<span id="txt_opt_lang"></span>:
+				<select id="opt_lang" onchange="UniSearchBase.onchangeLang();"><option selected="selected" value="zh-cn">简体中文</option><option value="en-us">English</option><option value="fr-fr">Français</option></select>
+	  <div class="clear"></div>
+				<input type="button" value="" id="opt_butSave" class="butt" onclick="UniSearchBase.changeLanguage();" /><input type="button" id="opt_butCancel" value="" class="butt" onclick="UniSearchBase.styHidDom('options');"  />
+			</p>
+	</div>
+	<div class="perConfigCon" id="perConfigCon" style="display:none">
+		<h3 id="custom_prefer"></h3>
+		<table width="100%" cellpadding="0" cellspacing="8" border="0" class="tableConfig">
+		  <tr>
+			<td width="50%"><strong id="custom_curr"></strong><span><a href="#" onclick="navPrefer.preferDef()" id="custom_def"></a></span><span id="muveImg" style="display:none"><img width="16" height="16" src="theme/google2011/images/btn_up.png" alt="Move Up" class="spanImg" onclick="navPrefer.moveUp()" /><img width="16" height="16" src="theme/google2011/images/btn_down.png" alt="Move down" class="spanImg" onclick="navPrefer.moveDown()" /></span></td>
+			<td width="50%"><b id="custom_list"></b></td>
+		  </tr>
+		  <tr>
+			<td width="50%">
+				<div class="preferList" id="preferList"></div>
+			</td>
+			<td width="50%">
+				<div class="preferListC" id="searchListAll"></div>
+			</td>
+		  </tr>
+		</table>
+		<input type="button" id="custom_butSave" value="保存" class="butt" onclick="navPrefer.saveConfig();nevTit.readyCreate['prefer'].newCreat(navPrefer.returnNewPrefer());UniSearchBase.savePre()" /><input type="button" id="custom_butCancel" value="取消" class="butt" onclick="navPrefer.cancleDom();UniSearchBase.styHidDom('perConfigCon');"  />
+	</div>
+	<div class="moreConMain" id="moreConMain" style="display:none"></div>
+	<div class="moreBg1" id="moreBg1" style="display:none"></div>
+	<div class="moreConMainUp" id="moreConMainUp" style="display:none">
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">机票火车票旅游</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.ctrip.com/" target="_blank">携程网</a></td>
+			<td width="20%">☆<a href="http://www.elong.com/" target="_blank">艺龙旅行网</a></td>
+			<td width="20%">☆<a href="http://www.huoche.com.cn/" target="_blank">火车网</a></td>
+			<td width="20%">☆<a href="http://www.lieche.cn/" target="_blank">列车时刻</a></td>
+			<td width="20%">☆<a href="http://www.qunar.com/" target="_blank">去哪</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.kuxun.cn/" target="_blank">酷讯</a></td>
+			<td width="20%">☆<a href="http://www.huochepiao.com/" target="_blank">火车票网</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+		</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">生活分类信息</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.58.com/" target="_blank">58同城</a></td>
+			<td width="20%">☆<a href="http://www.ganji.com/" target="_blank">赶集网</a></td>
+			<td width="20%">☆<a href="http://www.dianping.com/" target="_blank">大众点评</a></td>
+			<td width="20%">☆<a href="http://www.fantong.com/" target="_blank">饭统</a></td>
+			<td width="20%">☆<a href="http://www.aibang.com/" target="_blank">爱帮</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.edushi.com/" target="_blank">E都市</a></td>
+			<td width="20%">☆<a href="http://www.mapbar.com/" target="_blank">图吧</a></td>
+			<td width="20%">☆<a href="http://www.mapabc.com/" target="_blank">Mapabc</a></td>
+			<td width="20%">☆<a href="http://www.haodf.com/" target="_blank">好大夫</a></td>
+			<td width="20%">☆<a href="http://www.8684.cn/" target="_blank">公交查询</a></td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://www.kiees.cn/" target="_blank">快递查询</a></td>
+			<td width="20%">☆<a href="http://www.city8.com/" target="_blank">城市吧</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+	</table>
+		<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+		  <tr>
+			<td colspan="5" class="p1">股票基金</td>
+		  </tr>
+		  <tr>
+			<td width="20%">☆<a href="http://quote.eastmoney.com/" target="_blank" >股票查询</a></td>
+			<td width="20%">☆<a href="http://fund.eastmoney.com/fund.html" target="_blank">基金净值</a></td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+			<td width="20%">&nbsp;</td>
+		  </tr>
+	</table>
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" class="moreTable">
+	  <tr>
+		<td class="p2"><input type="button" value="&nbsp;&nbsp;关&nbsp;闭&nbsp;&nbsp;" onclick="UniSearchBase.showDom('backcon')" /></td>
+	  </tr>
+	</table>
+	<div class="clear"></div>
+	</div>
+</div>
+<div style=" display:none"><img src="" id="keyWordsSubmit" width="1" height="1" alt="UnionSearch"/></div>
+</body>
+</html>
