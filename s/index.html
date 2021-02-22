@@ -1,0 +1,224 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="鲁虺多次搜索,鲁虺多次,鲁虺搜索,鲁虺搜索引擎" />
+	<meta name="description" content="鲁虺多次搜索 - 鲁虺多线程搜索引擎集合" />
+	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8" />
+	<title>鲁虺多次搜索（luhui.net） - 鲁虺多线程搜索引擎集合</title>
+	<link rel="search" type="application/opensearchdescription+xml" href="duici-chs.xml" title="luhui.net Search" />
+	<link rel="stylesheet" type="text/css" href="static/css/base.css" />
+	<script type="text/javascript" src="static/js/func.js"></script>
+	<script type="text/javascript" src="static/js/gb2312.js"></script>
+	<script type="text/javascript" src="static/js/search.js"></script>
+	<script type="text/javascript" src="static/js/search.lang.js"></script>
+	<script type="text/javascript" src="static/js/search.config.js"></script>
+    <script language="vbscript">
+	Function str2asc(strstr)
+		str2asc = hex(asc(strstr)) 
+	End Function 
+	Function asc2str(ascasc) 
+		asc2str = chr(ascasc) 
+	End Function
+</script>
+</head>
+<body>
+<div class="wrapper">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="header">
+  <tr>
+    <td width="33%" rowspan="2"><div class="title"><a href="http://www.luhui.net"><img src="static/picture/logo_330x120.gif" alt="鲁虺多次搜索（luhui.net）" border="0" /></a></div></td>
+    <td width="67%">
+    <div class="menu">
+		<span id="btn_custom_prefer_wrapper">
+			<a href="javascript:;" id="btn_custom_prefer" onclick="this.blur()" style="font-weight: bold;"></a>
+		</span>
+	    <a href="javascript:;" id="btn_options" onclick="this.blur()"></a>
+		<a href="javascript:" id="btn_AddSearch" onclick="this.blur();"></a>
+		<a href="javascript:" id="btn_set_home" onclick="this.blur();"></a>
+		<a href="javascript:;" id="btn_add_fav" onclick="this.blur();"></a>
+    </div>
+    
+    </td>
+  </tr>
+  <tr>
+    <td valign="top">
+    	<div class="search">
+			<div class="categories">
+				<span id="categories"></span>
+			</div>
+
+			<div>
+				<input type="text" id="keyword" class="text searchBox"  baiduSug="2" />
+<!--
+value="" onblur="$('kwh').style.display='none'" onkeyup="hint()" onmouseenter="this.select();this.focus()"
+-->
+				<a href="javascript:;" id="btn_go"><img src="static/picture/btn_go.png" onmousemove="this.src='images/btn_go_hover.png'" onmouseout="this.src='images/btn_go.png'" /></a>
+				&nbsp;&nbsp;
+				<span id="btn_history_wrapper">
+					<a href="javascript:;" id="btn_history" onclick="this.blur()"></a>
+				</span>
+				&nbsp;
+			</div>
+            <div id=kwh></div>
+		</div>
+    </td>
+  </tr>
+</table>
+
+  
+
+	<!-- history menu -->
+	<div id="history" class="history" style="position:absolute;visibility:hidden;"></div>
+
+  <!-- nav -->
+	<div class="navPanel">
+		<div class="innerNavPanel">
+			<div class="buttons" id="searches">
+			<a href="#">初始化...</a>
+			</div>
+		</div>
+	</div>
+  <!-- end nav -->
+
+	<div class="shadowStrip">&nbsp;</div>
+
+  <!-- options wrapper -->
+	<div id="options" class="options" style="display:none;">
+
+		<div id="opt_sec_setup">
+
+			<h3><strong><span id="txt_options_header">Options</span></strong></h3>
+
+			<p>
+				<span id="txt_opt_lang">Interface Language</span>:
+				&nbsp;&nbsp;
+				<select id="opt_lang"></select>
+			</p>
+			<p><span id="txt_opt_save_history">Save Keyword History</span>: <select id="opt_save_history"></select> <span id=_counts>Items</span></p>
+			<p><span id="txt_opt_load_all">Load All Tables at Once</span>: <select id="opt_load_all"></select> <span id=_time>s</span></p>
+
+		</div>
+
+		<div id="opt_sec_list">
+
+			<h3><span id="txt_options_list">Customize Prefered Search List</span></h3>
+
+			<table width="100%" cellpadding="0" cellspacing="4" border="0" class="prefer-list">
+				<tr>
+					<td width="50%">
+						<span style="float:right;">
+							<a id="btn_list_default" href="javascript:;"><span id="txt_list_default">Restore Default</span></a>
+							&nbsp;&nbsp;
+							<a href="javascript:;" onclick="Search.options.list.moveItem(-1)"><img width="16" height="16" src="static/picture/btn_up.png" id="img_list_up" alt="Move Up" /></a>
+							<a href="javascript:;" onclick="Search.options.list.moveItem(1)"><img width="16" height="16" src="static/picture/btn_down.png" id="img_list_Down" alt="Move Down" /></a>
+						</span>
+						<strong id="txt_list_current_prefered">Current Prefered List</strong>
+					</td>
+					<td width="50%" align="right">
+						<span id="txt_list_add_text">Click to Add or</span><a id="btn_add_new" href="javascript:;"><span id="txt_list_i_new">Add Custom</span></a>
+					</td>
+				</tr>
+				<tr>
+					<td width="50%" valign="top"><div id="list_prefered" class="list-hot"></div></td>
+					<td width="50%" valign="top"><div id="list_all" class="list"></div></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+
+					<div id="opt_edit_table">
+					<table width="100%" cellpadding="8" cellspacing="0" border="0" class="list-edit-table">
+						<tr>
+							<td class="list-row-header"><span id="txt_list_i_name">Display Name</span>:</td>
+							<td>
+								<input id="i_name" type="text" value="" class="text" style="width:300px;"/>
+								&nbsp;
+								<span id="i_note_internal" class="comment">Can not delete internal item</span>
+								<span id="i_note_edit" class="comment">Use {keyword} in search string</span>
+							</td>
+						</tr>
+						<tr>
+							<td class="list-row-header"><span id="txt_list_i_url">Search URL</span>:</td>
+							<td><input id="i_url" type="text" value="" class="text" style="width:99%;" /></td>
+						</tr>
+						</table>
+						</div>
+
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+
+		<p>
+			<input id="btn_opt_save" type="button" class="button" value=" Save "/>
+			&nbsp;
+			<input id="btn_opt_cancel" type="button" class="button" value=" Cancel "/>
+		</p>
+
+		<p>&nbsp;</p>
+
+	</div>
+
+  <!-- content wrapper -->
+	<div id="content"></div>
+
+  <!-- note wrapper -->
+    	<div id="note" class="note" style="display:none;"></div>
+
+
+
+<div id="Copyright" class="Copyright">
+
+ Copyright&nbsp;2004-01-11&nbsp;<a href="http://luhui.net" title="鲁虺文化网" target="_top">luhui.net</a>&nbsp;all rights reserved.
+
+ </div>
+  
+  <!-- end content wrapper -->
+
+<!-- end global wrapper -->
+</div>
+<script type="text/javascript">Search.init();</script>
+</body>
+</html>
+<div style="display:none">
+
+
+<!--百度自动推送代码-->
+<script>
+(function(){
+    var bp = document.createElement('script');
+    bp.src = '//push.zhanzhang.baidu.com/push.js';
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+<!--百度自动推送代码-->
+
+
+<!-- 网址安全插件开始 -->
+<script type="text/javascript">
+	var _svq_ = _svq_ || [];
+	_svq_.push(['set_api_key', '16adflfafads9gf28327005056b68c3d']);
+	_svq_.push(['set_noicon_class', '']); //链接前不显示任何图标，如果需要显示，请去掉这句
+	_svq_.push(['set_nopopup_class', '-sv-no-popup']); 
+	_svq_.push(['check_page']);
+	(function(){   
+		var aq = document.createElement('script');
+		aq.type = 'text/javascript'; 
+		aq.async = true;   
+		aq.charset = 'utf-8';
+		aq.src = 'http://openapi.anquan.org/static/aq.js';    
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(aq, s); 
+	})();
+</script>	
+<!-- 网址安全插件结束 --> 
+
+<div style="display:none">
+    <script src="http://s11.cnzz.com/z_stat.php?id=610720&web_id=610720" language="JavaScript"></script>
+</div>
+
+
+<!--放下偷刀(盗)，回头是岸；尊重原作者的劳动成果也是对您自身人格的尊重-->
+</div>
