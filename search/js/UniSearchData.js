@@ -201,47 +201,47 @@ UniSearch.data["zh-cn"]["video"] = {
         baidu: {
             title: "百度",
             subtitle: "视频",
-            url: "http://video.baidu.com/v?rn=20&pn=0&db=0&s=0&fbl=1024&word={keyword:gb2312}"
+            url: "https://video.baidu.com/v?rn=20&pn=0&db=0&s=0&fbl=1024&word={keyword:gb2312}"
         },
         Google: {
             title: "Google",
             subtitle: "视频",
-            url: "http://72.14.203.106/search?q={keyword}&tbs=vid%3A1"
+            url: "https://72.14.203.106/search?q={keyword}&tbs=vid%3A1"
         },
         youku: {
             title: "优酷",
             subtitle: "视频",
-            url: "http://so.youku.com/search_video/q_"
+            url: "https://so.youku.com/search_video/q_"
         },
         tudou: {
             title: "土豆",
             subtitle: "视频",
-            url: "http://so.tudou.com/isearch.do?kw={keyword:gb2312}"
+            url: "https://so.tudou.com/isearch.do?kw={keyword:gb2312}"
         },
         ku6: {
             title: "酷6",
             subtitle: "视频",
-            url: "http://so.ku6.com/v?q="
+            url: "https://so.ku6.com/v?q="
         },
         "56": {
             title: "56",
             subtitle: "视频",
-            url: "http://so.56.com/index?type=video&key={keyword:gb2312}"
+            url: "https://so.56.com/index?type=video&key={keyword:gb2312}"
         },
         "6room": {
             title: "六间房",
             subtitle: "视频",
-            url: "http://6.cn/search.php?t=v&ko=1&k="
+            url: "https://6.cn/search.php?t=v&ko=1&k="
         },
         gougou: {
             title: "狗狗",
             subtitle: "视频",
-            url: "http://video.gougou.com/search?id=28416&s="
+            url: "https://video.gougou.com/search?id=28416&s="
         },
         OpenV: {
             title: "天线",
             subtitle: "视频",
-            url: "http://www.openv.com/ls.php?t=0&x=26&y=10&q="
+            url: "https://www.openv.com/ls.php?t=0&x=26&y=10&q="
         }
     }
 };
@@ -251,24 +251,24 @@ UniSearch.data["zh-cn"]["bt"] = {
         gougou: {
             title: "狗狗影视",
             subtitle: "BT",
-            url: "http://www.gougou.com/search?id=28416&search="
+            url: "https://www.gougou.com/search?id=28416&search="
         },
         Verycd: {
             title: "Verycd",
-            url: "http://www.verycd.com/search/folders/"
+            url: "https://www.verycd.com/search/folders/"
         },
         mtime: {
             title: "时光网",
-            url: "http://www.mtime.com/search/?"
+            url: "https://www.mtime.com/search/?"
         },
         douban: {
             title: "豆瓣影评",
-            url: "http://www.douban.com/subject_search?cat=1002&search_text="
+            url: "https://www.douban.com/subject_search?cat=1002&search_text="
         },
         shooter: {
             title: "射手字幕",
             subtitle: "BT",
-            url: "http://shooter.cn/sub/?searchword="
+            url: "https://shooter.cn/sub/?searchword="
         }
     }
 };
@@ -278,27 +278,27 @@ UniSearch.data["zh-cn"]["shopping"] = {
         taobao: {
             title: "淘宝",
             subtitle: "购物",
-            url: "http://ai.taobao.com/search/index.htm?pid=mm_31320626_0_0&unid=&source_id=search&key={keyword:gb2312}"
+            url: "https://ai.taobao.com/search/index.htm?pid=mm_31320626_0_0&unid=&source_id=search&key={keyword:gb2312}"
         },
         dangdang: {
             title: "当当",
             subtitle: "购物",
-            url: "http://search.dangdang.com/search.aspx?key={keyword:gb2312}"
+            url: "https://search.dangdang.com/search.aspx?key={keyword:gb2312}"
         },
         "360buy": {
             title: "京东商城",
             subtitle: "购物",
-            url: "http://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
+            url: "https://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
         },
         amazon: {
             title: "卓越",
             subtitle: "购物",
-            url: "http://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
+            url: "https://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
         },
         google: {
             title: "Google",
             subtitle: "购物",
-            url: "http://www.google.cn/products?q="
+            url: "https://www.google.cn/products?q="
         }
     }
 };
@@ -350,7 +350,7 @@ UniSearch.data["zh-cn"]["soft"] = {
         github: {
             title: "github",
             subtitle: "",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com{keyword:gb2312}"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com {keyword:gb2312}"
         },
 		pconline: {
             title: "太平洋",
