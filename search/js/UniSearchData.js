@@ -66,7 +66,7 @@ UniSearch.data["zh-cn"]["prefer"] = {
     title: "首选",
     items: [{
         c: "web",
-        n: "bing"
+        n: "live"
     },
     {
         c: "web",
@@ -98,7 +98,7 @@ UniSearch.data["zh-cn"]["web"] = {
     items: {
         baidu: {
             title: "百度",
-            url: "https://www.baidu.com/s?&ch=2&ie=utf-8&wd="
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word="
         },
         google: {
             title: "Google",
@@ -246,7 +246,7 @@ UniSearch.data["zh-cn"]["video"] = {
     }
 };
 UniSearch.data["zh-cn"]["bt"] = {
-    title: "影视BT",
+    title: "磁力",
     items: {
         gougou: {
             title: "狗狗影视",
@@ -303,27 +303,27 @@ UniSearch.data["zh-cn"]["shopping"] = {
     }
 };
 UniSearch.data["zh-cn"]["answer"] = {
-    title: "知识问答",
+    title: "知识",
     items: {
         baidu: {
             title: "百度知道",
-            url: "http://zhidao.baidu.com/q?word={keyword:gb2312}&ct=17&pn=0&tn=ikaslist&rn=10"
+            url: "https://zhidao.baidu.com/q?word={keyword:gb2312}&ct=17&pn=0&tn=ikaslist&rn=10"
         },
         baike: {
             title: "百度百科",
-            url: "http://baike.baidu.com/w?ct=17&lm=0&tn=baiduWikiSearch&pn=0&rn=10&word={keyword:gb2312}&submit=search"
+            url: "https://baike.baidu.com/w?ct=17&lm=0&tn=baiduWikiSearch&pn=0&rn=10&word={keyword:gb2312}&submit=search"
         },
         soso: {
             title: "搜搜问问",
-            url: "http://wenwen.soso.com/z/SearchSolved.e?ch=k2&sp="
+            url: "https://wenwen.soso.com/z/SearchSolved.e?ch=k2&sp="
         },
         sina: {
             title: "新浪爱问",
-            url: "http://iask.sina.com.cn/search_engine/search_knowledge_engine.php?key={keyword:gb2312}&classid=0&title=ttt&gjss=0&x=29&y=9"
+            url: "https://iask.sina.com.cn/search_engine/search_knowledge_engine.php?key={keyword:gb2312}&classid=0&title=ttt&gjss=0&x=29&y=9"
         },
         qihoo: {
             title: "奇虎",
-            url: "http://www.qihoo.com/wenda.php?kw={keyword:gb2312}&ff=1&do=search&noq=q&src=nindex"
+            url: "https://www.qihoo.com/wenda.php?kw={keyword:gb2312}&ff=1&do=search&noq=q&src=nindex"
         }
     }
 };
@@ -332,15 +332,15 @@ UniSearch.data["zh-cn"]["map"] = {
     items: {
         baidu: {
             title: "百度地图",
-            url: "http://map.baidu.com/#word={keyword:gb2312}&ct=10"
+            url: "https://map.baidu.com/#word={keyword:gb2312}&ct=10"
         },
         google: {
             title: "谷歌地图",
-            url: "http://maps.google.com/maps?q="
+            url: "https://maps.google.com/maps?q="
         },
         sogou: {
             title: "搜狗地图",
-            url: "http://map.sogou.com/#c=11944000,4152000,4&city=%u5168%u56FD&lq={keyword}&page=1"
+            url: "https://map.sogou.com/#c=11944000,4152000,4&city=%u5168%u56FD&lq={keyword}&page=1"
         }
     }
 };
@@ -349,8 +349,8 @@ UniSearch.data["zh-cn"]["soft"] = {
     items: {
         github: {
             title: "github",
-            subtitle: "软件",
-            url: "https://github.com/search?q={keyword:gb2312}"
+            subtitle: "",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com{keyword:gb2312}"
         },
 		pconline: {
             title: "太平洋",
