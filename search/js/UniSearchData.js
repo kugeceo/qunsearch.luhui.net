@@ -66,7 +66,7 @@ UniSearch.data["zh-cn"]["prefer"] = {
     title: "首选",
     items: [{
         c: "web",
-        n: "google"
+        n: "bing"
     },
     {
         c: "web",
@@ -128,17 +128,17 @@ UniSearch.data["zh-cn"]["image"] = {
         google: {
             title: "Google",
             subtitle: "图片",
-            url: "http://www.google.com/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
+            url: "https://www.google.com/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
         },
         baidu: {
             title: "百度",
             subtitle: "图片",
-            url: "http://image.baidu.com/i?ct=201326592&cl=2&lm=-1&tn=baiduimage&istype=2&fm=index&pv=&z=0&s=0&word="
+            url: "https://image.baidu.com/i?ct=201326592&cl=2&lm=-1&tn=baiduimage&istype=2&fm=index&pv=&z=0&s=0&word="
         },
         sogou: {
             title: "搜狗",
             subtitle: "图片",
-            url: "http://pic.sogou.com/pics?query={keyword:escape}"
+            url: "https://pic.sogou.com/pics?query={keyword:escape}"
         },
         live: {
             title: "Bing 搜索",
@@ -153,20 +153,20 @@ UniSearch.data["zh-cn"]["news"] = {
         baidu: {
             title: "百度",
             subtitle: "新闻",
-            url: "http://news.baidu.com/ns?word={keyword:gb2312}"
+            url: "https://news.baidu.com/ns?word={keyword:gb2312}"
         },
         sogou: {
             title: "搜狗",
             subtitle: "新闻",
-            url: "http://news.sogou.com/news?query={keyword:gb2312}"
+            url: "https://news.sogou.com/news?query={keyword:gb2312}"
         },
         youdao: {
             title: "有道",
-            url: "http://news.youdao.com/search?q={keyword}&keyfrom=web.top"
+            url: "https://news.youdao.com/search?q={keyword}&keyfrom=web.top"
         },
         aiwen: {
             title: "爱问",
-            url: "http://iask.com/n?k={keyword:gb2312}"
+            url: "https://iask.com/n?k={keyword:gb2312}"
         }
     }
 };
@@ -176,22 +176,22 @@ UniSearch.data["zh-cn"]["music"] = {
         baidu: {
             title: "百度",
             subtitle: "音乐",
-            url: "http://mp3.baidu.com/m?f=ms&lm=-1&word={keyword:gb2312}"
+            url: "https://mp3.baidu.com/m?f=ms&lm=-1&word={keyword:gb2312}"
         },
         sogou: {
             title: "搜狗",
             subtitle: "音乐",
-            url: "http://mp3.sogou.com/music.so?query={keyword:gb2312}"
+            url: "https://mp3.sogou.com/music.so?query={keyword:gb2312}"
         },
         sogua: {
             title: "SoGua",
             subtitle: "音乐",
-            url: "http://search.sogua.com/search.asp?key="
+            url: "https://search.sogua.com/search.asp?key="
         },
         zhongshou: {
             title: "中搜",
             subtitle: "MP3",
-            url: "http://mp3.zhongsou.com/m?w={keyword:gb2312}"
+            url: "https://mp3.zhongsou.com/m?w={keyword:gb2312}"
         }
     }
 };
@@ -278,7 +278,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
         taobao: {
             title: "淘宝",
             subtitle: "购物",
-            url: "http://search8.taobao.com/browse/search_auction.htm?q={keyword:gb2312}&pid=mm_12431063_2220385_8721096&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0"
+            url: "http://ai.taobao.com/search/index.htm?pid=mm_31320626_0_0&unid=&source_id=search&key={keyword:gb2312}"
         },
         dangdang: {
             title: "当当",
@@ -347,25 +347,30 @@ UniSearch.data["zh-cn"]["map"] = {
 UniSearch.data["zh-cn"]["soft"] = {
     title: "软件",
     items: {
-        pconline: {
+        github: {
+            title: "github",
+            subtitle: "软件",
+            url: "https://github.com/search?q={keyword:gb2312}"
+        },
+		pconline: {
             title: "太平洋",
             subtitle: "软件",
-            url: "http://dl.pconline.com.cn/search.jsp?PubDate=0&DLTypeId=1&SearchType=1&submit.x=20&submit.y=14&keyword={keyword:gb2312}"
+            url: "https://dl.pconline.com.cn/search.jsp?PubDate=0&DLTypeId=1&SearchType=1&submit.x=20&submit.y=14&keyword={keyword:gb2312}"
         },
         onlinedown: {
             title: "华军软件园",
             subtitle: "软件",
-            url: "http://search.newhua.com/search.asp?Keyword={keyword:gb2312}"
+            url: "https://search.newhua.com/search.asp?Keyword={keyword:gb2312}"
         },
         skycn: {
             title: "天空",
             subtitle: "软件",
-            url: "http://www.skycn.com/search.php?ss_name={keyword:gb2312}"
+            url: "https://www.skycn.com/search.php?ss_name={keyword:gb2312}"
         },
         mydrivers: {
             title: "驱动之家",
             subtitle: "软件",
-            url: "http://so.mydrivers.com/drivers.aspx?q={keyword:gb2312}"
+            url: "https://so.mydrivers.com/drivers.aspx?q={keyword:gb2312}"
         }
     }
 };
@@ -375,22 +380,22 @@ UniSearch.data["zh-cn"]["blog"] = {
 		google: {
             title: "Google",
             subtitle: "博客",
-            url: "http://www.google.com/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
+            url: "https://www.google.com/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
         },
         yodao: {
             title: "有道",
             subtitle: "博客",
-            url: "http://blog.yodao.com/search?q={keyword:gb2312}"
+            url: "https://blog.yodao.com/search?q={keyword:gb2312}"
         },
         baidu: {
             title: "百度",
             subtitle: "博客",
-            url: "http://blogsearch.baidu.com/s?wd={keyword:gb2312}"
+            url: "https://blogsearch.baidu.com/s?wd={keyword:gb2312}"
         },
 		sogou: {
             title: "搜狗",
             subtitle: "博客",
-            url: "http://blogsearch.sogou.com/blog?query={keyword:gb2312}"
+            url: "https://blogsearch.sogou.com/blog?query={keyword:gb2312}"
         }
     }
 };
@@ -399,24 +404,24 @@ UniSearch.data["zh-cn"]["dict"] = {
     items: {
         iciba: {
             title: "爱词霸",
-            url: "http://www.iciba.com/"
+            url: "https://www.iciba.com/"
         },
         zdic: {
             title: "汉典",
-            url: "http://www.zdic.net/zd/search/?q={keyword}"
+            url: "https://www.zdic.net/search/?q={keyword}"
         },
         yodao: {
             title: "有道",
             subtitle: "海量词典",
-            url: "http://dict.yodao.com/search?q={keyword}"
+            url: "https://dict.yodao.com/search?q={keyword}"
         },
         nciku: {
             title: "N词酷",
-            url: "http://www.nciku.com/search/all/"
+            url: "https://www.nciku.com/search/all/"
         },
         dictcn: {
             title: "海词",
-            url: "http://www.dict.cn/search/?q={keyword:gb2312}"
+            url: "https://www.dict.cn/search/?q={keyword:gb2312}"
         }
     }
 };
@@ -470,23 +475,23 @@ UniSearch.data["en-us"]["web"] = {
     items: {
         google: {
             title: "Google",
-            url: "http://www.google.com/search?hl=en-US&source=hp&cad=b&cad=cbv&q="
+            url: "https://www.google.com/search?hl=en-US&source=hp&cad=b&cad=cbv&q="
         },
         yahoo: {
             title: "Yahoo!",
-            url: "http://search.yahoo.com/search?ei=utf-8&p={keyword}"
+            url: "https://search.yahoo.com/search?ei=utf-8&p={keyword}"
         },
         ask: {
             title: "Ask.com",
-            url: "http://www.ask.com/web?q={keyword}"
+            url: "https://www.ask.com/web?q={keyword}"
         },
         live: {
             title: "Live Search",
-            url: "http://search.live.com/results.aspx?q={keyword}"
+            url: "https://search.live.com/results.aspx?q={keyword}"
         },
         gigablast: {
             title: "Gigablast",
-            url: "http://www.gigablast.com/search?q={keyword}"
+            url: "https://www.gigablast.com/search?q={keyword}"
         }
     }
 };
@@ -496,30 +501,30 @@ UniSearch.data["en-us"]["image"] = {
         google: {
             title: "Google",
             subtitle: " Images",
-            url: "http://www.google.com/search?hl=en&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q={keyword}"
+            url: "https://www.google.com/search?hl=en&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q={keyword}"
         },
         yahoo: {
             title: "Yahoo!",
             subtitle: " Images",
-            url: "http://images.search.yahoo.com/search/images?ei=UTF-8&p={keyword}"
+            url: "https://images.search.yahoo.com/search/images?ei=UTF-8&p={keyword}"
         },
         ask: {
             title: "Ask.com",
             subtitle: " Images",
-            url: "http://images.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"
+            url: "https://images.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"
         },
         live: {
             title: "Live Search",
             subtitle: " Images",
-            url: "http://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"
+            url: "https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"
         },
         flickr: {
             title: "Flickr",
-            url: "http://www.flickr.com/search/?q={keyword}"
+            url: "https://www.flickr.com/search/?q={keyword}"
         },
         picsearch: {
             title: "PicSearch",
-            url: "http://www.picsearch.com/search.cgi?q={keyword}"
+            url: "https://www.picsearch.com/search.cgi?q={keyword}"
         }
     }
 };
