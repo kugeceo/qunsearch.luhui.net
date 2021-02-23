@@ -63,7 +63,7 @@ a:hover {
 .header {
 	width:100%;
 	height:100px;
-	background:#F5F5F5 url('../images/bg_header.png') repeat-x;
+	background:#F5F5F5 url('/search/theme/google2011/images/bg_header.png') repeat-x;
 	overflow:hidden;
 	white-space:nowrap;
 }
@@ -98,7 +98,7 @@ a:hover {
 	text-decoration:underline;
 	width:200px;
 	height:74px;
-	background:url(../images/logo.png) no-repeat left top;
+	background:url(/search/theme/google2011/images/logo.png) no-repeat left top;
 }
 .header .innerHeader .header-weather {
 	position:absolute;
@@ -138,7 +138,7 @@ a:hover {
 	color:#fff;
 	font-weight:bolder;
 	text-decoration:none;
-	background:#2D2D2D url('../images/menu_btn_top.png') repeat-x;
+	background:#2D2D2D url('/search/theme/google2011/images/menu_btn_top.png') repeat-x;
 }
 .header .innerHeader .searchCon .title-menu a.more {
 	color:#fff;
@@ -171,10 +171,10 @@ a:hover {
 	z-index:80;
 	text-align:center;
 	cursor:pointer;
-	background:url(../images/dropdown.gif);
+	background:url(/search/theme/google2011/images/dropdown.gif);
 }
 .header .innerHeader .searchCon .historyBut:hover {
-	background:url(../images/dropdown_hover.gif);
+	background:url(/search/theme/google2011/images/dropdown_hover.gif);
 }
 .header .innerHeader .searchCon .searchText {
 	position:absolute;
@@ -193,12 +193,12 @@ a:hover {
 	cursor:pointer;
 	width:72px;
 	height:29px;
-	background:url(../images/btn_go.png) no-repeat left top;
+	background:url(/search/theme/google2011/images/btn_go.png) no-repeat left top;
 }
 .header .innerHeader .searchCon .searchText .spBut:hover {
 	width:72px;
 	height:29px;
-	background:url(../images/btn_go_hover.png) no-repeat left top;
+	background:url(/search/theme/google2011/images/btn_go_hover.png) no-repeat left top;
 }
 .header .innerHeader .searchCon .searchText .imeBut {
 	float:left;
@@ -210,12 +210,12 @@ a:hover {
 	cursor:pointer;
 	width:30px;
 	height:28px;
-	background:url(../images/qqime.png) no-repeat left top;
+	background:url(/search/theme/google2011/images/qqime.png) no-repeat left top;
 }
 .header .innerHeader .searchCon .searchText .imeBut:hover {
 	width:30px;
 	height:28px;
-	background:url(../images/qqime_hover.png) no-repeat left top;
+	background:url(/search/theme/google2011/images/qqime_hover.png) no-repeat left top;
 }
 .header .innerHeader .searchCon .searchText .searchBox {
 	float:left;
@@ -226,11 +226,11 @@ a:hover {
 	line-height:18px;
 	padding-left:6px;
 	padding-right:6px;
-	background:url(../images/bg_input_text.png) repeat-x;
+	background:url(/search/theme/google2011/images/bg_input_text.png) repeat-x;
 }
 .header .innerHeader .searchCon .searchText .searchBox:hover {
 	border:1px #9c0 solid;
-	background:url(../images/bg_input_text_hover.png) repeat-x;
+	background:url(/search/theme/google2011/images/bg_input_text_hover.png) repeat-x;
 }
 .header .innerHeader .searchCon .searchText .searchWord {
 	float:left;
@@ -361,7 +361,7 @@ a:hover {
 .wrapper .navPanel {
 	border-top:0px solid #DAD7CF;
 	border-bottom:0px solid #DAD7CF;
-	background:#f5f5f5 url('../images/bg_btn.png') top left;
+	background:#f5f5f5 url('/search/theme/google2011/images/bg_btn.png') top left;
 	padding:0 20px 0 80px;
 }
 .wrapper .navPanel span {
@@ -466,7 +466,7 @@ a:hover {
 	position:relative;
 }
 .wrapper .innerNavPanel a.currPr span {
-	background:url(../images/tab_close.gif) no-repeat center right;
+	background:url(/search/theme/google2011/images/tab_close.gif) no-repeat center right;
 	width:16px;
 	height:16px;
 	display:block;
@@ -477,7 +477,7 @@ a:hover {
 	z-index:15;
 }
 .wrapper .innerNavPanel a.currPr span:hover {
-	background:url(../images/tab_close_hover.gif) no-repeat center right;
+	background:url(/search/theme/google2011/images/tab_close_hover.gif) no-repeat center right;
 	width:16px;
 	height:16px;
 	display:block;
@@ -579,7 +579,7 @@ a:hover {
 	font-weight:bolder;
 }
 .wrapper .preferListC .searchMenuList .ListItems {
-	background:white url(../images/bg_btn.png) repeat scroll 0;
+	background:white url(/search/theme/google2011/images/bg_btn.png) repeat scroll 0;
 	border-bottom:1px dotted #D5CEC1;
 	cursor:pointer;
 	padding:5px 5px 5px 18px;
@@ -680,7 +680,7 @@ a:hover {
 	font-size:13px;
 	color:#ca6f04;
 	height:27px;
-	background:url(../images/moreBgTitle.gif) repeat-x;
+	background:url(/search/theme/google2011/images/moreBgTitle.gif) repeat-x;
 }
 .wrapper .moreConMainUp .moreTable .p2 {
 	line-height:50px;
@@ -720,7 +720,7 @@ a:hover {
 }
 #Tips .tipsContent {
 	width: 270px;
-	background: url(../images/tagtips.png) no-repeat;
+	background: url(/search/theme/google2011/images/tagtips.png) no-repeat;
 	height: 75px;
 	padding-top: 10px;
 }
@@ -728,7 +728,7 @@ a:hover {
 	margin: 8px 0px 0px 10px;
 	width: 30px;
 	display: inline;
-	background: url(../images/bgbtn.png) no-repeat;
+	background: url(/search/theme/google2011/images/bgbtn.png) no-repeat;
 	float: left;
 	height: 100px
 }
