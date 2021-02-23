@@ -3,7 +3,7 @@
 	 <ShortName>luhui Search</ShortName>
 	 <Description>luhui Search</Description>
 	 <InputEncoding>UTF-8</InputEncoding>
-	 <Image height="16" width="16" type="image/x-icon">http://luhui.net/search/favicon.ico</Image>
+	 <Image height="16" width="16" type="image/x-icon">http://search.luhui.net/search/favicon.ico</Image>
 	 <Contact>kugeceo@qq.com</Contact>
-	 <Url type="text/html" template="http://luhui.net/search/?q={searchTerms}"/>
+	 <Url type="text/html" template="http://search.luhui.net/search/?q={searchTerms}"/>
 </OpenSearchDescription>
