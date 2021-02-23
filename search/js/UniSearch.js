@@ -169,9 +169,9 @@ var UniSearchBase = {
     iframeLoad: function() {
         var A = $("iframeDom");
         A.src = "about:blank";
-        var B = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Search Result</title><link rel="stylesheet" type="text/css" href="theme/' + UniSearch.Theme + '/css/style.css" /></head>';
+        var B = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Search Result</title><link rel="stylesheet" type="text/css" href="/search/theme/' + UniSearch.Theme + '/css/style.css" /></head>';
         B += "<body>";
-        B += '<div class="loading"><img src="theme/' + UniSearch.Theme + '/images/loading.gif" /></div>';
+        B += '<div class="loading"><img src="/search/theme/' + UniSearch.Theme + '/images/loading.gif" /></div>';
         B += "</body></html>";
         try {
             var D = A.contentWindow.document;
@@ -544,44 +544,44 @@ var UniSearchBase = {
             $("txt_opt_lang").innerHTML = "语言选择";
             $("opt_butSave").value = "保存";
             $("opt_butCancel").value = "取消";
-			$("set_home").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+			$("set_home").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
             $("set_home").onmouseover = function() { 
-				set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />设为首页";
+				set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />设为首页";
 				};
             $("set_home").onmouseout = function() { 
-				set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+				set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 				};
 			$("set_home").onclick = function() {
-                Base.setHomepage("http://search.myuedu.net/", "联合搜索");
+                Base.setHomepage("http://search.luhui.net/", "鲁虺联合搜索群");
                 return false
 				};
-			$("add_fav").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+			$("add_fav").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
             $("add_fav").onmouseover = function() { 
-				add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />加入收藏夹";
+				add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />加入收藏夹";
 				};
             $("add_fav").onmouseout = function() { 
-				add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+				add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 				};
             $("add_fav").onclick = function() {
-                Base.addFavorite("http://search.myuedu.net/", "联合搜索");
+                Base.addFavorite("http://search.luhui.net/", "鲁虺搜索群");
                 return false
 				};
-			$("set_lang").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+			$("set_lang").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
             $("set_lang").onmouseover = function() { 
-				set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />语言选择";
+				set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />语言选择";
 				};
             $("set_lang").onmouseout = function() { 
-				set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+				set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
 				};
             $("set_lang").onclick = function() {
                 UniSearchBase.showDom("options");
                };
-			$("setup").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+			$("setup").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
             $("setup").onmouseover = function() { 
-				setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />自定义";
+				setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />自定义";
 				};
             $("setup").onmouseout = function() { 
-				setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+				setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
 				};
             $("setup").onclick = function() {
                 UniSearchBase.showDom("perConfigCon");
@@ -596,7 +596,7 @@ var UniSearchBase = {
             $("addPreferImg").alt = "添加到首选";
             $("newPreferImg").alt = "修改首选搜索引擎列表";
             $("searchBut").title = "搜索";
-            $("searchImgTop").alt = "联合搜索";
+            $("searchImgTop").alt = "鲁虺联合搜索群";
 			$("imeBut").title = "QQ云输入法";
 			$("TipsTitle").innerHTML = "本站已启用QQ云输入法，您可以直接点击云输入法图标或使用键盘快捷键Ctrl+Shift+Space启用。";
 			$("TipsClose").innerHTML = "我知道了";
@@ -608,44 +608,44 @@ var UniSearchBase = {
                 $("opt_lang").options[1].selected = true;
                 $("opt_butSave").value = "Save";
                 $("opt_butCancel").value = "Cancel";
-				$("set_home").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+				$("set_home").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 				$("set_home").onmouseover = function() { 
-					set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />Set as Homepage";
+					set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />Set as Homepage";
 					};
 				$("set_home").onmouseout = function() { 
-					set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+					set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 					};
 				$("set_home").onclick = function() {
-					Base.setHomepage("http://search.myuedu.net/", "Union Search");
+					Base.setHomepage("http://search.luhui.net/", "Union Search");
 					return false
 					};
-				$("add_fav").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+				$("add_fav").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 				$("add_fav").onmouseover = function() { 
-					add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />Add to Favorites";
+					add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />Add to Favorites";
 					};
 				$("add_fav").onmouseout = function() { 
-					add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+					add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 					};
 				$("add_fav").onclick = function() {
-					Base.addFavorite("http://search.myuedu.net/", "Union Search");
+					Base.addFavorite("http://search.luhui.net/", "Union Search");
 					return false
 					};
-				$("set_lang").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+				$("set_lang").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
 				$("set_lang").onmouseover = function() { 
-					set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />Language Choice";
+					set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />Language Choice";
 					};
 				$("set_lang").onmouseout = function() { 
-					set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+					set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
 					};
 				$("set_lang").onclick = function() {
 					UniSearchBase.showDom("options");
 					};
-				$("setup").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+				$("setup").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
 				$("setup").onmouseover = function() { 
-					setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />Customize";
+					setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />Customize";
 					};
 				$("setup").onmouseout = function() { 
-					setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+					setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
 					};
 				$("setup").onclick = function() {
 					UniSearchBase.showDom("perConfigCon");
@@ -673,44 +673,44 @@ var UniSearchBase = {
                     $("opt_lang").options[2].selected = true;
                     $("opt_butSave").value = "Enregistrer";
                     $("opt_butCancel").value = "Annuler";
-					$("set_home").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+					$("set_home").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 					$("set_home").onmouseover = function() { 
-						set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />Définir comme page de démarrage";
+						set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home_hover.png' width='22' height='22' alt='' />Définir comme page de démarrage";
 						};
 					$("set_home").onmouseout = function() { 
-						set_home.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
+						set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 						};
 					$("set_home").onclick = function() {
-						Base.setHomepage("http://search.myuedu.net/", "Union Search");
+						Base.setHomepage("http://search.luhui.net/", "Union Search");
 						return false
 						};
-					$("add_fav").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+					$("add_fav").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 					$("add_fav").onmouseover = function() { 
-						add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />Ajouter aux Favoris";
+						add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav_hover.png' width='22' height='22' alt='' />Ajouter aux Favoris";
 						};
 					$("add_fav").onmouseout = function() { 
-						add_fav.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
+						add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 						};
 					$("add_fav").onclick = function() {
-						Base.addFavorite("http://search.myuedu.net/", "Union Search");
+						Base.addFavorite("http://search.luhui.net/", "Union Search");
 						return false
 						};
-					$("set_lang").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+					$("set_lang").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
 					$("set_lang").onmouseover = function() { 
-						set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />Choix de la langue";
+						set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang_hover.png' width='22' height='22' alt='' />Choix de la langue";
 						};
 					$("set_lang").onmouseout = function() { 
-						set_lang.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
+						set_lang.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
 						};
 					$("set_lang").onclick = function() {
 						UniSearchBase.showDom("options");
 						};
-					$("setup").innerHTML= "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+					$("setup").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
 					$("setup").onmouseover = function() { 
-						setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />Personnaliser";
+						setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_hover.png' width='22' height='22' alt='' />Personnaliser";
 						};
 					$("setup").onmouseout = function() { 
-						setup.innerHTML = "<img src='theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
+						setup.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set.png' width='22' height='22' alt='' />";
 						};
 					$("setup").onclick = function() {
 						UniSearchBase.showDom("perConfigCon");
@@ -986,12 +986,12 @@ function perferMade(D, C) {
     };
     this.domOver = function(E) {
         if (Base.getSrcDom(E).tagName.toLowerCase() == "span") {
-            Base.getSrcDom(E).style.background = "url(theme/"+ UniSearch.Theme + "/images/tab_close_hover.gif) no-repeat center right"
+            Base.getSrcDom(E).style.background = "url(/search/theme/"+ UniSearch.Theme + "/images/tab_close_hover.gif) no-repeat center right"
         }
     };
     this.domOut = function(E) {
         if (Base.getSrcDom(E).tagName.toLowerCase() == "span") {
-            Base.getSrcDom(E).style.background = "url(theme/"+ UniSearch.Theme + "/images/tab_close.gif) no-repeat center right"
+            Base.getSrcDom(E).style.background = "url(/search/theme/"+ UniSearch.Theme + "/images/tab_close.gif) no-repeat center right"
         }
     };
     this.domClick = function(F) {
@@ -1071,7 +1071,7 @@ function preferConfig(C, B, D) {
                 con: G
             };
             this.domL.appendChild(this.ArrL[G]);
-            this.ArrL[G].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
+            this.ArrL[G].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="/search/theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
             this.ArrL[G].onclick = function(H) {
                 A.domLItemsClick(H)
             }
@@ -1139,7 +1139,7 @@ function preferConfig(C, B, D) {
             con: E
         };
         this.domL.appendChild(this.ArrL[E]);
-        this.ArrL[E].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
+        this.ArrL[E].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="/search/theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
         this.ArrL[E].onclick = function(G) {
             A.domLItemsClick(G)
         };
@@ -1212,7 +1212,7 @@ function preferConfig(C, B, D) {
         };
         this.domL.appendChild(this.ArrL[G]);
         var F = this.data[Base.getSrcDom(E).bsaeconfig.c]["items"][Base.getSrcDom(E).bsaeconfig.n];
-        this.ArrL[G].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
+        this.ArrL[G].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="/search/theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
         this.ArrL[G].onclick = function(H) {
             A.domLItemsClick(H)
         }
@@ -1291,7 +1291,7 @@ function preferConfig(C, B, D) {
                     con: H
                 };
                 this.domL.appendChild(this.ArrL[H]);
-                this.ArrL[H].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
+                this.ArrL[H].innerHTML = "<span>" + F.title + (F.subtitle ? F.subtitle: "") + '</span><img src="/search/theme/' + UniSearch.Theme + '/images/btn_remove.png" width="16" height="16" alt="" class="delImg" act="del" />';
                 this.ArrL[H].onclick = function(J) {
                     A.domLItemsClick(J)
                 }

@@ -98,27 +98,27 @@ UniSearch.data["zh-cn"]["web"] = {
     items: {
         baidu: {
             title: "百度",
-            url: "http://www.baidu.com/s?&ch=2&ie=utf-8&wd="
+            url: "https://www.baidu.com/s?&ch=2&ie=utf-8&wd="
         },
         google: {
             title: "Google",
-            url: "http://www.google.com/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
+            url: "https://www.google.com/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
         },
         youdao: {
             title: "有道",
-            url: "http://www.youdao.com/search?ue=gbk&q={noEncode}"
+            url: "https://www.youdao.com/search?ue=gbk&q={noEncode}"
         },
         gougou: {
             title: "狗狗",
-            url: "http://web.gougou.com/search?page=1&id=28416&search="
+            url: "https://web.gougou.com/search?page=1&id=28416&search="
         },
         live: {
             title: "Bing 搜索",
-            url: "http://cn.bing.com/search?form=QBLH&filt=all&q="
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },
         soso: {
             title: "搜搜",
-            url: "http://www.soso.com/q?w={keyword:gb2312}"
+            url: "https://www.soso.com/q?w={keyword:gb2312}"
         }
     }
 };
@@ -143,7 +143,7 @@ UniSearch.data["zh-cn"]["image"] = {
         live: {
             title: "Bing 搜索",
             subtitle: "图片",
-            url: "http://cn.bing.com/images/search?FORM=BIFD&q="
+            url: "https://cn.bing.com/images/search?FORM=BIFD&q="
         }
     }
 };
