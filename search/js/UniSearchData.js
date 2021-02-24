@@ -56,7 +56,7 @@ UniSearch.defaults.firstShow["zh-cn"] = {
     item: 0
 };
 UniSearch.defaults.order = {};
-UniSearch.defaults.order["zh-cn"] = ["prefer", "web", "music", "image", "video", "shopping", "dict", "bt", "answer", "news", "map", "soft", "blog", "more"];
+UniSearch.defaults.order["zh-cn"] = ["prefer", "web", "music", "image", "video", "shopping", "dict", "dht", "answer", "news", "map", "soft", "blog", "more"];
 UniSearch.data["zh-cn"] = {};
 UniSearch.data["zh-cn"]["more"] = {};
 UniSearch.data["zh-cn"]["set"] = {
@@ -85,7 +85,7 @@ UniSearch.data["zh-cn"]["prefer"] = {
         n: "baidu"
     },
     {
-        c: "bt",
+        c: "dht",
         n: "gougou"
     },
     {
@@ -245,13 +245,13 @@ UniSearch.data["zh-cn"]["video"] = {
         }
     }
 };
-UniSearch.data["zh-cn"]["bt"] = {
+UniSearch.data["zh-cn"]["dht"] = {
     title: "磁力",
     items: {
         gougou: {
-            title: "狗狗影视",
-            subtitle: "BT",
-            url: "http://www.gougou.com/search?id=28416&search="
+            title: "迅雷",
+            subtitle: "thunder",
+            url: "http://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=thunder:// "
         },
         Verycd: {
             title: "Verycd",
