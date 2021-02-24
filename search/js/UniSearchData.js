@@ -253,6 +253,49 @@ UniSearch.data["zh-cn"]["bt"] = {
             subtitle: "BT",
             url: "https://www.gougou.com/search?id=28416&search="
         },
+		
+                "baiduxt": { title: "百度",
+			url: "http://www.baidu.com/baidu?tn=luhuinet&word=xt urn:btih  {keyword:gb2312}& http://baidu.luhui.net:70/{keyword:gb2312}&http://www.cilisou.cn/s.php?q={keyword:gb2312}" },
+
+		"bingxt": { title: "必应",
+			url: "http://www.bing.com/search?q=xt urn:btih {keyword}" },
+
+		"thunder": { title: "thunder",
+			url: "http://www.luhui.net:70/thunder://{keyword:gb2312}" },
+
+		"luhui": { title: "鲁虺", subtitle: "磁力搜索引擎",
+			url: "http://www.luhui.net:70/xt urn:btih {keyword:gb2312}" },
+
+		"qqdl": { title: "旋风", subtitle: "旋风链接",
+			url: "http://www.luhui.net:70/qqdl:// {keyword:gb2312}" },
+
+		"soxt": { title: "360", subtitle: "奇虎360旗下搜索服务",
+			url: "http://www.so.com/index.php?a=index&ie=utf-8&shb=1&src=www.luhui.net&q=xt urn:btih {keyword:gb2312}" },
+
+		"xmbt": { title: "小米", subtitle: "磁力搜索引擎",
+			url: "http://www.xmbt.org/cvyun-{keyword:gb2312}-0-0-1.html" },
+
+
+
+"sogouxt": { title: "搜狗",
+			url: "http://www.sogou.com/web?query=xt urn:btih  {keyword}" },
+
+
+		"zhizhuso": { title: "btroom", subtitle: "磁力搜索引擎",
+			url: "http://www.btroom5.com/word.html?kw={keyword:gb2312}" },
+
+
+		"btbili": { title: "btbili", subtitle: "磁力搜索引擎",
+			url: "http://www.btbili.org/main-search-kw-{keyword:gb2312}.html" },
+
+		"btdiggjx": { title: "BtDigg", subtitle: "磁力搜索引擎",
+			url: "http://www.btdiggzw.cc/s/{keyword:gb2312}" },
+		
+		
+		
+        baidu: {
+            title: "baidu",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
         Verycd: {
             title: "Verycd",
             url: "https://www.verycd.com/search/folders/"
@@ -278,7 +321,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
         taobao: {
             title: "淘宝",
             subtitle: "购物",
-            url: "https://ai.taobao.com/search/index.htm?pid=mm_31320626_0_0&unid=&source_id=search&key={keyword:gb2312}"
+            url: "https://ai.taobao.com/search/index.htm?key={keyword:gb2312}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
         },
         dangdang: {
             title: "当当",
