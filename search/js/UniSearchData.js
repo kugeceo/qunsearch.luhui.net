@@ -184,7 +184,7 @@ UniSearch.data["zh-cn"]["image"] = {
         inmagine: {
             title: "123rf",
             subtitle: "图片",
-            url: "http://www.123rf.com/%E5%85%8D%E7%89%88%E7%A8%8E%E5%9B%BE%E5%83%8F/{keyword:gb2312}.html?&sti=lyjsmxtwtvytb4c61q"
+            url: "https://www.123rf.com/%E5%85%8D%E7%89%88%E7%A8%8E%E5%9B%BE%E5%83%8F/{keyword:gb2312}.html?&sti=lyjsmxtwtvytb4c61q"
         },
         live: {
             title: "Bing",
@@ -194,17 +194,27 @@ UniSearch.data["zh-cn"]["image"] = {
         pixabay: {
             title: "pixabay",
             subtitle: "",
-            url: "http://pixabay.com/zh/images/search/{keyword:gb2312}"
+            url: "https://pixabay.com/zh/images/search/{keyword:gb2312}"
         },
         yahoo: {
             title: "yahoo",
             subtitle: "雅虎",
-            url: "http://search.cn.yahoo.com/search?p={keyword}&v=image"
+            url: "https://search.cn.yahoo.com/search?p={keyword}&v=image"
         },
         so: {
             title: "360",
             subtitle: "图片",
-            url: "http://image.so.com/i?q={keyword:gb2312}&src=tab_www"
+            url: "https://image.so.com/i?q={keyword:gb2312}&src=tab_www"
+        },
+        huaban: {
+            title: "花瓣",
+            subtitle: "",
+            url: "https://huaban.com/search/?q={keyword:gb2312}"
+        },
+        quanjing: {
+            title: "全景",
+            subtitle: "",
+            url: "https://www.quanjing.com/search.aspx?q={keyword:gb2312}"
         }
     }
 };
@@ -410,25 +420,65 @@ UniSearch.data["zh-cn"]["shopping"] = {
 UniSearch.data["zh-cn"]["answer"] = {
     title: "文档",
     items: {
-        baidu: {
-            title: "百度知道",
-            url: "https://zhidao.baidu.com/q?word={keyword:gb2312}&ct=17&pn=0&tn=ikaslist&rn=10"
+        all: {
+            title: "全部文档",
+            url: "https://www.luhui.net/filetype:all {keyword:gb2312}&fileType=all"
         },
-        baike: {
-            title: "百度百科",
-            url: "https://baike.baidu.com/w?ct=17&lm=0&tn=baiduWikiSearch&pn=0&rn=10&word={keyword:gb2312}&submit=search"
+        pdf: {
+            title: "PDF文档",
+            url: "https://www.luhui.net/filetype:pdf {keyword:gb2312}&fileType=all"
         },
         jiumodiary: {
             title: "鸠摩",
             url: "https://www.jiumodiary.com/?SearchButton="
         },
-        sina: {
-            title: "新浪爱问",
-            url: "https://iask.sina.com.cn/search_engine/search_knowledge_engine.php?key={keyword:gb2312}&classid=0&title=ttt&gjss=0&x=29&y=9"
+        word: {
+            title: "word文档",
+            url: "https://www.luhui.net/filetype:doc {keyword:gb2312}&fileType=all"
+        },
+        txt: {
+            title: "txt文档",
+            url: "https://www.luhui.net/filetype:txt {keyword:gb2312}&fileType=all"
+        },
+        ppt: {
+            title: "ppt文档",
+            url: "https://www.luhui.net/filetype:ppt {keyword:gb2312}&fileType=all"
+        },
+        XLS: {
+            title: "XLS文档",
+            url: "https://www.luhui.net/filetype:XLS {keyword:gb2312}&fileType=all"
+        },
+        rtf: {
+            title: "rtf文档",
+            url: "https://www.luhui.net/filetype:rtf {keyword:gb2312}&fileType=all"
         },
         qihoo: {
             title: "奇虎",
-            url: "https://www.qihoo.com/wenda.php?kw={keyword:gb2312}&ff=1&do=search&noq=q&src=nindex"
+            url: "https://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q=filetype:all {keyword:gb2312}"
+        },
+        baidu: {
+            title: "百度",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:all {keyword:gb2312}"
+        },
+        google: {
+            title: "google",
+            url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q=filetype:all {keyword:gb2312}"
+        },
+        bing: {
+            title: "bing",
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:all {keyword:gb2312}"
+        },
+        sogou: {
+            title: "搜狗",
+            url: "https://www.sogou.com/web?query=filetype:all {keyword:gb2312}"
+        },
+        goobe: {
+            title: "goobe",
+            url: "https://goobe.io/search.aspx?k=filetype:all {keyword:gb2312}"
+        },
+        sm: {
+            title: "神马",
+            url: "https://m.sm.cn/s?q=filetype:all {keyword:gb2312}"
         }
     }
 };
@@ -441,7 +491,7 @@ UniSearch.data["zh-cn"]["map"] = {
         },
         google: {
             title: "谷歌地图",
-            url: "https://maps.google.com/maps?q="
+            url: "https://maps.google.cn/maps?q="
         },
         sogou: {
             title: "搜狗地图",
