@@ -13,7 +13,7 @@ UniSearch.defaults.preferredList["zh-cn"] = {
     news: "baidu",
     music: "baidu",
     video: "ku6",
-    bt: "gougou",
+    dht: "gougou",
     shopping: "taobao",
     answer: "baidu",
     map: "baidu",
@@ -43,7 +43,7 @@ UniSearch.defaults.preferredConList["zh-cn"] = [{
     n: "baidu"
 },
 {
-    c: "bt",
+    c: "dht",
     n: "gougou"
 },
 {
