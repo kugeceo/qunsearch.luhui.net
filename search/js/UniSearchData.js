@@ -140,6 +140,11 @@ UniSearch.data["zh-cn"]["image"] = {
             subtitle: "图片",
             url: "https://pic.sogou.com/pics?query={keyword:escape}"
         },
+        lmgtfy: {
+            title: "lmgtfy",
+            subtitle: "图片",
+            url: "https://zh.lmgtfy.app/#gsc.tab=0&gsc.q={keyword:escape}"
+        },
         live: {
             title: "Bing 搜索",
             subtitle: "图片",
@@ -281,7 +286,23 @@ UniSearch.data["zh-cn"]["bt"] = {
 		},
         sm: {
             title: "神马",
-            url: "http://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+            url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+		},
+        goobe: {
+            title: "goobe",
+            url: "https://goobe.io/search.aspx?k=magnet:?xt=urn:btih: {keyword:gb2312}"
+		},
+        chinaso: {
+            title: "国搜",
+            url: "https://www.chinaso.com/search/pagesearch.htm?q=magnet:?xt=urn:btih: {keyword:gb2312}"
+		},
+        lmgtfy: {
+            title: "lmgtfy",
+            url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q=magnet:?xt=urn:btih: {keyword:gb2312}"
+		},
+        sm: {
+            title: "神马",
+            url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}"
         }
     }
 };
