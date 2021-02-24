@@ -248,18 +248,23 @@ UniSearch.data["zh-cn"]["video"] = {
 UniSearch.data["zh-cn"]["bt"] = {
     title: "磁力",
     items: {
+        gougou: {
+            title: "狗狗影视",
+            subtitle: "BT",
+            url: "http://www.gougou.com/search?id=28416&search="
+        },
+        Verycd: {
+            title: "Verycd",
+            url: "http://www.verycd.com/search/folders/"
+        },
         bing: {
-            title: "必",
-            subtitle: "应",
+            title: "必应",
+            subtitle: "",
             url: "https://www.bing.com/search?q=magnet:?xt=urn:btih: "
         },
         baiduxt: {
             title: "百度",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
-        },
-        Verycd: {
-            title: "Verycd",
-            url: "https://www.verycd.com/search/folders/"
         },
         mtime: {
             title: "时光网",
