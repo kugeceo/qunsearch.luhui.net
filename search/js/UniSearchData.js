@@ -113,7 +113,7 @@ UniSearch.data["zh-cn"]["web"] = {
             url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q="
         },
         live: {
-            title: "Bing 搜索",
+            title: "Bing",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },
         chinaso: {
@@ -144,9 +144,9 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "白帽汇",
             url: "https://fofa.so/result?q={keyword:gb2312}&qbase64=6bKB6Jm6&file=&file="	
         },
-        mijisou: {
-            title: "秘迹",
-            url: "https://mijisou.com/?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
+        searx: {
+            title: "searx",
+            url: "https://searx.space/?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
         },
         search: {
             title: "search",
@@ -169,7 +169,7 @@ UniSearch.data["zh-cn"]["image"] = {
         baidu: {
             title: "百度",
             subtitle: "图片",
-            url: "https://image.baidu.com/i?ct=201326592&cl=2&lm=-1&tn=baiduimage&istype=2&fm=index&pv=&z=0&s=0&word="
+            url: "https://image.baidu.com/search/index?tn=baiduimage&word="
         },
         sogou: {
             title: "搜狗",
@@ -181,10 +181,30 @@ UniSearch.data["zh-cn"]["image"] = {
             subtitle: "图片",
             url: "https://zh.lmgtfy.app/#gsc.tab=0&gsc.q={keyword:escape}"
         },
+        inmagine: {
+            title: "123rf",
+            subtitle: "图片",
+            url: "http://www.123rf.com/%E5%85%8D%E7%89%88%E7%A8%8E%E5%9B%BE%E5%83%8F/{keyword:gb2312}.html?&sti=lyjsmxtwtvytb4c61q"
+        },
         live: {
-            title: "Bing 搜索",
+            title: "Bing",
             subtitle: "图片",
             url: "https://cn.bing.com/images/search?FORM=BIFD&q="
+        },
+        pixabay: {
+            title: "pixabay",
+            subtitle: "",
+            url: "http://pixabay.com/zh/images/search/{keyword:gb2312}"
+        },
+        yahoo: {
+            title: "yahoo",
+            subtitle: "雅虎",
+            url: "http://search.cn.yahoo.com/search?p={keyword}&v=image"
+        },
+        so: {
+            title: "360",
+            subtitle: "图片",
+            url: "http://image.so.com/i?q={keyword:gb2312}&src=tab_www"
         }
     }
 };
@@ -360,10 +380,25 @@ UniSearch.data["zh-cn"]["shopping"] = {
             subtitle: "购物",
             url: "https://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
         },
+        "etao": {
+            title: "一淘网",
+            subtitle: "",
+            url: "https://www.etao.com/cjfl/flash.htm?spm=a231o.13503973.1998559106.1.d89c68edoGdFEz&pid=mm_31320626_3466227_58448586&union_lens=recoveryid%3A201_11.224.245.240_89359_1614144716134%3Bprepvid%3A201_11.224.245.240_89359_1614144716134#{keyword:gb2312}"
+        },
+        "tmall": {
+            title: "天猫",
+            subtitle: "商城",
+            url: "https://www.tmall.com/?ali_trackid=2:mm_31320626_0_0:1614144796_153_313452492&union_lens=recoveryid:201_11.224.245.240_89359_1614144716134;prepvid:201_11.224.245.240_89359_1614144716134&spm=0.0.0.0.0_0.0.0.0&bxsign=tbknpsfE2t5pBml0fh95/kgF3pxUQZk22Z0nVfxpE9m3Eq/sxoH4kx5OfuYullTDIQr5PCISjZeKRPPvAIOLihfW4KUUJo5YIMLJTh2wn6AfoU={keyword:gb2312}"
+        },
         amazon: {
             title: "卓越",
             subtitle: "购物",
             url: "https://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
+        },
+        tianyancha: {
+            title: "天眼",
+            subtitle: "查",
+            url: "https://www.tianyancha.com/search?key={keyword}"
         },
         google: {
             title: "Google",
