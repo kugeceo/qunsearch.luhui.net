@@ -266,18 +266,18 @@ UniSearch.data["zh-cn"]["bt"] = {
             title: "百度",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
         },
-        mtime: {
-            title: "时光网",
-            url: "https://www.mtime.com/search/?"
+        qqdl: {
+            title: "旋风链接",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=qqdl:// "
         },
-        douban: {
-            title: "豆瓣影评",
-            url: "https://www.douban.com/subject_search?cat=1002&search_text="
+        360: {
+            title: "奇虎360",
+            url: "https://www.so.com/index.php?a=index&ie=utf-8&shb=1&src=www.luhui.net&q=xt urn:btih "
         },
-        shooter: {
-            title: "射手字幕",
-            subtitle: "BT",
-            url: "https://shooter.cn/sub/?searchword="
+        sogou: {
+            title: "搜",
+            subtitle: "狗",
+            url: "https://www.sogou.com/web?query=xt urn:btih  "
         }
     }
 };
