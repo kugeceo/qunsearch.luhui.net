@@ -249,13 +249,13 @@ UniSearch.data["zh-cn"]["bt"] = {
     title: "磁力",
     items: {
         gougou: {
-            title: "狗狗影视",
-            subtitle: "BT",
-            url: "http://www.baidu.com/baidu?tn=luhuinet&word="
+            title: "迅雷",
+            subtitle: "thunder",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=thunder:// "
         },
         Verycd: {
             title: "Verycd",
-            url: "http://www.verycd.com/search/folders/"
+            url: "https://www.verycd.com/search/folders/"
         },
         bing: {
             title: "必应",
