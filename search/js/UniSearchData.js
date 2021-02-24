@@ -251,7 +251,7 @@ UniSearch.data["zh-cn"]["bt"] = {
         gougou: {
             title: "狗狗影视",
             subtitle: "BT",
-            url: "http://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
+            url: "http://www.baidu.com/baidu?tn=luhuinet&word="
         },
         Verycd: {
             title: "Verycd",
