@@ -422,11 +422,11 @@ UniSearch.data["zh-cn"]["answer"] = {
     items: {
         all: {
             title: "全部文档",
-            url: "https://www.luhui.net/filetype:all {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:all {keyword:gb2312}&fileType=all"
         },
         pdf: {
             title: "PDF文档",
-            url: "https://www.luhui.net/filetype:pdf {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:pdf {keyword:gb2312}&fileType=all"
         },
         jiumodiary: {
             title: "鸠摩",
@@ -434,23 +434,23 @@ UniSearch.data["zh-cn"]["answer"] = {
         },
         word: {
             title: "word文档",
-            url: "https://www.luhui.net/filetype:doc {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:doc {keyword:gb2312}&fileType=all"
         },
         txt: {
             title: "txt文档",
-            url: "https://www.luhui.net/filetype:txt {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:txt {keyword:gb2312}&fileType=all"
         },
         ppt: {
             title: "ppt文档",
-            url: "https://www.luhui.net/filetype:ppt {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:ppt {keyword:gb2312}&fileType=all"
         },
         XLS: {
             title: "XLS文档",
-            url: "https://www.luhui.net/filetype:XLS {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:XLS {keyword:gb2312}&fileType=all"
         },
         rtf: {
             title: "rtf文档",
-            url: "https://www.luhui.net/filetype:rtf {keyword:gb2312}&fileType=all"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:rtf {keyword:gb2312}&fileType=all"
         },
         qihoo: {
             title: "奇虎",
@@ -458,7 +458,7 @@ UniSearch.data["zh-cn"]["answer"] = {
         },
         baidu: {
             title: "百度",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:all {keyword:gb2312}"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=index of {keyword:gb2312}"
         },
         google: {
             title: "google",
@@ -479,6 +479,10 @@ UniSearch.data["zh-cn"]["answer"] = {
         sm: {
             title: "神马",
             url: "https://m.sm.cn/s?q=filetype:all {keyword:gb2312}"
+        },
+        slimego: {
+            title: "史莱姆",
+            url: "https://slimego.cn/search.html?page=1&rows=50&v=www.luhui.net&q={keyword}"
         }
     }
 };
@@ -535,7 +539,7 @@ UniSearch.data["zh-cn"]["blog"] = {
 		google: {
             title: "Google",
             subtitle: "博客",
-            url: "https://www.google.com/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
+            url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
         },
         yodao: {
             title: "有道",
