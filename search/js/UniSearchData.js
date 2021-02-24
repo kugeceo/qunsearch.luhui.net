@@ -254,8 +254,8 @@ UniSearch.data["zh-cn"]["bt"] = {
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=thunder:// "
         },
         Verycd: {
-            title: "Verycd",
-            url: "https://www.verycd.com/search/folders/"
+            title: "电驴Verycd",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=ed2k://|file| "
         },
         bing: {
             title: "必应",
@@ -272,12 +272,12 @@ UniSearch.data["zh-cn"]["bt"] = {
         },
         360: {
             title: "奇虎360",
-            url: "https://www.so.com/index.php?a=index&ie=utf-8&shb=1&src=www.luhui.net&q=xt urn:btih "
+            url: "https://www.so.com/index.php?a=index&ie=utf-8&shb=1&src=www.luhui.net&q=magnet:?xt=urn:btih: "
         },
         sogou: {
             title: "搜",
             subtitle: "狗",
-            url: "https://www.sogou.com/web?query=xt urn:btih  "
+            url: "https://www.sogou.com/web?query=magnet:?xt=urn:btih: "
         }
     }
 };
