@@ -74,7 +74,7 @@ UniSearch.data["zh-cn"]["prefer"] = {
     },
     {
         c: "web",
-        n: "youdao"
+        n: "magi"
     },
     {
         c: "web",
@@ -104,21 +104,41 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "Google",
             url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
         },
-        youdao: {
-            title: "有道",
-            url: "https://www.youdao.com/search?ue=gbk&q={noEncode}"
+        magi: {
+            title: "magi",
+            url: "https://magi.com/search?q={noEncode}"
         },
-        gougou: {
-            title: "狗狗",
-            url: "https://web.gougou.com/search?page=1&id=28416&search="
+        lmgtfy: {
+            title: "lmgtfy",
+            url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q="
         },
         live: {
             title: "Bing 搜索",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },
+        chinaso: {
+            title: "国搜",
+            url: "https://www.chinaso.com/search/pagesearch.htm?q="
+        },
         soso: {
-            title: "搜搜",
-            url: "https://www.soso.com/q?w={keyword:gb2312}"
+            title: "搜狗",
+            url: "https://www.sogou.com/web?query={keyword:gb2312}"
+        },
+        haosou: {
+            title: "好搜",
+            url: "http://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q="
+        },
+        goobe: {
+            title: "goobe",
+            url: "https://goobe.io/search.aspx?k="
+        },
+        zhongsou: {
+            title: "中搜",
+            url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}&kid=&y=5&stag=1&dt=0&pt=0&utf=1"
+        },
+        sm: {
+            title: "神马",
+            url: "http://m.sm.cn/s?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
         }
     }
 };
@@ -300,9 +320,9 @@ UniSearch.data["zh-cn"]["bt"] = {
             title: "lmgtfy",
             url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q=magnet:?xt=urn:btih: {keyword:gb2312}"
 		},
-        sm: {
-            title: "神马",
-            url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}"
+        google: {
+            title: "google谷歌",
+            url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q=magnet:?xt=urn:btih: {keyword:gb2312}"
         }
     }
 };
