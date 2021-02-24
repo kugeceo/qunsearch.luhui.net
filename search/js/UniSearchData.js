@@ -248,7 +248,7 @@ UniSearch.data["zh-cn"]["video"] = {
 UniSearch.data["zh-cn"]["bt"] = {
     title: "磁力",
     items: {
-        bing: {
+        bingxt: {
             title: "必",
             subtitle: "应",
             url: "https://www.bing.com/search?q=magnet:?xt=urn:btih: "
@@ -312,7 +312,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
     }
 };
 UniSearch.data["zh-cn"]["answer"] = {
-    title: "知识",
+    title: "文档",
     items: {
         baidu: {
             title: "百度知道",
@@ -384,7 +384,7 @@ UniSearch.data["zh-cn"]["soft"] = {
     }
 };
 UniSearch.data["zh-cn"]["blog"] = {
-    title: "博客",
+    title: "人文",
     items: {
 		google: {
             title: "Google",
