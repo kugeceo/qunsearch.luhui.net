@@ -102,7 +102,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         google: {
             title: "Google",
-            url: "https://www.google.com/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
+            url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
         },
         youdao: {
             title: "有道",
@@ -128,7 +128,7 @@ UniSearch.data["zh-cn"]["image"] = {
         google: {
             title: "Google",
             subtitle: "图片",
-            url: "https://www.google.com/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
+            url: "https://www.google.cn/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
         },
         baidu: {
             title: "百度",
@@ -278,6 +278,10 @@ UniSearch.data["zh-cn"]["bt"] = {
             title: "搜",
             subtitle: "狗",
             url: "https://www.sogou.com/web?query=magnet:?xt=urn:btih: "
+		},
+        sm: {
+            title: "神马",
+            url: "http://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
         }
     }
 };
