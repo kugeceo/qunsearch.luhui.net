@@ -458,7 +458,7 @@ UniSearch.data["zh-cn"]["answer"] = {
         },
         baidu: {
             title: "百度",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=index of {keyword:gb2312}"
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=index of {keyword:gb2312} .zip"
         },
         google: {
             title: "google",
@@ -490,12 +490,40 @@ UniSearch.data["zh-cn"]["map"] = {
     title: "地图",
     items: {
         baidu: {
-            title: "百度地图",
+            title: "百度",
             url: "https://map.baidu.com/#word={keyword:gb2312}&ct=10"
         },
         google: {
-            title: "谷歌地图",
+            title: "谷歌",
             url: "https://maps.google.cn/maps?q="
+        },
+        luhui: {
+            title: "鲁虺",
+            url: "https://ditu.luhui.net?q="
+        },
+        so: {
+            title: "360",
+            url: "https://ditu.so.com/?k={keyword:gb2312}&src=www.luhui.net"
+        },
+        mapbar: {
+            title: "图吧",
+            url: "https://www.mapbar.com/search/#c=&k={keyword:gb2312}&pn=1&rn=10&wf=ls"
+        },
+        qq: {
+            title: "腾讯",
+            url: "https://map.qq.com/#lq={keyword:gb2312}"
+        },
+        amap: {
+            title: "高德",
+            url: "https://ditu.amap.com/?q={keyword}"
+        },
+        bing: {
+            title: "必应",
+            url: "https://cn.bing.com/ditu/?q={keyword}&mkt=zh&FORM=HDRSC7"
+        },
+        city8: {
+            title: "城市吧",
+            url: "http://www.city8.com/map/?q={keyword}"
         },
         sogou: {
             title: "搜狗地图",
