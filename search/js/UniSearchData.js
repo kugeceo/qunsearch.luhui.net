@@ -493,6 +493,10 @@ UniSearch.data["zh-cn"]["map"] = {
             title: "百度",
             url: "https://map.baidu.com/#word={keyword:gb2312}&ct=10"
         },
+        cesium: {
+            title: "cesium",
+            url: "https://cesium.com/cesiumjs/cesium-viewer/?view="
+        },
         google: {
             title: "谷歌",
             url: "https://maps.google.cn/maps?q="
@@ -526,8 +530,12 @@ UniSearch.data["zh-cn"]["map"] = {
             url: "http://www.city8.com/map/?q={keyword}"
         },
         sogou: {
-            title: "搜狗地图",
+            title: "搜狗",
             url: "https://map.sogou.com/#c=11944000,4152000,4&city=%u5168%u56FD&lq={keyword}&page=1"
+        },
+        OpenStreetMap: {
+            title: "OpenStreetMap",
+            url: "https://www.openstreetmap.org/search?query={keyword}"
         }
     }
 };
