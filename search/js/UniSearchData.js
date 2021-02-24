@@ -126,7 +126,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         haosou: {
             title: "好搜",
-            url: "http://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q="
+            url: "https://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q="
         },
         goobe: {
             title: "goobe",
@@ -138,7 +138,23 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         sm: {
             title: "神马",
-            url: "http://m.sm.cn/s?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+            url: "https://m.sm.cn/s?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+        },
+        fofa: {
+            title: "白帽汇",
+            url: "https://fofa.so/result?q={keyword:gb2312}&qbase64=6bKB6Jm6&file=&file="	
+        },
+        mijisou: {
+            title: "秘迹",
+            url: "https://mijisou.com/?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
+        },
+        search: {
+            title: "search",
+            url: "https://www.search.com/web?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
+        },
+        looksmart: {
+            title: "looksmart",
+            url: "https://results.looksmart.com/serp?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
         }
     }
 };
@@ -367,9 +383,9 @@ UniSearch.data["zh-cn"]["answer"] = {
             title: "百度百科",
             url: "https://baike.baidu.com/w?ct=17&lm=0&tn=baiduWikiSearch&pn=0&rn=10&word={keyword:gb2312}&submit=search"
         },
-        soso: {
-            title: "搜搜问问",
-            url: "https://wenwen.soso.com/z/SearchSolved.e?ch=k2&sp="
+        jiumodiary: {
+            title: "鸠摩",
+            url: "https://www.jiumodiary.com/?SearchButton="
         },
         sina: {
             title: "新浪爱问",
