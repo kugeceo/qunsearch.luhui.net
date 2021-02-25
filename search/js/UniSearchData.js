@@ -283,17 +283,17 @@ UniSearch.data["zh-cn"]["music"] = {
         baidu: {
             title: "鲁",
             subtitle: "虺",
-            url: "https://music.luhui.net/lyrics/?name={keyword:gb2312}&type=netease"
+            url: "https://music.luhui.net/?q={keyword:gb2312}"
         },
         sogou: {
             title: "搜狗",
             subtitle: "音乐",
             url: "https://mp3.sogou.com/music.so?query={keyword:gb2312}"
         },
-        sogua: {
-            title: "SoGua",
+        163: {
+            title: "网易云",
             subtitle: "音乐",
-            url: "https://search.sogua.com/search.asp?key="
+            url: "https://music.163.com/#/search/m/?s={keyword:gb2312}&type=1"
         },
         taihe: {
             title: "千千",
@@ -413,17 +413,15 @@ UniSearch.data["zh-cn"]["shopping"] = {
     items: {
         taobao: {
             title: "淘宝",
-            subtitle: "购物",
             url: "https://ai.taobao.com/search/index.htm?key={keyword:gb2312}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
         },
         dangdang: {
             title: "当当",
-            subtitle: "购物",
             url: "https://search.dangdang.com/search.aspx?key={keyword:gb2312}"
         },
         "360buy": {
-            title: "京东商城",
-            subtitle: "购物",
+            title: "京东",
+            subtitle: "商城",
             url: "https://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
         },
         "etao": {
@@ -437,8 +435,8 @@ UniSearch.data["zh-cn"]["shopping"] = {
             url: "https://www.tmall.com/?ali_trackid=2:mm_31320626_0_0:1614144796_153_313452492&union_lens=recoveryid:201_11.224.245.240_89359_1614144716134;prepvid:201_11.224.245.240_89359_1614144716134&spm=0.0.0.0.0_0.0.0.0&bxsign=tbknpsfE2t5pBml0fh95/kgF3pxUQZk22Z0nVfxpE9m3Eq/sxoH4kx5OfuYullTDIQr5PCISjZeKRPPvAIOLihfW4KUUJo5YIMLJTh2wn6AfoU={keyword:gb2312}"
         },
         amazon: {
-            title: "卓越",
-            subtitle: "购物",
+            title: "卓",
+            subtitle: "越",
             url: "https://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
         },
         tianyancha: {
@@ -448,7 +446,6 @@ UniSearch.data["zh-cn"]["shopping"] = {
         },
         google: {
             title: "Google",
-            subtitle: "购物",
             url: "https://www.google.cn/products?q="
         }
     }
@@ -595,7 +592,7 @@ UniSearch.data["zh-cn"]["soft"] = {
             url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword:gb2312}"
         },
         onlinedown: {
-            title: "华军软件园",
+            title: "华军",
             subtitle: "软件",
             url: "https://search.newhua.com/search.asp?Keyword={keyword:gb2312}"
         },
@@ -616,22 +613,21 @@ UniSearch.data["zh-cn"]["blog"] = {
     items: {
 		google: {
             title: "Google",
-            subtitle: "博客",
             url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
         },
         yodao: {
-            title: "有道",
-            subtitle: "博客",
+            title: "有",
+            subtitle: "道",
             url: "https://blog.yodao.com/search?q={keyword:gb2312}"
         },
         baidu: {
-            title: "百度",
-            subtitle: "博客",
+            title: "百",
+            subtitle: "度",
             url: "https://blogsearch.baidu.com/s?wd={keyword:gb2312}"
         },
 		sogou: {
-            title: "搜狗",
-            subtitle: "博客",
+            title: "搜",
+            subtitle: "狗",
             url: "https://blogsearch.sogou.com/blog?query={keyword:gb2312}"
         }
     }
