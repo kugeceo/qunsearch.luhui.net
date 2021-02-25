@@ -132,13 +132,25 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "goobe",
             url: "https://goobe.io/search.aspx?k="
         },
-        zhongsou: {
-            title: "中搜",
-            url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}&kid=&y=5&stag=1&dt=0&pt=0&utf=1"
-        },
         sm: {
             title: "神马",
             url: "https://m.sm.cn/s?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+        },
+        naver: {
+            title: "naver",
+            url: "https://search.naver.com/search.naver?query={keyword:gb2312}"
+        },
+        yahoo: {
+            title: "yahoo",
+            url: "https://search.yahoo.com/search?p="
+        },
+        toutiao: {
+            title: "头条",
+            url: "https://www.toutiao.com/search/?keyword={keyword:gb2312}"
+        },
+        zhongsou: {
+            title: "中搜",
+            url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}&kid=&y=5&stag=1&dt=0&pt=0&utf=1"
         },
         fofa: {
             title: "白帽汇",
@@ -245,9 +257,9 @@ UniSearch.data["zh-cn"]["music"] = {
     title: "音乐",
     items: {
         baidu: {
-            title: "百度",
-            subtitle: "音乐",
-            url: "https://mp3.baidu.com/m?f=ms&lm=-1&word={keyword:gb2312}"
+            title: "鲁",
+            subtitle: "虺",
+            url: "https://music.luhui.net/lyrics/?name={keyword:gb2312}&type=netease"
         },
         sogou: {
             title: "搜狗",
@@ -259,10 +271,10 @@ UniSearch.data["zh-cn"]["music"] = {
             subtitle: "音乐",
             url: "https://search.sogua.com/search.asp?key="
         },
-        zhongshou: {
-            title: "中搜",
-            subtitle: "MP3",
-            url: "https://mp3.zhongsou.com/m?w={keyword:gb2312}"
+        taihe: {
+            title: "千千",
+            subtitle: "音乐",
+            url: "https://music.taihe.com/search?word={keyword:gb2312}"
         }
     }
 };
@@ -544,13 +556,11 @@ UniSearch.data["zh-cn"]["soft"] = {
     items: {
         github: {
             title: "github",
-            subtitle: "",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com {keyword:gb2312}"
         },
-		pconline: {
-            title: "太平洋",
-            subtitle: "软件",
-            url: "https://dl.pconline.com.cn/search.jsp?PubDate=0&DLTypeId=1&SearchType=1&submit.x=20&submit.y=14&keyword={keyword:gb2312}"
+		gitee: {
+            title: "gitee",
+            url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword:gb2312}"
         },
         onlinedown: {
             title: "华军软件园",
