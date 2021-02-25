@@ -154,7 +154,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         luhui: {
             title: "鲁虺",
-            url: "http://www.luhui.net/?q={keyword:gb2312}"
+            url: "https://www.luhui.net/?q={keyword:gb2312}"
         },
         aol: {
             title: "aol",
@@ -170,7 +170,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         appeasou: {
             title: "宜搜",
-            url: "http://i.appeasou.com/s.m?idx=1&sty=1&q={keyword:gb2312}&esid=IlmUHM05uab&fr=9.3.2.2&wver=ta"
+            url: "https://i.appeasou.com/s.m?idx=1&sty=1&q={keyword:gb2312}&esid=IlmUHM05uab&fr=9.3.2.2&wver=ta"
         },
         zhongsou: {
             title: "中搜",
@@ -582,7 +582,15 @@ UniSearch.data["zh-cn"]["soft"] = {
             title: "github",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com {keyword:gb2312}"
         },
-		gitee: {
+		lingfengyun: {
+            title: "凌风云",
+            url: "https://www.lingfengyun.com/search?wd={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
+        },
+		xiaoso: {
+            title: "小不点",
+            url: "https://www.xiaoso.net/m/search?wd={keyword:gb2312}"
+        },
+		manong: {
             title: "gitee",
             url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword:gb2312}"
         },
