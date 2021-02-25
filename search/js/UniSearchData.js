@@ -148,9 +148,14 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "头条",
             url: "https://www.toutiao.com/search/?keyword={keyword:gb2312}"
         },
+        cctv: {
+            title: "央视",
+            url: "https://search.cctv.com/search.php?qtext={keyword:gb2312}&type=web"
+        },
         luhui: {
             title: "鲁虺",
             url: "http://www.luhui.net/?q={keyword:gb2312}"
+        },
         aol: {
             title: "aol",
             url: "https://search.aol.com/aol/search?q={keyword:gb2312}"
