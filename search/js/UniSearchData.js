@@ -148,9 +148,28 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "头条",
             url: "https://www.toutiao.com/search/?keyword={keyword:gb2312}"
         },
+        luhui: {
+            title: "鲁虺",
+            url: "http://www.luhui.net/?q={keyword:gb2312}"
+        aol: {
+            title: "aol",
+            url: "https://search.aol.com/aol/search?q={keyword:gb2312}"
+        },
+        biglobe: {
+            title: "biglobe",
+            url: "https://cgi.search.biglobe.ne.jp/cgi-bin/search-st?search=%E6%A4%9C%E7%B4%A2&web_s.x=1&q={keyword:gb2312}"
+        },
+        startpage: {
+            title: "startpage",
+            url: "https://www.startpage.com/sp/search?q={keyword:gb2312}"
+        },
+        appeasou: {
+            title: "宜搜",
+            url: "http://i.appeasou.com/s.m?idx=1&sty=1&q={keyword:gb2312}&esid=IlmUHM05uab&fr=9.3.2.2&wver=ta"
+        },
         zhongsou: {
             title: "中搜",
-            url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}&kid=&y=5&stag=1&dt=0&pt=0&utf=1"
+            url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}"
         },
         fofa: {
             title: "白帽汇",
@@ -332,12 +351,12 @@ UniSearch.data["zh-cn"]["bt"] = {
     title: "磁力",
     items: {
         gougou: {
-            title: "迅雷",
-            subtitle: "thunder",
+            title: "迅",
+            subtitle: "雷",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=thunder:// "
         },
         Verycd: {
-            title: "电驴Verycd",
+            title: "电驴",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=ed2k://|file| "
         },
         bing: {
