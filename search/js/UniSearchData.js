@@ -154,7 +154,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         luhui: {
             title: "鲁虺",
-            url: "https://luhui.net/?q={keyword:gb2312}"
+            url: "https://luhui.net/{keyword:gb2312}"
         },
         aol: {
             title: "aol",
@@ -312,8 +312,7 @@ UniSearch.data["zh-cn"]["video"] = {
         },
         Google: {
             title: "Google",
-            subtitle: "谷歌",
-            url: "https://www.g.cn/search?q={keyword}&tbs=vid%3A1"
+            url: "https://www.google.cn/search?q={keyword}&tbs=vid%3A1"
         },
         youku: {
             title: "优",
@@ -327,7 +326,6 @@ UniSearch.data["zh-cn"]["video"] = {
         },
         ku6: {
             title: "酷6",
-            subtitle: "视频",
             url: "https://so.ku6.com/v?q="
         },
         "bing": {
@@ -348,6 +346,22 @@ UniSearch.data["zh-cn"]["video"] = {
         vsearch: {
             title: "vsearch",
             url: "https://www.vsearch.me/s/?q="
+        },
+        xiaokesoso: {
+            title: "小可搜搜",
+            url: "https://www.xiaokesoso.com/s/search?q={keyword:gb2312}&currentPage=1"
+        },
+        cupfox: {
+            title: "茶杯狐",
+            url: "https://www.cupfox.com/search?key="
+        },
+        bilibili: {
+            title: "哔哩哔哩",
+            url: "https://search.bilibili.com/all?keyword={keyword:gb2312}&from_source=nav_search_new"
+        },
+        kan360: {
+            title: "360kan",
+            url: "https://video.360kan.com/v?q={keyword:gb2312}&src=tab_www"
         },
         mgtv: {
             title: "芒果TV",
