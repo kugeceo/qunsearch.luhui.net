@@ -616,7 +616,7 @@ var UniSearchBase = {
 					set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 					};
 				$("set_home").onclick = function() {
-					Base.setHomepage("http://search.luhui.net/", "Union Search");
+					Base.setHomepage("http://search.luhui.net/", "luhui Union Search");
 					return false
 					};
 				$("add_fav").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
@@ -627,7 +627,7 @@ var UniSearchBase = {
 					add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 					};
 				$("add_fav").onclick = function() {
-					Base.addFavorite("http://search.luhui.net/", "Union Search");
+					Base.addFavorite("http://search.luhui.net/", "luhui Union Search");
 					return false
 					};
 				$("set_lang").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";
@@ -660,12 +660,12 @@ var UniSearchBase = {
                 $("addPreferImg").alt = "Add to Prefer";
                 $("newPreferImg").alt = "New Prefer";
                 $("searchBut").title = "Search";
-                $("searchImgTop").alt = "Union Search";
+                $("searchImgTop").alt = "luhui Union Search";
 				$("imeBut").title = "QQ Cloud ime";
 				$("TipsTitle").innerHTML = "The site has enabled QQ Cloud ime，You can click this icon or use shortcut Ctrl+Shift+Space to start.";
 				$("TipsClose").innerHTML = "I know";
                 $("selfCon").innerHTML = "Customize";
-                document.title = "Union Search"
+                document.title = "luhui Union Search"
             } else {
                 if (A == "fr-fr") {
                     $("opt_title").innerHTML = "Langue de l'interface";
@@ -681,7 +681,7 @@ var UniSearchBase = {
 						set_home.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_home.png' width='22' height='22' alt='' />";
 						};
 					$("set_home").onclick = function() {
-						Base.setHomepage("http://search.luhui.net/", "Union Search");
+						Base.setHomepage("http://search.luhui.net/", "luhui Union Search");
 						return false
 						};
 					$("add_fav").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
@@ -692,7 +692,7 @@ var UniSearchBase = {
 						add_fav.innerHTML = "<img src='/search/theme/"+ UniSearch.Theme + "/images/add_fav.png' width='22' height='22' alt='' />";
 						};
 					$("add_fav").onclick = function() {
-						Base.addFavorite("http://search.luhui.net/", "Union Search");
+						Base.addFavorite("http://search.luhui.net/", "luhui Union Search");
 						return false
 						};
 					$("set_lang").innerHTML= "<img src='/search/theme/"+ UniSearch.Theme + "/images/set_lang.png' width='22' height='22' alt='' />";

@@ -8,7 +8,7 @@
 UniSearch.defaults.preferredList = {};
 UniSearch.defaults.preferredList["zh-cn"] = {
     prefer: 0,
-    web: "google",
+    web: "live",
     image: "google",
     news: "baidu",
     music: "baidu",
@@ -24,7 +24,7 @@ UniSearch.defaults.preferredList["zh-cn"] = {
 UniSearch.defaults.preferredConList = {};
 UniSearch.defaults.preferredConList["zh-cn"] = [{
     c: "web",
-    n: "google"
+    n: "live"
 },
 {
     c: "web",
@@ -32,7 +32,7 @@ UniSearch.defaults.preferredConList["zh-cn"] = [{
 },
 {
     c: "web",
-    n: "live"
+    n: "google"
 },
 {
     c: "web",
