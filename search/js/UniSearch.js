@@ -730,7 +730,7 @@ var UniSearchBase = {
 					$("TipsTitle").innerHTML = "Le site permis QQ Nuage ime, vous pouvez cliquer sur cette icône ou utiliser le raccourci Ctrl+Shift+Space pour commencer.";
 					$("TipsClose").innerHTML = "je sais que";
 					$("selfCon").innerHTML = "Personnaliser";
-                    document.title = "Recherche de search"
+                    document.title = "luhui Recherche de search"
                 } else {
                     alert("Language Error !!!!");
                     return
