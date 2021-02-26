@@ -32,7 +32,7 @@ UniSearch.defaults.preferredConList["zh-cn"] = [{
 },
 {
     c: "web",
-    n: "google"
+    n: "haosou"
 },
 {
     c: "web",
@@ -154,7 +154,7 @@ UniSearch.data["zh-cn"]["web"] = {
         },
         luhui: {
             title: "鲁虺",
-            url: "https://www.luhui.net/?q={keyword:gb2312}"
+            url: "https://luhui.net/?q={keyword:gb2312}"
         },
         aol: {
             title: "aol",
