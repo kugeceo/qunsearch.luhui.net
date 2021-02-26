@@ -308,16 +308,16 @@ UniSearch.data["zh-cn"]["video"] = {
         baidu: {
             title: "百",
             subtitle: "度",
-            url: "http://v.baidu.com/v?word={keyword:gb2312}"
+            url: "https://v.baidu.com/v?word={keyword:gb2312}"
         },
         Google: {
             title: "Google",
-            subtitle: "视频",
+            subtitle: "谷歌",
             url: "https://www.g.cn/search?q={keyword}&tbs=vid%3A1"
         },
         youku: {
-            title: "优酷",
-            subtitle: "视频",
+            title: "优",
+            subtitle: "酷",
             url: "https://so.youku.com/search_video/q_"
         },
         tudou: {
@@ -335,11 +335,6 @@ UniSearch.data["zh-cn"]["video"] = {
             subtitle: "必应",
             url: "https://cn.bing.com/videos/search?q={keyword:gb2312}"
         },
-        "6room": {
-            title: "六间房",
-            subtitle: "视频",
-            url: "https://6.cn/search.php?t=v&ko=1&k="
-        },
         gougou: {
             title: "搜",
             subtitle: "狗",
@@ -349,6 +344,29 @@ UniSearch.data["zh-cn"]["video"] = {
             title: "爱",
             subtitle: "奇艺",
             url: "https://so.iqiyi.com/so/q_"
+        },
+        vsearch: {
+            title: "vsearch",
+            url: "https://www.vsearch.me/s/?q="
+        },
+        mgtv: {
+            title: "芒果TV",
+            url: "https://so.mgtv.com/so?k={keyword:gb2312}&lastp=ch_home"
+        },
+        ilikev: {
+            title: "星",
+            subtitle: "视频",
+            url: "https://ilikev.com/v/q_"
+        },
+        ixigua: {
+            title: "西",
+            subtitle: "瓜",
+            url: "https://www.ixigua.com/search/{keyword:gb2312}/?logTag=-eY4N_faEGIyCjXoeXwFk&tab_name=home"
+        },
+        "6room": {
+            title: "六间",
+            subtitle: "房",
+            url: "https://www.6.cn/search.php?type=use&key="
         }
     }
 };
