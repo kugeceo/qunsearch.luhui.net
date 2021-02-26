@@ -12,12 +12,12 @@ UniSearch.defaults.preferredList["zh-cn"] = {
     image: "google",
     news: "baidu",
     music: "baidu",
-    video: "ku6",
+    video: "bing",
     bt: "gougou",
     shopping: "taobao",
     answer: "baidu",
     map: "baidu",
-    soft: "pconline",
+    soft: "github",
     blog: "google",
     dict: "iciba"
 };
@@ -459,7 +459,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
         "etao": {
             title: "一淘网",
             subtitle: "",
-            url: "https://www.etao.com/cjfl/flash.htm?spm=a231o.13503973.1998559106.1.d89c68edoGdFEz&pid=mm_31320626_3466227_58448586&union_lens=recoveryid%3A201_11.224.245.240_89359_1614144716134%3Bprepvid%3A201_11.224.245.240_89359_1614144716134#{keyword:gb2312}"
+            url: "https://www.etao.com/search.htm?spm=1002.8274268.2698880.6862&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.23.94.254_472700_1614348481490&nq={keyword:gb2312}"
         },
         "tmall": {
             title: "天猫",
