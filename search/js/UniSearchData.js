@@ -306,14 +306,14 @@ UniSearch.data["zh-cn"]["video"] = {
     title: "视频",
     items: {
         baidu: {
-            title: "百度",
-            subtitle: "视频",
-            url: "https://video.baidu.com/v?rn=20&pn=0&db=0&s=0&fbl=1024&word={keyword:gb2312}"
+            title: "百",
+            subtitle: "度",
+            url: "http://v.baidu.com/v?word={keyword:gb2312}"
         },
         Google: {
             title: "Google",
             subtitle: "视频",
-            url: "https://72.14.203.106/search?q={keyword}&tbs=vid%3A1"
+            url: "https://www.g.cn/search?q={keyword}&tbs=vid%3A1"
         },
         youku: {
             title: "优酷",
@@ -321,19 +321,19 @@ UniSearch.data["zh-cn"]["video"] = {
             url: "https://so.youku.com/search_video/q_"
         },
         tudou: {
-            title: "土豆",
-            subtitle: "视频",
-            url: "https://so.tudou.com/isearch.do?kw={keyword:gb2312}"
+            title: "腾讯",
+            subtitle: "qq",
+            url: "https://v.qq.com/x/search/?q={keyword:gb2312}&stag=0&smartbox_ab="
         },
         ku6: {
             title: "酷6",
             subtitle: "视频",
             url: "https://so.ku6.com/v?q="
         },
-        "56": {
-            title: "56",
-            subtitle: "视频",
-            url: "https://so.56.com/index?type=video&key={keyword:gb2312}"
+        "bing": {
+            title: "bing",
+            subtitle: "必应",
+            url: "https://cn.bing.com/videos/search?q={keyword:gb2312}"
         },
         "6room": {
             title: "六间房",
@@ -341,14 +341,14 @@ UniSearch.data["zh-cn"]["video"] = {
             url: "https://6.cn/search.php?t=v&ko=1&k="
         },
         gougou: {
-            title: "狗狗",
-            subtitle: "视频",
-            url: "https://video.gougou.com/search?id=28416&s="
+            title: "搜",
+            subtitle: "狗",
+            url: "https://v.sogou.com/v?query="
         },
-        OpenV: {
-            title: "天线",
-            subtitle: "视频",
-            url: "https://www.openv.com/ls.php?t=0&x=26&y=10&q="
+        iqiyi: {
+            title: "爱",
+            subtitle: "奇艺",
+            url: "https://so.iqiyi.com/so/q_"
         }
     }
 };
@@ -615,20 +615,19 @@ UniSearch.data["zh-cn"]["blog"] = {
             title: "Google",
             url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
         },
-        yodao: {
-            title: "有",
-            subtitle: "道",
-            url: "https://blog.yodao.com/search?q={keyword:gb2312}"
+        mbalib: {
+            title: "智",
+            subtitle: "库",
+            url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
         },
-        baidu: {
-            title: "百",
-            subtitle: "度",
-            url: "https://blogsearch.baidu.com/s?wd={keyword:gb2312}"
+        abibletool: {
+            title: "圣经",
+            url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
         },
 		sogou: {
-            title: "搜",
-            subtitle: "狗",
-            url: "https://blogsearch.sogou.com/blog?query={keyword:gb2312}"
+            title: "教",
+            subtitle: "育",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
         }
     }
 };
