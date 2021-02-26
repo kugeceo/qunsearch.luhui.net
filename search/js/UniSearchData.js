@@ -8,8 +8,8 @@
 UniSearch.defaults.preferredList = {};
 UniSearch.defaults.preferredList["zh-cn"] = {
     prefer: 0,
-    web: "live",
-    image: "google",
+    web: "baidu",
+    image: "live",
     news: "baidu",
     music: "baidu",
     video: "bing",
