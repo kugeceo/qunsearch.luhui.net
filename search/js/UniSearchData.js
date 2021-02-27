@@ -644,13 +644,13 @@ UniSearch.data["zh-cn"]["blog"] = {
     title: "人文",
     items: {
  
-        pipei: {
-            title: "完全匹配",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word={keyword:gb2312}"
+        link: {
+            title: "link:搜索url的反向链接",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=link:{keyword:gb2312}"
         },
 		
         intitle: {
-            title: "intitle含关键词的页",
+            title: "intitle:含关键词的页",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
         },
 		
@@ -690,10 +690,14 @@ UniSearch.data["zh-cn"]["blog"] = {
             url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
         },
 		
-		sogou: {
+		edu: {
             title: "教",
             subtitle: "育",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
+		
+		linkdomain: {
+            title: "linkdomain:外链查询",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
         }
     }
 };
