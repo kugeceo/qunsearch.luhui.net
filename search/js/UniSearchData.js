@@ -643,7 +643,11 @@ UniSearch.data["zh-cn"]["soft"] = {
 UniSearch.data["zh-cn"]["blog"] = {
     title: "人文",
     items: {
-
+ 
+        li3nk: {
+            title: "link:搜索url的反向链接",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=link:{keyword:gb2312}"
+        },
 		
         intitle: {
             title: "intitle:含关键词的页",
@@ -690,10 +694,7 @@ UniSearch.data["zh-cn"]["blog"] = {
             title: "教",
             subtitle: "育",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
-		
-		ldink: {
-            title: "linkdomain:外链查询",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
+
         }
     }
 };
