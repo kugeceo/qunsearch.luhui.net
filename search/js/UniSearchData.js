@@ -643,11 +643,7 @@ UniSearch.data["zh-cn"]["soft"] = {
 UniSearch.data["zh-cn"]["blog"] = {
     title: "人文",
     items: {
- 
-        li3nk: {
-            title: "link:搜索url的反向链接",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=link:{keyword:gb2312}"
-        },
+
 		
         intitle: {
             title: "intitle:含关键词的页",
