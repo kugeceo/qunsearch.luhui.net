@@ -695,7 +695,7 @@ UniSearch.data["zh-cn"]["blog"] = {
             subtitle: "育",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
 		
-		linkd: {
+		ldink: {
             title: "linkdomain:外链查询",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
         }
