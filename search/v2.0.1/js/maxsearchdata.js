@@ -77,12 +77,20 @@ url:"https://cn.bing.com/images/search?FORM=BIFD&q="}}};
 
 
 maxSearch.data["zh-cn"]["news"]={title:"新闻",
-items:{baidu:{title:"百度",subtitle:"新闻",
+
+items:{baidu:{title:"百度",
+subtitle:"新闻",
 url:"https://news.baidu.com/ns?word={keyword:gb2312}"},
-sogou:{title:"搜狗",subtitle:"新闻",
+
+sogou:{title:"搜狗",
+subtitle:"新闻",
 url:"https://news.sogou.com/news?query={keyword:gb2312}"},
-youdao:{title:"有道",url:"https://news.youdao.com/search?q={keyword}&keyfrom=web.top"},
-aiwen:{title:"爱问",url:"https://iask.com/n?k={keyword:gb2312}"}}};
+
+youdao:{title:"有道",
+url:"https://news.youdao.com/search?q={keyword}&keyfrom=web.top"},
+
+aiwen:{title:"爱问",
+url:"https://iask.com/n?k={keyword:gb2312}"}}};
 
 
 maxSearch.data["zh-cn"]["music"]={title:"音乐",
@@ -92,32 +100,82 @@ subtitle:"音乐",
 url:"https://mp3.baidu.com/m?f=ms&&ct=134217728&lm=-1&word={keyword:gb2312}"},
 
 sogou:{title:"搜狗",
-subtitle:"音乐",url:"https://mp3.sogou.com/music.so?query={keyword:gb2312}&p=99040205"},
-sogua:{title:"SoGua",subtitle:"音乐",url:"https://search.sogua.com/search.asp?key="},
-zhongshou:{title:"中搜",subtitle:"MP3",url:"https://mp3.zhongsou.com/m?w={keyword:gb2312}"}}};
+subtitle:"音乐",
+url:"https://mp3.sogou.com/music.so?query={keyword:gb2312}&p=99040205"},
+
+sogua:{title:"SoGua",
+subtitle:"音乐",
+url:"https://search.sogua.com/search.asp?key="},
+
+zhongshou:{title:"中搜",
+subtitle:"MP3",
+url:"https://mp3.zhongsou.com/m?w={keyword:gb2312}"}}};
 
 
-maxSearch.data["zh-cn"]["video"]={title:"视频",items:{baidu:{title:"百度",subtitle:"视频",
+maxSearch.data["zh-cn"]["video"]={title:"视频",
+
+items:{baidu:{title:"百度",
+subtitle:"视频",
 url:"https://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=0&fbl=1024&word={keyword:gb2312}"},
-Google:{title:"Google",subtitle:"视频",url:"https://www.google.com.hk/search?q={keyword}&tbs=vid%3A1"},
-youku:{title:"优酷",subtitle:"视频",url:"https://so.youku.com/search_video/q_"},
-tudou:{title:"土豆",subtitle:"视频",url:"https://so.tudou.com/isearch.do?kw={keyword:gb2312}"},
-ku6:{title:"酷6",subtitle:"视频",url:"https://so.ku6.com/v?q="},"56":{title:"56",subtitle:"视频",
-url:"https://so.56.com/index?type=video&key={keyword:gb2312}"},"6room":{title:"六间房",subtitle:"视频",
-url:"https://6.cn/search.php?t=v&ko=1&k="},gougou:{title:"狗狗",subtitle:"视频",
-url:"https://video.gougou.com/search?id=28416&s="},OpenV:{title:"天线",subtitle:"视频",
-url:"https://www.openv.com/ls.php?t=0&x=26&y=10&q="}}};maxSearch.data["zh-cn"]["bt"]={title:"影视BT",
-items:{gougou:{title:"狗狗影视",subtitle:"BT",url:"https://www.gougou.com/search?id=28416&search="},
-Verycd:{title:"Verycd",url:"https://www.verycd.com/search/folders/"},mtime:{title:"时光网",
-url:"https://www.mtime.com/search/?"},douban:{title:"豆瓣影评",
+
+Google:{title:"Google",
+subtitle:"视频",
+url:"https://www.google.cn/search?q={keyword}&tbs=vid%3A1"},
+
+youku:{title:"优酷",
+subtitle:"视频",
+url:"https://so.youku.com/search_video/q_"},
+
+tudou:{title:"土豆",
+subtitle:"视频",
+url:"https://so.tudou.com/isearch.do?kw={keyword:gb2312}"},
+
+ku6:{title:"酷6",
+subtitle:"视频",
+url:"https://so.ku6.com/v?q="},
+
+"56":{title:"56",
+subtitle:"视频",
+url:"https://so.56.com/index?type=video&key={keyword:gb2312}"},
+
+"6room":{title:"六间房",
+subtitle:"视频",
+url:"https://6.cn/search.php?t=v&ko=1&k="},
+
+gougou:{title:"狗狗",
+subtitle:"视频",
+url:"https://video.gougou.com/search?id=28416&s="},
+
+OpenV:{title:"天线",
+subtitle:"视频",
+url:"https://www.openv.com/ls.php?t=0&x=26&y=10&q="}}};
+
+maxSearch.data["zh-cn"]
+["bt"]={title:"影视",
+
+items:{gougou:{title:"狗狗影视",
+subtitle:"BT",
+url:"https://www.gougou.com/search?id=28416&search="},
+
+Verycd:{title:"Verycd",
+url:"https://www.verycd.com/search/folders/"},
+
+mtime:{title:"时光网",
+url:"https://www.mtime.com/search/?"},
+
+douban:{title:"豆瓣影评",
 url:"https://www.douban.com/subject_search?cat=1002&search_text="},
-shooter:{title:"射手字幕",subtitle:"BT",
+
+shooter:{title:"射手字幕",
+subtitle:"BT",
 url:"https://shooter.cn/sub/?searchword="}}};
 
 
-maxSearch.data["zh-cn"]["shopping"]={title:"购物",
+maxSearch.data["zh-cn"]
+["shopping"]={title:"购物",
 
-items:{taobao:{title:"淘宝",subtitle:"购物",
+items:{taobao:{title:"淘宝",
+subtitle:"购物",
 url:"https://search8.taobao.com/browse/search_auction.htm?q={keyword:gb2312}&pid=mm_12431063_2220385_8721096&commend=all&search_type=auction&user_action=initiative&f=D9_5_1&at_topsearch=1&sort=&spercent=0"},
 
 dangdang:{title:"当当",
@@ -445,6 +503,7 @@ url:"https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"},
 
 flickr:{title:"Flickr",
 url:"https://www.flickr.com/search/?q={keyword}"},
+
 picsearch:{title:"PicSearch",
 url:"https://www.picsearch.fr/search.cgi?q={keyword}"}}};
 
@@ -524,4 +583,4 @@ yahoo:{title:"Yahoo Questions Réponses",
 subtitle:"",
 url:"https://fr.answers.yahoo.com/search/search_result;_ylt=AlnxKjDWkwMepoT1FRXn2tgjzKIX?p={keyword}"}}};
 var keywords=[["情人节礼物选什么","情人节礼物选什么"]];
-var google_search_url="https://www.quwan.com/index.php?u=691";
+var google_search_url="?u=情人节";
