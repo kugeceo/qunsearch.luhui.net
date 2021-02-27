@@ -669,7 +669,7 @@ UniSearch.data["zh-cn"]["blog"] = {
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=alltitle:{keyword:gb2312}"
         },
 		
-        allinurl: {
+        arnlliul: {
             title: "allinurl:页面标题包含多组关键词的文件",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=allinurl:{keyword:gb2312}"
         },
@@ -694,7 +694,10 @@ UniSearch.data["zh-cn"]["blog"] = {
             title: "教",
             subtitle: "育",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
-
+		
+		ldink: {
+            title: "linkdomain:外链查询",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
         }
     }
 };
