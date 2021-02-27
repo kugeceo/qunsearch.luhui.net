@@ -644,6 +644,11 @@ UniSearch.data["zh-cn"]["blog"] = {
     title: "人文",
     items: {
  
+        pipei: {
+            title: "完全匹配",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word="{keyword:gb2312}""
+        },
+		
         intitle: {
             title: "intitle含关键词的页",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
