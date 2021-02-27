@@ -43,10 +43,10 @@ maxSearch.data["zh-cn"]
 ["web"]={title:"网页",
 
 items:{baidu:{title:"百度",
-url:"https://www.baidu.com/s?tn=myie2dg&ch=2&ie=utf-8&wd="},
+url:"https://www.baidu.com/s?tn=luhuinet&ch=2&ie=utf-8&wd="},
 
 google:{title:"Google",
-url:"https://www.google.com.hk/search?q="},
+url:"https://www.google.cn/search?q="},
 
 youdao:{title:"有道",
 url:"https://www.youdao.com/search?ue=gbk&keyfrom=browser.maxthon_02&vendor=browser.maxthon_02&q={noEncode}"},
@@ -174,6 +174,7 @@ url:"https://dl.pconline.com.cn/search.jsp?PubDate=0&DLTypeId=1&SearchType=1&sub
 onlinedown:{title:"华军软件园",
 subtitle:"软件",
 url:"https://search.newhua.com/search.asp?Keyword={keyword:gb2312}"},
+
 skycn:{title:"天空",
 subtitle:"软件",
 url:"https://www.skycn.com/search.php?ss_name={keyword:gb2312}"},
@@ -240,13 +241,19 @@ maxSearch.data["en-us"]
 ["web"]={title:"Web",
 
 items:{google:{title:"Google",
-url:"https://www.google.com/custom?cx=016320414824861919433%3Amwns0tkni6q&ie=UTF-8&q={keyword}&hl=en&siteurl=www.google.com%2Fcse%2Fhome%3Fcx%3D016320414824861919433%3Amwns0tkni6q%26hl%3Den&adkw=AELymgWPyMLXOtiwX0ucj4-7XXSMn-oQaMhHW9Vfv7ccKkN1DDc8uB9IHFW_VExiPJ_KTJf1UkoUqwgosxA6R1Pd4HcEwNTubsL4s1aS8yTl_bp8wnn90Lg&cof=AH%3Aleft%3BALC%3A%230000CC%3BBGC%3A%23FFFFFF%3BCX%3AGoogle%3BDIV%3A%23FFFFF1%3BFORID%3A13%3BGALT%3A%23008000%3BKMBGC%3A%23FFFFFF%3BKMBOC%3A%23336699%3BKMSC%3A%23000000%3BKMTC%3A%230000CC%3BKMTVC%3A%230000CC%3BKMUC%3A%23008000%3BL%3Ahttp%3A%2F%2Fwww.google.com%2Fintl%2Fen%2Fimages%2FLogo_60wht.gif%3BLC%3A%230000CC%3BLH%3A80%3BLP%3A1%3BT%3A%23000000%3BVLC%3A%230000CC%3B&oe=UTF-8&client=pub-2698861478625135&channel=6325891050"},yahoo:{title:"Yahoo!",url:"https://search.yahoo.com/search?fr=cb-max&serveUrl=s.maxthon.com&ei=utf-8&p={keyword}"},
+url:"https://www.google.com/search?q={keyword}"},
 
-ask:{title:"Ask.com",url:"https://www.ask.com/web?q={keyword}"},
+yahoo:{title:"Yahoo!",
+url:"https://search.yahoo.com/search?fr=cb-max&serveUrl=luhui.net&ei=utf-8&p={keyword}"},
 
-live:{title:"Live Search",url:"https://search.live.com/results.aspx?q={keyword}"},
+ask:{title:"Ask.com",
+url:"https://www.ask.com/web?q={keyword}"},
 
-gigablast:{title:"Gigablast",url:"https://www.gigablast.com/search?q={keyword}"}}};
+live:{title:"Live Search",
+url:"https://search.live.com/results.aspx?q={keyword}"},
+
+gigablast:{title:"Gigablast",
+url:"https://www.gigablast.com/search?q={keyword}"}}};
 
 
 maxSearch.data["en-us"]
@@ -258,10 +265,20 @@ url:"https://images.google.com/images?hl=en&q={keyword}&gbv=2"},
 
 yahoo:{title:"Yahoo!",
 subtitle:" Images",
-url:"https://images.search.yahoo.com/search/images?ei=UTF-8&fr=cb-max&serveUrl=s.maxthon.com&p={keyword}"},
-ask:{title:"Ask.com",subtitle:" Images",url:"https://images.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"},
-live:{title:"Live Search",subtitle:" Images",url:"https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"},
-flickr:{title:"Flickr",url:"https://www.flickr.com/search/?q={keyword}"},picsearch:{title:"PicSearch",
+url:"https://images.search.yahoo.com/search/images?ei=UTF-8&fr=cb-max&serveUrl=luhui.net&p={keyword}"},
+
+ask:{title:"Ask.com",
+subtitle:" Images",
+url:"https://images.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"},
+
+live:{title:"Live Search",
+subtitle:" Images",
+url:"https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"},
+
+flickr:{title:"Flickr",
+url:"https://www.flickr.com/search/?q={keyword}"},
+
+picsearch:{title:"PicSearch",
 url:"https://www.picsearch.com/search.cgi?q={keyword}"}}};
 
 
