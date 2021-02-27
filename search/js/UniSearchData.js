@@ -643,19 +643,53 @@ UniSearch.data["zh-cn"]["soft"] = {
 UniSearch.data["zh-cn"]["blog"] = {
     title: "人文",
     items: {
+ 
+        baidu: {
+            title: "完全匹配",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word="{keyword:gb2312}""
+        },
+		
+        intitle: {
+            title: "intitle含关键词的页",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
+        },
+		
+        inurl: {
+            title: "inurl:带有链接的页",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=inurl:{keyword:gb2312}"
+        },
+		
+        inanchor: {
+            title: "Inanchor:链接锚文字中包含搜索词的页",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=inanchor:{keyword:gb2312}"
+        },
+		
+        alltitle: {
+            title: "alltitle:页面标题包含多组关键词的文件",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=alltitle:{keyword:gb2312}"
+        },
+		
+        allinurl: {
+            title: "allinurl:页面标题包含多组关键词的文件",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=allinurl:{keyword:gb2312}"
+        },
+		
 		google: {
             title: "Google",
             url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
         },
+		
         mbalib: {
             title: "智",
             subtitle: "库",
             url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
         },
+		
         abibletool: {
             title: "圣经",
             url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
         },
+		
 		sogou: {
             title: "教",
             subtitle: "育",
@@ -753,6 +787,10 @@ UniSearch.data["en-us"]["web"] = {
             title: "Live Search",
             url: "https://search.live.com/results.aspx?q={keyword}"
         },
+        yippy: {
+            title: "yippy",
+            url: "https://www.yippy.com/search?query={keyword}"
+        },
         gigablast: {
             title: "Gigablast",
             url: "https://www.gigablast.com/search?q={keyword}"
@@ -782,6 +820,10 @@ UniSearch.data["en-us"]["image"] = {
             subtitle: " Images",
             url: "https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"
         },
+        yippy: {
+            title: "yippy",
+            url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com-images&v%3asources=yippy-images&query={keyword}"
+        },
         flickr: {
             title: "Flickr",
             url: "https://www.flickr.com/search/?q={keyword}"
@@ -804,6 +846,10 @@ UniSearch.data["en-us"]["news"] = {
             title: "Yahoo!",
             subtitle: " News",
             url: "http://news.search.yahoo.com/news/search?p={keyword}"
+        },
+        yippy: {
+            title: "yippy",
+            url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com&v%3asources=news-bundle&query={keyword}"
         },
         live: {
             title: "Live Search",
@@ -849,6 +895,10 @@ UniSearch.data["en-us"]["misc"] = {
         youtube: {
             title: "YouTube",
             url: "http://www.youtube.com/results?search_query={keyword}"
+        },
+        yippy: {
+            title: "yippy",
+            url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com-images&v%3asources=yippy-video&query={keyword}"
         },
         yahoo: {
             title: "Yahoo! Answers",
