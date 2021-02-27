@@ -646,7 +646,7 @@ UniSearch.data["zh-cn"]["blog"] = {
  
         pipei: {
             title: "完全匹配",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word="{keyword:gb2312}""
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word={keyword:gb2312}"
         },
 		
         intitle: {
