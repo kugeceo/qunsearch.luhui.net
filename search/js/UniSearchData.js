@@ -160,6 +160,10 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "aol",
             url: "https://search.aol.com/aol/search?q={keyword:gb2312}"
         },
+        lookao: {
+            title: "lookao",
+            url: "https://lookao.com/search?q={keyword:gb2312}&category_general=1&time_range=&language=all"
+        },
         biglobe: {
             title: "biglobe",
             url: "https://cgi.search.biglobe.ne.jp/cgi-bin/search-st?search=%E6%A4%9C%E7%B4%A2&web_s.x=1&q={keyword:gb2312}"
@@ -202,51 +206,67 @@ UniSearch.data["zh-cn"]["image"] = {
             subtitle: "图片",
             url: "https://www.google.cn/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
         },
+		
         baidu: {
             title: "百度",
             subtitle: "图片",
             url: "https://image.baidu.com/search/index?tn=baiduimage&word="
         },
+		
         sogou: {
             title: "搜狗",
             subtitle: "图片",
             url: "https://pic.sogou.com/pics?query={keyword:escape}"
         },
+		
         lmgtfy: {
             title: "lmgtfy",
             subtitle: "图片",
             url: "https://zh.lmgtfy.app/#gsc.tab=0&gsc.q={keyword:escape}"
         },
+		
         inmagine: {
             title: "123rf",
             subtitle: "图片",
             url: "https://www.123rf.com/%E5%85%8D%E7%89%88%E7%A8%8E%E5%9B%BE%E5%83%8F/{keyword:gb2312}.html?&sti=lyjsmxtwtvytb4c61q"
         },
+		
         live: {
             title: "Bing",
             subtitle: "图片",
             url: "https://cn.bing.com/images/search?FORM=BIFD&q="
         },
+		
         pixabay: {
             title: "pixabay",
             subtitle: "",
             url: "https://pixabay.com/zh/images/search/{keyword:gb2312}"
         },
+		
         yahoo: {
             title: "yahoo",
             subtitle: "雅虎",
             url: "https://search.cn.yahoo.com/search?p={keyword}&v=image"
         },
+		
         so: {
             title: "360",
             subtitle: "图片",
             url: "https://image.so.com/i?q={keyword:gb2312}&src=tab_www"
         },
+		
+        lookao: {
+            title: "lookao",
+            subtitle: "图片",
+            url: "https://lookao.com/search?q={keyword:gb2312}&category_images=1"
+        },
+		
         huaban: {
             title: "花瓣",
             subtitle: "",
             url: "https://huaban.com/search/?q={keyword:gb2312}"
         },
+		
         quanjing: {
             title: "全景",
             subtitle: "",
@@ -325,8 +345,8 @@ UniSearch.data["zh-cn"]["video"] = {
             url: "https://v.qq.com/x/search/?q={keyword:gb2312}&stag=0&smartbox_ab="
         },
         ku6: {
-            title: "酷6",
-            url: "https://so.ku6.com/v?q="
+            title: "lookao",
+            url: "https://lookao.com/search?q={keyword:gb2312}&category_videos=1&time_range=&language=all"
         },
         "bing": {
             title: "bing",
@@ -615,28 +635,39 @@ UniSearch.data["zh-cn"]["soft"] = {
             title: "凌风云",
             url: "https://www.lingfengyun.com/search?wd={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
         },
+		
 		xiaoso: {
             title: "小不点",
             url: "https://www.xiaoso.net/m/search?wd={keyword:gb2312}"
         },
+		
 		manong: {
             title: "gitee",
             url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword:gb2312}"
         },
+		
         onlinedown: {
-            title: "华军",
-            subtitle: "软件",
-            url: "https://search.newhua.com/search.asp?Keyword={keyword:gb2312}"
+            title: "华",
+            subtitle: "军",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:newhua.com {keyword:gb2312}"
         },
+		
         skycn: {
-            title: "天空",
-            subtitle: "软件",
-            url: "https://www.skycn.com/search.php?ss_name={keyword:gb2312}"
+            title: "天",
+            subtitle: "空",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:skycn.com {keyword:gb2312}"
+		
         },
         mydrivers: {
-            title: "驱动之家",
-            subtitle: "软件",
+            title: "驱动",
+            subtitle: "之家",
             url: "https://so.mydrivers.com/drivers.aspx?q={keyword:gb2312}"
+
+        },			
+        kaifa: {
+            title: "开",
+            subtitle: "发者",
+            url: "https://kaifa.baidu.com/searchPage?wd={keyword:gb2312}"
         }
     }
 };
@@ -698,7 +729,7 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
 		related: {
             title: "related:关联页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=related{keyword:gb2312}"		
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=related:{keyword:gb2312}"		
         },
 		
 		bmd: {
