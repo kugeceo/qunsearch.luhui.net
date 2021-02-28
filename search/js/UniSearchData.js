@@ -649,6 +649,23 @@ UniSearch.data["zh-cn"]["blog"] = {
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=link:{keyword:gb2312}"
         },
 		
+        mbalib: {
+            title: "智",
+            subtitle: "库",
+            url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
+        },
+		
+        abibletool: {
+            title: "圣经",
+            url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
+        },
+		
+		edu: {
+            title: "教",
+            subtitle: "育",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
+        },
+		
         intitle: {
             title: "intitle:含关键词的页",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
@@ -677,23 +694,6 @@ UniSearch.data["zh-cn"]["blog"] = {
 		google: {
             title: "Google",
             url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
-        },
-		
-        mbalib: {
-            title: "智",
-            subtitle: "库",
-            url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
-        },
-		
-        abibletool: {
-            title: "圣经",
-            url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
-        },
-		
-		edu: {
-            title: "教",
-            subtitle: "育",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
         }
     }
 };
