@@ -693,7 +693,17 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
 		google: {
             title: "Google",
-            url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"
+            url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"		
+        },
+		
+		related: {
+            title: "related:关联页",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=related{keyword:gb2312}"		
+        },
+		
+		bmd: {
+            title: "查询linkdomain:外链",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
         }
     }
 };
