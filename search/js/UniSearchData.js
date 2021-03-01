@@ -334,15 +334,18 @@ UniSearch.data["zh-cn"]["news"] = {
             subtitle: "新闻",
             url: "https://news.baidu.com/ns?word={keyword:gb2312}"
         },
+		
         sogou: {
             title: "搜狗",
             subtitle: "新闻",
             url: "https://news.sogou.com/news?query={keyword:gb2312}"
         },
+		
         youdao: {
             title: "有道",
             url: "https://news.youdao.com/search?q={keyword}&keyfrom=web.top"
         },
+		
         aiwen: {
             title: "爱问",
             url: "https://iask.com/n?k={keyword:gb2312}"
@@ -357,16 +360,19 @@ UniSearch.data["zh-cn"]["music"] = {
             subtitle: "虺",
             url: "https://music.luhui.net/?q={keyword:gb2312}"
         },
+		
         sogou: {
             title: "搜狗",
             subtitle: "音乐",
             url: "https://mp3.sogou.com/music.so?query={keyword:gb2312}"
         },
+		
         163: {
             title: "网易云",
             subtitle: "音乐",
             url: "https://music.163.com/#/search/m/?s={keyword:gb2312}&type=1"
         },
+		
         taihe: {
             title: "千千",
             subtitle: "音乐",
@@ -382,73 +388,89 @@ UniSearch.data["zh-cn"]["video"] = {
             subtitle: "度",
             url: "https://v.baidu.com/v?word={keyword:gb2312}"
         },
+		
         Google: {
             title: "Google",
             url: "https://www.google.cn/search?q={keyword}&tbs=vid%3A1"
         },
+		
         youku: {
             title: "优",
             subtitle: "酷",
             url: "https://so.youku.com/search_video/q_"
         },
+		
         tudou: {
             title: "腾讯",
             subtitle: "qq",
             url: "https://v.qq.com/x/search/?q={keyword:gb2312}&stag=0&smartbox_ab="
         },
+		
         ku6: {
             title: "lookao",
             url: "https://lookao.com/search?q={keyword:gb2312}&category_videos=1&time_range=&language=all"
         },
+		
         "bing": {
             title: "bing",
             subtitle: "必应",
             url: "https://cn.bing.com/videos/search?q={keyword:gb2312}"
         },
+		
         gougou: {
             title: "搜",
             subtitle: "狗",
             url: "https://v.sogou.com/v?query="
         },
+		
         iqiyi: {
             title: "爱",
             subtitle: "奇艺",
             url: "https://so.iqiyi.com/so/q_"
         },
+		
         vsearch: {
             title: "vsearch",
             url: "https://www.vsearch.me/s/?q="
         },
+		
         xiaokesoso: {
             title: "小可搜搜",
             url: "https://www.xiaokesoso.com/s/search?q={keyword:gb2312}&currentPage=1"
         },
+		
         cupfox: {
             title: "茶杯狐",
             url: "https://www.cupfox.com/search?key="
         },
+		
         bilibili: {
             title: "哔哩哔哩",
             url: "https://search.bilibili.com/all?keyword={keyword:gb2312}&from_source=nav_search_new"
         },
+		
         kan360: {
             title: "360kan",
             url: "https://video.360kan.com/v?q={keyword:gb2312}&src=tab_www"
         },
+		
         mgtv: {
             title: "芒果TV",
             url: "https://so.mgtv.com/so?k={keyword:gb2312}&lastp=ch_home"
         },
+		
         ilikev: {
             title: "星",
             subtitle: "视频",
             url: "https://ilikev.com/v/q_"
         },
+		
         ixigua: {
             title: "西",
             subtitle: "瓜",
             url: "https://www.ixigua.com/search/{keyword:gb2312}/?logTag=-eY4N_faEGIyCjXoeXwFk&tab_name=home"
         },
+		
         "6room": {
             title: "六间",
             subtitle: "房",
@@ -464,48 +486,59 @@ UniSearch.data["zh-cn"]["bt"] = {
             subtitle: "雷",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=thunder:// "
         },
+		
         Verycd: {
             title: "电驴",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=ed2k://|file| "
         },
+		
         bing: {
             title: "必应",
             subtitle: "",
             url: "https://www.bing.com/search?q=magnet:?xt=urn:btih: "
         },
+		
         baiduxt: {
             title: "百度",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
         },
+		
         qqdl: {
             title: "旋风链接",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=qqdl:// "
         },
-        360: {
+		
+        s306: {
             title: "奇虎360",
             url: "https://www.so.com/index.php?a=index&ie=utf-8&shb=1&src=www.luhui.net&q=magnet:?xt=urn:btih: "
         },
+		
         sogou: {
             title: "搜",
             subtitle: "狗",
             url: "https://www.sogou.com/web?query=magnet:?xt=urn:btih: "
 		},
+		
         sm: {
             title: "神马",
             url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
 		},
+		
         goobe: {
             title: "goobe",
             url: "https://goobe.io/search.aspx?k=magnet:?xt=urn:btih: {keyword:gb2312}"
 		},
+		
         chinaso: {
             title: "国搜",
             url: "https://www.chinaso.com/search/pagesearch.htm?q=magnet:?xt=urn:btih: {keyword:gb2312}"
 		},
+		
         lmgtfy: {
             title: "lmgtfy",
             url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q=magnet:?xt=urn:btih: {keyword:gb2312}"
 		},
+		
         google: {
             title: "google谷歌",
             url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q=magnet:?xt=urn:btih: {keyword:gb2312}"
@@ -517,37 +550,44 @@ UniSearch.data["zh-cn"]["shopping"] = {
     items: {
         taobao: {
             title: "淘宝",
-            url: "https://ai.taobao.com/search/index.htm?key={keyword:gb2312}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
+            url: "https://ai.taobao.com/search/index.htm?key={keyword:utf-8}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
         },
+		
         dangdang: {
             title: "当当",
             url: "https://search.dangdang.com/search.aspx?key={keyword:gb2312}"
         },
+		
         "360buy": {
             title: "京东",
             subtitle: "商城",
             url: "https://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
         },
+		
         "etao": {
             title: "一淘网",
             subtitle: "",
             url: "https://www.etao.com/search.htm?spm=1002.8274268.2698880.6862&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.23.94.254_472700_1614348481490&nq={keyword:gb2312}"
         },
+		
         "tmall": {
             title: "天猫",
             subtitle: "商城",
             url: "https://www.tmall.com/?ali_trackid=2:mm_31320626_0_0:1614144796_153_313452492&union_lens=recoveryid:201_11.224.245.240_89359_1614144716134;prepvid:201_11.224.245.240_89359_1614144716134&spm=0.0.0.0.0_0.0.0.0&bxsign=tbknpsfE2t5pBml0fh95/kgF3pxUQZk22Z0nVfxpE9m3Eq/sxoH4kx5OfuYullTDIQr5PCISjZeKRPPvAIOLihfW4KUUJo5YIMLJTh2wn6AfoU={keyword:gb2312}"
         },
+		
         amazon: {
             title: "卓",
             subtitle: "越",
             url: "https://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
         },
+		
         tianyancha: {
             title: "天眼",
             subtitle: "查",
             url: "https://www.tianyancha.com/search?key={keyword}"
         },
+		
         google: {
             title: "Google",
             url: "https://www.google.cn/products?q="
@@ -561,62 +601,82 @@ UniSearch.data["zh-cn"]["answer"] = {
             title: "全部文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:all {keyword:gb2312}&fileType=all"
         },
+		
+        un: {
+            title: "联合国",
+            url: "https://search.un.org/results.php?tpl=dist_search&query={noEncode}&lang=zh-cn&tplfilter=documents"
+        },
+		
         pdf: {
             title: "PDF文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:pdf {keyword:gb2312}&fileType=all"
         },
+		
         jiumodiary: {
             title: "鸠摩",
             url: "https://www.jiumodiary.com/?SearchButton="
         },
+		
         word: {
             title: "word文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:doc {keyword:gb2312}&fileType=all"
         },
+		
         txt: {
             title: "txt文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:txt {keyword:gb2312}&fileType=all"
         },
+		
         ppt: {
             title: "ppt文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:ppt {keyword:gb2312}&fileType=all"
         },
+		
         XLS: {
             title: "XLS文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:XLS {keyword:gb2312}&fileType=all"
         },
+		
         rtf: {
             title: "rtf文档",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:rtf {keyword:gb2312}&fileType=all"
         },
+		
         qihoo: {
             title: "奇虎",
             url: "https://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q=filetype:all {keyword:gb2312}"
         },
+		
         baidu: {
             title: "百度",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=index of {keyword:gb2312} .zip"
         },
+		
         google: {
             title: "google",
             url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q=filetype:all {keyword:gb2312}"
         },
+		
         bing: {
             title: "bing",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:all {keyword:gb2312}"
         },
+		
         sogou: {
             title: "搜狗",
             url: "https://www.sogou.com/web?query=filetype:all {keyword:gb2312}"
         },
+		
         goobe: {
             title: "goobe",
             url: "https://goobe.io/search.aspx?k=filetype:all {keyword:gb2312}"
         },
+		
         sm: {
             title: "神马",
             url: "https://m.sm.cn/s?q=filetype:all {keyword:gb2312}"
         },
+		
         slimego: {
             title: "史莱姆",
             url: "https://slimego.cn/search.html?page=1&rows=50&v=www.luhui.net&q={keyword}"
@@ -630,46 +690,57 @@ UniSearch.data["zh-cn"]["map"] = {
             title: "百度",
             url: "https://map.baidu.com/#word={keyword:gb2312}&ct=10"
         },
+		
         cesium: {
             title: "cesium",
             url: "https://cesium.com/cesiumjs/cesium-viewer/?view="
         },
+		
         google: {
             title: "谷歌",
             url: "https://maps.google.cn/maps?q="
         },
+		
         luhui: {
             title: "鲁虺",
             url: "https://ditu.luhui.net?q="
         },
+		
         so: {
             title: "360",
             url: "https://ditu.so.com/?k={keyword:gb2312}&src=www.luhui.net"
         },
+		
         mapbar: {
             title: "图吧",
             url: "https://www.mapbar.com/search/#c=&k={keyword:gb2312}&pn=1&rn=10&wf=ls"
         },
+		
         qq: {
             title: "腾讯",
             url: "https://map.qq.com/#lq={keyword:gb2312}"
         },
+		
         amap: {
             title: "高德",
             url: "https://ditu.amap.com/?q={keyword}"
         },
+		
         bing: {
             title: "必应",
             url: "https://cn.bing.com/ditu/?q={keyword}&mkt=zh&FORM=HDRSC7"
         },
+		
         city8: {
             title: "城市吧",
             url: "http://www.city8.com/map/?q={keyword}"
         },
+		
         sogou: {
             title: "搜狗",
             url: "https://map.sogou.com/#c=11944000,4152000,4&city=%u5168%u56FD&lq={keyword}&page=1"
         },
+		
         OpenStreetMap: {
             title: "OpenStreetMap",
             url: "https://www.openstreetmap.org/search?query={keyword}"
@@ -683,11 +754,12 @@ UniSearch.data["zh-cn"]["soft"] = {
             title: "github",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com {keyword:gb2312}"
         },
+		
 		lingfengyun: {
             title: "凌风云",
             url: "https://www.lingfengyun.com/search?wd={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
         },
-		
+				
 		xiaoso: {
             title: "小不点",
             url: "https://www.xiaoso.net/m/search?wd={keyword:gb2312}"
@@ -708,14 +780,14 @@ UniSearch.data["zh-cn"]["soft"] = {
             title: "天",
             subtitle: "空",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:skycn.com {keyword:gb2312}"
+		},
 		
-        },
         mydrivers: {
             title: "驱动",
             subtitle: "之家",
             url: "https://so.mydrivers.com/drivers.aspx?q={keyword:gb2312}"
-
-        },			
+        },
+		
         kaifa: {
             title: "开",
             subtitle: "发者",
@@ -797,19 +869,23 @@ UniSearch.data["zh-cn"]["dict"] = {
             title: "爱词霸",
             url: "https://www.iciba.com/"
         },
+		
         zdic: {
             title: "汉典",
             url: "https://www.zdic.net/search/?q={keyword}"
         },
+		
         yodao: {
             title: "有道",
             subtitle: "海量词典",
             url: "https://dict.yodao.com/search?q={keyword}"
         },
+		
         nciku: {
             title: "N词酷",
             url: "https://www.nciku.com/search/all/"
         },
+		
         dictcn: {
             title: "海词",
             url: "https://www.dict.cn/search/?q={keyword:gb2312}"
@@ -1010,26 +1086,32 @@ UniSearch.data["en-us"]["misc"] = {
             title: "Google Groups",
             url: "http://groups.google.com/groups/search?q={keyword}"
         },
+		
         google_maps: {
             title: "Google Maps",
             url: "http://maps.google.com/maps?ie=UTF-8&oe=UTF-8&hl=en&q={keyword}&z=4&om=1&um=1&sa=N&tab=wl"
         },
+		
         amazon: {
             title: "Amazon",
             url: "http://www.amazon.com/gp/search?ie=UTF8&keywords={keyword}&index=blended&linkCode=ur2&camp=1789&creative=9325"
         },
+		
         ebay: {
             title: "eBay",
             url: "http://shop.ebay.com/items/_W0QQ_nkwZ{keyword}QQ_armrsZ1QQ_fromZR3QQ_mdoZQQ_sopZ1"
         },
+		
         youtube: {
             title: "YouTube",
             url: "http://www.youtube.com/results?search_query={keyword}"
         },
+		
         yippy: {
             title: "yippy",
             url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com-images&v%3asources=yippy-video&query={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo! Answers",
             subtitle: "",
@@ -1044,6 +1126,7 @@ UniSearch.data["en-us"]["software"] = {
             title: "Brothersoft",
             url: "http://maxthonsearch.brothersoft.com/home.php?act=search_home.index&keyword={keyword}"
         },
+		
         softpedia: {
             title: "Softpedia",
             url: "http://www.softpedia.com/dyn-search.php?search_term={keyword}"
@@ -1058,11 +1141,13 @@ UniSearch.data["en-us"]["blog"] = {
             subtitle: " Blogs",
             url: "http://blogsearch.google.com/blogsearch?ie=UTF8&oe=UTF-8&hl=en&q={keyword}&om=1&z=4&tab=lb"
         },
+		
         ask: {
             title: "Ask.com",
             subtitle: " Blogs",
             url: "http://www.ask.com/blogsearch?q={keyword}"
         },
+		
         technorati: {
             title: "Technorati",
             url: "http://technorati.com/search/{keyword}"
@@ -1076,22 +1161,27 @@ UniSearch.data["en-us"]["reference"] = {
             title: "Dictionary.com",
             url: "http://dictionary.reference.com/browse/{keyword}"
         },
+		
         webster: {
             title: "Merriam-Webster",
             url: "http://www.webster.com/dictionary/{keyword}"
         },
+		
         wikipedia: {
             title: "Wikipedia",
             url: "http://www.wikipedia.org/w/wiki.phtml?search={keyword}"
         },
+		
         encarta: {
             title: "Encarta",
             url: "http://encarta.msn.com/encnet/refpages/search.aspx?q={keyword}"
         },
+		
         britannica: {
             title: "Britannica",
             url: "http://www.britannica.com/search?query={keyword}"
         },
+		
         infomine: {
             title: "Infomine",
             url: "http://infomine.ucr.edu/cgi-bin/canned_search?query={keyword}"
@@ -1150,22 +1240,27 @@ UniSearch.data["fr-fr"]["web"] = {
             title: "Google",
             url: "http://www.google.com/search?hl=fr&source=hp&cad=b&cad=cbv&q={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo!",
             url: "http://fr.search.yahoo.com/search?ei=utf-8&p={keyword}"
         },
+		
         ask: {
             title: "Ask.com",
             url: "http://fr.ask.com/web?q={keyword}"
         },
+		
         live: {
             title: "Live Search",
             url: "http://search.live.com/results.aspx?q={keyword}"
         },
+		
         exalead: {
             title: "Exalead",
             url: "http://www.exalead.fr/search/results?q={keyword}&%24mode=allweb"
         },
+		
         voila: {
             title: "Voila",
             url: "http://search.ke.voila.fr/S/voila?rtype=kw&rdata={keyword}&profil=voila"
@@ -1180,25 +1275,30 @@ UniSearch.data["fr-fr"]["image"] = {
             subtitle: " Images",
             url: "http://www.google.com/search?hl=fr&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo!",
             subtitle: " Images",
             url: "http://fr.search.yahoo.com/search/images?ei=UTF-8&p={keyword}"
         },
+		
         ask: {
             title: "Ask.com",
             subtitle: " Images",
             url: "http://fr.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"
         },
+		
         live: {
             title: "Live Search",
             subtitle: " Images",
             url: "http://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"
         },
+		
         flickr: {
             title: "Flickr",
             url: "http://www.flickr.com/search/?q={keyword}"
         },
+		
         picsearch: {
             title: "PicSearch",
             url: "http://www.picsearch.fr/search.cgi?q={keyword}"
@@ -1213,21 +1313,25 @@ UniSearch.data["fr-fr"]["news"] = {
             subtitle: " News",
             url: "http://news.google.fr/news?hl=fr&ned=fr&q={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo!",
             subtitle: " News",
             url: "http://fr.news.search.yahoo.com/news/search?p={keyword}"
         },
+		
         live: {
             title: "Live Search",
             subtitle: " News",
             url: "http://search.live.com/news/results.aspx?q={keyword}&FORM=BNRE"
         },
+		
         alltheweb: {
             title: "AllTheWeb",
             subtitle: " News",
             url: "http://www.alltheweb.com/search?cat=news&cs=utf8&q={keyword}&rys=0&itag=crv&_sb_lang=fr"
         },
+		
         altavista: {
             title: "AltaVista",
             subtitle: " News",
@@ -1243,11 +1347,13 @@ UniSearch.data["fr-fr"]["blog"] = {
             subtitle: " Blogs",
             url: "http://blogsearch.google.fr/blogsearch?ie=UTF8&oe=UTF-8&hl=fr&q={keyword}&om=1&z=4&tab=lb"
         },
+		
         ask: {
             title: "Ask.com",
             subtitle: " Blogs",
             url: "http://fr.ask.com/blogsearch?q={keyword}"
         },
+		
         technorati: {
             title: "Technorati",
             url: "http://technorati.com/search/{keyword}?language=fr&authority=n"
@@ -1261,18 +1367,22 @@ UniSearch.data["fr-fr"]["reference"] = {
             title: "Dictionary.com",
             url: "http://dictionary.reference.com/browse/{keyword}"
         },
+		
         tv5: {
             title: "Dictionnaire TV5",
             url: "http://dictionnaire.tv5.org/dictionnaires.asp?Action=&param={keyword}&che=1"
         },
+		
         alexandria: {
             title: "Dictionnaire Alexandria",
             url: "http://www.tv5.org/TV5Site/alexandria/definition.php?sl=fr&tl=fr&ok.x=0&ok.y=0&ok=OK&terme={keyword}"
         },
+		
         wikipedia: {
             title: "Wikipédia",
             url: "http://fr.wikipedia.org/wiki/{keyword}"
         },
+		
         encarta: {
             title: "Encarta",
             url: "http://fr.encarta.msn.com/encnet/refpages/search.aspx?q={keyword}"
@@ -1286,22 +1396,27 @@ UniSearch.data["fr-fr"]["misc"] = {
             title: "Google Groupes",
             url: "http://groups.google.fr/groups/search?q={keyword}"
         },
+		
         google_maps: {
             title: "Google Maps",
             url: "http://maps.google.fr/maps?ie=UTF-8&oe=UTF-8&hl=fr&q={keyword}&z=4&om=1&um=1&sa=N&tab=wl"
         },
+		
         amazon: {
             title: "Amazon",
             url: "http://www.amazon.fr/s/ref=nb_ss_gw/002-0555077-8828815?url=search-alias%3Daps&field-keywords={keyword}"
         },
+		
         ebay: {
             title: "eBay",
             url: "http://acheter.ebay.fr/{keyword}"
         },
+		
         youtube: {
             title: "YouTube",
             url: "http://www.youtube.com/results?search_query={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo Questions Réponses",
             subtitle: "",
