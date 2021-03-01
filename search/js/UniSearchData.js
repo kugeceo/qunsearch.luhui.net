@@ -816,22 +816,32 @@ UniSearch.data["en-us"]["web"] = {
             title: "Google",
             url: "https://www.google.com/search?hl=en-US&source=hp&cad=b&cad=cbv&q="
         },
+		
         yahoo: {
             title: "Yahoo!",
             url: "https://search.yahoo.com/search?ei=utf-8&p={keyword}"
         },
+		
         ask: {
             title: "Ask.com",
             url: "https://www.ask.com/web?q={keyword}"
         },
+		
         live: {
             title: "Live Search",
             url: "https://search.live.com/results.aspx?q={keyword}"
         },
+		
         yippy: {
             title: "yippy",
             url: "https://www.yippy.com/search?query={keyword}"
         },
+		
+        usearch: {
+            title: "usearch",
+            url: "https://usearch.com/search/{keyword}/all"
+        },
+		
         gigablast: {
             title: "Gigablast",
             url: "https://www.gigablast.com/search?q={keyword}"
@@ -846,29 +856,45 @@ UniSearch.data["en-us"]["image"] = {
             subtitle: " Images",
             url: "https://www.google.com/search?hl=en&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo!",
             subtitle: " Images",
             url: "https://images.search.yahoo.com/search/images?ei=UTF-8&p={keyword}"
         },
+		
         ask: {
             title: "Ask.com",
             subtitle: " Images",
             url: "https://images.ask.com/pictures?q={keyword}&qsrc=2072&tool=img"
         },
+		
         live: {
             title: "Live Search",
             subtitle: " Images",
             url: "https://search.live.com/images/results.aspx?q={keyword}&FORM=BIRE"
         },
+		
         yippy: {
             title: "yippy",
             url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com-images&v%3asources=yippy-images&query={keyword}"
         },
+		
         flickr: {
             title: "Flickr",
             url: "https://www.flickr.com/search/?q={keyword}"
         },
+		
+        iconfinder: {
+            title: "iconfinder",
+            url: "https://www.iconfinder.com/search/?q={keyword}"
+        },
+		
+        usearch: {
+            title: "usearch",
+            url: "https://usearch.com/search/{keyword}/images"
+        },
+		
         picsearch: {
             title: "PicSearch",
             url: "https://www.picsearch.com/search.cgi?q={keyword}"
@@ -883,30 +909,41 @@ UniSearch.data["en-us"]["news"] = {
             subtitle: " News",
             url: "http://news.google.com/news?hl=en&ned=us&q={keyword}"
         },
+		
         yahoo: {
             title: "Yahoo!",
             subtitle: " News",
             url: "http://news.search.yahoo.com/news/search?p={keyword}"
         },
+		
         yippy: {
             title: "yippy",
             url: "https://www.yippy.com/ysa/cgi-bin/query-meta?v%3aproject=yippy-com&v%3asources=news-bundle&query={keyword}"
         },
+		
         live: {
             title: "Live Search",
             subtitle: " News",
             url: "http://search.live.com/news/results.aspx?q={keyword}&FORM=BNRE"
         },
+		
         daypop: {
             title: "Daypop",
             subtitle: " News",
             url: "http://www.daypop.com/search?q={keyword}&t=n"
         },
+		
         alltheweb: {
             title: "AllTheWeb",
             subtitle: " News",
             url: "http://www.alltheweb.com/search?cat=news&cs=utf8&q={keyword}&rys=0&itag=crv&_sb_lang=any"
         },
+		
+        usearch: {
+            title: "usearch",
+            url: "https://usearch.com/search/{keyword}/news"
+        },
+		
         altavista: {
             title: "AltaVista",
             subtitle: " News",
