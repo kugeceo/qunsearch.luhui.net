@@ -26,26 +26,38 @@ UniSearch.defaults.preferredConList["zh-cn"] = [{
     c: "web",
     n: "live"
 },
+
 {
     c: "web",
     n: "baidu"
 },
+
+	
+{
+        c: "web",
+        n: "un"
+},
+	
 {
     c: "web",
     n: "haosou"
 },
+
 {
     c: "web",
     n: "soso"
 },
+
 {
     c: "music",
     n: "baidu"
 },
+
 {
     c: "bt",
     n: "gougou"
 },
+
 {
     c: "shopping",
     n: "taobao"
