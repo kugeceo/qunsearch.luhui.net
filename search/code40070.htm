@@ -1,0 +1,210 @@
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+body{margin:0}
+td,div{font-size:12px;line-height:18px}
+a:link{color:#0000CC;text-decoration:underline}
+a:visited{color:#800080;text-decoration:underline}
+a:hover{color:#FF0000;text-decoration:underline}
+a.ch:link,a.ch:visited,a.chon:link,a.chon:visited{display:block;float:left;position:relative; width:43px; text-align:center; top:5px;padding:6px 0px 2px 0px;color:#000;text-decoration:none;margin-right:2px;font-size:12px;font-family:宋体}
+a.chon:link,a.chon:visited{color:#000;font-weight:bold;cursor:default;background:url('images/tbgb.gif') no-repeat left top; }
+.ls{margin-top:5px; width:100%;}
+.ls td{padding-right:10px}
+.fyb{float:left;white-space:nowrap;margin-right:12px}
+.padl{padding-left:8px}
+.sbox{padding:2px}
+.sbox .s{background:#f0f0fa;padding:2px}
+.sbox .m{background:#FFF;margin-left:-4px;margin-top:-4px}
+</style>
+</head>
+<body>
+<script>
+	var frmact = new Array();
+var frmnm = new Array();
+var frmid = new Array();
+frmact[0] = "http://search.luhui.net/search/";
+frmact[1] = "http://search.luhui.net/search/";
+frmact[2] = "http://search.luhui.net/search/";
+frmact[3] = "http://search.luhui.net/search/";
+frmact[4] = "http://search.luhui.net/search/";
+frmact[5] = "http://search.luhui.net/search/";
+
+frmnm[0] = "新闻";
+frmnm[1] = "网页";
+frmnm[2] = "购物";
+frmnm[3] = "电影";
+frmnm[4] = "MP3";
+frmnm[5] = "视频";
+
+frmid[0] = "1";
+frmid[1] = "2";
+frmid[2] = "3";
+frmid[3] = "4";
+frmid[4] = "5";
+frmid[5] = "6";
+
+
+//new
+function changetab(idx) 
+{
+	for (i=0;i<frmact.length;i++) {
+		if (i==idx) {document.getElementById('sitem_'+i).className="chon";}
+			else {document.getElementById('sitem_'+i).className="ch";}
+	}
+}
+
+if (frmid[0] == "1") {var bd_idx=1;}else{var bd_idx=0;}
+
+function bd_chg_idx(idx)
+{
+ bd_idx=idx;
+ //new
+ changetab(idx);
+}
+
+function addhiddenEle(parentEle, childEleName, childEleValue)
+{
+	for (var i=0; i < childEleName.length; i++) {
+		 var ur = document.createElement("input");   
+		  ur.type = "hidden";   
+		  ur.name = childEleName[i];   
+		  ur.value = childEleValue[i]; 
+		  parentEle.appendChild(ur); 
+	}
+}
+
+function removeallhiddenEle(parentEle)
+{
+	 for (var i = parentEle.length - 1; i >= 0; i--) {
+    var childEle = parentEle.elements[i];
+		if(childEle.type == "hidden"){
+			childEle.parentNode.removeChild(childEle);
+		}
+	}
+}
+
+function gowhere(formname)
+{
+ var url;
+ var idx = bd_idx;
+ if (frmact[idx] == null || frmact[idx] == "")  idx = "0";
+ url = frmact[idx];
+
+ removeallhiddenEle(formname);
+
+ switch(frmid[idx]){
+ case "1":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "news";
+  
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q"
+  
+  break;
+ case "2":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "web";
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "3":
+  
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "shop";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "4":
+ 
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "movie";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "5":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "music";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "6":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "video";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ 
+	default:
+		return false;
+ }
+
+ formname.action = url;
+ return true;
+} 
+</script>
+<table cellpadding="0" cellspacing="0" border="0" height="100%" width="100%"><tr><td style="padding-right:0!important;padding-right:2px">
+<form name="search_form" target="_blank" id="search_form" onsubmit="return gowhere(this)">
+<div class="sbox">
+<div class="s">
+<div class="m">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #d1d6ec">
+<tr>
+<td nowrap style="padding-top:0px">
+<div class="padl" style="padding-bottom:2px;border-bottom:1px solid #d1d6ec; height:auto!important; height:100%; ">
+<a href="http://www.2mfa.cn" target="_blank" target="_blank" style="float:left"><img src="./images/logo.gif" border="0" alt="搜道鲁虺全能搜索引擎" style="margin-right:10px"></a>
+<span id="tops" name="tops"></span>
+<script>
+	content = '';
+	for (i = 0; i < frmact.length; i++)
+	{
+		if (frmid[i] == "2") {content += '<a onClick="bd_chg_idx(' + i + '); return false;"  onfocus="this.blur()" class="chon" href="#" id="sitem_' + i + '" >' + frmnm[i] + '</a>';}
+			else {content += '<a onClick="bd_chg_idx(' + i + '); return false;"  onfocus="this.blur()" class="ch" href="#" id="sitem_' + i + '" >' + frmnm[i] + '</a>';}
+	}	
+	document.getElementById('tops').innerHTML = content;
+</script>
+<br clear="all">
+</div>
+<div class="padl" style="background:#f0f3fc url('images/btbgb.gif') repeat-x left bottom; ">
+<div style="margin-top:1px;padding-top:4px">
+<input id="word" name="word" value="请输入关键字" style="width:335px" onMouseOver="this.focus()" onBlur="if (this.value =='') this.value='请输入关键字'" onFocus="this.select()" onClick="if (this.value=='请输入关键字') this.value=''"><input type="submit" class="sb" value="搜索" style="width:39px;height:21px;margin-left:1px;margin-bottom:1px">
+<div style="padding:3px 0">
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</td>
+</tr>
+</table>
+<div id="StatCounter" style="display:none;">
+<script src="/search/js/stat.js"></script>
+</div></body>
+</html>

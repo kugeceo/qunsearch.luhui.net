@@ -1,0 +1,308 @@
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+body{margin:0}
+td,div{font-size:12px;line-height:18px}
+a:link{color:#0000CC;text-decoration:underline}
+a:visited{color:#800080;text-decoration:underline}
+a:hover{color:#FF0000;text-decoration:underline}
+a.ch:link,a.ch:visited,a.chon:link,a.chon:visited{display:block;float:left;position:relative; width:42px; text-align:center; top:7px;background:url('images/tbg3.gif') no-repeat left top;color:#000;text-decoration:none;margin-right:2px;font-size:12px;font-family:宋体; padding-left:0; padding-right:0; padding-top:4px; padding-bottom:4px}
+a.chon:link,a.chon:visited{color:#FFF;font-weight:bold;cursor:default;background:url('images/tbg2.gif') no-repeat left top; }
+.ls{margin-top:5px; width:100%;}
+.ls td{padding-right:10px}
+.fyb{float:left;white-space:nowrap;margin-right:12px}
+.padl{padding-left:8px}
+.tp{float:left;white-space:nowrap;margin-right:12px}
+</style>
+</head>
+<body>
+<script>
+ var frmact = new Array();
+var frmnm = new Array();
+var frmid = new Array();
+frmact[0] = "http://search.luhui.net/search/";
+frmact[1] = "http://search.luhui.net/search/";
+frmact[2] = "http://search.luhui.net/search/";
+frmact[3] = "http://search.luhui.net/search/";
+frmact[4] = "http://search.luhui.net/search/";
+frmact[5] = "http://search.luhui.net/search/";
+frmact[6] = "http://search.luhui.net/search/";
+frmact[7] = "http://search.luhui.net/search/";
+frmact[8] = "http://search.luhui.net/search/";
+frmact[9] = "http://search.luhui.net/search/";
+frmnm[0] = "新闻";
+frmnm[1] = "网页";
+frmnm[2] = "购物";
+frmnm[3] = "视频";
+frmnm[4] = "MP3";
+frmnm[5] = "电影";
+frmnm[6] = "图片";
+frmnm[7] = "博客";
+frmnm[8] = "词典";
+frmnm[9] = "下载";
+frmid[0] = "1";
+frmid[1] = "2";
+frmid[2] = "3";
+frmid[3] = "4";
+frmid[4] = "5";
+frmid[5] = "6";
+frmid[6] = "7";
+frmid[7] = "8";
+frmid[8] = "9";
+frmid[9] = "10";
+
+//new
+function changetab(idx) 
+{
+	for (i=0;i<frmact.length;i++) {
+		if (i==idx) {document.getElementById('sitem_'+i).className="chon";}
+			else {document.getElementById('sitem_'+i).className="ch";}
+	}
+}
+
+if (frmid[0] == "1") {var bd_idx=1;}else{var bd_idx=0;}
+
+function bd_chg_idx(idx)
+{
+ bd_idx=idx;
+ //new
+ changetab(idx);
+}
+
+function addhiddenEle(parentEle, childEleName, childEleValue)
+{
+	for (var i=0; i < childEleName.length; i++) {
+		 var ur = document.createElement("input");   
+		  ur.type = "hidden";   
+		  ur.name = childEleName[i];   
+		  ur.value = childEleValue[i]; 
+		  parentEle.appendChild(ur); 
+	}
+}
+
+function removeallhiddenEle(parentEle)
+{
+	 for (var i = parentEle.length - 1; i >= 0; i--) {
+    var childEle = parentEle.elements[i];
+		if(childEle.type == "hidden"){
+			childEle.parentNode.removeChild(childEle);
+		}
+	}
+}
+
+function gowhere(formname)
+{
+ var url;
+ var idx = bd_idx;
+ if (frmact[idx] == null || frmact[idx] == "")  idx = "0";
+ url = frmact[idx];
+
+ removeallhiddenEle(formname);
+
+ switch(frmid[idx]){
+ case "1":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "news";
+ 
+  
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q"
+  
+  break;
+ case "2":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "web";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "3":
+  
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "shop";
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "4":
+ 
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "video";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "5":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "music";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "6":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "movie";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "7":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "image";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "8":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "blog";
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "9":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "dict";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+  
+ case "10":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "down";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+
+ default:
+  return false;
+ }
+ formname.action = url;
+ return true;
+} 
+</script>
+<table cellpadding="0" cellspacing="0" border="0" height="75" width="100%"><tr><td>
+<form name="search_form" target="_blank" id="search_form" onsubmit="return gowhere(this)">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" style="border:1px solid #8CB4E7">
+<tr>
+<td nowrap style="padding-top:0px">
+<div class="padl" style="padding-top:3px;padding-bottom:2px;border-bottom:1px solid #8CB4E7; height:auto!important; height:100% !important; background:url('images/tab.gif') repeat-x top ; ">
+<a href="http://www.2mfa.cn" target="_blank" style="float:right">
+<img src="./images/logo.gif" border="0" alt="搜道鲁虺全能搜索引擎" style="margin-right:10px"></a>
+<span id="tops" name="tops"></span>
+<script>
+ content = '';
+ for (i = 0; i < frmact.length; i++)
+ {
+  if (frmid[i] == "2") {content += '<a onClick="bd_chg_idx(' + i + '); return false;"  onfocus="this.blur()" class="chon" href="#" id="sitem_' + i + '" >' + frmnm[i] + '</a>';}
+   else {content += '<a onClick="bd_chg_idx(' + i + '); return false;"  onfocus="this.blur()" class="ch" href="#" id="sitem_' + i + '" >' + frmnm[i] + '</a>';}
+ } 
+ document.getElementById('tops').innerHTML = content;
+</script>
+<br clear="all">
+</div>
+<table class="padl" width="100%" height="41" border="0" cellpadding="0" cellspacing="0" style="background:url('images/btbg2.gif') repeat-x left bottom; ">
+  <tr>
+    <td nowrap>
+      <input id="word" name="word" value="请输入关键字" style="width:390px; font-size:14px; border:1px solid #D4D4D4;padding:0px 3px; line-height:23px; height:25px;" onMouseOver="this.focus()" onBlur="if (this.value =='') this.value='请输入关键字'" onFocus="this.select()" onClick="if (this.value=='请输入关键字') this.value=''"> <input type="submit" value="搜索" style="width:39px;height:25px;margin-left:1px;font-size:14px;"></td>
+    <td nowrap>
+<div style="height:18px;overflow:hidden;margin-left:10px">
+<div id="marqueebox">
+<div class="tp"><a href="code.htm" target=_blank>
+	免费代码</a></div>
+<div class="tp"><a href="s.htm?q=%E5%9F%B9%E8%AE%AD" target=_blank>
+	培训</a></div>
+<div class="tp"><a href="s.htm?q=%E5%B0%8F%E5%9E%8B%E6%9C%BA" target=_blank>
+	小型机</a></div>
+<div class="tp"><a href="s.htm?q=%E7%BE%8E%E5%AE%B9" target=_blank>
+	美容</a></div>
+<div class="tp"><a href="s.htm?q=%E9%95%BF%E6%B1%9F%E4%B8%83%E5%8F%B7" target=_blank>
+	长江七号</a></div>
+<div class="tp"><a href="s.htm?q=%E6%B5%B7%E9%87%8F%E7%BE%8E%E5%9B%BE" target=_blank>
+	海量美图</a></div>
+<div class="tp"><a href="s.htm?q=%E6%88%91%E5%92%8C%E4%BD%A0" target=_blank>
+	我和你</a></div>
+<div class="tp"><a href="s.htm?q=%E5%81%A5%E5%BA%B7" target=_blank>
+	健康</a></div>
+<div class="tp"><a href="s.htm?q=%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB" target=_blank>
+	功夫熊猫</a></div>
+<div class="tp"><a href="s.htm?wd=%D5%C5%F3%E3%D3%EA&_si=%CB%D1%CB%F7&dir=7&st=10" target=_blank>
+	张筱雨</a></div>
+<div class="tp"><a href="s.htm?wd=%C1%F5%D2%E0%B7%C6&dir=5&st=12" target=_blank>
+	刘亦菲</a></div>
+<br clear="all">
+</div>
+</div>
+<SCRIPT>
+function startmarquee(lh,speed,delay) {
+var p=false;
+var t;
+var sh;
+var o=document.getElementById("marqueebox");
+o.innerHTML+=o.innerHTML;
+o.style.marginTop=0;
+o.onmouseover=function(){p=true;}
+o.onmouseout=function(){p=false;}
+function start(){
+sh = o.offsetHeight;
+o.style.height = sh;
+t=setInterval(scrolling,speed);
+if(!p) o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+}
+function scrolling(){
+if(parseInt(o.style.marginTop)%lh!=0){
+o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+if(Math.abs(parseInt(o.style.marginTop))>=sh/2) o.style.marginTop=0;
+}else{
+clearInterval(t);
+setTimeout(start,delay);
+}
+}
+setTimeout(start,delay);
+}
+startmarquee(18,20,3000);
+</SCRIPT>    </td>
+  </tr>
+</table>
+</td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+<div id="StatCounter" style="display:none;">
+<script src="/search/js/stat.js"></script>
+</div></body>
+</html>

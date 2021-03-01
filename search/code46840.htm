@@ -1,0 +1,282 @@
+<!--STATUS OK-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<style>
+body{margin:0 0 0 0px;background:#ffffff}
+td,div{font-size:12px;line-height:18px}
+a{color:#0000ff;text-decoration:underline}
+.logo{width:92px;}.logo img{border:0}
+.tp{float:left;white-space:nowrap;margin-right:12px}
+</style>
+</head>
+<body>
+<script>
+	var frmact = new Array();
+var frmnm = new Array();
+var frmid = new Array();
+frmact[0] = "http://search.luhui.net/search/";
+frmact[1] = "http://search.luhui.net/search/";
+frmact[2] = "http://search.luhui.net/search/";
+frmact[3] = "http://search.luhui.net/search/";
+frmact[4] = "http://search.luhui.net/search/";
+frmact[5] = "http://search.luhui.net/search/";
+frmact[6] = "http://search.luhui.net/search/";
+frmact[7] = "http://search.luhui.net/search/";
+frmact[8] = "http://search.luhui.net/search/";
+frmact[9] = "http://search.luhui.net/search/";
+frmnm[0] = "新闻";
+frmnm[1] = "网页";
+frmnm[2] = "购物";
+frmnm[3] = "视频";
+frmnm[4] = "MP3";
+frmnm[5] = "电影";
+frmnm[6] = "图片";
+frmnm[7] = "博客";
+frmnm[8] = "词典";
+frmnm[9] = "下载";
+frmid[0] = "1";
+frmid[1] = "2";
+frmid[2] = "3";
+frmid[3] = "4";
+frmid[4] = "5";
+frmid[5] = "6";
+frmid[6] = "7";
+frmid[7] = "8";
+frmid[8] = "9";
+frmid[9] = "10";
+
+
+if (frmid[0] == "1") {var bd_idx=1;}else{var bd_idx=0;}
+
+function bd_chg_idx(idx)
+{
+ bd_idx=idx;
+}
+
+function addhiddenEle(parentEle, childEleName, childEleValue)
+{
+	for (var i=0; i < childEleName.length; i++) {
+		 var ur = document.createElement("input");   
+		  ur.type = "hidden";   
+		  ur.name = childEleName[i];   
+		  ur.value = childEleValue[i]; 
+		  parentEle.appendChild(ur); 
+	}
+}
+
+function removeallhiddenEle(parentEle)
+{
+	 for (var i = parentEle.length - 1; i >= 0; i--) {
+    var childEle = parentEle.elements[i];
+		if(childEle.type == "hidden"){
+			childEle.parentNode.removeChild(childEle);
+		}
+	}
+}
+
+function gowhere(formname)
+{
+ var url;
+ var idx = bd_idx;
+ if (frmact[idx] == null || frmact[idx] == "")  idx = "0";
+ url = frmact[idx];
+
+ removeallhiddenEle(formname);
+
+ switch(frmid[idx]){
+ case "1":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "news";
+ 
+  
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q"
+  
+  break;
+ case "2":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "web";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "3":
+  
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "shop";
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "4":
+ 
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "video";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "5":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "music";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "6":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "movie";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "7":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "image";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "8":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "blog";
+  
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+ case "9":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "dict";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+  
+ case "10":
+  var childEleName = new Array();
+  var childEleValue = new Array();
+  childEleName[0] = "c";
+  childEleValue[0] = "down";
+  
+
+  addhiddenEle(formname, childEleName, childEleValue);
+  formname.word.name = "q";
+  break;
+
+	default:
+		return false;
+ }
+
+ formname.action = url;
+ return true;
+} 
+</script>
+
+<table width="100%" height="100%" cellspacing="0" cellpadding="0"  border="0" >
+<form name="search_form" target="_blank" id="search_form" onsubmit="return gowhere(this)">
+<tr><td>
+<table cellspacing="0" cellpadding="0">
+<tr>
+<td class="logo" align=center><a href="http://www.2mfa.cn" target="_blank">
+<img src="./images/logo.gif" border="0" alt="搜道鲁虺全能搜索引擎"></a></td>
+<td valign="bottom" nowrap><input id="word" name="word" value="请输入关键字" style="width:165px" onMouseOver="this.focus()" onBlur="if (this.value =='') this.value='请输入关键字'" onFocus="this.select()" onClick="if (this.value=='请输入关键字') this.value=''"><span id="tops" name="tops"></span>
+<script>
+	content = '<select name="select" onChange="bd_chg_idx(this.options[this.selectedIndex].value);">';
+	for (i = 0; i < frmact.length; i++)
+	{
+		if (frmid[i] == "2") {content += '<option selected value="' + i + '" >' + frmnm[i] + '</option>';}
+			else {content += '<option value="' + i + '" >' + frmnm[i] + '</option>';}
+	}	
+	content+='</select>';
+	document.getElementById('tops').innerHTML = content;
+</script>
+</select>
+<input type="submit" class="sb" value="搜索" style="width:39px;height:21px"></td>
+<td valign="bottom">
+<div style="height:18px;overflow:hidden;margin-left:10px">
+<div id="marqueebox">
+<div class="tp"><a href="code.htm" target=_blank>
+	免费代码</a></div>
+<div class="tp"><a href="s.htm?q=%E5%9F%B9%E8%AE%AD" target=_blank>
+	培训</a></div>
+<div class="tp"><a href="s.htm?q=%E5%B0%8F%E5%9E%8B%E6%9C%BA" target=_blank>
+	小型机</a></div>
+<div class="tp"><a href="s.htm?q=%E7%BE%8E%E5%AE%B9" target=_blank>
+	美容</a></div>
+<div class="tp"><a href="s.htm?q=%E9%95%BF%E6%B1%9F%E4%B8%83%E5%8F%B7" target=_blank>
+	长江七号</a></div>
+<div class="tp"><a href="s.htm?q=%E6%B5%B7%E9%87%8F%E7%BE%8E%E5%9B%BE" target=_blank>
+	海量美图</a></div>
+<div class="tp"><a href="s.htm?q=%E6%88%91%E5%92%8C%E4%BD%A0" target=_blank>
+	我和你</a></div>
+<div class="tp"><a href="s.htm?q=%E5%81%A5%E5%BA%B7" target=_blank>
+	健康</a></div>
+<div class="tp"><a href="s.htm?q=%E5%8A%9F%E5%A4%AB%E7%86%8A%E7%8C%AB" target=_blank>
+	功夫熊猫</a></div>
+<br clear="all">
+</div>
+</div>
+<SCRIPT>
+function startmarquee(lh,speed,delay) {
+var p=false;
+var t;
+var sh;
+var o=document.getElementById("marqueebox");
+o.innerHTML+=o.innerHTML;
+o.style.marginTop=0;
+o.onmouseover=function(){p=true;}
+o.onmouseout=function(){p=false;}
+function start(){
+sh = o.offsetHeight;
+o.style.height = sh;
+t=setInterval(scrolling,speed);
+if(!p) o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+}
+function scrolling(){
+if(parseInt(o.style.marginTop)%lh!=0){
+o.style.marginTop=parseInt(o.style.marginTop)-1+"px";
+if(Math.abs(parseInt(o.style.marginTop))>=sh/2) o.style.marginTop=0;
+}else{
+clearInterval(t);
+setTimeout(start,delay);
+}
+}
+setTimeout(start,delay);
+}
+startmarquee(18,20,3000);
+</SCRIPT>
+</td>
+</tr>
+</table></td>
+</tr>
+</table>
+<div id="StatCounter" style="display:none;">
+<script src="/search/js/stat.js"></script>
+</div></body>
+</html>
