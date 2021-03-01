@@ -550,7 +550,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
     items: {
         taobao: {
             title: "淘宝",
-            url: "https://ai.taobao.com/search/index.htm?key={keyword:utf-8}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
+            url: "https://ai.taobao.com/search/index.htm?key={keyword}&pid=mm_31320626_0_0&union_lens=recoveryid%3A201_11.11.105.189_5728_1614085897205%3Bprepvid%3A201_11.11.105.189_5728_1614085897205"
         },
 		
         dangdang: {
