@@ -68,26 +68,37 @@ UniSearch.data["zh-cn"]["prefer"] = {
         c: "web",
         n: "live"
     },
+	
+    {
+        c: "web",
+        n: "un"
+    },
+	
     {
         c: "web",
         n: "baidu"
     },
+	
     {
         c: "web",
         n: "magi"
     },
+	
     {
         c: "web",
         n: "soso"
     },
+	
     {
         c: "music",
         n: "baidu"
     },
+	
     {
         c: "bt",
         n: "gougou"
     },
+	
     {
         c: "shopping",
         n: "taobao"
@@ -100,98 +111,127 @@ UniSearch.data["zh-cn"]["web"] = {
             title: "百度",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word="
         },
+		
         google: {
             title: "Google",
             url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
         },
+		
+        un: {
+            title: "联合国",
+            url: "https://search.un.org/results.php?tpl=dist_search&query={noEncode}&lang=zh-cn&tplfilter=websites"
+        },
+		
         magi: {
             title: "magi",
             url: "https://magi.com/search?q={noEncode}"
         },
+		
         lmgtfy: {
             title: "lmgtfy",
             url: "https://lmgtfy.com/?s=l&qtype=search&ovr=1&q="
         },
+		
         live: {
             title: "Bing",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },
+		
         chinaso: {
             title: "国搜",
             url: "https://www.chinaso.com/search/pagesearch.htm?q="
         },
+		
         soso: {
             title: "搜狗",
             url: "https://www.sogou.com/web?query={keyword:gb2312}"
         },
+		
         haosou: {
             title: "好搜",
             url: "https://www.haosou.com/s?ie=utf-8&shb=1&src=www.luhui.net&q="
         },
+		
         goobe: {
             title: "goobe",
             url: "https://goobe.io/search.aspx?k="
         },
+		
         sm: {
             title: "神马",
             url: "https://m.sm.cn/s?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
         },
+		
         naver: {
             title: "naver",
             url: "https://search.naver.com/search.naver?query={keyword:gb2312}"
         },
+		
         yahoo: {
             title: "yahoo",
             url: "https://search.yahoo.com/search?p="
         },
+		
         toutiao: {
             title: "头条",
             url: "https://www.toutiao.com/search/?keyword={keyword:gb2312}"
         },
+		
         cctv: {
             title: "央视",
             url: "https://search.cctv.com/search.php?qtext={keyword:gb2312}&type=web"
         },
+		
         luhui: {
             title: "鲁虺",
             url: "https://luhui.net/{keyword:gb2312}"
         },
+		
         aol: {
             title: "aol",
             url: "https://search.aol.com/aol/search?q={keyword:gb2312}"
         },
+		
         lookao: {
             title: "lookao",
             url: "https://lookao.com/search?q={keyword:gb2312}&category_general=1&time_range=&language=all"
         },
+		
         biglobe: {
             title: "biglobe",
             url: "https://cgi.search.biglobe.ne.jp/cgi-bin/search-st?search=%E6%A4%9C%E7%B4%A2&web_s.x=1&q={keyword:gb2312}"
         },
+		
         startpage: {
             title: "startpage",
             url: "https://www.startpage.com/sp/search?q={keyword:gb2312}"
         },
+		
         appeasou: {
             title: "宜搜",
             url: "https://i.appeasou.com/s.m?idx=1&sty=1&q={keyword:gb2312}&esid=IlmUHM05uab&fr=9.3.2.2&wver=ta"
         },
+		
         zhongsou: {
             title: "中搜",
             url: "https://www.zhongsou.com/third.cgi?w={keyword:gb2312}"
         },
+		
         fofa: {
             title: "白帽汇",
             url: "https://fofa.so/result?q={keyword:gb2312}&qbase64=6bKB6Jm6&file=&file="	
         },
+		
         searx: {
             title: "searx",
             url: "https://searx.space/?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
         },
+		
         search: {
             title: "search",
             url: "https://www.search.com/web?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
         },
+		
         looksmart: {
             title: "looksmart",
             url: "https://results.looksmart.com/serp?q={keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"	
