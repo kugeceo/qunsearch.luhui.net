@@ -147,8 +147,13 @@ UniSearch.data["zh-cn"]["web"] = {
         live: {
             title: "Bing",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
-        },
+        },	
 		
+        yioop: {
+            title: "yioop",
+            url: "https://www.yioop.com/?q="
+        },		
+
         chinaso: {
             title: "国搜",
             url: "https://www.chinaso.com/search/pagesearch.htm?q="
