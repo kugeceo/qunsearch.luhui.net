@@ -312,6 +312,12 @@ UniSearch.data["zh-cn"]["image"] = {
             url: "https://image.so.com/i?q={keyword:gb2312}&src=tab_www"
         },
 		
+        huitu: {
+            title: "汇",
+            subtitle: "图",
+            url: "http://soso.huitu.com/search?kw={keyword:gb2312}&category_images=1"
+        },
+		
         lookao: {
             title: "lookao",
             subtitle: "图片",
@@ -815,20 +821,25 @@ UniSearch.data["zh-cn"]["blog"] = {
             url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
         },
 		
+        intitle: {
+            title: "intitle:含关键词的页",
+            url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
+        },
+		
         abibletool: {
             title: "圣经",
             url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
+        },
+		
+        wikipedia: {
+            title: "维基百科",
+            url: "https://zh.wikipedia.org/w/index.php?search={keyword:gb2312}"
         },
 		
 		edu: {
             title: "教",
             subtitle: "育",
             url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
-        },
-		
-        intitle: {
-            title: "intitle:含关键词的页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
         },
 		
         inurl: {
