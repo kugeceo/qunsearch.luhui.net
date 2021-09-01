@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, shrink-to-fit=no, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="author" content="virZhang, virs2018@outlook.com" />
+    <meta http-equiv="Window-target" content="_top">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta http-equiv="Content-Language" content="zh-cn" />
+    <title>极简导航 - 一个极简自定义的导航搜索主页</title>
+    <meta name="keywords" content="极简导航,自定义导航,简洁导航,网站导航,导航页,浏览器主页,设计导航,开发导航,工具导航,技术导航"/>
+    <meta name="description" content="一个极简自定义导航，支持多个搜索引擎。简约导航，各种实用工具导航、设计导航、开发导航、技术学习、视频购物导航，兼容手机浏览器。">
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fontAwesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+	<link rel="icon" href="img/logo/logo.ico">
+	<link rel="manifest" href="/pwa/manifest.json">
+    <meta name="theme-color" content="#3eaf7c"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
+    <link rel="apple-touch-icon" href="/pwa/icons/128.png">
+    <link rel="mask-icon" href="/pwa/icons/safari-pinned-tab.svg" color="#3eaf7c">
+    <meta name="msapplication-TileImage" content="/pwa/icons/200.png"/>
+    <meta name="msapplication-TileColor" conten="#000000"/>
+	
+    <!-- <link id="skinTag" rel="stylesheet" href="./css/skin/skin_SunsetBeach.css"> -->
+    <link id="uiTag" rel="stylesheet" href="./css/uistyle/neumorphism.min.css">
+    <script>
+        /*@cc_on window.location.href="http://support.dmeng.net/upgrade-your-browser.html?referrer="+encodeURIComponent(window.location.href); @*/
+    </script>
+
+
+	
+</head>
+
+<body>
+
+<!--和风天气插件-->
+    <div class="mywth" style="width: 320px;">
+      <div id="he-plugin-simple"></div>
+      <script async>
+        WIDGET = {
+          CONFIG: {
+            modules: "01234",
+            background: 5,
+            tmpColor: "#333333",
+            tmpSize: "15",
+            cityColor: "#333333",
+            citySize: "15",
+            aqiSize: "15",
+            weatherIconSize: "26",
+            alertIconSize: "24",
+            padding: "0px 5px 5px 0px",
+            shadow: "1",
+            language: "auto",
+            borderRadius: 5,
+            fixed: "false",
+            vertical: "middle",
+            horizontal: "left",
+            key: "5e9773d40306432e915cb9093c9f6369",
+          },
+        };
+      </script>
+      <script
+        async
+        src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"
+      ></script>
+    </div>
+<!--和风天气插件-->
+
+    <div id="body">
+        <div class="container">
+            <div class="search-logo"></div>
+            <div class="search-content">
+                <div class="search-group">
+                    <div class="search-select" id="selectEngine"></div>
+                    <input id="search" type="search" autocomplete="off" class="search-input" name=""
+                        placeholder="请输入搜索的内容">
+                    <button id="searchBtn" type="button" class="search-btn">
+                        <i class="fa fa-search"></i> 搜索&nbsp;
+                    </button>
+                </div>
+                <div class="search-option" id="selectOption"></div>
+                <ul id="searchList"></ul>
+            </div>
+            <div class="poetry">
+                <div class="poetry-content">
+                    <span id="jinrishiciSentence">正在加载诗词....</span>
+                </div>
+                <div class="poetry-info">
+                    <span id="jinrishiciAuthor"></span>
+                    <span id="jinrishiciTitle"></span>
+                </div>
+            </div>
+            <div id="commonUse"></div>
+            <div id="copyright"></div>
+        </div>
+        <div id="sideBarButton"><i class="fa fa-bars"></i></div>
+        <div id="sideBar">
+            <div id="sideBarTitle"></div>
+            <div id="sideBarContent">
+                <div id="scrollContent"></div>
+            </div>
+        </div>
+        <div id="loading">
+            <div class="pic">
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+                <i></i>
+            </div>
+        </div>
+        <ul id="messageList"></ul>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/anime-3.0.1.min.js"></script>
+    <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+	
+    <script type="module" src="./js/main.js"></script>
+
+	<script>
+  // 检测浏览器是否支持SW
+  if(navigator.serviceWorker != null){
+    navigator.serviceWorker.register('/pwa/sw.js')
+    .then(function(registartion){
+      console.log('支持sw:',registartion.scope)
+    })
+  }
+</script>
+
+</body>
+
+</html>
