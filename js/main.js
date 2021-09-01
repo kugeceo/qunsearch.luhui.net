@@ -257,7 +257,7 @@ if (jsonData.copyright.show) {
     let nowDdate = new Date();
     copyrightContent = copyrightContent.replace("#after#", nowDdate.getFullYear());
     copyrightContent = copyrightContent.replace("#author#", "luhui.net");
-    copyrightContent = copyrightContent.replace("#before#", "-1-11");
+    copyrightContent = copyrightContent.replace("#before#", "2004-1-11");
     copyright.innerHTML = `<a class="copyright" href="${jsonData.copyright.href}">${copyrightContent}</a>`
 }
 
