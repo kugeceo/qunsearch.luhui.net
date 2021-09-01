@@ -255,9 +255,9 @@ renderSideBarIcon();
 if (jsonData.copyright.show) {
     let copyrightContent = jsonData.copyright.content;
     let nowDdate = new Date();
-    copyrightContent = copyrightContent.replace("#before#", "2018");
     copyrightContent = copyrightContent.replace("#after#", nowDdate.getFullYear());
-    copyrightContent = copyrightContent.replace("#author#", "Vir");
+    copyrightContent = copyrightContent.replace("#before#", "-1-11");
+    copyrightContent = copyrightContent.replace("#author#", "luhui.net");
     copyright.innerHTML = `<a class="copyright" href="${jsonData.copyright.href}">${copyrightContent}</a>`
 }
 
