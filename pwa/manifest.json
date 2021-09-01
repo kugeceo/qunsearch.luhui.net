@@ -1,0 +1,41 @@
+{
+  "name": "极简导航",
+  "short_name": "极简导航",
+  "description": "一个极简自定义导航，支持多个搜索引擎。简约导航，各种实用工具导航、设计导航、开发导航、技术学习、视频购物导航，兼容手机浏览器。",
+  "theme_color": "#2196f3",
+  "background_color": "#2196f3",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "icons": [
+    {
+      "src": "/pwa/icons/16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icons/32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icons/48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icons/64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/pwa/icons/128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+	{
+      "src": "/pwa/icons/200.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}
