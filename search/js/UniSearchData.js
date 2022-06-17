@@ -120,7 +120,7 @@ UniSearch.data["zh-cn"]["web"] = {
     title: "网页",
     items: {
         baidu: {
-            title: "百度",
+            title: "F搜",
             url: "https://fsoufsou.com/search?q="
         },
 		
@@ -510,7 +510,7 @@ UniSearch.data["zh-cn"]["bt"] = {
         },
 		
         baiduxt: {
-            title: "百度",
+            title: "F搜",
             url: "https://fsoufsou.com/search?q=magnet:?xt=urn:btih: "
         },
 		
@@ -659,7 +659,7 @@ UniSearch.data["zh-cn"]["answer"] = {
         },
 		
         baidu: {
-            title: "百度",
+            title: "F搜",
             url: "https://fsoufsou.com/search?q=index of {keyword:gb2312} .zip"
         },
 		
