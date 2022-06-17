@@ -121,7 +121,7 @@ UniSearch.data["zh-cn"]["web"] = {
     items: {
         baidu: {
             title: "百度",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word="
+            url: "https://fsoufsou.com/search?q="
         },
 		
         google: {
@@ -495,12 +495,12 @@ UniSearch.data["zh-cn"]["bt"] = {
         gougou: {
             title: "迅",
             subtitle: "雷",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=thunder:// "
+            url: "https://fsoufsou.com/search?q=thunder:// "
         },
 		
         Verycd: {
             title: "电驴",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=ed2k://|file| "
+            url: "https://fsoufsou.com/search?q=ed2k://|file| "
         },
 		
         bing: {
@@ -511,12 +511,12 @@ UniSearch.data["zh-cn"]["bt"] = {
 		
         baiduxt: {
             title: "百度",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=magnet:?xt=urn:btih: "
+            url: "https://fsoufsou.com/search?q=magnet:?xt=urn:btih: "
         },
 		
         qqdl: {
             title: "旋风链接",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=qqdl:// "
+            url: "https://fsoufsou.com/search?q=qqdl:// "
         },
 		
         s306: {
@@ -610,7 +610,7 @@ UniSearch.data["zh-cn"]["answer"] = {
     items: {
         all: {
             title: "全部文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:all {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:all {keyword:gb2312}&fileType=all"
         },
 		
         un: {
@@ -620,7 +620,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         pdf: {
             title: "PDF文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:pdf {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:pdf {keyword:gb2312}&fileType=all"
         },
 		
         jiumodiary: {
@@ -630,27 +630,27 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         word: {
             title: "word文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:doc {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:doc {keyword:gb2312}&fileType=all"
         },
 		
         txt: {
             title: "txt文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:txt {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:txt {keyword:gb2312}&fileType=all"
         },
 		
         ppt: {
             title: "ppt文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:ppt {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:ppt {keyword:gb2312}&fileType=all"
         },
 		
         XLS: {
             title: "XLS文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:XLS {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:XLS {keyword:gb2312}&fileType=all"
         },
 		
         rtf: {
             title: "rtf文档",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=filetype:rtf {keyword:gb2312}&fileType=all"
+            url: "https://fsoufsou.com/search?q=filetype:rtf {keyword:gb2312}&fileType=all"
         },
 		
         qihoo: {
@@ -660,7 +660,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         baidu: {
             title: "百度",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=index of {keyword:gb2312} .zip"
+            url: "https://fsoufsou.com/search?q=index of {keyword:gb2312} .zip"
         },
 		
         google: {
@@ -763,7 +763,7 @@ UniSearch.data["zh-cn"]["soft"] = {
     items: {
         github: {
             title: "github",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:github.com {keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=site:github.com {keyword:gb2312}"
         },
 		
 		lingfengyun: {
@@ -784,13 +784,13 @@ UniSearch.data["zh-cn"]["soft"] = {
         onlinedown: {
             title: "华",
             subtitle: "军",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:newhua.com {keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=site:newhua.com {keyword:gb2312}"
         },
 		
         skycn: {
             title: "天",
             subtitle: "空",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site:skycn.com {keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=site:skycn.com {keyword:gb2312}"
 		},
 		
         mydrivers: {
@@ -812,7 +812,7 @@ UniSearch.data["zh-cn"]["blog"] = {
  
         li3nk: {
             title: "link:搜索url的反向链接",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=link:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=link:{keyword:gb2312}"
         },
 		
         mbalib: {
@@ -823,7 +823,7 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
         intitle: {
             title: "intitle:含关键词的页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=intitle:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=intitle:{keyword:gb2312}"
         },
 		
         abibletool: {
@@ -839,27 +839,27 @@ UniSearch.data["zh-cn"]["blog"] = {
 		edu: {
             title: "教",
             subtitle: "育",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=site%3A.edu {keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=site%3A.edu {keyword:gb2312}"
         },
 		
         inurl: {
             title: "inurl:带有链接的页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=inurl:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=inurl:{keyword:gb2312}"
         },
 		
         inanchor: {
             title: "Inanchor:链接锚文字中包含搜索词的页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=inanchor:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=inanchor:{keyword:gb2312}"
         },
 		
         alltitle: {
             title: "alltitle:页面标题包含多组关键词的文件",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=alltitle:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=alltitle:{keyword:gb2312}"
         },
 		
         arnlliul: {
             title: "allinurl:页面标题包含多组关键词的文件",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=allinurl:{keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=allinurl:{keyword:gb2312}"
         },
 		
 		google: {
@@ -869,12 +869,12 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
 		related: {
             title: "related:关联页",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=related:{keyword:gb2312}"		
+            url: "https://fsoufsou.com/search?q=related:{keyword:gb2312}"		
         },
 		
 		bmd: {
             title: "查询linkdomain:外链",
-            url: "https://www.baidu.com/baidu?tn=luhuinet&word=linkdomain: {keyword:gb2312}"
+            url: "https://fsoufsou.com/search?q=linkdomain: {keyword:gb2312}"
         }
     }
 };
