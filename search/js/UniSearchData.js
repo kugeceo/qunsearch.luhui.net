@@ -124,10 +124,23 @@ UniSearch.data["zh-cn"]["web"] = {
             url: "https://fsoufsou.com/search?q="
         },
 		
+        toutiao: {
+            title: "头条",
+            url: "https://so.toutiao.com/search?keyword="
+        },
+		
+		
+        wuzhuiso: {
+            title: "无追",
+            url: "https://www.wuzhuiso.com/s?q="
+        },
+		
+		
         baidu: {
             title: "百度",
             url: "https://baidu.luhui.net/?"
         },
+		
 		
         google: {
             title: "Google",
