@@ -119,9 +119,14 @@ UniSearch.data["zh-cn"]["prefer"] = {
 UniSearch.data["zh-cn"]["web"] = {
     title: "网页",
     items: {
-        baidu: {
+        fsoufsou: {
             title: "F搜",
             url: "https://fsoufsou.com/search?q="
+        },
+		
+        baidu: {
+            title: "百度",
+            url: "https://baidu.luhui.net/?"
         },
 		
         google: {
