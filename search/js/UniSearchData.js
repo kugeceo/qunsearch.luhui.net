@@ -88,7 +88,7 @@ UniSearch.data["zh-cn"]["prefer"] = {
 	
     {
         c: "web",
-        n: "baidu"
+        n: "toutiao"
     },
 	
     {
