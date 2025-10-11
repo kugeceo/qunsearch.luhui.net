@@ -68,7 +68,7 @@ UniSearch.defaults.firstShow["zh-cn"] = {
     item: 0
 };
 UniSearch.defaults.order = {};
-UniSearch.defaults.order["zh-cn"] = ["prefer", "web", "music", "image", "video", "shopping", "dict", "bt", "answer", "news", "map", "soft", "blog", "more"];
+UniSearch.defaults.order["zh-cn"] = ["prefer","web","music","image","video","shopping","dict","bt","answer","news","map","soft","blog","more"];
 UniSearch.data["zh-cn"] = {};
 UniSearch.data["zh-cn"]["more"] = {};
 UniSearch.data["zh-cn"]["set"] = {
@@ -76,10 +76,17 @@ UniSearch.data["zh-cn"]["set"] = {
 };
 UniSearch.data["zh-cn"]["prefer"] = {
     title: "首选",
-    items: [{
+    items: [
+	{
         c: "web",
         n: "live"
     },
+	
+	{
+        c: "shopping",
+        n: "taobao",
+    },	
+
 	
     {
         c: "web",
@@ -109,11 +116,6 @@ UniSearch.data["zh-cn"]["prefer"] = {
     {
         c: "bt",
         n: "gougou"
-    },
-	
-    {
-        c: "shopping",
-        n: "taobao"
     }]
 };
 UniSearch.data["zh-cn"]["web"] = {
@@ -219,7 +221,7 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         luhui: {
             title: "鲁虺",
-            url: "https://luhui.net/{keyword:gb2312}"
+            url: "http://luhui.net/wap/search.html?qtext={keyword:gb2312}"
         },
 		
         aol: {
@@ -278,37 +280,43 @@ UniSearch.data["zh-cn"]["image"] = {
     items: {
         google: {
             title: "Google",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://www.google.cn/search?hl=zh-CN&um=1&ie=UTF-8&tbm=isch&source=og&sa=N&tab=wi&q="
         },
 		
+        openai: {
+            title: "open",
+            subtitle: ".ai",
+            url: "http://open.ai/?prompt="
+        },
+		
         baidu: {
-            title: "百度",
-            subtitle: "图片",
+            title: "百",
+            subtitle: "度",
             url: "https://image.baidu.com/search/index?tn=baiduimage&word="
         },
 		
         sogou: {
             title: "搜狗",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://pic.sogou.com/pics?query={keyword:escape}"
         },
 		
         lmgtfy: {
             title: "lmgtfy",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://zh.lmgtfy.app/#gsc.tab=0&gsc.q={keyword:escape}"
         },
 		
         inmagine: {
             title: "123rf",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://www.123rf.com/%E5%85%8D%E7%89%88%E7%A8%8E%E5%9B%BE%E5%83%8F/{keyword:gb2312}.html?&sti=lyjsmxtwtvytb4c61q"
         },
 		
         live: {
-            title: "Bing",
-            subtitle: "图片",
+            title: "必应",
+            subtitle: "",
             url: "https://cn.bing.com/images/search?FORM=BIFD&q="
         },
 		
@@ -320,25 +328,25 @@ UniSearch.data["zh-cn"]["image"] = {
 		
         yahoo: {
             title: "yahoo",
-            subtitle: "雅虎",
+            subtitle: "",
             url: "https://search.cn.yahoo.com/search?p={keyword}&v=image"
         },
 		
         so: {
             title: "360",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://image.so.com/i?q={keyword:gb2312}&src=tab_www"
         },
 		
         huitu: {
-            title: "汇",
-            subtitle: "图",
+            title: "汇图",
+            subtitle: "",
             url: "http://soso.huitu.com/search?kw={keyword:gb2312}&category_images=1"
         },
 		
         lookao: {
             title: "lookao",
-            subtitle: "图片",
+            subtitle: "",
             url: "https://lookao.com/search?q={keyword:gb2312}&category_images=1"
         },
 		
@@ -387,7 +395,7 @@ UniSearch.data["zh-cn"]["music"] = {
         baidu: {
             title: "鲁",
             subtitle: "虺",
-            url: "https://music.luhui.net/?q={keyword:gb2312}"
+            url: "http://luhui.net/cn/music?q={keyword:gb2312}"
         },
 		
         sogou: {
@@ -788,7 +796,7 @@ UniSearch.data["zh-cn"]["soft"] = {
             title: "凌风云",
             url: "https://www.lingfengyun.com/search?wd={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
         },
-				
+	
 		xiaoso: {
             title: "小不点",
             url: "https://www.xiaoso.net/m/search?wd={keyword:gb2312}"
@@ -939,7 +947,7 @@ UniSearch.defaults.preferredList["en-us"] = {
     misc: "google_groups",
     blog: "google"
 };
-UniSearch.defaults.order["en-us"] = ["prefer", "web", "misc", "image", "software", "blog", "set"];
+UniSearch.defaults.order["en-us"] = ["prefer","web","misc","image","software","blog","set"];
 UniSearch.defaults.preferredConList["en-us"] = [{
     c: "web",
     n: "google"
@@ -1235,7 +1243,7 @@ UniSearch.defaults.preferredList["fr-fr"] = {
     blog: "google",
     reference: "dictionary"
 };
-UniSearch.defaults.order["fr-fr"] = ["prefer", "web", "news", "image", "blog", "reference", "misc", "set"];
+UniSearch.defaults.order["fr-fr"] = ["prefer","web","news","image","blog","reference","misc","set"];
 UniSearch.defaults.preferredConList["fr-fr"] = [{
     c: "web",
     n: "google"
