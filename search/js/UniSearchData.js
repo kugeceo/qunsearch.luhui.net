@@ -122,8 +122,8 @@ UniSearch.data["zh-cn"]["web"] = {
     title: "网页",
     items: {
         fsoufsou: {
-            title: "F搜",
-            url: "https://fsoufsou.com/search?q="
+            title: "摩发",
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },
 		
         toutiao: {
@@ -521,12 +521,12 @@ UniSearch.data["zh-cn"]["bt"] = {
         gougou: {
             title: "迅",
             subtitle: "雷",
-            url: "https://fsoufsou.com/search?q=thunder:// "
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=thunder:// "
         },
 		
         Verycd: {
             title: "电驴",
-            url: "https://fsoufsou.com/search?q=ed2k://|file| "
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=ed2k://|file| "
         },
 		
         bing: {
@@ -537,12 +537,12 @@ UniSearch.data["zh-cn"]["bt"] = {
 		
         baiduxt: {
             title: "F搜",
-            url: "https://fsoufsou.com/search?q=magnet:?xt=urn:btih: "
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=magnet:?xt=urn:btih: "
         },
 		
         qqdl: {
             title: "旋风链接",
-            url: "https://fsoufsou.com/search?q=qqdl:// "
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=qqdl:// "
         },
 		
         s306: {
@@ -595,10 +595,10 @@ UniSearch.data["zh-cn"]["shopping"] = {
             url: "https://search.dangdang.com/search.aspx?key={keyword:gb2312}"
         },
 		
-        "360buy": {
+        "jd": {
             title: "京东",
             subtitle: "商城",
-            url: "https://Union.360buy.com/SearchRedirect.aspx?Union_Id=197&keyword={keyword:gb2312}"
+            url: "http://search.jd.com/Search?pvid=a27be22edcfd44d7be078ebb3d389b4d&keyword={keyword:gb2312}"
         },
 		
         "etao": {
@@ -636,7 +636,7 @@ UniSearch.data["zh-cn"]["answer"] = {
     items: {
         all: {
             title: "全部文档",
-            url: "https://fsoufsou.com/search?q=filetype:all {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:all {keyword:gb2312}&fileType=all"
         },
 		
         un: {
@@ -646,7 +646,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         pdf: {
             title: "PDF文档",
-            url: "https://fsoufsou.com/search?q=filetype:pdf {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:pdf {keyword:gb2312}&fileType=all"
         },
 		
         jiumodiary: {
@@ -656,27 +656,27 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         word: {
             title: "word文档",
-            url: "https://fsoufsou.com/search?q=filetype:doc {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:doc {keyword:gb2312}&fileType=all"
         },
 		
         txt: {
             title: "txt文档",
-            url: "https://fsoufsou.com/search?q=filetype:txt {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:txt {keyword:gb2312}&fileType=all"
         },
 		
         ppt: {
             title: "ppt文档",
-            url: "https://fsoufsou.com/search?q=filetype:ppt {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:ppt {keyword:gb2312}&fileType=all"
         },
 		
         XLS: {
             title: "XLS文档",
-            url: "https://fsoufsou.com/search?q=filetype:XLS {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:XLS {keyword:gb2312}&fileType=all"
         },
 		
         rtf: {
             title: "rtf文档",
-            url: "https://fsoufsou.com/search?q=filetype:rtf {keyword:gb2312}&fileType=all"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=filetype:rtf {keyword:gb2312}&fileType=all"
         },
 		
         qihoo: {
@@ -686,7 +686,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         baidu: {
             title: "F搜",
-            url: "https://fsoufsou.com/search?q=index of {keyword:gb2312} .zip"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=index of {keyword:gb2312} .zip"
         },
 		
         google: {
@@ -789,7 +789,7 @@ UniSearch.data["zh-cn"]["soft"] = {
     items: {
         github: {
             title: "github",
-            url: "https://fsoufsou.com/search?q=site:github.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:github.com {keyword:gb2312}"
         },
 		
 		lingfengyun: {
@@ -810,13 +810,13 @@ UniSearch.data["zh-cn"]["soft"] = {
         onlinedown: {
             title: "华",
             subtitle: "军",
-            url: "https://fsoufsou.com/search?q=site:newhua.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:newhua.com {keyword:gb2312}"
         },
 		
         skycn: {
             title: "天",
             subtitle: "空",
-            url: "https://fsoufsou.com/search?q=site:skycn.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:skycn.com {keyword:gb2312}"
 		},
 		
         mydrivers: {
@@ -838,7 +838,7 @@ UniSearch.data["zh-cn"]["blog"] = {
  
         li3nk: {
             title: "link:搜索url的反向链接",
-            url: "https://fsoufsou.com/search?q=link:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=link:{keyword:gb2312}"
         },
 		
         mbalib: {
@@ -849,7 +849,7 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
         intitle: {
             title: "intitle:含关键词的页",
-            url: "https://fsoufsou.com/search?q=intitle:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=intitle:{keyword:gb2312}"
         },
 		
         abibletool: {
@@ -865,27 +865,27 @@ UniSearch.data["zh-cn"]["blog"] = {
 		edu: {
             title: "教",
             subtitle: "育",
-            url: "https://fsoufsou.com/search?q=site%3A.edu {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site%3A.edu {keyword:gb2312}"
         },
 		
         inurl: {
             title: "inurl:带有链接的页",
-            url: "https://fsoufsou.com/search?q=inurl:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inurl:{keyword:gb2312}"
         },
 		
         inanchor: {
             title: "Inanchor:链接锚文字中包含搜索词的页",
-            url: "https://fsoufsou.com/search?q=inanchor:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inanchor:{keyword:gb2312}"
         },
 		
         alltitle: {
             title: "alltitle:页面标题包含多组关键词的文件",
-            url: "https://fsoufsou.com/search?q=alltitle:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=alltitle:{keyword:gb2312}"
         },
 		
         arnlliul: {
             title: "allinurl:页面标题包含多组关键词的文件",
-            url: "https://fsoufsou.com/search?q=allinurl:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=allinurl:{keyword:gb2312}"
         },
 		
 		google: {
@@ -895,12 +895,12 @@ UniSearch.data["zh-cn"]["blog"] = {
 		
 		related: {
             title: "related:关联页",
-            url: "https://fsoufsou.com/search?q=related:{keyword:gb2312}"		
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=related:{keyword:gb2312}"		
         },
 		
 		bmd: {
             title: "查询linkdomain:外链",
-            url: "https://fsoufsou.com/search?q=linkdomain: {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=linkdomain: {keyword:gb2312}"
         }
     }
 };
