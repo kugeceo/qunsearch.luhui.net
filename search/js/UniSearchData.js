@@ -789,34 +789,34 @@ UniSearch.data["zh-cn"]["soft"] = {
     items: {
         github: {
             title: "github",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:github.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:github.com {keyword}"
         },
 		
 		lingfengyun: {
-            title: "凌风云",
-            url: "https://www.lingfengyun.com/search?wd={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
+            title: "鲁虺",
+            url: "http://soft.luhui.net/search?q={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
         },
 	
 		xiaoso: {
             title: "小不点",
-            url: "https://www.xiaoso.net/m/search?wd={keyword:gb2312}"
+            url: "https://www.xiaoso.net/m/search?wd={keyword}"
         },
 		
 		manong: {
             title: "gitee",
-            url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword:gb2312}"
+            url: "https://search.gitee.com/?skin=rec&type=repository&q={keyword}"
         },
 		
         onlinedown: {
             title: "华",
             subtitle: "军",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:newhua.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:newhua.com {keyword}"
         },
 		
         skycn: {
             title: "天",
             subtitle: "空",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:skycn.com {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:skycn.com {keyword}"
 		},
 		
         hunhepan: {
@@ -828,7 +828,7 @@ UniSearch.data["zh-cn"]["soft"] = {
         kaifa: {
             title: "开",
             subtitle: "发者",
-            url: "https://kaifa.baidu.com/searchPage?wd={keyword:gb2312}"
+            url: "https://kaifa.baidu.com/searchPage?wd={keyword}"
         }
     }
 };
