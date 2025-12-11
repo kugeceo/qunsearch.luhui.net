@@ -822,7 +822,7 @@ UniSearch.data["zh-cn"]["soft"] = {
         hunhepan: {
             title: "混合",
             subtitle: "盘搜",
-            url: "https://hunhepan.com/search?q={keyword:gb2312}"
+            url: "https://hunhepan.com/search?q={keyword}"
         },
 		
         kaifa: {
