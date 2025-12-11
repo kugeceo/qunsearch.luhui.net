@@ -536,7 +536,7 @@ UniSearch.data["zh-cn"]["bt"] = {
         },
 		
         baiduxt: {
-            title: "F搜",
+            title: "摩发",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q=magnet:?xt=urn:btih: "
         },
 		
@@ -685,7 +685,7 @@ UniSearch.data["zh-cn"]["answer"] = {
         },
 		
         baidu: {
-            title: "F搜",
+            title: "摩发",
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q=index of {keyword:gb2312} .zip"
         },
 		
@@ -735,12 +735,12 @@ UniSearch.data["zh-cn"]["map"] = {
 		
         google: {
             title: "谷歌",
-            url: "https://maps.google.cn/maps?q="
+            url: "https://maps.google.com/maps?q="
         },
 		
         luhui: {
             title: "鲁虺",
-            url: "https://ditu.luhui.net?q="
+            url: "https://diqiu.luhui.net?q="
         },
 		
         so: {
@@ -819,10 +819,10 @@ UniSearch.data["zh-cn"]["soft"] = {
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:skycn.com {keyword:gb2312}"
 		},
 		
-        mydrivers: {
-            title: "驱动",
-            subtitle: "之家",
-            url: "https://so.mydrivers.com/drivers.aspx?q={keyword:gb2312}"
+        hunhepan: {
+            title: "混合",
+            subtitle: "盘搜",
+            url: "https://hunhepan.com/search?q={keyword:gb2312}"
         },
 		
         kaifa: {
