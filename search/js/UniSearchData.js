@@ -123,7 +123,7 @@ UniSearch.data["zh-cn"]["web"] = {
     items: {
         fsoufsou: {
             title: "摩发",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
+            url: "https://2mfa.cn/?q="
         },
 		
         toutiao: {
@@ -133,8 +133,8 @@ UniSearch.data["zh-cn"]["web"] = {
 		
 		
         wuzhuiso: {
-            title: "无追",
-            url: "https://www.wuzhuiso.com/s?q="
+            title: "360无追",
+            url: "https://www.sou.com/search?q="
         },
 		
 		
@@ -211,17 +211,17 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         toutiao: {
             title: "头条",
-            url: "https://www.toutiao.com/search/?keyword={keyword:gb2312}"
+            url: "https://www.toutiao.com/search/?keyword={keyword}"
         },
 		
         cctv: {
             title: "央视",
-            url: "https://search.cctv.com/search.php?qtext={keyword:gb2312}&type=web"
+            url: "https://search.cctv.com/search.php?qtext={keyword}&type=web"
         },
 		
         luhui: {
             title: "鲁虺",
-            url: "http://luhui.net/wap/search.html?qtext={keyword:gb2312}"
+            url: "https://luhui.net/wap/search.html?qtext={keyword:gb2312}"
         },
 		
         aol: {
@@ -229,9 +229,9 @@ UniSearch.data["zh-cn"]["web"] = {
             url: "https://search.aol.com/aol/search?q={keyword:gb2312}"
         },
 		
-        lookao: {
-            title: "lookao",
-            url: "https://lookao.com/search?q={keyword:gb2312}&category_general=1&time_range=&language=all"
+        quark: {
+            title: "夸克",
+            url: "https://s.quark.cn/s?q={keyword}&safe=1&snum=2"
         },
 		
         biglobe: {
@@ -246,7 +246,7 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         appeasou: {
             title: "宜搜",
-            url: "https://i.appeasou.com/s.m?idx=1&sty=1&q={keyword:gb2312}&esid=IlmUHM05uab&fr=9.3.2.2&wver=ta"
+            url: "https://appeasou.com/s.m?idx=1&sty=1&q={keyword}"
         },
 		
         zhongsou: {
@@ -558,7 +558,7 @@ UniSearch.data["zh-cn"]["bt"] = {
 		
         sm: {
             title: "神马",
-            url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword:gb2312}&from=smor&tomode=advanced&safe=1&snum=0"
+            url: "https://m.sm.cn/s?q=magnet:?xt=urn:btih: {keyword}&from=smor&tomode=advanced&safe=1&snum=0"
 		},
 		
         goobe: {
@@ -598,7 +598,7 @@ UniSearch.data["zh-cn"]["shopping"] = {
         "jd": {
             title: "京东",
             subtitle: "商城",
-            url: "http://search.jd.com/Search?pvid=a27be22edcfd44d7be078ebb3d389b4d&keyword={keyword:gb2312}"
+            url: "https://search.jd.com/Search?pvid=a27be22edcfd44d7be078ebb3d389b4d&keyword={keyword}"
         },
 		
         "etao": {
@@ -838,69 +838,69 @@ UniSearch.data["zh-cn"]["blog"] = {
  
         li3nk: {
             title: "link:搜索url的反向链接",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=link:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=link:{keyword}"
         },
 		
         mbalib: {
             title: "智",
             subtitle: "库",
-            url: "https://wiki.mbalib.com/wiki/Special:Search?search={keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:mbalib.com wiki {keyword}"
         },
 		
         intitle: {
             title: "intitle:含关键词的页",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=intitle:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=intitle:{keyword}"
         },
 		
         abibletool: {
             title: "圣经",
-            url: "https://www.abibletool.net/search.aspx?q={keyword:gb2312}"
+            url: "https://www.abibletool.net/search.aspx?q={keyword}"
         },
 		
         wikipedia: {
             title: "维基百科",
-            url: "https://zh.wikipedia.org/w/index.php?search={keyword:gb2312}"
+            url: "https://zh.wikipedia.org/w/index.php?search={keyword}"
         },
 		
 		edu: {
             title: "教",
             subtitle: "育",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site%3A.edu {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site%3A.edu {keyword}"
         },
 		
         inurl: {
             title: "inurl:带有链接的页",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inurl:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inurl:{keyword}"
         },
 		
         inanchor: {
             title: "Inanchor:链接锚文字中包含搜索词的页",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inanchor:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=inanchor:{keyword}"
         },
 		
         alltitle: {
             title: "alltitle:页面标题包含多组关键词的文件",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=alltitle:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=alltitle:{keyword}"
         },
 		
         arnlliul: {
             title: "allinurl:页面标题包含多组关键词的文件",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=allinurl:{keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=allinurl:{keyword}"
         },
 		
 		google: {
             title: "Google",
-            url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword:gb2312}"		
+            url: "https://www.google.cn/search?hl=zh-CN&ie=UTF-8&lr=&tbm=blg&q={keyword}"		
         },
 		
 		related: {
             title: "related:关联页",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=related:{keyword:gb2312}"		
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=related:{keyword}"		
         },
 		
 		bmd: {
             title: "查询linkdomain:外链",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=linkdomain: {keyword:gb2312}"
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=linkdomain: {keyword}"
         }
     }
 };
@@ -995,6 +995,11 @@ UniSearch.data["en-us"]["web"] = {
         ask: {
             title: "Ask.com",
             url: "https://www.ask.com/web?q={keyword}"
+        },
+		
+        lookao: {
+            title: "lookao",
+            url: "https://lookao.com/search?q={keyword:gb2312}&category_general=1&time_range=&language=all"
         },
 		
         live: {
