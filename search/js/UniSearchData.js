@@ -128,7 +128,7 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         toutiao: {
             title: "头条",
-            url: "https://so.toutiao.com/search?keyword="
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site:toutiao.com "
         },
 		
 		
@@ -146,7 +146,7 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         google: {
             title: "Google",
-            url: "https://www.google.cn/search?hl=zh-CN&source=hp&cad=b&cad=cbv&q="
+            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=site: google"
         },
 		
         un: {
@@ -169,9 +169,9 @@ UniSearch.data["zh-cn"]["web"] = {
             url: "https://cn.bing.com/search?form=QBLH&filt=all&q="
         },	
 		
-        yioop: {
-            title: "yioop",
-            url: "https://www.yioop.com/?q="
+        backdata: {
+            title: "backdata",
+            url: "https://backdata.net/search.html?q="
         },		
 
         chinaso: {
