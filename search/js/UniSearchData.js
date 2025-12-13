@@ -156,7 +156,7 @@ UniSearch.data["zh-cn"]["web"] = {
 		
         magi: {
             title: "magi",
-            url: "https://magi.com/search?q={noEncode}"
+            url: "https://mtg-search.com/?source={%22query%22:{%22query_string%22:{%22query%22:%22{noEncode}%22,%22default_operator%22:%22AND%22}},%22sort%22:[%22_id%22],%22aggregations%22:{%22colors.exact%22:{%22terms%22:{%22field%22:%22colors.exact%22}},%22dualColors.exact%22:{%22terms%22:{%22field%22:%22dualColors.exact%22}},%22tripleColors.exact%22:{%22terms%22:{%22field%22:%22tripleColors.exact%22}},%22devotions%22:{%22terms%22:{%22field%22:%22devotions%22}},%22convertedManaCost%22:{%22terms%22:{%22field%22:%22convertedManaCost%22}},%22type%22:{%22terms%22:{%22field%22:%22type%22}},%22layout.exact%22:{%22terms%22:{%22field%22:%22layout.exact%22}},%22abilities.exact%22:{%22terms%22:{%22field%22:%22abilities.exact%22}},%22power%22:{%22terms%22:{%22field%22:%22power%22}},%22toughness%22:{%22terms%22:{%22field%22:%22toughness%22}},%22rarities%22:{%22terms%22:{%22field%22:%22rarities%22}},%22priceRanges.exact%22:{%22terms%22:{%22field%22:%22priceRanges.exact%22}},%22editions.exact%22:{%22terms%22:{%22field%22:%22editions.exact%22}},%22blocks.exact%22:{%22terms%22:{%22field%22:%22blocks.exact%22}},%22formats.exact%22:{%22terms%22:{%22field%22:%22formats.exact%22}},%22special.exact%22:{%22terms%22:{%22field%22:%22special.exact%22}},%22land.exact%22:{%22terms%22:{%22field%22:%22land.exact%22}},%22artists.exact%22:{%22terms%22:{%22field%22:%22artists.exact%22}}}}"
         },
 		
         lmgtfy: {
