@@ -407,7 +407,7 @@ UniSearch.data["zh-cn"]["music"] = {
         163: {
             title: "网易云",
             subtitle: "音乐",
-            url: "https://music.163.com/#/search/m/?s={keyword:gb2312}&type=1"
+            url: "https://baidu.luhui.net/search.html?type=music&keyword={keyword:gb2312}&type=1"
         },
 		
         taihe: {
@@ -614,8 +614,8 @@ UniSearch.data["zh-cn"]["shopping"] = {
         },
 		
         amazon: {
-            title: "卓",
-            subtitle: "越",
+            title: "亚",
+            subtitle: "马逊",
             url: "https://www.amazon.cn/s/ref=nb_ss?url=search-alias%3Daps&keywords={keyword}&searchKind=keyword"
         },
 		
@@ -686,7 +686,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         baidu: {
             title: "摩发",
-            url: "https://cn.bing.com/search?form=QBLH&filt=all&q=index of {keyword:gb2312} .zip"
+            url: "https://2mfa.cn/#search?form=QBLH&filt=all&q=index of {keyword:gb2312} .zip"
         },
 		
         google: {
@@ -711,7 +711,7 @@ UniSearch.data["zh-cn"]["answer"] = {
 		
         sm: {
             title: "神马",
-            url: "https://m.sm.cn/s?q=filetype:all {keyword:gb2312}"
+            url: "https://m.sm.cn/s?q=filetype:all {keyword}"
         },
 		
         slimego: {
@@ -794,7 +794,12 @@ UniSearch.data["zh-cn"]["soft"] = {
 		
 		lingfengyun: {
             title: "鲁虺",
-            url: "http://soft.luhui.net/search?q={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
+            url: "https://soft.luhui.net/?q={keyword:gb2312}&so_token=a3532b0083fe60f35d974ffbef6b1cfe&so_file=wang_pan&so_source=all_pan"
+        },
+	
+		pcqq: {
+            title: "腾讯",
+            url: "https://pc.qq.com/search.html#!keyword={keyword}"
         },
 	
 		xiaoso: {
