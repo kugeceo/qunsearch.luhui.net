@@ -740,7 +740,7 @@ UniSearch.data["zh-cn"]["map"] = {
 		
         luhui: {
             title: "鲁虺",
-            url: "https://diqiu.luhui.net?q="
+            url: "https://luhui.net/cs/qi/?text="
         },
 		
         so: {
